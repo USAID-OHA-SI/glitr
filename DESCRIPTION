@@ -17,8 +17,10 @@ RoxygenNote: 7.1.0
 Depends: 
     R (>= 3.1.2)
 Imports: 
-  ggplot2,
-  magrittr,
-  scales
+    ggplot2,
+    magrittr,
+    scales,
+    usethis,
+    extrafont
 Suggests: 
     testthat
