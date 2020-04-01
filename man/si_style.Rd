@@ -5,10 +5,10 @@
 \title{Create Standard SI Plots}
 \usage{
 si_style(
-  font_title = "Helvetica",
-  font_subtitle = "Helvetica",
-  font_plot = "Helvetica",
-  font_caption = "Helvetica"
+  font_title = "Source Sans Pro",
+  font_subtitle = "Source Sans Pro",
+  font_plot = "Source Sans Pro",
+  font_caption = "Source Sans Pro"
 )
 }
 \arguments{
@@ -21,7 +21,7 @@ si_style(
 \item{font_caption}{font family for captions}
 }
 \description{
-This function adorns your ggplot to convert it into a SI style plot. The default font is Helvetica.
+This function adorns your ggplot to convert it into a SI style plot. The default font is Source Sans Pro
 }
 \examples{
 library(ggplot2)
