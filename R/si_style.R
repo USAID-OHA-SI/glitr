@@ -1,6 +1,6 @@
 #' @title Create Standard SI Plots
 #'
-#' @description This function adorns your ggplot to convert it into a SI style plot. The default font is Helvetica.
+#' @description This function adorns your ggplot to convert it into a SI style plot. The default font is Source Sans Pro
 #' @param font_title font family for titles
 #' @param font_subtitle font family for subtitles
 #' @param font_plot font family for the plot space
@@ -15,10 +15,10 @@
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style()
 
-si_style <- function(font_title = "Helvetica",
-                     font_subtitle = "Helvetica",
-                     font_plot = "Helvetica",
-                     font_caption = "Helvetica") {
+si_style <- function(font_title = "Source Sans Pro",
+                     font_subtitle = "Source Sans Pro",
+                     font_plot = "Source Sans Pro",
+                     font_caption = "Source Sans Pro") {
 
   # Depends on plot_setup being run first
 
