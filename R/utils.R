@@ -1,3 +1,12 @@
+.onLoad <- function (libname, pkgname)
+{
+  check_fonts()
+
+  invisible ()
+}
+
+
+
 #' Check for Imported Fonts
 #'
 #' @export
