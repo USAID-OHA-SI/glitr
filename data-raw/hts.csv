@@ -1,0 +1,1696 @@
+operatingunit,primepartner,indicator,modality,period,period_type,value
+Saturn,Auriga,HTS_TST,Index,FY49,targets,3080
+Saturn,Auriga,HTS_TST,Index,FY50,targets,6880
+Saturn,Auriga,HTS_TST,IndexMod,FY49,targets,890
+Saturn,Auriga,HTS_TST,IndexMod,FY50,targets,780
+Saturn,Auriga,HTS_TST,Inpat,FY49,targets,6550
+Saturn,Auriga,HTS_TST,Inpat,FY50,targets,2170
+Saturn,Auriga,HTS_TST,Malnutrition,FY49,targets,870
+Saturn,Auriga,HTS_TST,MobileMod,FY49,targets,2900
+Saturn,Auriga,HTS_TST,MobileMod,FY50,targets,1200
+Saturn,Auriga,HTS_TST,OtherMod,FY49,targets,1690
+Saturn,Auriga,HTS_TST,OtherMod,FY50,targets,780
+Saturn,Auriga,HTS_TST,OtherPITC,FY49,targets,71440
+Saturn,Auriga,HTS_TST,OtherPITC,FY50,targets,24510
+Saturn,Auriga,HTS_TST,Pediatric,FY49,targets,800
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY49,targets,9980
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY50,targets,5300
+Saturn,Auriga,HTS_TST,STI Clinic,FY49,targets,2790
+Saturn,Auriga,HTS_TST,STI Clinic,FY50,targets,830
+Saturn,Auriga,HTS_TST,TBClinic,FY49,targets,1380
+Saturn,Auriga,HTS_TST,TBClinic,FY50,targets,790
+Saturn,Auriga,HTS_TST,VCT,FY49,targets,42070
+Saturn,Auriga,HTS_TST,VCT,FY50,targets,5820
+Saturn,Auriga,HTS_TST,VCTMod,FY50,targets,570
+Saturn,Auriga,HTS_TST,VMMC,FY49,targets,7350
+Saturn,Auriga,HTS_TST,VMMC,FY50,targets,2340
+Saturn,Auriga,HTS_TST_POS,Index,FY49,targets,680
+Saturn,Auriga,HTS_TST_POS,Index,FY50,targets,1000
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY49,targets,120
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY50,targets,290
+Saturn,Auriga,HTS_TST_POS,Inpat,FY49,targets,330
+Saturn,Auriga,HTS_TST_POS,Inpat,FY50,targets,310
+Saturn,Auriga,HTS_TST_POS,Malnutrition,FY49,targets,10
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY49,targets,100
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY50,targets,150
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY49,targets,60
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY49,targets,1860
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY50,targets,940
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY49,targets,530
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY50,targets,190
+Saturn,Auriga,HTS_TST_POS,STI Clinic,FY49,targets,10
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY49,targets,500
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY50,targets,320
+Saturn,Auriga,HTS_TST_POS,VCT,FY49,targets,820
+Saturn,Auriga,HTS_TST_POS,VCT,FY50,targets,200
+Saturn,Auriga,HTS_TST_POS,VMMC,FY50,targets,30
+Saturn,Boötes,HTS_TST,Index,FY49,targets,170
+Saturn,Boötes,HTS_TST,Index,FY50,targets,890
+Saturn,Boötes,HTS_TST,IndexMod,FY50,targets,170
+Saturn,Boötes,HTS_TST,Inpat,FY49,targets,1780
+Saturn,Boötes,HTS_TST,Inpat,FY50,targets,330
+Saturn,Boötes,HTS_TST,MobileMod,FY50,targets,310
+Saturn,Boötes,HTS_TST,OtherMod,FY50,targets,190
+Saturn,Boötes,HTS_TST,OtherPITC,FY49,targets,9480
+Saturn,Boötes,HTS_TST,OtherPITC,FY50,targets,2730
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY49,targets,610
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY50,targets,680
+Saturn,Boötes,HTS_TST,STI Clinic,FY49,targets,380
+Saturn,Boötes,HTS_TST,STI Clinic,FY50,targets,110
+Saturn,Boötes,HTS_TST,TBClinic,FY49,targets,340
+Saturn,Boötes,HTS_TST,TBClinic,FY50,targets,240
+Saturn,Boötes,HTS_TST,VCT,FY49,targets,790
+Saturn,Boötes,HTS_TST,VCT,FY50,targets,710
+Saturn,Boötes,HTS_TST,VCTMod,FY50,targets,140
+Saturn,Boötes,HTS_TST_POS,Index,FY50,targets,230
+Saturn,Boötes,HTS_TST_POS,IndexMod,FY50,targets,10
+Saturn,Boötes,HTS_TST_POS,Inpat,FY49,targets,90
+Saturn,Boötes,HTS_TST_POS,Inpat,FY50,targets,30
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY49,targets,260
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY50,targets,220
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY49,targets,50
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY50,targets,50
+Saturn,Boötes,HTS_TST_POS,STI Clinic,FY49,targets,10
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY49,targets,170
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY50,targets,80
+Saturn,Boötes,HTS_TST_POS,VCT,FY49,targets,60
+Saturn,Boötes,HTS_TST_POS,VCT,FY50,targets,100
+Saturn,Capricornus,HTS_TST,Index,FY49,targets,12010
+Saturn,Capricornus,HTS_TST,Index,FY50,targets,10660
+Saturn,Capricornus,HTS_TST,IndexMod,FY50,targets,1050
+Saturn,Capricornus,HTS_TST,Inpat,FY49,targets,15230
+Saturn,Capricornus,HTS_TST,Inpat,FY50,targets,2820
+Saturn,Capricornus,HTS_TST,Malnutrition,FY49,targets,30
+Saturn,Capricornus,HTS_TST,MobileMod,FY50,targets,1800
+Saturn,Capricornus,HTS_TST,OtherMod,FY50,targets,1240
+Saturn,Capricornus,HTS_TST,OtherPITC,FY49,targets,36430
+Saturn,Capricornus,HTS_TST,OtherPITC,FY50,targets,31070
+Saturn,Capricornus,HTS_TST,Pediatric,FY49,targets,800
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY49,targets,5980
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY50,targets,4970
+Saturn,Capricornus,HTS_TST,STI Clinic,FY49,targets,1650
+Saturn,Capricornus,HTS_TST,STI Clinic,FY50,targets,980
+Saturn,Capricornus,HTS_TST,TBClinic,FY49,targets,1040
+Saturn,Capricornus,HTS_TST,TBClinic,FY50,targets,1160
+Saturn,Capricornus,HTS_TST,VCT,FY49,targets,31110
+Saturn,Capricornus,HTS_TST,VCT,FY50,targets,7030
+Saturn,Capricornus,HTS_TST,VCTMod,FY50,targets,750
+Saturn,Capricornus,HTS_TST,VMMC,FY49,targets,1720
+Saturn,Capricornus,HTS_TST,VMMC,FY50,targets,8010
+Saturn,Capricornus,HTS_TST_POS,Index,FY49,targets,1360
+Saturn,Capricornus,HTS_TST_POS,Index,FY50,targets,1300
+Saturn,Capricornus,HTS_TST_POS,IndexMod,FY50,targets,330
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY49,targets,550
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY50,targets,350
+Saturn,Capricornus,HTS_TST_POS,MobileMod,FY50,targets,240
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY49,targets,1210
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY50,targets,1170
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY49,targets,30
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY49,targets,350
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY50,targets,150
+Saturn,Capricornus,HTS_TST_POS,STI Clinic,FY49,targets,50
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY49,targets,510
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY50,targets,440
+Saturn,Capricornus,HTS_TST_POS,VCT,FY49,targets,1070
+Saturn,Capricornus,HTS_TST_POS,VCT,FY50,targets,310
+Saturn,Capricornus,HTS_TST_POS,VMMC,FY49,targets,20
+Saturn,Capricornus,HTS_TST_POS,VMMC,FY50,targets,90
+Saturn,Cepheus,HTS_TST,Index,FY49,targets,280
+Saturn,Cepheus,HTS_TST,Index,FY50,targets,3390
+Saturn,Cepheus,HTS_TST,IndexMod,FY49,targets,2680
+Saturn,Cepheus,HTS_TST,IndexMod,FY50,targets,580
+Saturn,Cepheus,HTS_TST,Inpat,FY50,targets,1620
+Saturn,Cepheus,HTS_TST,MobileMod,FY49,targets,5810
+Saturn,Cepheus,HTS_TST,MobileMod,FY50,targets,920
+Saturn,Cepheus,HTS_TST,OtherMod,FY50,targets,740
+Saturn,Cepheus,HTS_TST,OtherPITC,FY50,targets,10150
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY49,targets,3430
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY50,targets,1230
+Saturn,Cepheus,HTS_TST,STI Clinic,FY50,targets,590
+Saturn,Cepheus,HTS_TST,TBClinic,FY49,targets,710
+Saturn,Cepheus,HTS_TST,TBClinic,FY50,targets,950
+Saturn,Cepheus,HTS_TST,VCT,FY49,targets,28110
+Saturn,Cepheus,HTS_TST,VCT,FY50,targets,4150
+Saturn,Cepheus,HTS_TST,VCTMod,FY50,targets,540
+Saturn,Cepheus,HTS_TST_POS,Index,FY49,targets,130
+Saturn,Cepheus,HTS_TST_POS,Index,FY50,targets,730
+Saturn,Cepheus,HTS_TST_POS,IndexMod,FY49,targets,140
+Saturn,Cepheus,HTS_TST_POS,IndexMod,FY50,targets,100
+Saturn,Cepheus,HTS_TST_POS,Inpat,FY50,targets,200
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY49,targets,170
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY50,targets,30
+Saturn,Cepheus,HTS_TST_POS,OtherPITC,FY50,targets,760
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY49,targets,60
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY50,targets,70
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY49,targets,180
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY50,targets,320
+Saturn,Cepheus,HTS_TST_POS,VCT,FY49,targets,810
+Saturn,Cepheus,HTS_TST_POS,VCT,FY50,targets,350
+Saturn,Corvus,HTS_TST,Index,FY49,targets,4030
+Saturn,Corvus,HTS_TST,Index,FY50,targets,13590
+Saturn,Corvus,HTS_TST,IndexMod,FY50,targets,630
+Saturn,Corvus,HTS_TST,Inpat,FY49,targets,8570
+Saturn,Corvus,HTS_TST,Inpat,FY50,targets,3710
+Saturn,Corvus,HTS_TST,MobileMod,FY50,targets,2080
+Saturn,Corvus,HTS_TST,OtherMod,FY50,targets,1420
+Saturn,Corvus,HTS_TST,OtherPITC,FY49,targets,148590
+Saturn,Corvus,HTS_TST,OtherPITC,FY50,targets,50230
+Saturn,Corvus,HTS_TST,Pediatric,FY49,targets,5630
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY49,targets,6170
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY50,targets,9740
+Saturn,Corvus,HTS_TST,STI Clinic,FY49,targets,7950
+Saturn,Corvus,HTS_TST,STI Clinic,FY50,targets,1550
+Saturn,Corvus,HTS_TST,TBClinic,FY49,targets,340
+Saturn,Corvus,HTS_TST,TBClinic,FY50,targets,550
+Saturn,Corvus,HTS_TST,VCT,FY49,targets,7390
+Saturn,Corvus,HTS_TST,VCT,FY50,targets,11810
+Saturn,Corvus,HTS_TST,VCTMod,FY50,targets,880
+Saturn,Corvus,HTS_TST,VMMC,FY49,targets,14830
+Saturn,Corvus,HTS_TST,VMMC,FY50,targets,16380
+Saturn,Corvus,HTS_TST_POS,Index,FY49,targets,400
+Saturn,Corvus,HTS_TST_POS,Index,FY50,targets,1730
+Saturn,Corvus,HTS_TST_POS,IndexMod,FY50,targets,180
+Saturn,Corvus,HTS_TST_POS,Inpat,FY49,targets,140
+Saturn,Corvus,HTS_TST_POS,Inpat,FY50,targets,210
+Saturn,Corvus,HTS_TST_POS,MobileMod,FY50,targets,140
+Saturn,Corvus,HTS_TST_POS,OtherMod,FY50,targets,20
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY49,targets,2380
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY50,targets,1550
+Saturn,Corvus,HTS_TST_POS,Pediatric,FY49,targets,20
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY49,targets,430
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY50,targets,270
+Saturn,Corvus,HTS_TST_POS,STI Clinic,FY49,targets,10
+Saturn,Corvus,HTS_TST_POS,STI Clinic,FY50,targets,10
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY49,targets,170
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY50,targets,230
+Saturn,Corvus,HTS_TST_POS,VCT,FY49,targets,140
+Saturn,Corvus,HTS_TST_POS,VCT,FY50,targets,250
+Saturn,Corvus,HTS_TST_POS,VCTMod,FY50,targets,60
+Saturn,Corvus,HTS_TST_POS,VMMC,FY49,targets,30
+Saturn,Corvus,HTS_TST_POS,VMMC,FY50,targets,30
+Saturn,Dedup,HTS_TST,OtherPITC,FY49,targets,-230
+Saturn,Eridanus,HTS_TST,Index,FY49,targets,2640
+Saturn,Eridanus,HTS_TST,Index,FY50,targets,11450
+Saturn,Eridanus,HTS_TST,IndexMod,FY50,targets,590
+Saturn,Eridanus,HTS_TST,Inpat,FY49,targets,4160
+Saturn,Eridanus,HTS_TST,Inpat,FY50,targets,10190
+Saturn,Eridanus,HTS_TST,MobileMod,FY50,targets,6710
+Saturn,Eridanus,HTS_TST,OtherMod,FY50,targets,5950
+Saturn,Eridanus,HTS_TST,OtherPITC,FY49,targets,30670
+Saturn,Eridanus,HTS_TST,OtherPITC,FY50,targets,59660
+Saturn,Eridanus,HTS_TST,Pediatric,FY49,targets,160
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY49,targets,39570
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY50,targets,35870
+Saturn,Eridanus,HTS_TST,STI Clinic,FY49,targets,220
+Saturn,Eridanus,HTS_TST,STI Clinic,FY50,targets,2970
+Saturn,Eridanus,HTS_TST,TBClinic,FY49,targets,1840
+Saturn,Eridanus,HTS_TST,TBClinic,FY50,targets,3130
+Saturn,Eridanus,HTS_TST,VCT,FY49,targets,54750
+Saturn,Eridanus,HTS_TST,VCT,FY50,targets,40630
+Saturn,Eridanus,HTS_TST,VCTMod,FY50,targets,2500
+Saturn,Eridanus,HTS_TST,VMMC,FY49,targets,700
+Saturn,Eridanus,HTS_TST_POS,Index,FY49,targets,350
+Saturn,Eridanus,HTS_TST_POS,Index,FY50,targets,2340
+Saturn,Eridanus,HTS_TST_POS,IndexMod,FY50,targets,200
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY49,targets,220
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY50,targets,350
+Saturn,Eridanus,HTS_TST_POS,MobileMod,FY50,targets,250
+Saturn,Eridanus,HTS_TST_POS,OtherMod,FY50,targets,160
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY49,targets,970
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY50,targets,1820
+Saturn,Eridanus,HTS_TST_POS,Pediatric,FY49,targets,10
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY49,targets,870
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY50,targets,540
+Saturn,Eridanus,HTS_TST_POS,STI Clinic,FY49,targets,40
+Saturn,Eridanus,HTS_TST_POS,STI Clinic,FY50,targets,70
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY49,targets,550
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY50,targets,560
+Saturn,Eridanus,HTS_TST_POS,VCT,FY49,targets,1730
+Saturn,Eridanus,HTS_TST_POS,VCT,FY50,targets,780
+Saturn,Eridanus,HTS_TST_POS,VCTMod,FY50,targets,160
+Saturn,Eridanus,HTS_TST_POS,VMMC,FY49,targets,40
+Saturn,Libra,HTS_TST,Index,FY49,targets,6280
+Saturn,Libra,HTS_TST,Index,FY50,targets,39110
+Saturn,Libra,HTS_TST,IndexMod,FY49,targets,540
+Saturn,Libra,HTS_TST,IndexMod,FY50,targets,910
+Saturn,Libra,HTS_TST,Inpat,FY49,targets,5070
+Saturn,Libra,HTS_TST,Inpat,FY50,targets,6540
+Saturn,Libra,HTS_TST,Malnutrition,FY49,targets,30
+Saturn,Libra,HTS_TST,MobileMod,FY50,targets,4940
+Saturn,Libra,HTS_TST,OtherMod,FY50,targets,4940
+Saturn,Libra,HTS_TST,OtherPITC,FY49,targets,223640
+Saturn,Libra,HTS_TST,OtherPITC,FY50,targets,68980
+Saturn,Libra,HTS_TST,Pediatric,FY49,targets,90
+Saturn,Libra,HTS_TST,PMTCT ANC,FY49,targets,13510
+Saturn,Libra,HTS_TST,PMTCT ANC,FY50,targets,17730
+Saturn,Libra,HTS_TST,STI Clinic,FY49,targets,3730
+Saturn,Libra,HTS_TST,STI Clinic,FY50,targets,1780
+Saturn,Libra,HTS_TST,TBClinic,FY49,targets,390
+Saturn,Libra,HTS_TST,TBClinic,FY50,targets,870
+Saturn,Libra,HTS_TST,VCT,FY49,targets,15370
+Saturn,Libra,HTS_TST,VCT,FY50,targets,14040
+Saturn,Libra,HTS_TST,VCTMod,FY50,targets,2060
+Saturn,Libra,HTS_TST,VMMC,FY49,targets,13640
+Saturn,Libra,HTS_TST,VMMC,FY50,targets,7880
+Saturn,Libra,HTS_TST_POS,Index,FY49,targets,1190
+Saturn,Libra,HTS_TST_POS,Index,FY50,targets,2030
+Saturn,Libra,HTS_TST_POS,IndexMod,FY49,targets,10
+Saturn,Libra,HTS_TST_POS,IndexMod,FY50,targets,220
+Saturn,Libra,HTS_TST_POS,Inpat,FY49,targets,160
+Saturn,Libra,HTS_TST_POS,Inpat,FY50,targets,280
+Saturn,Libra,HTS_TST_POS,MobileMod,FY50,targets,220
+Saturn,Libra,HTS_TST_POS,OtherMod,FY50,targets,140
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY49,targets,4200
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY50,targets,2120
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY49,targets,670
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY50,targets,50
+Saturn,Libra,HTS_TST_POS,STI Clinic,FY50,targets,70
+Saturn,Libra,HTS_TST_POS,TBClinic,FY49,targets,290
+Saturn,Libra,HTS_TST_POS,TBClinic,FY50,targets,310
+Saturn,Libra,HTS_TST_POS,VCT,FY49,targets,240
+Saturn,Libra,HTS_TST_POS,VCT,FY50,targets,300
+Saturn,Libra,HTS_TST_POS,VCTMod,FY50,targets,140
+Saturn,Libra,HTS_TST_POS,VMMC,FY49,targets,70
+Saturn,Libra,HTS_TST_POS,VMMC,FY50,targets,30
+Saturn,Ophiuchus,HTS_TST,Index,FY49,targets,2890
+Saturn,Ophiuchus,HTS_TST,Index,FY50,targets,1820
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY49,targets,1820
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY50,targets,200
+Saturn,Ophiuchus,HTS_TST,Inpat,FY50,targets,1590
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY49,targets,5810
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY50,targets,1080
+Saturn,Ophiuchus,HTS_TST,OtherMod,FY50,targets,890
+Saturn,Ophiuchus,HTS_TST,OtherPITC,FY50,targets,8580
+Saturn,Ophiuchus,HTS_TST,STI Clinic,FY50,targets,480
+Saturn,Ophiuchus,HTS_TST,TBClinic,FY50,targets,400
+Saturn,Ophiuchus,HTS_TST,VCT,FY49,targets,38790
+Saturn,Ophiuchus,HTS_TST,VCT,FY50,targets,5860
+Saturn,Ophiuchus,HTS_TST,VCTMod,FY49,targets,160
+Saturn,Ophiuchus,HTS_TST,VCTMod,FY50,targets,420
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY49,targets,1230
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY50,targets,440
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY49,targets,130
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY50,targets,90
+Saturn,Ophiuchus,HTS_TST_POS,Inpat,FY50,targets,160
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY49,targets,120
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY50,targets,90
+Saturn,Ophiuchus,HTS_TST_POS,OtherPITC,FY50,targets,360
+Saturn,Ophiuchus,HTS_TST_POS,TBClinic,FY50,targets,160
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY49,targets,560
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY50,targets,200
+Saturn,Sagittarius,HTS_TST,Index,FY49,targets,4300
+Saturn,Sagittarius,HTS_TST,Index,FY50,targets,17540
+Saturn,Sagittarius,HTS_TST,IndexMod,FY50,targets,2030
+Saturn,Sagittarius,HTS_TST,Inpat,FY49,targets,16440
+Saturn,Sagittarius,HTS_TST,Inpat,FY50,targets,15090
+Saturn,Sagittarius,HTS_TST,MobileMod,FY50,targets,10090
+Saturn,Sagittarius,HTS_TST,OtherMod,FY50,targets,8630
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY49,targets,151100
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY50,targets,84800
+Saturn,Sagittarius,HTS_TST,Pediatric,FY49,targets,1300
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY49,targets,28810
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY50,targets,33020
+Saturn,Sagittarius,HTS_TST,STI Clinic,FY49,targets,1260
+Saturn,Sagittarius,HTS_TST,STI Clinic,FY50,targets,4530
+Saturn,Sagittarius,HTS_TST,TBClinic,FY49,targets,3010
+Saturn,Sagittarius,HTS_TST,TBClinic,FY50,targets,3190
+Saturn,Sagittarius,HTS_TST,VCT,FY49,targets,54830
+Saturn,Sagittarius,HTS_TST,VCT,FY50,targets,58570
+Saturn,Sagittarius,HTS_TST,VCTMod,FY50,targets,3940
+Saturn,Sagittarius,HTS_TST,VMMC,FY49,targets,1760
+Saturn,Sagittarius,HTS_TST_POS,Index,FY49,targets,750
+Saturn,Sagittarius,HTS_TST_POS,Index,FY50,targets,4090
+Saturn,Sagittarius,HTS_TST_POS,IndexMod,FY50,targets,740
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY49,targets,570
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY50,targets,950
+Saturn,Sagittarius,HTS_TST_POS,MobileMod,FY50,targets,770
+Saturn,Sagittarius,HTS_TST_POS,OtherMod,FY50,targets,150
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY49,targets,3250
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY50,targets,3230
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY49,targets,20
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY49,targets,710
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY50,targets,620
+Saturn,Sagittarius,HTS_TST_POS,STI Clinic,FY49,targets,70
+Saturn,Sagittarius,HTS_TST_POS,STI Clinic,FY50,targets,40
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY49,targets,700
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY50,targets,750
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY49,targets,1390
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY50,targets,1520
+Saturn,Sagittarius,HTS_TST_POS,VCTMod,FY50,targets,150
+Saturn,Sagittarius,HTS_TST_POS,VMMC,FY49,targets,60
+Saturn,Serpens,HTS_TST,Index,FY50,targets,490
+Saturn,Serpens,HTS_TST,IndexMod,FY50,targets,110
+Saturn,Serpens,HTS_TST,Inpat,FY50,targets,390
+Saturn,Serpens,HTS_TST,MobileMod,FY50,targets,240
+Saturn,Serpens,HTS_TST,OtherMod,FY50,targets,210
+Saturn,Serpens,HTS_TST,OtherPITC,FY50,targets,1630
+Saturn,Serpens,HTS_TST,STI Clinic,FY50,targets,170
+Saturn,Serpens,HTS_TST,TBClinic,FY49,targets,330
+Saturn,Serpens,HTS_TST,TBClinic,FY50,targets,160
+Saturn,Serpens,HTS_TST,VCT,FY49,targets,1540
+Saturn,Serpens,HTS_TST,VCT,FY50,targets,1070
+Saturn,Serpens,HTS_TST,VCTMod,FY50,targets,130
+Saturn,Serpens,HTS_TST_POS,Index,FY50,targets,180
+Saturn,Serpens,HTS_TST_POS,Inpat,FY50,targets,40
+Saturn,Serpens,HTS_TST_POS,MobileMod,FY50,targets,10
+Saturn,Serpens,HTS_TST_POS,OtherPITC,FY50,targets,220
+Saturn,Serpens,HTS_TST_POS,VCT,FY49,targets,190
+Saturn,Serpens,HTS_TST_POS,VCT,FY50,targets,110
+Saturn,Ursa Major,HTS_TST,Index,FY49,targets,9030
+Saturn,Ursa Major,HTS_TST,Index,FY50,targets,5390
+Saturn,Ursa Major,HTS_TST,IndexMod,FY50,targets,750
+Saturn,Ursa Major,HTS_TST,Inpat,FY50,targets,4850
+Saturn,Ursa Major,HTS_TST,MobileMod,FY50,targets,3320
+Saturn,Ursa Major,HTS_TST,OtherMod,FY50,targets,2760
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY49,targets,16470
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY50,targets,26410
+Saturn,Ursa Major,HTS_TST,Pediatric,FY49,targets,1330
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY49,targets,13040
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY50,targets,11010
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY49,targets,130
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY50,targets,1400
+Saturn,Ursa Major,HTS_TST,TBClinic,FY49,targets,1080
+Saturn,Ursa Major,HTS_TST,TBClinic,FY50,targets,1430
+Saturn,Ursa Major,HTS_TST,VCT,FY49,targets,48800
+Saturn,Ursa Major,HTS_TST,VCT,FY50,targets,18040
+Saturn,Ursa Major,HTS_TST,VCTMod,FY50,targets,1270
+Saturn,Ursa Major,HTS_TST,VMMC,FY49,targets,8080
+Saturn,Ursa Major,HTS_TST_POS,Index,FY49,targets,630
+Saturn,Ursa Major,HTS_TST_POS,Index,FY50,targets,1260
+Saturn,Ursa Major,HTS_TST_POS,IndexMod,FY50,targets,300
+Saturn,Ursa Major,HTS_TST_POS,Inpat,FY50,targets,360
+Saturn,Ursa Major,HTS_TST_POS,MobileMod,FY50,targets,330
+Saturn,Ursa Major,HTS_TST_POS,OtherMod,FY50,targets,40
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY49,targets,630
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY50,targets,970
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY49,targets,20
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY49,targets,460
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY50,targets,200
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY49,targets,10
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY49,targets,340
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY50,targets,390
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY49,targets,930
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY50,targets,500
+Saturn,Ursa Major,HTS_TST_POS,VCTMod,FY50,targets,40
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY49,targets,80
+Saturn,Virgo,HTS_TST,Index,FY50,targets,6700
+Saturn,Virgo,HTS_TST,IndexMod,FY49,targets,1560
+Saturn,Virgo,HTS_TST,IndexMod,FY50,targets,270
+Saturn,Virgo,HTS_TST,Inpat,FY50,targets,1480
+Saturn,Virgo,HTS_TST,MobileMod,FY49,targets,13830
+Saturn,Virgo,HTS_TST,MobileMod,FY50,targets,1060
+Saturn,Virgo,HTS_TST,OtherMod,FY50,targets,990
+Saturn,Virgo,HTS_TST,OtherPITC,FY49,targets,620
+Saturn,Virgo,HTS_TST,OtherPITC,FY50,targets,11690
+Saturn,Virgo,HTS_TST,STI Clinic,FY49,targets,40
+Saturn,Virgo,HTS_TST,STI Clinic,FY50,targets,440
+Saturn,Virgo,HTS_TST,VCT,FY50,targets,2900
+Saturn,Virgo,HTS_TST,VCTMod,FY49,targets,1690
+Saturn,Virgo,HTS_TST,VCTMod,FY50,targets,430
+Saturn,Virgo,HTS_TST_POS,Index,FY50,targets,630
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY49,targets,130
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY50,targets,50
+Saturn,Virgo,HTS_TST_POS,Inpat,FY50,targets,170
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY49,targets,580
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY50,targets,60
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY49,targets,110
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY50,targets,590
+Saturn,Virgo,HTS_TST_POS,VCT,FY50,targets,210
+Saturn,Virgo,HTS_TST_POS,VCTMod,FY49,targets,200
+Saturn,Auriga,HTS_TST,Emergency Ward,FY49Q1,results,760
+Saturn,Auriga,HTS_TST,Emergency Ward,FY50Q1,results,270
+Saturn,Auriga,HTS_TST,Index,FY49Q1,results,3740
+Saturn,Auriga,HTS_TST,Index,FY50Q1,results,1420
+Saturn,Auriga,HTS_TST,IndexMod,FY49Q1,results,180
+Saturn,Auriga,HTS_TST,IndexMod,FY50Q1,results,20
+Saturn,Auriga,HTS_TST,Inpat,FY49Q1,results,2820
+Saturn,Auriga,HTS_TST,Inpat,FY50Q1,results,810
+Saturn,Auriga,HTS_TST,Malnutrition,FY49Q1,results,20
+Saturn,Auriga,HTS_TST,MobileMod,FY49Q1,results,890
+Saturn,Auriga,HTS_TST,MobileMod,FY50Q1,results,470
+Saturn,Auriga,HTS_TST,OtherMod,FY49Q1,results,730
+Saturn,Auriga,HTS_TST,OtherMod,FY50Q1,results,1270
+Saturn,Auriga,HTS_TST,OtherPITC,FY49Q1,results,32350
+Saturn,Auriga,HTS_TST,OtherPITC,FY50Q1,results,2630
+Saturn,Auriga,HTS_TST,Pediatric,FY49Q1,results,920
+Saturn,Auriga,HTS_TST,Pediatric,FY50Q1,results,50
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY49Q1,results,2560
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY50Q1,results,1330
+Saturn,Auriga,HTS_TST,Post ANC1,FY49Q1,results,3380
+Saturn,Auriga,HTS_TST,Post ANC1,FY50Q1,results,740
+Saturn,Auriga,HTS_TST,STI Clinic,FY49Q1,results,410
+Saturn,Auriga,HTS_TST,STI Clinic,FY50Q1,results,140
+Saturn,Auriga,HTS_TST,TBClinic,FY49Q1,results,800
+Saturn,Auriga,HTS_TST,TBClinic,FY50Q1,results,430
+Saturn,Auriga,HTS_TST,VCT,FY49Q1,results,7280
+Saturn,Auriga,HTS_TST,VCT,FY50Q1,results,1910
+Saturn,Auriga,HTS_TST,VMMC,FY49Q1,results,4630
+Saturn,Auriga,HTS_TST,VMMC,FY50Q1,results,500
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY49Q1,results,120
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY50Q1,results,60
+Saturn,Auriga,HTS_TST_POS,Index,FY49Q1,results,660
+Saturn,Auriga,HTS_TST_POS,Index,FY50Q1,results,440
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY50Q1,results,10
+Saturn,Auriga,HTS_TST_POS,Inpat,FY49Q1,results,300
+Saturn,Auriga,HTS_TST_POS,Inpat,FY50Q1,results,100
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY49Q1,results,40
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY49Q1,results,30
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY50Q1,results,10
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY49Q1,results,910
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY50Q1,results,160
+Saturn,Auriga,HTS_TST_POS,Pediatric,FY49Q1,results,40
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY49Q1,results,220
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY50Q1,results,110
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY49Q1,results,140
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY50Q1,results,60
+Saturn,Auriga,HTS_TST_POS,STI Clinic,FY49Q1,results,40
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY49Q1,results,180
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY50Q1,results,150
+Saturn,Auriga,HTS_TST_POS,VCT,FY49Q1,results,470
+Saturn,Auriga,HTS_TST_POS,VCT,FY50Q1,results,120
+Saturn,Auriga,HTS_TST_POS,VMMC,FY49Q1,results,80
+Saturn,Auriga,HTS_TST_POS,VMMC,FY50Q1,results,10
+Saturn,Boötes,HTS_TST,Index,FY49Q1,results,180
+Saturn,Boötes,HTS_TST,Index,FY50Q1,results,320
+Saturn,Boötes,HTS_TST,Inpat,FY49Q1,results,320
+Saturn,Boötes,HTS_TST,OtherPITC,FY49Q1,results,710
+Saturn,Boötes,HTS_TST,OtherPITC,FY50Q1,results,480
+Saturn,Boötes,HTS_TST,Pediatric,FY49Q1,results,70
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY49Q1,results,140
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY50Q1,results,170
+Saturn,Boötes,HTS_TST,TBClinic,FY49Q1,results,80
+Saturn,Boötes,HTS_TST,TBClinic,FY50Q1,results,70
+Saturn,Boötes,HTS_TST_POS,Index,FY49Q1,results,70
+Saturn,Boötes,HTS_TST_POS,Index,FY50Q1,results,170
+Saturn,Boötes,HTS_TST_POS,Inpat,FY49Q1,results,30
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY49Q1,results,140
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY50Q1,results,130
+Saturn,Boötes,HTS_TST_POS,Pediatric,FY49Q1,results,20
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY49Q1,results,30
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY50Q1,results,50
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY49Q1,results,40
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY50Q1,results,30
+Saturn,Capricornus,HTS_TST,Index,FY49Q1,results,3140
+Saturn,Capricornus,HTS_TST,Index,FY50Q1,results,4040
+Saturn,Capricornus,HTS_TST,Inpat,FY49Q1,results,2070
+Saturn,Capricornus,HTS_TST,Inpat,FY50Q1,results,1110
+Saturn,Capricornus,HTS_TST,Malnutrition,FY50Q1,results,20
+Saturn,Capricornus,HTS_TST,OtherPITC,FY49Q1,results,19270
+Saturn,Capricornus,HTS_TST,OtherPITC,FY50Q1,results,9030
+Saturn,Capricornus,HTS_TST,Pediatric,FY49Q1,results,190
+Saturn,Capricornus,HTS_TST,Pediatric,FY50Q1,results,130
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY49Q1,results,1150
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY50Q1,results,1490
+Saturn,Capricornus,HTS_TST,Post ANC1,FY49Q1,results,1440
+Saturn,Capricornus,HTS_TST,Post ANC1,FY50Q1,results,280
+Saturn,Capricornus,HTS_TST,STI Clinic,FY50Q1,results,160
+Saturn,Capricornus,HTS_TST,TBClinic,FY49Q1,results,450
+Saturn,Capricornus,HTS_TST,TBClinic,FY50Q1,results,400
+Saturn,Capricornus,HTS_TST,VCT,FY49Q1,results,3750
+Saturn,Capricornus,HTS_TST,VCT,FY50Q1,results,4750
+Saturn,Capricornus,HTS_TST,VMMC,FY49Q1,results,100
+Saturn,Capricornus,HTS_TST,VMMC,FY50Q1,results,510
+Saturn,Capricornus,HTS_TST_POS,Index,FY49Q1,results,470
+Saturn,Capricornus,HTS_TST_POS,Index,FY50Q1,results,680
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY49Q1,results,170
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY50Q1,results,110
+Saturn,Capricornus,HTS_TST_POS,Malnutrition,FY50Q1,results,10
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY49Q1,results,600
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY50Q1,results,500
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY49Q1,results,30
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY50Q1,results,10
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY49Q1,results,130
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY50Q1,results,120
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY49Q1,results,60
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY50Q1,results,70
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY49Q1,results,150
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY50Q1,results,120
+Saturn,Capricornus,HTS_TST_POS,VCT,FY49Q1,results,360
+Saturn,Capricornus,HTS_TST_POS,VCT,FY50Q1,results,400
+Saturn,Cepheus,HTS_TST,Index,FY49Q1,results,260
+Saturn,Cepheus,HTS_TST,Index,FY50Q1,results,720
+Saturn,Cepheus,HTS_TST,MobileMod,FY49Q1,results,510
+Saturn,Cepheus,HTS_TST,MobileMod,FY50Q1,results,1100
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY49Q1,results,420
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY50Q1,results,440
+Saturn,Cepheus,HTS_TST,TBClinic,FY49Q1,results,290
+Saturn,Cepheus,HTS_TST,TBClinic,FY50Q1,results,260
+Saturn,Cepheus,HTS_TST,VCT,FY49Q1,results,8390
+Saturn,Cepheus,HTS_TST,VCT,FY50Q1,results,7120
+Saturn,Cepheus,HTS_TST_POS,Index,FY49Q1,results,40
+Saturn,Cepheus,HTS_TST_POS,Index,FY50Q1,results,250
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY49Q1,results,20
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY49Q1,results,50
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY50Q1,results,40
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY49Q1,results,60
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY50Q1,results,60
+Saturn,Cepheus,HTS_TST_POS,VCT,FY49Q1,results,510
+Saturn,Cepheus,HTS_TST_POS,VCT,FY50Q1,results,550
+Saturn,Corvus,HTS_TST,Index,FY49Q1,results,2340
+Saturn,Corvus,HTS_TST,Index,FY50Q1,results,4200
+Saturn,Corvus,HTS_TST,Inpat,FY49Q1,results,2800
+Saturn,Corvus,HTS_TST,Inpat,FY50Q1,results,600
+Saturn,Corvus,HTS_TST,Malnutrition,FY49Q1,results,20
+Saturn,Corvus,HTS_TST,OtherPITC,FY49Q1,results,51310
+Saturn,Corvus,HTS_TST,OtherPITC,FY50Q1,results,10510
+Saturn,Corvus,HTS_TST,Pediatric,FY49Q1,results,2600
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY49Q1,results,2280
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY50Q1,results,2180
+Saturn,Corvus,HTS_TST,Post ANC1,FY49Q1,results,40
+Saturn,Corvus,HTS_TST,Post ANC1,FY50Q1,results,60
+Saturn,Corvus,HTS_TST,TBClinic,FY49Q1,results,350
+Saturn,Corvus,HTS_TST,TBClinic,FY50Q1,results,320
+Saturn,Corvus,HTS_TST,VCT,FY49Q1,results,670
+Saturn,Corvus,HTS_TST,VCT,FY50Q1,results,5730
+Saturn,Corvus,HTS_TST,VMMC,FY49Q1,results,1490
+Saturn,Corvus,HTS_TST,VMMC,FY50Q1,results,830
+Saturn,Corvus,HTS_TST_POS,Index,FY49Q1,results,510
+Saturn,Corvus,HTS_TST_POS,Index,FY50Q1,results,570
+Saturn,Corvus,HTS_TST_POS,Inpat,FY49Q1,results,150
+Saturn,Corvus,HTS_TST_POS,Inpat,FY50Q1,results,60
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY49Q1,results,380
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY50Q1,results,210
+Saturn,Corvus,HTS_TST_POS,Pediatric,FY49Q1,results,20
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY49Q1,results,120
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY50Q1,results,90
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY49Q1,results,30
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY50Q1,results,40
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY49Q1,results,120
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY50Q1,results,110
+Saturn,Corvus,HTS_TST_POS,VCT,FY49Q1,results,60
+Saturn,Corvus,HTS_TST_POS,VCT,FY50Q1,results,130
+Saturn,Corvus,HTS_TST_POS,VMMC,FY50Q1,results,30
+Saturn,Dedup,HTS_TST,OtherPITC,FY49Q1,results,-2730
+Saturn,Dedup,HTS_TST,PMTCT ANC,FY49Q1,results,-470
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY49Q1,results,170
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY50Q1,results,260
+Saturn,Eridanus,HTS_TST,Index,FY49Q1,results,880
+Saturn,Eridanus,HTS_TST,Index,FY50Q1,results,860
+Saturn,Eridanus,HTS_TST,Inpat,FY49Q1,results,1810
+Saturn,Eridanus,HTS_TST,Inpat,FY50Q1,results,1140
+Saturn,Eridanus,HTS_TST,Malnutrition,FY50Q1,results,10
+Saturn,Eridanus,HTS_TST,OtherPITC,FY49Q1,results,21090
+Saturn,Eridanus,HTS_TST,OtherPITC,FY50Q1,results,13760
+Saturn,Eridanus,HTS_TST,Pediatric,FY50Q1,results,50
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY49Q1,results,7850
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY50Q1,results,7020
+Saturn,Eridanus,HTS_TST,Post ANC1,FY49Q1,results,4910
+Saturn,Eridanus,HTS_TST,Post ANC1,FY50Q1,results,6070
+Saturn,Eridanus,HTS_TST,STI Clinic,FY49Q1,results,370
+Saturn,Eridanus,HTS_TST,STI Clinic,FY50Q1,results,130
+Saturn,Eridanus,HTS_TST,TBClinic,FY49Q1,results,970
+Saturn,Eridanus,HTS_TST,TBClinic,FY50Q1,results,850
+Saturn,Eridanus,HTS_TST,VCT,FY49Q1,results,14790
+Saturn,Eridanus,HTS_TST,VCT,FY50Q1,results,6120
+Saturn,Eridanus,HTS_TST,VMMC,FY49Q1,results,1030
+Saturn,Eridanus,HTS_TST,VMMC,FY50Q1,results,350
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY49Q1,results,30
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY50Q1,results,30
+Saturn,Eridanus,HTS_TST_POS,Index,FY49Q1,results,170
+Saturn,Eridanus,HTS_TST_POS,Index,FY50Q1,results,290
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY49Q1,results,210
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY50Q1,results,170
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY49Q1,results,550
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY50Q1,results,480
+Saturn,Eridanus,HTS_TST_POS,Pediatric,FY50Q1,results,20
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY49Q1,results,260
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY50Q1,results,150
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY49Q1,results,60
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY50Q1,results,50
+Saturn,Eridanus,HTS_TST_POS,STI Clinic,FY49Q1,results,30
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY49Q1,results,180
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY50Q1,results,150
+Saturn,Eridanus,HTS_TST_POS,VCT,FY49Q1,results,440
+Saturn,Eridanus,HTS_TST_POS,VCT,FY50Q1,results,220
+Saturn,Leo,HTS_TST,IndexMod,FY50Q1,results,320
+Saturn,Leo,HTS_TST,MobileMod,FY50Q1,results,870
+Saturn,Leo,HTS_TST,VCTMod,FY50Q1,results,830
+Saturn,Leo,HTS_TST_POS,IndexMod,FY50Q1,results,120
+Saturn,Leo,HTS_TST_POS,MobileMod,FY50Q1,results,180
+Saturn,Leo,HTS_TST_POS,VCTMod,FY50Q1,results,130
+Saturn,Libra,HTS_TST,Index,FY49Q1,results,9610
+Saturn,Libra,HTS_TST,Index,FY50Q1,results,9410
+Saturn,Libra,HTS_TST,Inpat,FY49Q1,results,1700
+Saturn,Libra,HTS_TST,Inpat,FY50Q1,results,1880
+Saturn,Libra,HTS_TST,OtherPITC,FY49Q1,results,69790
+Saturn,Libra,HTS_TST,OtherPITC,FY50Q1,results,47230
+Saturn,Libra,HTS_TST,Pediatric,FY49Q1,results,40
+Saturn,Libra,HTS_TST,PMTCT ANC,FY49Q1,results,3100
+Saturn,Libra,HTS_TST,PMTCT ANC,FY50Q1,results,4050
+Saturn,Libra,HTS_TST,Post ANC1,FY49Q1,results,220
+Saturn,Libra,HTS_TST,Post ANC1,FY50Q1,results,80
+Saturn,Libra,HTS_TST,STI Clinic,FY49Q1,results,80
+Saturn,Libra,HTS_TST,TBClinic,FY49Q1,results,380
+Saturn,Libra,HTS_TST,TBClinic,FY50Q1,results,380
+Saturn,Libra,HTS_TST,VCT,FY49Q1,results,230
+Saturn,Libra,HTS_TST,VCT,FY50Q1,results,1110
+Saturn,Libra,HTS_TST,VMMC,FY49Q1,results,670
+Saturn,Libra,HTS_TST,VMMC,FY50Q1,results,440
+Saturn,Libra,HTS_TST_POS,Index,FY49Q1,results,880
+Saturn,Libra,HTS_TST_POS,Index,FY50Q1,results,1180
+Saturn,Libra,HTS_TST_POS,Inpat,FY49Q1,results,150
+Saturn,Libra,HTS_TST_POS,Inpat,FY50Q1,results,170
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY49Q1,results,520
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY50Q1,results,690
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY49Q1,results,110
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY50Q1,results,110
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY49Q1,results,30
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY50Q1,results,40
+Saturn,Libra,HTS_TST_POS,STI Clinic,FY49Q1,results,10
+Saturn,Libra,HTS_TST_POS,TBClinic,FY49Q1,results,180
+Saturn,Libra,HTS_TST_POS,TBClinic,FY50Q1,results,170
+Saturn,Libra,HTS_TST_POS,VCT,FY50Q1,results,90
+Saturn,Libra,HTS_TST_POS,VMMC,FY49Q1,results,10
+Saturn,Libra,HTS_TST_POS,VMMC,FY50Q1,results,10
+Saturn,Ophiuchus,HTS_TST,Index,FY49Q1,results,360
+Saturn,Ophiuchus,HTS_TST,Index,FY50Q1,results,590
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY49Q1,results,10
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY50Q1,results,290
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY49Q1,results,2100
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY50Q1,results,2940
+Saturn,Ophiuchus,HTS_TST,VCT,FY49Q1,results,5750
+Saturn,Ophiuchus,HTS_TST,VCT,FY50Q1,results,5770
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY49Q1,results,130
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY50Q1,results,210
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY50Q1,results,150
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY49Q1,results,70
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY50Q1,results,120
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY49Q1,results,180
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY50Q1,results,230
+Saturn,Sagittarius,HTS_TST,Index,FY49Q1,results,1890
+Saturn,Sagittarius,HTS_TST,Index,FY50Q1,results,3270
+Saturn,Sagittarius,HTS_TST,Inpat,FY49Q1,results,3400
+Saturn,Sagittarius,HTS_TST,Inpat,FY50Q1,results,2590
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY49Q1,results,47510
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY50Q1,results,34490
+Saturn,Sagittarius,HTS_TST,Pediatric,FY49Q1,results,460
+Saturn,Sagittarius,HTS_TST,Pediatric,FY50Q1,results,270
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY49Q1,results,6970
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY50Q1,results,6930
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY49Q1,results,1830
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY50Q1,results,2270
+Saturn,Sagittarius,HTS_TST,TBClinic,FY49Q1,results,1560
+Saturn,Sagittarius,HTS_TST,TBClinic,FY50Q1,results,1160
+Saturn,Sagittarius,HTS_TST,VCT,FY49Q1,results,18210
+Saturn,Sagittarius,HTS_TST,VCT,FY50Q1,results,15490
+Saturn,Sagittarius,HTS_TST,VMMC,FY49Q1,results,20
+Saturn,Sagittarius,HTS_TST_POS,Index,FY49Q1,results,590
+Saturn,Sagittarius,HTS_TST_POS,Index,FY50Q1,results,930
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY49Q1,results,320
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY50Q1,results,280
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY49Q1,results,1540
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY50Q1,results,1200
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY49Q1,results,20
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY50Q1,results,20
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY49Q1,results,290
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY50Q1,results,270
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY49Q1,results,80
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY50Q1,results,110
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY49Q1,results,520
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY50Q1,results,320
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY49Q1,results,820
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY50Q1,results,740
+Saturn,Serpens,HTS_TST,Index,FY49Q1,results,200
+Saturn,Serpens,HTS_TST,Index,FY50Q1,results,110
+Saturn,Serpens,HTS_TST,TBClinic,FY49Q1,results,10
+Saturn,Serpens,HTS_TST,TBClinic,FY50Q1,results,20
+Saturn,Serpens,HTS_TST,VCT,FY49Q1,results,1310
+Saturn,Serpens,HTS_TST,VCT,FY50Q1,results,960
+Saturn,Serpens,HTS_TST_POS,Index,FY49Q1,results,10
+Saturn,Serpens,HTS_TST_POS,TBClinic,FY49Q1,results,10
+Saturn,Serpens,HTS_TST_POS,TBClinic,FY50Q1,results,20
+Saturn,Serpens,HTS_TST_POS,VCT,FY49Q1,results,180
+Saturn,Serpens,HTS_TST_POS,VCT,FY50Q1,results,150
+Saturn,Ursa Major,HTS_TST,Index,FY49Q1,results,980
+Saturn,Ursa Major,HTS_TST,Index,FY50Q1,results,1100
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY49Q1,results,5380
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY50Q1,results,2810
+Saturn,Ursa Major,HTS_TST,Pediatric,FY49Q1,results,700
+Saturn,Ursa Major,HTS_TST,Pediatric,FY50Q1,results,290
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY49Q1,results,1990
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY50Q1,results,2220
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY49Q1,results,260
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY50Q1,results,110
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY49Q1,results,590
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY50Q1,results,430
+Saturn,Ursa Major,HTS_TST,TBClinic,FY49Q1,results,470
+Saturn,Ursa Major,HTS_TST,TBClinic,FY50Q1,results,510
+Saturn,Ursa Major,HTS_TST,VCT,FY49Q1,results,12600
+Saturn,Ursa Major,HTS_TST,VCT,FY50Q1,results,6110
+Saturn,Ursa Major,HTS_TST,VMMC,FY49Q1,results,1130
+Saturn,Ursa Major,HTS_TST,VMMC,FY50Q1,results,780
+Saturn,Ursa Major,HTS_TST_POS,Index,FY49Q1,results,300
+Saturn,Ursa Major,HTS_TST_POS,Index,FY50Q1,results,360
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY49Q1,results,260
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY50Q1,results,300
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY49Q1,results,20
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY50Q1,results,40
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY49Q1,results,120
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY50Q1,results,130
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY49Q1,results,60
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY50Q1,results,50
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY49Q1,results,80
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY50Q1,results,90
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY49Q1,results,100
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY50Q1,results,100
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY49Q1,results,360
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY50Q1,results,640
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY49Q1,results,20
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY50Q1,results,30
+Saturn,Virgo,HTS_TST,IndexMod,FY49Q1,results,310
+Saturn,Virgo,HTS_TST,IndexMod,FY50Q1,results,260
+Saturn,Virgo,HTS_TST,MobileMod,FY49Q1,results,13800
+Saturn,Virgo,HTS_TST,MobileMod,FY50Q1,results,1580
+Saturn,Virgo,HTS_TST,OtherPITC,FY49Q1,results,510
+Saturn,Virgo,HTS_TST,OtherPITC,FY50Q1,results,700
+Saturn,Virgo,HTS_TST,VCTMod,FY49Q1,results,840
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY49Q1,results,160
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY50Q1,results,140
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY49Q1,results,310
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY50Q1,results,70
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY49Q1,results,30
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY50Q1,results,40
+Saturn,Virgo,HTS_TST_POS,VCTMod,FY49Q1,results,160
+Saturn,Auriga,HTS_TST,Emergency Ward,FY49Q2,results,760
+Saturn,Auriga,HTS_TST,Index,FY49Q2,results,4210
+Saturn,Auriga,HTS_TST,IndexMod,FY49Q2,results,120
+Saturn,Auriga,HTS_TST,Inpat,FY49Q2,results,2540
+Saturn,Auriga,HTS_TST,Malnutrition,FY49Q2,results,20
+Saturn,Auriga,HTS_TST,MobileMod,FY49Q2,results,1110
+Saturn,Auriga,HTS_TST,OtherMod,FY49Q2,results,830
+Saturn,Auriga,HTS_TST,OtherPITC,FY49Q2,results,33950
+Saturn,Auriga,HTS_TST,Pediatric,FY49Q2,results,370
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY49Q2,results,2860
+Saturn,Auriga,HTS_TST,Post ANC1,FY49Q2,results,1040
+Saturn,Auriga,HTS_TST,STI Clinic,FY49Q2,results,630
+Saturn,Auriga,HTS_TST,TBClinic,FY49Q2,results,860
+Saturn,Auriga,HTS_TST,VCT,FY49Q2,results,6940
+Saturn,Auriga,HTS_TST,VMMC,FY49Q2,results,1070
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY49Q2,results,100
+Saturn,Auriga,HTS_TST_POS,Index,FY49Q2,results,740
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY49Q2,results,10
+Saturn,Auriga,HTS_TST_POS,Inpat,FY49Q2,results,280
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY49Q2,results,20
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY49Q2,results,10
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY49Q2,results,840
+Saturn,Auriga,HTS_TST_POS,Pediatric,FY49Q2,results,30
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY49Q2,results,240
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY49Q2,results,120
+Saturn,Auriga,HTS_TST_POS,STI Clinic,FY49Q2,results,60
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY49Q2,results,270
+Saturn,Auriga,HTS_TST_POS,VCT,FY49Q2,results,530
+Saturn,Auriga,HTS_TST_POS,VMMC,FY49Q2,results,20
+Saturn,Boötes,HTS_TST,Index,FY49Q2,results,320
+Saturn,Boötes,HTS_TST,Inpat,FY49Q2,results,290
+Saturn,Boötes,HTS_TST,OtherPITC,FY49Q2,results,1080
+Saturn,Boötes,HTS_TST,Pediatric,FY49Q2,results,60
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY49Q2,results,170
+Saturn,Boötes,HTS_TST,Post ANC1,FY49Q2,results,10
+Saturn,Boötes,HTS_TST,TBClinic,FY49Q2,results,150
+Saturn,Boötes,HTS_TST_POS,Index,FY49Q2,results,110
+Saturn,Boötes,HTS_TST_POS,Inpat,FY49Q2,results,20
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY49Q2,results,150
+Saturn,Boötes,HTS_TST_POS,Pediatric,FY49Q2,results,10
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY49Q2,results,30
+Saturn,Boötes,HTS_TST_POS,Post ANC1,FY49Q2,results,10
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY49Q2,results,90
+Saturn,Capricornus,HTS_TST,Index,FY49Q2,results,3790
+Saturn,Capricornus,HTS_TST,Inpat,FY49Q2,results,2140
+Saturn,Capricornus,HTS_TST,OtherPITC,FY49Q2,results,21550
+Saturn,Capricornus,HTS_TST,Pediatric,FY49Q2,results,190
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY49Q2,results,1420
+Saturn,Capricornus,HTS_TST,Post ANC1,FY49Q2,results,1800
+Saturn,Capricornus,HTS_TST,STI Clinic,FY49Q2,results,110
+Saturn,Capricornus,HTS_TST,TBClinic,FY49Q2,results,560
+Saturn,Capricornus,HTS_TST,VCT,FY49Q2,results,5030
+Saturn,Capricornus,HTS_TST,VMMC,FY49Q2,results,90
+Saturn,Capricornus,HTS_TST_POS,Index,FY49Q2,results,710
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY49Q2,results,240
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY49Q2,results,660
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY49Q2,results,150
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY49Q2,results,70
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY49Q2,results,170
+Saturn,Capricornus,HTS_TST_POS,VCT,FY49Q2,results,420
+Saturn,Cepheus,HTS_TST,Index,FY49Q2,results,440
+Saturn,Cepheus,HTS_TST,IndexMod,FY49Q2,results,20
+Saturn,Cepheus,HTS_TST,MobileMod,FY49Q2,results,300
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY49Q2,results,440
+Saturn,Cepheus,HTS_TST,TBClinic,FY49Q2,results,340
+Saturn,Cepheus,HTS_TST,VCT,FY49Q2,results,9320
+Saturn,Cepheus,HTS_TST_POS,Index,FY49Q2,results,180
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY49Q2,results,10
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY49Q2,results,40
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY49Q2,results,100
+Saturn,Cepheus,HTS_TST_POS,VCT,FY49Q2,results,440
+Saturn,Corvus,HTS_TST,Index,FY49Q2,results,3740
+Saturn,Corvus,HTS_TST,Inpat,FY49Q2,results,1940
+Saturn,Corvus,HTS_TST,OtherPITC,FY49Q2,results,41520
+Saturn,Corvus,HTS_TST,Pediatric,FY49Q2,results,1460
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY49Q2,results,2410
+Saturn,Corvus,HTS_TST,Post ANC1,FY49Q2,results,80
+Saturn,Corvus,HTS_TST,TBClinic,FY49Q2,results,340
+Saturn,Corvus,HTS_TST,VCT,FY49Q2,results,1470
+Saturn,Corvus,HTS_TST,VMMC,FY49Q2,results,800
+Saturn,Corvus,HTS_TST_POS,Index,FY49Q2,results,680
+Saturn,Corvus,HTS_TST_POS,Inpat,FY49Q2,results,120
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY49Q2,results,290
+Saturn,Corvus,HTS_TST_POS,Pediatric,FY49Q2,results,20
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY49Q2,results,110
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY49Q2,results,40
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY49Q2,results,120
+Saturn,Corvus,HTS_TST_POS,VCT,FY49Q2,results,20
+Saturn,Corvus,HTS_TST_POS,VMMC,FY49Q2,results,10
+Saturn,Dedup,HTS_TST,OtherPITC,FY49Q2,results,-1650
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY49Q2,results,320
+Saturn,Eridanus,HTS_TST,Index,FY49Q2,results,910
+Saturn,Eridanus,HTS_TST,Inpat,FY49Q2,results,1400
+Saturn,Eridanus,HTS_TST,OtherPITC,FY49Q2,results,20220
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY49Q2,results,7970
+Saturn,Eridanus,HTS_TST,Post ANC1,FY49Q2,results,6650
+Saturn,Eridanus,HTS_TST,STI Clinic,FY49Q2,results,150
+Saturn,Eridanus,HTS_TST,TBClinic,FY49Q2,results,910
+Saturn,Eridanus,HTS_TST,VCT,FY49Q2,results,14060
+Saturn,Eridanus,HTS_TST,VMMC,FY49Q2,results,320
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY49Q2,results,50
+Saturn,Eridanus,HTS_TST_POS,Index,FY49Q2,results,200
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY49Q2,results,160
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY49Q2,results,550
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY49Q2,results,210
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY49Q2,results,60
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY49Q2,results,190
+Saturn,Eridanus,HTS_TST_POS,VCT,FY49Q2,results,450
+Saturn,Eridanus,HTS_TST_POS,VMMC,FY49Q2,results,10
+Saturn,Libra,HTS_TST,Index,FY49Q2,results,8150
+Saturn,Libra,HTS_TST,Inpat,FY49Q2,results,1570
+Saturn,Libra,HTS_TST,OtherPITC,FY49Q2,results,63050
+Saturn,Libra,HTS_TST,PMTCT ANC,FY49Q2,results,3540
+Saturn,Libra,HTS_TST,Post ANC1,FY49Q2,results,280
+Saturn,Libra,HTS_TST,STI Clinic,FY49Q2,results,180
+Saturn,Libra,HTS_TST,TBClinic,FY49Q2,results,390
+Saturn,Libra,HTS_TST,VCT,FY49Q2,results,80
+Saturn,Libra,HTS_TST,VMMC,FY49Q2,results,400
+Saturn,Libra,HTS_TST_POS,Index,FY49Q2,results,1160
+Saturn,Libra,HTS_TST_POS,Inpat,FY49Q2,results,150
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY49Q2,results,540
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY49Q2,results,120
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY49Q2,results,40
+Saturn,Libra,HTS_TST_POS,TBClinic,FY49Q2,results,180
+Saturn,Libra,HTS_TST_POS,VMMC,FY49Q2,results,30
+Saturn,Ophiuchus,HTS_TST,Index,FY49Q2,results,430
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY49Q2,results,60
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY49Q2,results,5150
+Saturn,Ophiuchus,HTS_TST,TBClinic,FY49Q2,results,10
+Saturn,Ophiuchus,HTS_TST,VCT,FY49Q2,results,7480
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY49Q2,results,170
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY49Q2,results,40
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY49Q2,results,80
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY49Q2,results,160
+Saturn,Sagittarius,HTS_TST,Index,FY49Q2,results,2300
+Saturn,Sagittarius,HTS_TST,Inpat,FY49Q2,results,3130
+Saturn,Sagittarius,HTS_TST,Malnutrition,FY49Q2,results,20
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY49Q2,results,47630
+Saturn,Sagittarius,HTS_TST,Pediatric,FY49Q2,results,390
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY49Q2,results,7740
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY49Q2,results,1250
+Saturn,Sagittarius,HTS_TST,TBClinic,FY49Q2,results,1550
+Saturn,Sagittarius,HTS_TST,VCT,FY49Q2,results,19990
+Saturn,Sagittarius,HTS_TST_POS,Index,FY49Q2,results,660
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY49Q2,results,310
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY49Q2,results,1420
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY49Q2,results,300
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY49Q2,results,60
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY49Q2,results,520
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY49Q2,results,850
+Saturn,Serpens,HTS_TST,Index,FY49Q2,results,90
+Saturn,Serpens,HTS_TST,VCT,FY49Q2,results,1580
+Saturn,Serpens,HTS_TST_POS,Index,FY49Q2,results,30
+Saturn,Serpens,HTS_TST_POS,VCT,FY49Q2,results,190
+Saturn,Ursa Major,HTS_TST,Index,FY49Q2,results,880
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY49Q2,results,5240
+Saturn,Ursa Major,HTS_TST,Pediatric,FY49Q2,results,740
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY49Q2,results,2410
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY49Q2,results,160
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY49Q2,results,650
+Saturn,Ursa Major,HTS_TST,TBClinic,FY49Q2,results,550
+Saturn,Ursa Major,HTS_TST,VCT,FY49Q2,results,14910
+Saturn,Ursa Major,HTS_TST,VMMC,FY49Q2,results,230
+Saturn,Ursa Major,HTS_TST_POS,Index,FY49Q2,results,280
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY49Q2,results,240
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY49Q2,results,30
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY49Q2,results,140
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY49Q2,results,30
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY49Q2,results,70
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY49Q2,results,90
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY49Q2,results,450
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY49Q2,results,10
+Saturn,Virgo,HTS_TST,IndexMod,FY49Q2,results,420
+Saturn,Virgo,HTS_TST,MobileMod,FY49Q2,results,18780
+Saturn,Virgo,HTS_TST,OtherPITC,FY49Q2,results,760
+Saturn,Virgo,HTS_TST,VCTMod,FY49Q2,results,960
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY49Q2,results,210
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY49Q2,results,320
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY49Q2,results,20
+Saturn,Virgo,HTS_TST_POS,VCTMod,FY49Q2,results,140
+Saturn,Auriga,HTS_TST,Emergency Ward,FY49Q3,results,540
+Saturn,Auriga,HTS_TST,Index,FY49Q3,results,3610
+Saturn,Auriga,HTS_TST,IndexMod,FY49Q3,results,70
+Saturn,Auriga,HTS_TST,Inpat,FY49Q3,results,2010
+Saturn,Auriga,HTS_TST,MobileMod,FY49Q3,results,990
+Saturn,Auriga,HTS_TST,OtherMod,FY49Q3,results,1640
+Saturn,Auriga,HTS_TST,OtherPITC,FY49Q3,results,21070
+Saturn,Auriga,HTS_TST,Pediatric,FY49Q3,results,170
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY49Q3,results,2690
+Saturn,Auriga,HTS_TST,Post ANC1,FY49Q3,results,1610
+Saturn,Auriga,HTS_TST,STI Clinic,FY49Q3,results,310
+Saturn,Auriga,HTS_TST,TBClinic,FY49Q3,results,910
+Saturn,Auriga,HTS_TST,VCT,FY49Q3,results,5960
+Saturn,Auriga,HTS_TST,VCTMod,FY49Q3,results,280
+Saturn,Auriga,HTS_TST,VMMC,FY49Q3,results,2480
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY49Q3,results,70
+Saturn,Auriga,HTS_TST_POS,Index,FY49Q3,results,720
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY49Q3,results,20
+Saturn,Auriga,HTS_TST_POS,Inpat,FY49Q3,results,230
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY49Q3,results,70
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY49Q3,results,30
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY49Q3,results,830
+Saturn,Auriga,HTS_TST_POS,Pediatric,FY49Q3,results,10
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY49Q3,results,220
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY49Q3,results,100
+Saturn,Auriga,HTS_TST_POS,STI Clinic,FY49Q3,results,10
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY49Q3,results,250
+Saturn,Auriga,HTS_TST_POS,VCT,FY49Q3,results,480
+Saturn,Auriga,HTS_TST_POS,VMMC,FY49Q3,results,10
+Saturn,Boötes,HTS_TST,Index,FY49Q3,results,320
+Saturn,Boötes,HTS_TST,Inpat,FY49Q3,results,330
+Saturn,Boötes,HTS_TST,OtherPITC,FY49Q3,results,830
+Saturn,Boötes,HTS_TST,Pediatric,FY49Q3,results,60
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY49Q3,results,190
+Saturn,Boötes,HTS_TST,Post ANC1,FY49Q3,results,10
+Saturn,Boötes,HTS_TST,TBClinic,FY49Q3,results,60
+Saturn,Boötes,HTS_TST_POS,Index,FY49Q3,results,100
+Saturn,Boötes,HTS_TST_POS,Inpat,FY49Q3,results,30
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY49Q3,results,130
+Saturn,Boötes,HTS_TST_POS,Pediatric,FY49Q3,results,20
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY49Q3,results,50
+Saturn,Boötes,HTS_TST_POS,Post ANC1,FY49Q3,results,10
+Saturn,Capricornus,HTS_TST,Index,FY49Q3,results,4090
+Saturn,Capricornus,HTS_TST,Inpat,FY49Q3,results,1820
+Saturn,Capricornus,HTS_TST,Malnutrition,FY49Q3,results,10
+Saturn,Capricornus,HTS_TST,OtherPITC,FY49Q3,results,14190
+Saturn,Capricornus,HTS_TST,Pediatric,FY49Q3,results,250
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY49Q3,results,1410
+Saturn,Capricornus,HTS_TST,Post ANC1,FY49Q3,results,1280
+Saturn,Capricornus,HTS_TST,STI Clinic,FY49Q3,results,170
+Saturn,Capricornus,HTS_TST,TBClinic,FY49Q3,results,500
+Saturn,Capricornus,HTS_TST,VCT,FY49Q3,results,7040
+Saturn,Capricornus,HTS_TST,VMMC,FY49Q3,results,90
+Saturn,Capricornus,HTS_TST_POS,Index,FY49Q3,results,720
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY49Q3,results,200
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY49Q3,results,540
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY49Q3,results,10
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY49Q3,results,130
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY49Q3,results,60
+Saturn,Capricornus,HTS_TST_POS,STI Clinic,FY49Q3,results,10
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY49Q3,results,180
+Saturn,Capricornus,HTS_TST_POS,VCT,FY49Q3,results,470
+Saturn,Cepheus,HTS_TST,Index,FY49Q3,results,490
+Saturn,Cepheus,HTS_TST,IndexMod,FY49Q3,results,130
+Saturn,Cepheus,HTS_TST,MobileMod,FY49Q3,results,710
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY49Q3,results,410
+Saturn,Cepheus,HTS_TST,TBClinic,FY49Q3,results,270
+Saturn,Cepheus,HTS_TST,VCT,FY49Q3,results,8180
+Saturn,Cepheus,HTS_TST_POS,Index,FY49Q3,results,190
+Saturn,Cepheus,HTS_TST_POS,IndexMod,FY49Q3,results,10
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY49Q3,results,40
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY49Q3,results,20
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY49Q3,results,40
+Saturn,Cepheus,HTS_TST_POS,VCT,FY49Q3,results,450
+Saturn,Corvus,HTS_TST,Index,FY49Q3,results,5040
+Saturn,Corvus,HTS_TST,Inpat,FY49Q3,results,1310
+Saturn,Corvus,HTS_TST,OtherPITC,FY49Q3,results,22180
+Saturn,Corvus,HTS_TST,Pediatric,FY49Q3,results,1210
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY49Q3,results,2490
+Saturn,Corvus,HTS_TST,Post ANC1,FY49Q3,results,60
+Saturn,Corvus,HTS_TST,TBClinic,FY49Q3,results,340
+Saturn,Corvus,HTS_TST,VCT,FY49Q3,results,5300
+Saturn,Corvus,HTS_TST,VMMC,FY49Q3,results,910
+Saturn,Corvus,HTS_TST_POS,Index,FY49Q3,results,680
+Saturn,Corvus,HTS_TST_POS,Inpat,FY49Q3,results,120
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY49Q3,results,200
+Saturn,Corvus,HTS_TST_POS,Pediatric,FY49Q3,results,20
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY49Q3,results,120
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY49Q3,results,40
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY49Q3,results,130
+Saturn,Corvus,HTS_TST_POS,VCT,FY49Q3,results,100
+Saturn,Corvus,HTS_TST_POS,VMMC,FY49Q3,results,10
+Saturn,Dedup,HTS_TST,OtherPITC,FY49Q3,results,-100
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY49Q3,results,320
+Saturn,Eridanus,HTS_TST,Index,FY49Q3,results,1110
+Saturn,Eridanus,HTS_TST,Inpat,FY49Q3,results,1440
+Saturn,Eridanus,HTS_TST,OtherPITC,FY49Q3,results,17880
+Saturn,Eridanus,HTS_TST,Pediatric,FY49Q3,results,70
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY49Q3,results,7680
+Saturn,Eridanus,HTS_TST,Post ANC1,FY49Q3,results,7460
+Saturn,Eridanus,HTS_TST,STI Clinic,FY49Q3,results,200
+Saturn,Eridanus,HTS_TST,TBClinic,FY49Q3,results,850
+Saturn,Eridanus,HTS_TST,VCT,FY49Q3,results,12420
+Saturn,Eridanus,HTS_TST,VMMC,FY49Q3,results,440
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY49Q3,results,70
+Saturn,Eridanus,HTS_TST_POS,Index,FY49Q3,results,250
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY49Q3,results,160
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY49Q3,results,530
+Saturn,Eridanus,HTS_TST_POS,Pediatric,FY49Q3,results,10
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY49Q3,results,200
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY49Q3,results,70
+Saturn,Eridanus,HTS_TST_POS,STI Clinic,FY49Q3,results,40
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY49Q3,results,190
+Saturn,Eridanus,HTS_TST_POS,VCT,FY49Q3,results,440
+Saturn,Eridanus,HTS_TST_POS,VMMC,FY49Q3,results,10
+Saturn,Libra,HTS_TST,Index,FY49Q3,results,9620
+Saturn,Libra,HTS_TST,Inpat,FY49Q3,results,1570
+Saturn,Libra,HTS_TST,OtherPITC,FY49Q3,results,61190
+Saturn,Libra,HTS_TST,PMTCT ANC,FY49Q3,results,3670
+Saturn,Libra,HTS_TST,Post ANC1,FY49Q3,results,50
+Saturn,Libra,HTS_TST,STI Clinic,FY49Q3,results,220
+Saturn,Libra,HTS_TST,TBClinic,FY49Q3,results,420
+Saturn,Libra,HTS_TST,VCT,FY49Q3,results,310
+Saturn,Libra,HTS_TST,VMMC,FY49Q3,results,320
+Saturn,Libra,HTS_TST_POS,Index,FY49Q3,results,1350
+Saturn,Libra,HTS_TST_POS,Inpat,FY49Q3,results,160
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY49Q3,results,560
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY49Q3,results,120
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY49Q3,results,30
+Saturn,Libra,HTS_TST_POS,STI Clinic,FY49Q3,results,50
+Saturn,Libra,HTS_TST_POS,TBClinic,FY49Q3,results,180
+Saturn,Libra,HTS_TST_POS,VCT,FY49Q3,results,20
+Saturn,Libra,HTS_TST_POS,VMMC,FY49Q3,results,30
+Saturn,Ophiuchus,HTS_TST,Index,FY49Q3,results,500
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY49Q3,results,320
+Saturn,Ophiuchus,HTS_TST,TBClinic,FY49Q3,results,10
+Saturn,Ophiuchus,HTS_TST,VCT,FY49Q3,results,8330
+Saturn,Ophiuchus,HTS_TST,VCTMod,FY49Q3,results,4380
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY49Q3,results,160
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY49Q3,results,120
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY49Q3,results,230
+Saturn,Ophiuchus,HTS_TST_POS,VCTMod,FY49Q3,results,150
+Saturn,Sagittarius,HTS_TST,Index,FY49Q3,results,2970
+Saturn,Sagittarius,HTS_TST,Inpat,FY49Q3,results,3120
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY49Q3,results,56110
+Saturn,Sagittarius,HTS_TST,Pediatric,FY49Q3,results,220
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY49Q3,results,7640
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY49Q3,results,2630
+Saturn,Sagittarius,HTS_TST,TBClinic,FY49Q3,results,1560
+Saturn,Sagittarius,HTS_TST,VCT,FY49Q3,results,17670
+Saturn,Sagittarius,HTS_TST_POS,Index,FY49Q3,results,870
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY49Q3,results,370
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY49Q3,results,1410
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY49Q3,results,30
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY49Q3,results,300
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY49Q3,results,80
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY49Q3,results,540
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY49Q3,results,770
+Saturn,Serpens,HTS_TST,Index,FY49Q3,results,250
+Saturn,Serpens,HTS_TST,TBClinic,FY49Q3,results,10
+Saturn,Serpens,HTS_TST,VCT,FY49Q3,results,1590
+Saturn,Serpens,HTS_TST_POS,TBClinic,FY49Q3,results,10
+Saturn,Serpens,HTS_TST_POS,VCT,FY49Q3,results,180
+Saturn,Ursa Major,HTS_TST,Index,FY49Q3,results,1210
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY49Q3,results,4620
+Saturn,Ursa Major,HTS_TST,Pediatric,FY49Q3,results,640
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY49Q3,results,2180
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY49Q3,results,90
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY49Q3,results,580
+Saturn,Ursa Major,HTS_TST,TBClinic,FY49Q3,results,560
+Saturn,Ursa Major,HTS_TST,VCT,FY49Q3,results,13180
+Saturn,Ursa Major,HTS_TST,VMMC,FY49Q3,results,280
+Saturn,Ursa Major,HTS_TST_POS,Index,FY49Q3,results,400
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY49Q3,results,270
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY49Q3,results,10
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY49Q3,results,130
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY49Q3,results,40
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY49Q3,results,110
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY49Q3,results,110
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY49Q3,results,470
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY49Q3,results,10
+Saturn,Virgo,HTS_TST,Index,FY49Q3,results,20
+Saturn,Virgo,HTS_TST,IndexMod,FY49Q3,results,470
+Saturn,Virgo,HTS_TST,MobileMod,FY49Q3,results,16720
+Saturn,Virgo,HTS_TST,OtherPITC,FY49Q3,results,800
+Saturn,Virgo,HTS_TST,TBClinic,FY49Q3,results,10
+Saturn,Virgo,HTS_TST,VCTMod,FY49Q3,results,1290
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY49Q3,results,190
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY49Q3,results,290
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY49Q3,results,20
+Saturn,Virgo,HTS_TST_POS,VCTMod,FY49Q3,results,150
+Saturn,Auriga,HTS_TST,Emergency Ward,FY49Q4,results,290
+Saturn,Auriga,HTS_TST,Index,FY49Q4,results,3400
+Saturn,Auriga,HTS_TST,IndexMod,FY49Q4,results,130
+Saturn,Auriga,HTS_TST,Inpat,FY49Q4,results,1430
+Saturn,Auriga,HTS_TST,Malnutrition,FY49Q4,results,10
+Saturn,Auriga,HTS_TST,MobileMod,FY49Q4,results,2040
+Saturn,Auriga,HTS_TST,OtherMod,FY49Q4,results,1390
+Saturn,Auriga,HTS_TST,OtherPITC,FY49Q4,results,9310
+Saturn,Auriga,HTS_TST,Pediatric,FY49Q4,results,110
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY49Q4,results,1870
+Saturn,Auriga,HTS_TST,Post ANC1,FY49Q4,results,1610
+Saturn,Auriga,HTS_TST,STI Clinic,FY49Q4,results,170
+Saturn,Auriga,HTS_TST,TBClinic,FY49Q4,results,660
+Saturn,Auriga,HTS_TST,VCT,FY49Q4,results,3570
+Saturn,Auriga,HTS_TST,VMMC,FY49Q4,results,2730
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY49Q4,results,30
+Saturn,Auriga,HTS_TST_POS,Index,FY49Q4,results,680
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY49Q4,results,40
+Saturn,Auriga,HTS_TST_POS,Inpat,FY49Q4,results,150
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY49Q4,results,130
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY49Q4,results,10
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY49Q4,results,390
+Saturn,Auriga,HTS_TST_POS,Pediatric,FY49Q4,results,20
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY49Q4,results,170
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY49Q4,results,60
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY49Q4,results,190
+Saturn,Auriga,HTS_TST_POS,VCT,FY49Q4,results,290
+Saturn,Auriga,HTS_TST_POS,VMMC,FY49Q4,results,20
+Saturn,Boötes,HTS_TST,Index,FY49Q4,results,300
+Saturn,Boötes,HTS_TST,Inpat,FY49Q4,results,80
+Saturn,Boötes,HTS_TST,OtherPITC,FY49Q4,results,440
+Saturn,Boötes,HTS_TST,Pediatric,FY49Q4,results,20
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY49Q4,results,140
+Saturn,Boötes,HTS_TST,Post ANC1,FY49Q4,results,10
+Saturn,Boötes,HTS_TST,TBClinic,FY49Q4,results,60
+Saturn,Boötes,HTS_TST_POS,Index,FY49Q4,results,130
+Saturn,Boötes,HTS_TST_POS,Inpat,FY49Q4,results,30
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY49Q4,results,100
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY49Q4,results,30
+Saturn,Boötes,HTS_TST_POS,Post ANC1,FY49Q4,results,10
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY49Q4,results,30
+Saturn,Capricornus,HTS_TST,Index,FY49Q4,results,6840
+Saturn,Capricornus,HTS_TST,Inpat,FY49Q4,results,1740
+Saturn,Capricornus,HTS_TST,Malnutrition,FY49Q4,results,30
+Saturn,Capricornus,HTS_TST,OtherPITC,FY49Q4,results,11630
+Saturn,Capricornus,HTS_TST,Pediatric,FY49Q4,results,200
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY49Q4,results,1510
+Saturn,Capricornus,HTS_TST,Post ANC1,FY49Q4,results,180
+Saturn,Capricornus,HTS_TST,STI Clinic,FY49Q4,results,150
+Saturn,Capricornus,HTS_TST,TBClinic,FY49Q4,results,640
+Saturn,Capricornus,HTS_TST,VCT,FY49Q4,results,6730
+Saturn,Capricornus,HTS_TST,VMMC,FY49Q4,results,60
+Saturn,Capricornus,HTS_TST_POS,Index,FY49Q4,results,1030
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY49Q4,results,230
+Saturn,Capricornus,HTS_TST_POS,Malnutrition,FY49Q4,results,10
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY49Q4,results,520
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY49Q4,results,20
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY49Q4,results,160
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY49Q4,results,60
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY49Q4,results,210
+Saturn,Capricornus,HTS_TST_POS,VCT,FY49Q4,results,460
+Saturn,Cepheus,HTS_TST,Index,FY49Q4,results,850
+Saturn,Cepheus,HTS_TST,IndexMod,FY49Q4,results,30
+Saturn,Cepheus,HTS_TST,MobileMod,FY49Q4,results,1290
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY49Q4,results,490
+Saturn,Cepheus,HTS_TST,TBClinic,FY49Q4,results,310
+Saturn,Cepheus,HTS_TST,VCT,FY49Q4,results,7590
+Saturn,Cepheus,HTS_TST_POS,Index,FY49Q4,results,410
+Saturn,Cepheus,HTS_TST_POS,IndexMod,FY49Q4,results,10
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY49Q4,results,10
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY49Q4,results,50
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY49Q4,results,100
+Saturn,Cepheus,HTS_TST_POS,VCT,FY49Q4,results,600
+Saturn,Corvus,HTS_TST,Index,FY49Q4,results,7570
+Saturn,Corvus,HTS_TST,Inpat,FY49Q4,results,970
+Saturn,Corvus,HTS_TST,OtherPITC,FY49Q4,results,17330
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY49Q4,results,1870
+Saturn,Corvus,HTS_TST,Post ANC1,FY49Q4,results,100
+Saturn,Corvus,HTS_TST,TBClinic,FY49Q4,results,350
+Saturn,Corvus,HTS_TST,VCT,FY49Q4,results,6210
+Saturn,Corvus,HTS_TST,VMMC,FY49Q4,results,550
+Saturn,Corvus,HTS_TST_POS,Index,FY49Q4,results,860
+Saturn,Corvus,HTS_TST_POS,Inpat,FY49Q4,results,110
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY49Q4,results,220
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY49Q4,results,90
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY49Q4,results,40
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY49Q4,results,150
+Saturn,Corvus,HTS_TST_POS,VCT,FY49Q4,results,120
+Saturn,Corvus,HTS_TST_POS,VMMC,FY49Q4,results,20
+Saturn,Dedup,HTS_TST,OtherPITC,FY49Q4,results,-50
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY49Q4,results,390
+Saturn,Eridanus,HTS_TST,Index,FY49Q4,results,1330
+Saturn,Eridanus,HTS_TST,Inpat,FY49Q4,results,1330
+Saturn,Eridanus,HTS_TST,OtherPITC,FY49Q4,results,21830
+Saturn,Eridanus,HTS_TST,Pediatric,FY49Q4,results,80
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY49Q4,results,7800
+Saturn,Eridanus,HTS_TST,Post ANC1,FY49Q4,results,8260
+Saturn,Eridanus,HTS_TST,STI Clinic,FY49Q4,results,160
+Saturn,Eridanus,HTS_TST,TBClinic,FY49Q4,results,1050
+Saturn,Eridanus,HTS_TST,VCT,FY49Q4,results,8070
+Saturn,Eridanus,HTS_TST,VMMC,FY49Q4,results,240
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY49Q4,results,90
+Saturn,Eridanus,HTS_TST_POS,Index,FY49Q4,results,390
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY49Q4,results,160
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY49Q4,results,700
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY49Q4,results,180
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY49Q4,results,70
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY49Q4,results,220
+Saturn,Eridanus,HTS_TST_POS,VCT,FY49Q4,results,260
+Saturn,Libra,HTS_TST,Index,FY49Q4,results,10880
+Saturn,Libra,HTS_TST,Inpat,FY49Q4,results,1500
+Saturn,Libra,HTS_TST,OtherPITC,FY49Q4,results,55680
+Saturn,Libra,HTS_TST,PMTCT ANC,FY49Q4,results,3390
+Saturn,Libra,HTS_TST,Post ANC1,FY49Q4,results,70
+Saturn,Libra,HTS_TST,STI Clinic,FY49Q4,results,120
+Saturn,Libra,HTS_TST,TBClinic,FY49Q4,results,400
+Saturn,Libra,HTS_TST,VMMC,FY49Q4,results,490
+Saturn,Libra,HTS_TST_POS,Index,FY49Q4,results,1220
+Saturn,Libra,HTS_TST_POS,Inpat,FY49Q4,results,140
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY49Q4,results,510
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY49Q4,results,100
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY49Q4,results,20
+Saturn,Libra,HTS_TST_POS,TBClinic,FY49Q4,results,160
+Saturn,Ophiuchus,HTS_TST,Index,FY49Q4,results,830
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY49Q4,results,410
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY49Q4,results,4050
+Saturn,Ophiuchus,HTS_TST,VCT,FY49Q4,results,7340
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY49Q4,results,340
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY49Q4,results,170
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY49Q4,results,150
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY49Q4,results,320
+Saturn,Sagittarius,HTS_TST,Index,FY49Q4,results,3390
+Saturn,Sagittarius,HTS_TST,Inpat,FY49Q4,results,3460
+Saturn,Sagittarius,HTS_TST,Malnutrition,FY49Q4,results,20
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY49Q4,results,51300
+Saturn,Sagittarius,HTS_TST,Pediatric,FY49Q4,results,230
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY49Q4,results,7770
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY49Q4,results,2580
+Saturn,Sagittarius,HTS_TST,TBClinic,FY49Q4,results,1460
+Saturn,Sagittarius,HTS_TST,VCT,FY49Q4,results,17240
+Saturn,Sagittarius,HTS_TST_POS,Index,FY49Q4,results,1040
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY49Q4,results,380
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY49Q4,results,1330
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY49Q4,results,30
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY49Q4,results,300
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY49Q4,results,70
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY49Q4,results,510
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY49Q4,results,750
+Saturn,Serpens,HTS_TST,VCT,FY49Q4,results,1540
+Saturn,Serpens,HTS_TST_POS,VCT,FY49Q4,results,140
+Saturn,Ursa Major,HTS_TST,Index,FY49Q4,results,1520
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY49Q4,results,4370
+Saturn,Ursa Major,HTS_TST,Pediatric,FY49Q4,results,510
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY49Q4,results,2460
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY49Q4,results,160
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY49Q4,results,610
+Saturn,Ursa Major,HTS_TST,TBClinic,FY49Q4,results,580
+Saturn,Ursa Major,HTS_TST,VCT,FY49Q4,results,12160
+Saturn,Ursa Major,HTS_TST,VMMC,FY49Q4,results,390
+Saturn,Ursa Major,HTS_TST_POS,Index,FY49Q4,results,430
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY49Q4,results,330
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY49Q4,results,20
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY49Q4,results,150
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY49Q4,results,100
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY49Q4,results,90
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY49Q4,results,130
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY49Q4,results,610
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY49Q4,results,60
+Saturn,Virgo,HTS_TST,IndexMod,FY49Q4,results,560
+Saturn,Virgo,HTS_TST,MobileMod,FY49Q4,results,14120
+Saturn,Virgo,HTS_TST,OtherPITC,FY49Q4,results,650
+Saturn,Virgo,HTS_TST,VCTMod,FY49Q4,results,1360
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY49Q4,results,260
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY49Q4,results,130
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY49Q4,results,40
+Saturn,Virgo,HTS_TST_POS,VCTMod,FY49Q4,results,110
+Saturn,Auriga,HTS_TST,Emergency Ward,FY49,cumulative,1720
+Saturn,Auriga,HTS_TST,Emergency Ward,FY50,cumulative,270
+Saturn,Auriga,HTS_TST,Index,FY49,cumulative,12410
+Saturn,Auriga,HTS_TST,Index,FY50,cumulative,1420
+Saturn,Auriga,HTS_TST,IndexMod,FY49,cumulative,300
+Saturn,Auriga,HTS_TST,IndexMod,FY50,cumulative,20
+Saturn,Auriga,HTS_TST,Inpat,FY49,cumulative,7420
+Saturn,Auriga,HTS_TST,Inpat,FY50,cumulative,810
+Saturn,Auriga,HTS_TST,Malnutrition,FY49,cumulative,20
+Saturn,Auriga,HTS_TST,MobileMod,FY49,cumulative,4630
+Saturn,Auriga,HTS_TST,MobileMod,FY50,cumulative,470
+Saturn,Auriga,HTS_TST,OtherMod,FY49,cumulative,4270
+Saturn,Auriga,HTS_TST,OtherMod,FY50,cumulative,1270
+Saturn,Auriga,HTS_TST,OtherPITC,FY49,cumulative,93520
+Saturn,Auriga,HTS_TST,OtherPITC,FY50,cumulative,2630
+Saturn,Auriga,HTS_TST,Pediatric,FY49,cumulative,1440
+Saturn,Auriga,HTS_TST,Pediatric,FY50,cumulative,50
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY49,cumulative,8990
+Saturn,Auriga,HTS_TST,PMTCT ANC,FY50,cumulative,1330
+Saturn,Auriga,HTS_TST,Post ANC1,FY49,cumulative,7100
+Saturn,Auriga,HTS_TST,Post ANC1,FY50,cumulative,740
+Saturn,Auriga,HTS_TST,STI Clinic,FY49,cumulative,900
+Saturn,Auriga,HTS_TST,STI Clinic,FY50,cumulative,140
+Saturn,Auriga,HTS_TST,TBClinic,FY49,cumulative,1420
+Saturn,Auriga,HTS_TST,TBClinic,FY50,cumulative,430
+Saturn,Auriga,HTS_TST,VCT,FY49,cumulative,21360
+Saturn,Auriga,HTS_TST,VCT,FY50,cumulative,1910
+Saturn,Auriga,HTS_TST,VCTMod,FY49,cumulative,280
+Saturn,Auriga,HTS_TST,VMMC,FY49,cumulative,10490
+Saturn,Auriga,HTS_TST,VMMC,FY50,cumulative,500
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY49,cumulative,140
+Saturn,Auriga,HTS_TST_POS,Emergency Ward,FY50,cumulative,60
+Saturn,Auriga,HTS_TST_POS,Index,FY49,cumulative,1530
+Saturn,Auriga,HTS_TST_POS,Index,FY50,cumulative,440
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY49,cumulative,60
+Saturn,Auriga,HTS_TST_POS,IndexMod,FY50,cumulative,10
+Saturn,Auriga,HTS_TST_POS,Inpat,FY49,cumulative,520
+Saturn,Auriga,HTS_TST_POS,Inpat,FY50,cumulative,100
+Saturn,Auriga,HTS_TST_POS,MobileMod,FY49,cumulative,160
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY49,cumulative,50
+Saturn,Auriga,HTS_TST_POS,OtherMod,FY50,cumulative,10
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY49,cumulative,1480
+Saturn,Auriga,HTS_TST_POS,OtherPITC,FY50,cumulative,160
+Saturn,Auriga,HTS_TST_POS,Pediatric,FY49,cumulative,60
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY49,cumulative,410
+Saturn,Auriga,HTS_TST_POS,PMTCT ANC,FY50,cumulative,110
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY49,cumulative,180
+Saturn,Auriga,HTS_TST_POS,Post ANC1,FY50,cumulative,60
+Saturn,Auriga,HTS_TST_POS,STI Clinic,FY49,cumulative,100
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY49,cumulative,490
+Saturn,Auriga,HTS_TST_POS,TBClinic,FY50,cumulative,150
+Saturn,Auriga,HTS_TST_POS,VCT,FY49,cumulative,790
+Saturn,Auriga,HTS_TST_POS,VCT,FY50,cumulative,120
+Saturn,Auriga,HTS_TST_POS,VMMC,FY49,cumulative,120
+Saturn,Auriga,HTS_TST_POS,VMMC,FY50,cumulative,10
+Saturn,Boötes,HTS_TST,Index,FY49,cumulative,460
+Saturn,Boötes,HTS_TST,Index,FY50,cumulative,320
+Saturn,Boötes,HTS_TST,Inpat,FY49,cumulative,620
+Saturn,Boötes,HTS_TST,OtherPITC,FY49,cumulative,2340
+Saturn,Boötes,HTS_TST,OtherPITC,FY50,cumulative,480
+Saturn,Boötes,HTS_TST,Pediatric,FY49,cumulative,140
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY49,cumulative,460
+Saturn,Boötes,HTS_TST,PMTCT ANC,FY50,cumulative,170
+Saturn,Boötes,HTS_TST,Post ANC1,FY49,cumulative,20
+Saturn,Boötes,HTS_TST,TBClinic,FY49,cumulative,210
+Saturn,Boötes,HTS_TST,TBClinic,FY50,cumulative,70
+Saturn,Boötes,HTS_TST_POS,Index,FY49,cumulative,190
+Saturn,Boötes,HTS_TST_POS,Index,FY50,cumulative,170
+Saturn,Boötes,HTS_TST_POS,Inpat,FY49,cumulative,70
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY49,cumulative,180
+Saturn,Boötes,HTS_TST_POS,OtherPITC,FY50,cumulative,130
+Saturn,Boötes,HTS_TST_POS,Pediatric,FY49,cumulative,20
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY49,cumulative,50
+Saturn,Boötes,HTS_TST_POS,PMTCT ANC,FY50,cumulative,50
+Saturn,Boötes,HTS_TST_POS,Post ANC1,FY49,cumulative,20
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY49,cumulative,110
+Saturn,Boötes,HTS_TST_POS,TBClinic,FY50,cumulative,30
+Saturn,Capricornus,HTS_TST,Index,FY49,cumulative,15750
+Saturn,Capricornus,HTS_TST,Index,FY50,cumulative,4040
+Saturn,Capricornus,HTS_TST,Inpat,FY49,cumulative,6280
+Saturn,Capricornus,HTS_TST,Inpat,FY50,cumulative,1110
+Saturn,Capricornus,HTS_TST,Malnutrition,FY49,cumulative,30
+Saturn,Capricornus,HTS_TST,Malnutrition,FY50,cumulative,20
+Saturn,Capricornus,HTS_TST,OtherPITC,FY49,cumulative,64400
+Saturn,Capricornus,HTS_TST,OtherPITC,FY50,cumulative,9030
+Saturn,Capricornus,HTS_TST,Pediatric,FY49,cumulative,730
+Saturn,Capricornus,HTS_TST,Pediatric,FY50,cumulative,130
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY49,cumulative,4730
+Saturn,Capricornus,HTS_TST,PMTCT ANC,FY50,cumulative,1490
+Saturn,Capricornus,HTS_TST,Post ANC1,FY49,cumulative,4290
+Saturn,Capricornus,HTS_TST,Post ANC1,FY50,cumulative,280
+Saturn,Capricornus,HTS_TST,STI Clinic,FY49,cumulative,240
+Saturn,Capricornus,HTS_TST,STI Clinic,FY50,cumulative,160
+Saturn,Capricornus,HTS_TST,TBClinic,FY49,cumulative,1030
+Saturn,Capricornus,HTS_TST,TBClinic,FY50,cumulative,400
+Saturn,Capricornus,HTS_TST,VCT,FY49,cumulative,20550
+Saturn,Capricornus,HTS_TST,VCT,FY50,cumulative,4750
+Saturn,Capricornus,HTS_TST,VMMC,FY49,cumulative,200
+Saturn,Capricornus,HTS_TST,VMMC,FY50,cumulative,510
+Saturn,Capricornus,HTS_TST_POS,Index,FY49,cumulative,1810
+Saturn,Capricornus,HTS_TST_POS,Index,FY50,cumulative,680
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY49,cumulative,420
+Saturn,Capricornus,HTS_TST_POS,Inpat,FY50,cumulative,110
+Saturn,Capricornus,HTS_TST_POS,Malnutrition,FY49,cumulative,10
+Saturn,Capricornus,HTS_TST_POS,Malnutrition,FY50,cumulative,10
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY49,cumulative,1040
+Saturn,Capricornus,HTS_TST_POS,OtherPITC,FY50,cumulative,500
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY49,cumulative,40
+Saturn,Capricornus,HTS_TST_POS,Pediatric,FY50,cumulative,10
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY49,cumulative,260
+Saturn,Capricornus,HTS_TST_POS,PMTCT ANC,FY50,cumulative,120
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY49,cumulative,80
+Saturn,Capricornus,HTS_TST_POS,Post ANC1,FY50,cumulative,70
+Saturn,Capricornus,HTS_TST_POS,STI Clinic,FY49,cumulative,10
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY49,cumulative,400
+Saturn,Capricornus,HTS_TST_POS,TBClinic,FY50,cumulative,120
+Saturn,Capricornus,HTS_TST_POS,VCT,FY49,cumulative,700
+Saturn,Capricornus,HTS_TST_POS,VCT,FY50,cumulative,400
+Saturn,Cepheus,HTS_TST,Index,FY49,cumulative,1210
+Saturn,Cepheus,HTS_TST,Index,FY50,cumulative,720
+Saturn,Cepheus,HTS_TST,IndexMod,FY49,cumulative,150
+Saturn,Cepheus,HTS_TST,MobileMod,FY49,cumulative,2480
+Saturn,Cepheus,HTS_TST,MobileMod,FY50,cumulative,1100
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY49,cumulative,1540
+Saturn,Cepheus,HTS_TST,PMTCT ANC,FY50,cumulative,440
+Saturn,Cepheus,HTS_TST,TBClinic,FY49,cumulative,610
+Saturn,Cepheus,HTS_TST,TBClinic,FY50,cumulative,260
+Saturn,Cepheus,HTS_TST,VCT,FY49,cumulative,31270
+Saturn,Cepheus,HTS_TST,VCT,FY50,cumulative,7120
+Saturn,Cepheus,HTS_TST_POS,Index,FY49,cumulative,500
+Saturn,Cepheus,HTS_TST_POS,Index,FY50,cumulative,250
+Saturn,Cepheus,HTS_TST_POS,IndexMod,FY49,cumulative,20
+Saturn,Cepheus,HTS_TST_POS,MobileMod,FY49,cumulative,60
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY49,cumulative,90
+Saturn,Cepheus,HTS_TST_POS,PMTCT ANC,FY50,cumulative,40
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY49,cumulative,170
+Saturn,Cepheus,HTS_TST_POS,TBClinic,FY50,cumulative,60
+Saturn,Cepheus,HTS_TST_POS,VCT,FY49,cumulative,1070
+Saturn,Cepheus,HTS_TST_POS,VCT,FY50,cumulative,550
+Saturn,Corvus,HTS_TST,Index,FY49,cumulative,18000
+Saturn,Corvus,HTS_TST,Index,FY50,cumulative,4200
+Saturn,Corvus,HTS_TST,Inpat,FY49,cumulative,6430
+Saturn,Corvus,HTS_TST,Inpat,FY50,cumulative,600
+Saturn,Corvus,HTS_TST,Malnutrition,FY49,cumulative,20
+Saturn,Corvus,HTS_TST,OtherPITC,FY49,cumulative,131730
+Saturn,Corvus,HTS_TST,OtherPITC,FY50,cumulative,10510
+Saturn,Corvus,HTS_TST,Pediatric,FY49,cumulative,5220
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY49,cumulative,8820
+Saturn,Corvus,HTS_TST,PMTCT ANC,FY50,cumulative,2180
+Saturn,Corvus,HTS_TST,Post ANC1,FY49,cumulative,130
+Saturn,Corvus,HTS_TST,Post ANC1,FY50,cumulative,60
+Saturn,Corvus,HTS_TST,TBClinic,FY49,cumulative,570
+Saturn,Corvus,HTS_TST,TBClinic,FY50,cumulative,320
+Saturn,Corvus,HTS_TST,VCT,FY49,cumulative,13200
+Saturn,Corvus,HTS_TST,VCT,FY50,cumulative,5730
+Saturn,Corvus,HTS_TST,VMMC,FY49,cumulative,3590
+Saturn,Corvus,HTS_TST,VMMC,FY50,cumulative,830
+Saturn,Corvus,HTS_TST_POS,Index,FY49,cumulative,2340
+Saturn,Corvus,HTS_TST_POS,Index,FY50,cumulative,570
+Saturn,Corvus,HTS_TST_POS,Inpat,FY49,cumulative,200
+Saturn,Corvus,HTS_TST_POS,Inpat,FY50,cumulative,60
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY49,cumulative,760
+Saturn,Corvus,HTS_TST_POS,OtherPITC,FY50,cumulative,210
+Saturn,Corvus,HTS_TST_POS,Pediatric,FY49,cumulative,50
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY49,cumulative,350
+Saturn,Corvus,HTS_TST_POS,PMTCT ANC,FY50,cumulative,90
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY49,cumulative,70
+Saturn,Corvus,HTS_TST_POS,Post ANC1,FY50,cumulative,40
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY49,cumulative,180
+Saturn,Corvus,HTS_TST_POS,TBClinic,FY50,cumulative,110
+Saturn,Corvus,HTS_TST_POS,VCT,FY49,cumulative,150
+Saturn,Corvus,HTS_TST_POS,VCT,FY50,cumulative,130
+Saturn,Corvus,HTS_TST_POS,VMMC,FY49,cumulative,30
+Saturn,Corvus,HTS_TST_POS,VMMC,FY50,cumulative,30
+Saturn,Dedup,HTS_TST,OtherPITC,FY49,cumulative,-4740
+Saturn,Dedup,HTS_TST,PMTCT ANC,FY49,cumulative,-530
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY49,cumulative,780
+Saturn,Eridanus,HTS_TST,Emergency Ward,FY50,cumulative,260
+Saturn,Eridanus,HTS_TST,Index,FY49,cumulative,3490
+Saturn,Eridanus,HTS_TST,Index,FY50,cumulative,860
+Saturn,Eridanus,HTS_TST,Inpat,FY49,cumulative,5210
+Saturn,Eridanus,HTS_TST,Inpat,FY50,cumulative,1140
+Saturn,Eridanus,HTS_TST,Malnutrition,FY50,cumulative,10
+Saturn,Eridanus,HTS_TST,OtherPITC,FY49,cumulative,80250
+Saturn,Eridanus,HTS_TST,OtherPITC,FY50,cumulative,13760
+Saturn,Eridanus,HTS_TST,Pediatric,FY49,cumulative,140
+Saturn,Eridanus,HTS_TST,Pediatric,FY50,cumulative,50
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY49,cumulative,31080
+Saturn,Eridanus,HTS_TST,PMTCT ANC,FY50,cumulative,7020
+Saturn,Eridanus,HTS_TST,Post ANC1,FY49,cumulative,27050
+Saturn,Eridanus,HTS_TST,Post ANC1,FY50,cumulative,6070
+Saturn,Eridanus,HTS_TST,STI Clinic,FY49,cumulative,560
+Saturn,Eridanus,HTS_TST,STI Clinic,FY50,cumulative,130
+Saturn,Eridanus,HTS_TST,TBClinic,FY49,cumulative,3120
+Saturn,Eridanus,HTS_TST,TBClinic,FY50,cumulative,850
+Saturn,Eridanus,HTS_TST,VCT,FY49,cumulative,48740
+Saturn,Eridanus,HTS_TST,VCT,FY50,cumulative,6120
+Saturn,Eridanus,HTS_TST,VMMC,FY49,cumulative,1860
+Saturn,Eridanus,HTS_TST,VMMC,FY50,cumulative,350
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY49,cumulative,110
+Saturn,Eridanus,HTS_TST_POS,Emergency Ward,FY50,cumulative,30
+Saturn,Eridanus,HTS_TST_POS,Index,FY49,cumulative,640
+Saturn,Eridanus,HTS_TST_POS,Index,FY50,cumulative,290
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY49,cumulative,330
+Saturn,Eridanus,HTS_TST_POS,Inpat,FY50,cumulative,170
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY49,cumulative,1920
+Saturn,Eridanus,HTS_TST_POS,OtherPITC,FY50,cumulative,480
+Saturn,Eridanus,HTS_TST_POS,Pediatric,FY49,cumulative,10
+Saturn,Eridanus,HTS_TST_POS,Pediatric,FY50,cumulative,20
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY49,cumulative,740
+Saturn,Eridanus,HTS_TST_POS,PMTCT ANC,FY50,cumulative,150
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY49,cumulative,160
+Saturn,Eridanus,HTS_TST_POS,Post ANC1,FY50,cumulative,50
+Saturn,Eridanus,HTS_TST_POS,STI Clinic,FY49,cumulative,60
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY49,cumulative,470
+Saturn,Eridanus,HTS_TST_POS,TBClinic,FY50,cumulative,150
+Saturn,Eridanus,HTS_TST_POS,VCT,FY49,cumulative,1340
+Saturn,Eridanus,HTS_TST_POS,VCT,FY50,cumulative,220
+Saturn,Eridanus,HTS_TST_POS,VMMC,FY49,cumulative,20
+Saturn,Leo,HTS_TST,IndexMod,FY50,cumulative,320
+Saturn,Leo,HTS_TST,MobileMod,FY50,cumulative,870
+Saturn,Leo,HTS_TST,VCTMod,FY50,cumulative,830
+Saturn,Leo,HTS_TST_POS,IndexMod,FY50,cumulative,120
+Saturn,Leo,HTS_TST_POS,MobileMod,FY50,cumulative,180
+Saturn,Leo,HTS_TST_POS,VCTMod,FY50,cumulative,130
+Saturn,Libra,HTS_TST,Index,FY49,cumulative,37610
+Saturn,Libra,HTS_TST,Index,FY50,cumulative,9410
+Saturn,Libra,HTS_TST,Inpat,FY49,cumulative,5600
+Saturn,Libra,HTS_TST,Inpat,FY50,cumulative,1880
+Saturn,Libra,HTS_TST,OtherPITC,FY49,cumulative,249100
+Saturn,Libra,HTS_TST,OtherPITC,FY50,cumulative,47230
+Saturn,Libra,HTS_TST,Pediatric,FY49,cumulative,40
+Saturn,Libra,HTS_TST,PMTCT ANC,FY49,cumulative,13470
+Saturn,Libra,HTS_TST,PMTCT ANC,FY50,cumulative,4050
+Saturn,Libra,HTS_TST,Post ANC1,FY49,cumulative,440
+Saturn,Libra,HTS_TST,Post ANC1,FY50,cumulative,80
+Saturn,Libra,HTS_TST,STI Clinic,FY49,cumulative,340
+Saturn,Libra,HTS_TST,TBClinic,FY49,cumulative,690
+Saturn,Libra,HTS_TST,TBClinic,FY50,cumulative,380
+Saturn,Libra,HTS_TST,VCT,FY49,cumulative,450
+Saturn,Libra,HTS_TST,VCT,FY50,cumulative,1110
+Saturn,Libra,HTS_TST,VMMC,FY49,cumulative,1690
+Saturn,Libra,HTS_TST,VMMC,FY50,cumulative,440
+Saturn,Libra,HTS_TST_POS,Index,FY49,cumulative,4270
+Saturn,Libra,HTS_TST_POS,Index,FY50,cumulative,1180
+Saturn,Libra,HTS_TST_POS,Inpat,FY49,cumulative,180
+Saturn,Libra,HTS_TST_POS,Inpat,FY50,cumulative,170
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY49,cumulative,1850
+Saturn,Libra,HTS_TST_POS,OtherPITC,FY50,cumulative,690
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY49,cumulative,370
+Saturn,Libra,HTS_TST_POS,PMTCT ANC,FY50,cumulative,110
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY49,cumulative,50
+Saturn,Libra,HTS_TST_POS,Post ANC1,FY50,cumulative,40
+Saturn,Libra,HTS_TST_POS,STI Clinic,FY49,cumulative,50
+Saturn,Libra,HTS_TST_POS,TBClinic,FY49,cumulative,280
+Saturn,Libra,HTS_TST_POS,TBClinic,FY50,cumulative,170
+Saturn,Libra,HTS_TST_POS,VCT,FY49,cumulative,20
+Saturn,Libra,HTS_TST_POS,VCT,FY50,cumulative,90
+Saturn,Libra,HTS_TST_POS,VMMC,FY49,cumulative,60
+Saturn,Libra,HTS_TST_POS,VMMC,FY50,cumulative,10
+Saturn,Ophiuchus,HTS_TST,Index,FY49,cumulative,1320
+Saturn,Ophiuchus,HTS_TST,Index,FY50,cumulative,590
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY49,cumulative,520
+Saturn,Ophiuchus,HTS_TST,IndexMod,FY50,cumulative,290
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY49,cumulative,10940
+Saturn,Ophiuchus,HTS_TST,MobileMod,FY50,cumulative,2940
+Saturn,Ophiuchus,HTS_TST,TBClinic,FY49,cumulative,20
+Saturn,Ophiuchus,HTS_TST,VCT,FY49,cumulative,28320
+Saturn,Ophiuchus,HTS_TST,VCT,FY50,cumulative,5770
+Saturn,Ophiuchus,HTS_TST,VCTMod,FY49,cumulative,4380
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY49,cumulative,480
+Saturn,Ophiuchus,HTS_TST_POS,Index,FY50,cumulative,210
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY49,cumulative,210
+Saturn,Ophiuchus,HTS_TST_POS,IndexMod,FY50,cumulative,150
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY49,cumulative,190
+Saturn,Ophiuchus,HTS_TST_POS,MobileMod,FY50,cumulative,120
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY49,cumulative,600
+Saturn,Ophiuchus,HTS_TST_POS,VCT,FY50,cumulative,230
+Saturn,Ophiuchus,HTS_TST_POS,VCTMod,FY49,cumulative,150
+Saturn,Sagittarius,HTS_TST,Index,FY49,cumulative,7810
+Saturn,Sagittarius,HTS_TST,Index,FY50,cumulative,3270
+Saturn,Sagittarius,HTS_TST,Inpat,FY49,cumulative,11110
+Saturn,Sagittarius,HTS_TST,Inpat,FY50,cumulative,2590
+Saturn,Sagittarius,HTS_TST,Malnutrition,FY49,cumulative,20
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY49,cumulative,197420
+Saturn,Sagittarius,HTS_TST,OtherPITC,FY50,cumulative,34490
+Saturn,Sagittarius,HTS_TST,Pediatric,FY49,cumulative,1120
+Saturn,Sagittarius,HTS_TST,Pediatric,FY50,cumulative,270
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY49,cumulative,28790
+Saturn,Sagittarius,HTS_TST,PMTCT ANC,FY50,cumulative,6930
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY49,cumulative,7730
+Saturn,Sagittarius,HTS_TST,Post ANC1,FY50,cumulative,2270
+Saturn,Sagittarius,HTS_TST,TBClinic,FY49,cumulative,3050
+Saturn,Sagittarius,HTS_TST,TBClinic,FY50,cumulative,1160
+Saturn,Sagittarius,HTS_TST,VCT,FY49,cumulative,70050
+Saturn,Sagittarius,HTS_TST,VCT,FY50,cumulative,15490
+Saturn,Sagittarius,HTS_TST,VMMC,FY49,cumulative,20
+Saturn,Sagittarius,HTS_TST_POS,Index,FY49,cumulative,1900
+Saturn,Sagittarius,HTS_TST_POS,Index,FY50,cumulative,930
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY49,cumulative,780
+Saturn,Sagittarius,HTS_TST_POS,Inpat,FY50,cumulative,280
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY49,cumulative,3430
+Saturn,Sagittarius,HTS_TST_POS,OtherPITC,FY50,cumulative,1200
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY49,cumulative,30
+Saturn,Sagittarius,HTS_TST_POS,Pediatric,FY50,cumulative,20
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY49,cumulative,690
+Saturn,Sagittarius,HTS_TST_POS,PMTCT ANC,FY50,cumulative,270
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY49,cumulative,150
+Saturn,Sagittarius,HTS_TST_POS,Post ANC1,FY50,cumulative,110
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY49,cumulative,820
+Saturn,Sagittarius,HTS_TST_POS,TBClinic,FY50,cumulative,320
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY49,cumulative,1780
+Saturn,Sagittarius,HTS_TST_POS,VCT,FY50,cumulative,740
+Saturn,Serpens,HTS_TST,Index,FY49,cumulative,330
+Saturn,Serpens,HTS_TST,Index,FY50,cumulative,110
+Saturn,Serpens,HTS_TST,TBClinic,FY49,cumulative,20
+Saturn,Serpens,HTS_TST,TBClinic,FY50,cumulative,20
+Saturn,Serpens,HTS_TST,VCT,FY49,cumulative,5260
+Saturn,Serpens,HTS_TST,VCT,FY50,cumulative,960
+Saturn,Serpens,HTS_TST_POS,Index,FY49,cumulative,40
+Saturn,Serpens,HTS_TST_POS,TBClinic,FY49,cumulative,20
+Saturn,Serpens,HTS_TST_POS,TBClinic,FY50,cumulative,20
+Saturn,Serpens,HTS_TST_POS,VCT,FY49,cumulative,250
+Saturn,Serpens,HTS_TST_POS,VCT,FY50,cumulative,150
+Saturn,Ursa Major,HTS_TST,Index,FY49,cumulative,3190
+Saturn,Ursa Major,HTS_TST,Index,FY50,cumulative,1100
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY49,cumulative,18570
+Saturn,Ursa Major,HTS_TST,OtherPITC,FY50,cumulative,2810
+Saturn,Ursa Major,HTS_TST,Pediatric,FY49,cumulative,2430
+Saturn,Ursa Major,HTS_TST,Pediatric,FY50,cumulative,290
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY49,cumulative,8580
+Saturn,Ursa Major,HTS_TST,PMTCT ANC,FY50,cumulative,2220
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY49,cumulative,430
+Saturn,Ursa Major,HTS_TST,Post ANC1,FY50,cumulative,110
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY49,cumulative,1610
+Saturn,Ursa Major,HTS_TST,STI Clinic,FY50,cumulative,430
+Saturn,Ursa Major,HTS_TST,TBClinic,FY49,cumulative,1030
+Saturn,Ursa Major,HTS_TST,TBClinic,FY50,cumulative,510
+Saturn,Ursa Major,HTS_TST,VCT,FY49,cumulative,51550
+Saturn,Ursa Major,HTS_TST,VCT,FY50,cumulative,6110
+Saturn,Ursa Major,HTS_TST,VMMC,FY49,cumulative,1840
+Saturn,Ursa Major,HTS_TST,VMMC,FY50,cumulative,780
+Saturn,Ursa Major,HTS_TST_POS,Index,FY49,cumulative,730
+Saturn,Ursa Major,HTS_TST_POS,Index,FY50,cumulative,360
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY49,cumulative,630
+Saturn,Ursa Major,HTS_TST_POS,OtherPITC,FY50,cumulative,300
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY49,cumulative,30
+Saturn,Ursa Major,HTS_TST_POS,Pediatric,FY50,cumulative,40
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY49,cumulative,290
+Saturn,Ursa Major,HTS_TST_POS,PMTCT ANC,FY50,cumulative,130
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY49,cumulative,110
+Saturn,Ursa Major,HTS_TST_POS,Post ANC1,FY50,cumulative,50
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY49,cumulative,180
+Saturn,Ursa Major,HTS_TST_POS,STI Clinic,FY50,cumulative,90
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY49,cumulative,230
+Saturn,Ursa Major,HTS_TST_POS,TBClinic,FY50,cumulative,100
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY49,cumulative,1270
+Saturn,Ursa Major,HTS_TST_POS,VCT,FY50,cumulative,640
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY49,cumulative,60
+Saturn,Ursa Major,HTS_TST_POS,VMMC,FY50,cumulative,30
+Saturn,Virgo,HTS_TST,Index,FY49,cumulative,20
+Saturn,Virgo,HTS_TST,IndexMod,FY49,cumulative,950
+Saturn,Virgo,HTS_TST,IndexMod,FY50,cumulative,260
+Saturn,Virgo,HTS_TST,MobileMod,FY49,cumulative,62190
+Saturn,Virgo,HTS_TST,MobileMod,FY50,cumulative,1580
+Saturn,Virgo,HTS_TST,OtherPITC,FY49,cumulative,2370
+Saturn,Virgo,HTS_TST,OtherPITC,FY50,cumulative,700
+Saturn,Virgo,HTS_TST,TBClinic,FY49,cumulative,10
+Saturn,Virgo,HTS_TST,VCTMod,FY49,cumulative,3700
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY49,cumulative,450
+Saturn,Virgo,HTS_TST_POS,IndexMod,FY50,cumulative,140
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY49,cumulative,520
+Saturn,Virgo,HTS_TST_POS,MobileMod,FY50,cumulative,70
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY49,cumulative,40
+Saturn,Virgo,HTS_TST_POS,OtherPITC,FY50,cumulative,40
+Saturn,Virgo,HTS_TST_POS,VCTMod,FY49,cumulative,270
