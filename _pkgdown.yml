@@ -1,4 +1,8 @@
 destination: docs
 
-navbar:
-  type: inverse
+template:
+  params:
+    bootswatch: flatly
+
+
+
