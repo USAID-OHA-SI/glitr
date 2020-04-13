@@ -22,7 +22,7 @@ check_fonts <- function(){
       extrafont::font_import(prompt = TRUE)
     }
 
-  #check if font (Source Sans Pro) is installed
+    #check if font (Source Sans Pro) is installed
     if(!"Source Sans Pro" %in% localfonts)
       usethis::ui_warn("Before proceeding, install font: Source Sans Pro")
 

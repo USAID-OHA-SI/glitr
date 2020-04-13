@@ -1,81 +1,20 @@
-#' @title SI Colors
-#' @name si_colors
-#' @title SI custom colors
-#' @description Defines custom colors to use in SI plots
+#' SI-themed color palettes
+#'
+#' A collection of color palettes gathered by the si team
+#' @title SI-theme color palettes
+#' @description Sets of color palettes that have been collected by the SI team
 #' @importFrom scales show_col
-#' @keywords SI colors
 #' @export
 #' @examples
-#' #Preview colors
-#'   #library(scales)
-#'   #show_col(c(wapo_lblue, wapo_dblue, wapo_lmauve, wapo_dmauve))
+#' # List the palettes available
+#' names(si_palettes)
 #'
-#' # Preview colors as generated palette
-#'   #new_palette <- colorRampPalette(c(si_lorange, si_dorange))(12)
-#'   #show_col(new_palette)
+#' # Show palettes interpolated
+#' si_pal("carto_div_earth", n = 10) %>% scales::show_col(labels = FALSE)
+#' si_pal("carto_div_earth", n = 100) %>% scales::show_col(labels = FALSE)
 #'
-#' # Apply the new color palette to a plot with the si_style theme
-#'   #ggplot(iris, aes(Sepal.Length, Sepal.Width, fill = Petal.Length)) +
-#'   #geom_point(shape = 21, color = grey50, size = 3) +
-#'   #scale_fill_gradientn(colours = new_palette) + si_style()
 
-si_colors <- list(
-
-# TODO: determine function to plot colors and load them when package loads
-# Flesh out colors that will be default
-# TODO: Are these helpers? Should objects appear on load or be called w/ a function?
-
-  # USAID Specific
-    USAID_blue = "#002F6C",
-    USAID_red = "#BA0C2F",
-    USAID_medblue = "#0067B9",
-    USAID_ltblue = "#A7C6ED",
-    USAID_dkred = "#651D32",
-    USAID_black = "#212721",
-    USAID_lgrey = "#CFCDC9",
-    USAID_mgrey = "#8C8985",
-    USAID_dgrey = "#6C6463",
-
-  # OHA Specific
-    si_blue = "#2166AC",
-    si_lblue = "#67A9CF",
-    si_dgrey = "#595959",
-    si_grey10K = "#bfbfbf",
-    si_lorange = "#f5b9a1",
-    si_orange = "#EF8A62",
-    si_dorange = "#D95709",
-
-  #grays
-    grey20 = "#202020",
-    grey30 = "#303030",
-    grey40 = "#404040",
-    grey50 = "#505050",
-    grey60 = "#606060",
-    grey70 = "#707070",
-    grey80 = "#808080",
-    grey90 = "#909090",
-    greyA0 = "#A0A0A0",
-    greyB = "#B0B0B0",
-    greyC = "#C0C0C0",
-    greyD = "#D0D0D0",
-    greyE = "#E0E0E0",
-    greyF = "#F0F0F0",
-    greyFF = "#F5F5F5",
-
-  # Inspiration from media outets
-    wapo_lpurple = "#C7ABC7",
-    wapo_lorange = "#F4AB67",
-    wapo_pushpop = "#FEC693",
-
-    wapo_lgreen = "#B5D1D0",
-    wapo_lorange2 = "#EFCAB4",
-    wapo_dorange = "#DC7C33",
-
-    wapo_lblue = "#B4D5E5",
-    wapo_dblue = "#3579A8",
-    wapo_lmauve = "#D8B3D4",
-    wapo_dmauve = "#B68AB8",
-
+si_palettes <- list(
 
     contrast = c("#E4F4EA", "#364352", "#768491", "#C5CAD0", "#BE311F"),
     compliment = c("#6F472E", "#6F827C", "#E4F4EA", "#E4F4EA", "#E4F4EA"),
@@ -110,9 +49,165 @@ si_colors <- list(
       "#bdbdbd", "#d9d9d9"),
 
   # Cartodb colors
+    carto_burgyl = c("#fbe6c5", "#f5ba98", "#ee8a82", "#dc7176", "#c8586c", "#9c3f5d", "#70284a"),
     carto_sunset = c("#fcde9c", "#faa476", "#f0746e", "#e34f6f", "#dc3977", "#b9257a", "#7c1d6f"),
-    carto_teal = c("#d1eeea", "#a8dbd9", "#85c4c9", "#68abb8", "#4f90a6", "#3b738f", "#2a5674")
+    carto_teal = c("#d1eeea", "#a8dbd9", "#85c4c9", "#68abb8", "#4f90a6", "#3b738f", "#2a5674"),
+    carto_dmint = c("#d2fbd4", "#a5dbc2", "#7bbcb0", "#559c9e", "#3a7c89", "#235d72", "#123f5a"),
+    carto_sunset = c("#fcde9c", "#faa476", "#f0746e", "#e34f6f", "#dc3977", "#b9257a", "#7c1d6f"),
+    carto_mint = c("#e4f1e1", "#b4d9cc", "#89c0b6", "#63a6a0", "#448c8a", "#287274", "#0d585f"),
+    carto_brown = c("#ede5cf", "#e0c2a2", "#d39c83", "#c1766f", "#a65461", "#813753", "#541f3f"),
+
+  # Carto diverging
+    carto_div_armyrose = c("#798234", "#a3ad62", "#d0d3a2", "#fdfbe4", "#f0c6c3", "#df91a3", "#d46780"),
+    carto_div_fall = c("#3d5941", "#778868", "#b5b991", "#f6edbd", "#edbb8a", "#de8a5a", "#ca562c"),
+    carto_div_geyser = c("#008080", "#70a494", "#b4c8a8", "#f6edbd", "#edbb8a", "#de8a5a", "#ca562c"),
+    carto_div_temps = c("#009392", "#39b185", "#9ccb86", "#e9e29c", "#eeb479", "#e88471", "#cf597e"),
+    carto_div_teal = c("#009392", "#72aaa1", "#b1c7b3", "#f1eac8", "#e5b9ad", "#d98994", "#d0587e"),
+    carto_div_tropic = c("#009B9E", "#42B7B9", "#A7D3D4", "#F1F1F1", "#E4C1D9", "#D691C1", "#C75DAB"),
+    carto_div_earth = c("#A16928", "#bd925a", "#d6bd8d", "#edeac2", "#b5c8b8", "#79a7ac", "#2887a1")
 
 )
 
+
+#' Chooses palette to use with ggplot2
+#'
+#' @description Gnerate a palette by linear interpolation.
+#' @title Palette interpolation
+#' @param pal_name name of the palette
+#' @param n number of interpolation points
+#' @param reverse if true, reverses order
+#' @param alpha controls opacity of color
+#' @export
+#' @import grDevices
+#'
+#' @examples
+#' # View different interpolations of palettes
+#' si_pal("outbreak_or")(5)
+#' si_pal("outbreak_or")(10)
+#' si_pal("outbreak_or")(100)
+#'
+
+
+  si_pal <- function(pal_name, alpha = 1, reverse = FALSE, n = 5) {
+
+    pal <- si_palettes[[pal_name]]
+
+      if (reverse) {
+      pal <- rev(si_palettes[[pal_name]])
+    }
+
+    pal <- colorRampPalette(pal, alpha)(n)
+
+
+     return(pal)
+  }
+
+
+
+
+# TODO: AC or BK, if you know a better way of doing this, let me know.
+#' @export
+  si_blue = "#2166AC"
+#' @export
+  si_lblue = "#67A9CF"
+#' @export
+  si_dgrey = "#595959"
+#' @export
+  si_grey10K = "#bfbfbf"
+#' @export
+  si_lorange = "#f5b9a1"
+#' @export
+  si_orange = "#EF8A62"
+#' @export
+  si_dorange = "#D95709"
+#' @export
+  wapo_lpurple = "#C7ABC7"
+#' @export
+  wapo_lorange = "#F4AB67"
+#' @export
+  wapo_pushpop = "#FEC693"
+#' @export
+  wapo_lgreen = "#B5D1D0"
+#' @export
+  wapo_lorange2 = "#EFCAB4"
+#' @export
+  wapo_dorange = "#DC7C33"
+#' @export
+  wapo_lblue = "#B4D5E5"
+#' @export
+  wapo_dblue = "#3579A8"
+#' @export
+  wapo_lmauve = "#D8B3D4"
+#' @export
+  wapo_dmauve = "#B68AB8"
+
+  #grays
+#' @export
+  grey10k = "#E6E7E8"
+#' @export
+  grey20k = "#d1d3d4"
+#' @export
+  grey30k = "#BCBEC0"
+#' @export
+  grey40k = "#a7a9ac"
+#' @export
+  grey50k = "#939598"
+#' @export
+  grey60k = "#808s85"
+#' @export
+  grey70k = "#6d6e71"
+#' @export
+  grey80k = "#58595b"
+#' @export
+  grey90k = "414042"
+
+# Inspiration from media outets
+#' @export
+  wapo_lpurple = "#C7ABC7"
+#' @export
+  wapo_lorange = "#F4AB67"
+#' @export
+  wapo_pushpop = "#FEC693"
+#' @export
+  wapo_lgreen = "#B5D1D0"
+#' @export
+  wapo_lorange2 = "#EFCAB4"
+#' @export
+  wapo_dorange = "#DC7C33"
+#' @export
+  wapo_lblue = "#B4D5E5"
+#' @export
+  wapo_dblue = "#3579A8"
+#' @export
+  wapo_lmauve = "#D8B3D4"
+#' @export
+  wapo_dmauve = "#B68AB8"
+
+# USAID specific
+#' @export
+USAID_blue = "#002F6C"
+
+#' @export
+USAID_red = "#BA0C2F"
+
+#' @export
+USAID_medblue = "#0067B9"
+
+#' @export
+USAID_ltblue = "#A7C6ED"
+
+#' @export
+USAID_dkred = "#651D32"
+
+#' @export
+USAID_black = "#212721"
+
+#' @export
+USAID_lgrey = "#CFCDC9"
+
+#' @export
+USAID_mgrey = "#8C8985"
+
+#' @export
+USAID_dgrey = "#6C6463"
 

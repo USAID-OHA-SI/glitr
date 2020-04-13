@@ -1,8 +1,6 @@
 
 #' @title SI style plot with only y-axis gridlines
 #' @description Incorporates the default si_style graph and modifies it to include on y-axis gridlines. Useful for when you are highlighting a horizontal comparison.
-#' @param
-#' @importFrom ggplot2 %+replace% aes geom_point theme
 #' @export
 #' @examples
 #' library(ggplot2)
@@ -21,7 +19,6 @@
 #' @title  SI style plot with only x-axis gridlines
 #' @description Incorporates the default si_style graph and modifies it to include on x-axis gridlines. Useful for when you are highlighting a vertical comparison, such as rotated bar graphs
 #'
-#' @param
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme
 #' @examples
@@ -41,7 +38,6 @@
 #' @title SI style plot with blank canvass
 #' @description Incorporates the default si_style graph and strips all gridlines. Useful for when you want to focus attention on a few parts of a plot -- such as a bar graph with fewer than four categories.
 #'
-#' @param
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme
 #' @examples
@@ -63,7 +59,6 @@
 #' @title SI style plot with x-axis line drawn
 #' @description May be used in place of si_style_blank if you would like to anchor the x-axis.
 #'
-#' @param
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
@@ -83,7 +78,6 @@
 #' @title SI style plot with y-axis line drawn
 #' @description May be used in place of si_style_blank if you would like to anchor the y-axis.
 #'
-#' @param
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
@@ -102,7 +96,6 @@
 
 #' @title Create Standard SI Plots showing only both x and y axis lines
 #'
-#' @param
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
