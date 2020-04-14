@@ -24,7 +24,8 @@ library(usethis)
       group_by(operatingunit, primepartner, indicator, fiscal_year) %>%
       summarise_if(is.double, sum, na.rm = TRUE) %>%
       reshape_msd(clean = TRUE) %>%
-      rename(value = val)
+      rename(value = val) %>%
+     ungroup()
 
     write_csv(cascade, "data-raw/cascade.csv")
     use_data(cascade, overwrite = TRUE)
@@ -38,7 +39,8 @@ library(usethis)
     group_by(operatingunit, primepartner, indicator, modality, fiscal_year) %>%
     summarise_if(is.double, sum, na.rm = TRUE) %>%
     reshape_msd(clean = TRUE) %>%
-    rename(value = val)
+    rename(value = val) %>%
+    ungroup()
 
   write_csv(hts, "data-raw/hts.csv")
   use_data(hts, overwrite = TRUE)
