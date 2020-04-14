@@ -32,7 +32,7 @@
 #'}
 
   # Show only x axis lines
-    si_style_xgrid<- function() {
+    si_style_xgrid <- function() {
       si_style() %+replace%
         theme(
           panel.grid.major.y = ggplot2::element_blank()
