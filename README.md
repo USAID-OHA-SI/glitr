@@ -1,3 +1,6 @@
+  <!-- badges: start -->
+  [![Travis build status](https://travis-ci.org/USAID-OHA-SI/glitr.svg?branch=master)](https://travis-ci.org/USAID-OHA-SI/glitr)
+  <!-- badges: end -->
 
 # glitr
 SI graphics package to adorn your ggplots

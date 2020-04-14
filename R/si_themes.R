@@ -3,10 +3,12 @@
 #' @description Incorporates the default si_style graph and modifies it to include on y-axis gridlines. Useful for when you are highlighting a horizontal comparison.
 #' @export
 #' @examples
+#' \dontrun{
+#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_ygrid()
-#'
+#'}
 
   # Show only y axis lines
     si_style_ygrid <- function() {
@@ -22,10 +24,12 @@
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme
 #' @examples
+#' \dontrun{
+#' ibrary(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_xgrid()
-#'
+#'}
 
   # Show only x axis lines
     si_style_xgrid<- function() {
@@ -41,10 +45,12 @@
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme
 #' @examples
+#' \dontrun{
+#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_nolines()
-#'
+#'}
 
   # Show no axis lines
     si_style_nolines <- function() {
@@ -62,10 +68,12 @@
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
+#' \dontrun{
+#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_xline()
-#'
+#'}
 
     si_style_xline <- function() {
       si_style_nolines() %+replace%
@@ -81,10 +89,12 @@
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
+#' \dontrun{
+#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_yline()
-#'
+#'}
 
     si_style_yline <- function() {
       si_style_nolines() %+replace%
@@ -99,10 +109,12 @@
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
+#' \dontrun{
+#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_xyline()
-#'
+#'}
 #'
   si_style_xyline <- function() {
       si_style() %+replace%

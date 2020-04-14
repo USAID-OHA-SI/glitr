@@ -11,9 +11,12 @@
 #' @importFrom ggplot2 %+replace% aes geom_point theme_minimal theme
 #'
 #' @examples
+#' \dontrun{
+#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style()
+#'   }
 
 si_style <- function(font_title = "Source Sans Pro",
                      font_subtitle = "Source Sans Pro",

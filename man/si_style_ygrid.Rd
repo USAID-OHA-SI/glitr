@@ -10,8 +10,10 @@ si_style_ygrid()
 Incorporates the default si_style graph and modifies it to include on y-axis gridlines. Useful for when you are highlighting a horizontal comparison.
 }
 \examples{
+\dontrun{
+library(extrafont)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_ygrid()
-
+}
 }

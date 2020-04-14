@@ -20,11 +20,12 @@ A collection of color palettes gathered by the si team
 }
 \examples{
 # List the palettes available
+\dontrun{
 names(si_palettes)
 
 # Show palettes interpolated
 si_pal("carto_div_earth", n = 10) \%>\% scales::show_col(labels = FALSE)
 si_pal("carto_div_earth", n = 100) \%>\% scales::show_col(labels = FALSE)
-
+}
 }
 \keyword{datasets}

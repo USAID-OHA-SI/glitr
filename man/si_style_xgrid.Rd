@@ -10,8 +10,10 @@ si_style_xgrid()
 Incorporates the default si_style graph and modifies it to include on x-axis gridlines. Useful for when you are highlighting a vertical comparison, such as rotated bar graphs
 }
 \examples{
+\dontrun{
+ibrary(extrafont)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_xgrid()
-
+}
 }

@@ -10,8 +10,10 @@ si_style_nolines()
 Incorporates the default si_style graph and strips all gridlines. Useful for when you want to focus attention on a few parts of a plot -- such as a bar graph with fewer than four categories.
 }
 \examples{
+\dontrun{
+library(extrafont)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_nolines()
-
+}
 }

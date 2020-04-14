@@ -24,7 +24,10 @@ si_style(
 This function adorns your ggplot to convert it into a SI style plot. The default font is Source Sans Pro
 }
 \examples{
+\dontrun{
+library(extrafont)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style()
+  }
 }

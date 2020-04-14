@@ -7,12 +7,13 @@
 #' @export
 #' @examples
 #' # List the palettes available
+#' \dontrun{
 #' names(si_palettes)
 #'
 #' # Show palettes interpolated
 #' si_pal("carto_div_earth", n = 10) %>% scales::show_col(labels = FALSE)
 #' si_pal("carto_div_earth", n = 100) %>% scales::show_col(labels = FALSE)
-#'
+#'}
 
 si_palettes <- list(
 
@@ -79,14 +80,16 @@ si_palettes <- list(
 #' @param alpha controls opacity of color
 #' @export
 #' @import grDevices
+#' @importFrom scales show_col
 #'
 #' @examples
+#' \dontrun{
 #' #
-#' #View different interpolations of palettes
-#' #si_pal("outbreak_or")(5)
-#' #si_pal("outbreak_or")(10)
-#' #si_pal("outbreak_or")(100)
-#'
+#' View different interpolations of palettes
+#' si_pal("outbreak_or", n = 5) %>%  show_col()
+#' si_pal("outbreak_or", n = 10) %>% show_col()
+#' si_pal("outbreak_or", n = 100) %>% show_col(labels = FALSE)
+#'}
 
 
   si_pal <- function(pal_name, alpha = 1, reverse = FALSE, n = 5) {

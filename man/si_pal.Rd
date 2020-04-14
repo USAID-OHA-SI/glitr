@@ -22,10 +22,11 @@ Gnerate a palette by linear interpolation.
 Chooses palette to use with ggplot2
 }
 \examples{
+\dontrun{
 #
-#View different interpolations of palettes
-#si_pal("outbreak_or")(5)
-#si_pal("outbreak_or")(10)
-#si_pal("outbreak_or")(100)
-
+View different interpolations of palettes
+si_pal("outbreak_or", n = 5) \%>\%  show_col()
+si_pal("outbreak_or", n = 10) \%>\% show_col()
+si_pal("outbreak_or", n = 100) \%>\% show_col(labels = FALSE)
+}
 }
