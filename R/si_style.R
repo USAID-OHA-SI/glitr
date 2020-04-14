@@ -20,7 +20,6 @@ si_style <- function(font_title = "Source Sans Pro",
                      font_plot = "Source Sans Pro",
                      font_caption = "Source Sans Pro") {
 
-  # Depends on plot_setup being run first
 
   # build off of theme_minimal settings
   ggplot2::theme_minimal() %+replace%

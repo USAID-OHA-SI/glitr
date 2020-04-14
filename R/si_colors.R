@@ -81,10 +81,11 @@ si_palettes <- list(
 #' @import grDevices
 #'
 #' @examples
-#' # View different interpolations of palettes
-#' si_pal("outbreak_or")(5)
-#' si_pal("outbreak_or")(10)
-#' si_pal("outbreak_or")(100)
+#' #
+#' #View different interpolations of palettes
+#' #si_pal("outbreak_or")(5)
+#' #si_pal("outbreak_or")(10)
+#' #si_pal("outbreak_or")(100)
 #'
 
 
