@@ -4,9 +4,7 @@
 \name{color_gridline}
 \alias{color_gridline}
 \title{Gridline color default}
-\format{
-An object of class \code{character} of length 1.
-}
+\format{An object of class \code{character} of length 1.}
 \usage{
 color_gridline
 }
