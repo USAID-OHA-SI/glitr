@@ -48,9 +48,9 @@ si_style <- function(font_title = "Source Sans Pro",
     plot.caption = ggplot2::element_text(
       family = font_caption,
       size = 9,
-      color = color_title,
-      margin = ggplot2::margin(t = half_line)
-    ),
+      color = color_caption,
+      margin = ggplot2::margin(t = half_line),
+      hjust = 1, vjust = 1),
     plot.margin = ggplot2::margin(half_line, half_line, half_line, half_line),
 
 
