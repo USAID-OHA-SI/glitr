@@ -4,9 +4,7 @@
 \name{color_title}
 \alias{color_title}
 \title{Title color default}
-\format{
-An object of class \code{character} of length 1.
-}
+\format{An object of class \code{character} of length 1.}
 \usage{
 color_title
 }

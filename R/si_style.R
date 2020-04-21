@@ -24,6 +24,8 @@ si_style <- function(font_title = "Source Sans Pro",
                      font_caption = "Source Sans Pro") {
 
 
+  half_line <- 5.5
+
   # build off of theme_minimal settings
   ggplot2::theme_minimal() %+replace%
 
@@ -33,6 +35,7 @@ si_style <- function(font_title = "Source Sans Pro",
       size = 14,
       face = "bold",
       color = color_title,
+      margin = ggplot2::margin(b = half_line),
       hjust = 0),
 
     #This sets the font, size, type and colour of text for the chart's subtitle, as well as setting a margin between the title and the subtitle
@@ -40,12 +43,15 @@ si_style <- function(font_title = "Source Sans Pro",
       family = font_subtitle,
       size = 12,
       color = color_title,
+      margin = ggplot2::margin(b = half_line),
       hjust = 0),
     plot.caption = ggplot2::element_text(
       family = font_caption,
       size = 9,
-      color = color_title
-    ),
+      color = color_caption,
+      margin = ggplot2::margin(t = half_line),
+      hjust = 1, vjust = 1),
+    plot.margin = ggplot2::margin(half_line, half_line, half_line, half_line),
 
 
     #Legend format
