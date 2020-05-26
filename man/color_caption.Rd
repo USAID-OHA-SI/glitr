@@ -4,7 +4,9 @@
 \name{color_caption}
 \alias{color_caption}
 \title{Color caption default}
-\format{An object of class \code{character} of length 1.}
+\format{
+An object of class \code{character} of length 1.
+}
 \usage{
 color_caption
 }

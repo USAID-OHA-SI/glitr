@@ -111,107 +111,176 @@ si_palettes <- list(
 
 # TODO: AC or BK, if you know a better way of doing this, let me know.
 #' @export
+#' @description blue color
+#' @title si inspired blue
   si_blue = "#2166AC"
+
 #' @export
+#' @description light blue
+#' @title si inspired  light blue
   si_lblue = "#67A9CF"
+
 #' @export
+#' @description dark grey
+#' @title si inspired dark grey
   si_dgrey = "#595959"
+
 #' @export
-  si_grey10K = "#bfbfbf"
-#' @export
+#' @description light orange
+#' @title si inspired light orange
   si_lorange = "#f5b9a1"
+
 #' @export
+#' @description normal orange
+#' @title si inspired orange
   si_orange = "#EF8A62"
+
 #' @export
+#' @description dark shade of orange
+#' @title si inspired dark orange
   si_dorange = "#D95709"
+
 #' @export
+#' @description wapo inspired purple
+#' @title wapo inspired light purple
   wapo_lpurple = "#C7ABC7"
+
 #' @export
+#' @description wapo inspired light orange
+#' @title wapo inspired light orange
   wapo_lorange = "#F4AB67"
+
 #' @export
+#' @description wapo inspired push-popish orange
+#' @title wapo inspired pushpop orange
   wapo_pushpop = "#FEC693"
+
 #' @export
+#' @description wapo inspired light green
+#' @title wapo inspired light green
   wapo_lgreen = "#B5D1D0"
+
 #' @export
+#' @description wapo inspired light orange
+#' @title wapo inspired light orange 2
   wapo_lorange2 = "#EFCAB4"
+
 #' @export
+#' @description wapo inspired dark orange
+#' @title wapo inspired dark orange
   wapo_dorange = "#DC7C33"
+
 #' @export
+#' @description wapo inspired light blue
+#' @title wapo inspired light blue
   wapo_lblue = "#B4D5E5"
+
 #' @export
+#' @description wapo inspired dark blue
+#' @title wapo inspired dark blue
   wapo_dblue = "#3579A8"
+
 #' @export
+#' @description wapo inspired light mauve
+#' @title wapo inspired light mauve
   wapo_lmauve = "#D8B3D4"
+
 #' @export
+#' @description wapo inspired dark mauve
+#' @title wapo inspired dark mauve
   wapo_dmauve = "#B68AB8"
 
-  #grays
+ # Inspired by Laura Hughes who was inspired by Adobe
+   #grays
 #' @export
+#' @description lightest grey
+#' @title 10k grey
   grey10k = "#E6E7E8"
-#' @export
-  grey20k = "#d1d3d4"
-#' @export
-  grey30k = "#BCBEC0"
-#' @export
-  grey40k = "#a7a9ac"
-#' @export
-  grey50k = "#939598"
-#' @export
-  grey60k = "#808s85"
-#' @export
-  grey70k = "#6d6e71"
-#' @export
-  grey80k = "#58595b"
-#' @export
-  grey90k = "414042"
 
-# Inspiration from media outets
 #' @export
-  wapo_lpurple = "#C7ABC7"
+#' @description 20k grey
+#' @title 20k grey
+  grey20k = "#d1d3d4"
+
 #' @export
-  wapo_lorange = "#F4AB67"
+#' @description 30k grey
+#' @title 30k grey
+  grey30k = "#BCBEC0"
+
 #' @export
-  wapo_pushpop = "#FEC693"
+#' @description 40k grey
+#' @title 40k grey
+  grey40k = "#a7a9ac"
+
 #' @export
-  wapo_lgreen = "#B5D1D0"
+#' @description 50k grey
+#' @title 50k grey
+  grey50k = "#939598"
+
 #' @export
-  wapo_lorange2 = "#EFCAB4"
+#' @description 60k grey
+#' @title 60k grey
+  grey60k = "#808080"
+
 #' @export
-  wapo_dorange = "#DC7C33"
+#' @description 70k grey
+#' @title 70k grey
+  grey70k = "#6d6e71"
+
 #' @export
-  wapo_lblue = "#B4D5E5"
+#' @description 80k grey
+#' @title 80k grey
+  grey80k = "#58595b"
+
 #' @export
-  wapo_dblue = "#3579A8"
-#' @export
-  wapo_lmauve = "#D8B3D4"
-#' @export
-  wapo_dmauve = "#B68AB8"
+#' @description 90k grey
+#' @title 90k grey
+  grey90k = "#414042"
+
 
 # USAID specific
 #' @export
+#' @description usaid blue
+#' @title usaid blue
 USAID_blue = "#002F6C"
 
 #' @export
+#' @description usaid red
+#' @title usaid red
 USAID_red = "#BA0C2F"
 
 #' @export
+#' @description usaid medium blue
+#' @title usaid medium blue
 USAID_medblue = "#0067B9"
 
 #' @export
+#' @description usaid light blue
+#' @title usaid light blue
 USAID_ltblue = "#A7C6ED"
 
 #' @export
+#' @description usaid dark red
+#' @title usaid dark red
 USAID_dkred = "#651D32"
 
 #' @export
+#' @description usaid black
+#' @title usaid black
 USAID_black = "#212721"
 
 #' @export
+#' @description usaid light grey
+#' @title usaid light grey
 USAID_lgrey = "#CFCDC9"
 
 #' @export
+#' @description usaid medium grey
+#' @title usaid medium grey
 USAID_mgrey = "#8C8985"
 
 #' @export
+#' @description usaid dark grey
+#' @title usaid dark grey
 USAID_dgrey = "#6C6463"
 

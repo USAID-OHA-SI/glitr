@@ -88,6 +88,7 @@ si_style <- function(font_title = "Source Sans Pro",
     #Blank background
     panel.background = ggplot2::element_blank(),
     panel.border = ggplot2::element_blank(),
+    panel.spacing = unit(2, "lines"),
 
     #Strip background (This sets the panel background for facet-wrapped plots to white)
     strip.background = ggplot2::element_blank(),
@@ -95,6 +96,6 @@ si_style <- function(font_title = "Source Sans Pro",
       family = font_title,
       size  = 11,
       hjust = 0,
-      color = color_plot_text),
+      color = color_plot_text)
   )
 }
