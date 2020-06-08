@@ -92,11 +92,12 @@ library(extrafont)
   df_bar <- df_bar %>%
     bind_cols(agency, .)
 
+  # Not sure of the geom_errorbar call and what it is doing
   df_bar %>%
     ggplot(aes(fct_reorder(primepartner, targets_q1, sum), cumulative)) +
-    geom_col(aes(y = targets_q1), fill = "gray90") +
-    geom_col() +
-    geom_errorbar(aes(ymin = targets_q1, ymax = targets_q1), color = "gray90", size = .9) +
+    geom_col(aes(y = targets_q1), fill = grey10k) +
+    geom_col(fill = "#AED5D9") +
+    geom_errorbar(aes(ymin = targets_q1, ymax = targets_q1), color = "#62ACB5", size = 1) +
     scale_y_continuous(label = comma, expand = c(.005, .005)) +
     facet_wrap(~ fct_rev(fundingagency), scales = "free_y") +
     coord_flip() +
@@ -115,9 +116,11 @@ library(extrafont)
     mutate(achievement = cumulative / targets)
 
   df_lollipop %>%
-    ggplot(aes(fct_reorder(primepartner, achievement, sum), achievement)) +
-    geom_segment(aes(x = primepartner, y = 0, xend = primepartner, yend = achievement), size = .9) +
+    mutate(partner_order = tidytext::reorder_within(primepartner, achievement, agency)) %>%
+    ggplot(aes(partner_order, achievement)) +
+    geom_segment(aes(x = partner_order, y = 0, xend = partner_order, yend = achievement), size = .9) +
     geom_point(size = 3) +
+    tidytext::scale_x_reordered() +
     scale_y_continuous(label = percent, expand = c(.005, .005)) +
     facet_wrap(~ fct_rev(fundingagency), scales = "free_y") +
     coord_flip() +
