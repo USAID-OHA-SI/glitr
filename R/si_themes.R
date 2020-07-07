@@ -127,4 +127,27 @@
 
 
 
+#' @title Create ggplot with no axes or no grid lines
+#'
+#' @export
+#' @importFrom ggplot2 %+replace% aes geom_point theme element_line
+#' @examples
+#' \dontrun{
+#' library(extrafont)
+#' library(ggplot2)
+#' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
+#'   geom_point() + si_style_void()
+#'}
+
+  si_style_void <- function() {
+    si_style() %+replace%
+      theme(
+        axis.line = ggplot2::element_blank(),
+        panel.grid.major.y = ggplot2::element_blank(),
+        panel.grid.major.x = ggplot2::element_blank(),
+        axis.text.x = ggplot2::element_blank(),
+        axis.text.y = ggplot2::element_blank(),
+        axis.title = ggplot2::element_blank()
+      )
+  }
 
