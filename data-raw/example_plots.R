@@ -2,6 +2,7 @@
 ## AUTHOR:  AChafetz | USAID
 ## PURPOSE: example plots
 ## DATE:    2020-06-01
+## UPDATED: 2020-07-27
 
 
 # DEPENDENCIES ------------------------------------------------------------
@@ -10,8 +11,28 @@ library(tidyverse)
 library(scales)
 library(glitr)
 library(extrafont)
+library(fs)
 
 
+
+# OUTPUT FOLDER -----------------------------------------------------------
+
+dir_create("out")
+
+# CHART ELEMENTS ----------------------------------------------------------
+
+
+tibble(x = c("FY50Q1", "FY50Q2", "FY50Q3", "FY50Q4"),
+       y = seq(0, 1200, length.out = 4)) %>%
+  ggplot(aes(x, y)) +
+  scale_y_continuous(label = comma) +
+  labs(x = NULL, y = NULL,
+       title = "TITLE",
+       subtitle = "caption/description",
+       caption = "data source") +
+  si_style()
+
+ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
 
 # SCATTER PLOT ------------------------------------------------------------
 
@@ -50,8 +71,9 @@ library(extrafont)
     top_n(5, wt = pt_end) %>%
     pull(primepartner)
 
-  df_line <- filter(df_line, primepartner %in% largest_partners)
-
+  df_line <- df_line %>%
+    filter(primepartner %in% largest_partners,
+           primepartner != "Eridanus")
 
 
   df_line %>%
@@ -61,6 +83,7 @@ library(extrafont)
     geom_point(aes(y = pt_start, fill = partner_focal), shape = 21, size = 4, na.rm = TRUE) +
     geom_text(aes(y = pt_end, label = primepartner), na.rm = TRUE,
               family = "Source Sans Pro", nudge_x = .4) +
+    scale_y_continuous(labels = comma) +
     labs(x = NULL, y = NULL,
          title = "TITLE",
          subtitle = "caption/description",
