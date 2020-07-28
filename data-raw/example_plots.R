@@ -2,7 +2,7 @@
 ## AUTHOR:  AChafetz | USAID
 ## PURPOSE: example plots
 ## DATE:    2020-06-01
-## UPDATED: 2020-07-27
+## UPDATED: 2020-07-28
 
 
 # DEPENDENCIES ------------------------------------------------------------
@@ -54,7 +54,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
     si_style() +
     theme(legend.position = "none")
 
-
+  ggsave("out/scatter.png", dpi = 320, height = 5.625, width = 10)
 
 # LINE CHART --------------------------------------------------------------
 
@@ -92,6 +92,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
     si_style() +
     theme(legend.position = "none")
 
+  ggsave("out/line.png", dpi = 320, height = 5.625, width = 10)
 
 # BAR CHART ---------------------------------------------------------------
 
@@ -130,7 +131,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
          caption = "data source") +
     si_style_xgrid()
 
-
+  ggsave("out/bar.png", dpi = 320, height = 5.625, width = 10)
 
 # LOLLIPOP CHART ----------------------------------------------------------
 
@@ -141,8 +142,11 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
   df_lollipop %>%
     mutate(partner_order = tidytext::reorder_within(primepartner, achievement, agency)) %>%
     ggplot(aes(partner_order, achievement)) +
+    geom_blank(aes(y = achievement * 1.08)) +
     geom_segment(aes(x = partner_order, y = 0, xend = partner_order, yend = achievement), size = .9) +
     geom_point(size = 3) +
+    geom_text(aes(label = percent(achievement, 1)), hjust = -.25,
+              family = "Source Sans Pro", color = "gray30",size = 3.5) +
     tidytext::scale_x_reordered() +
     scale_y_continuous(label = percent, expand = c(.005, .005)) +
     facet_wrap(~ fct_rev(fundingagency), scales = "free_y") +
@@ -151,8 +155,11 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
          title = "TITLE",
          subtitle = "caption/description",
          caption = "data source") +
-    si_style_xgrid()
+    si_style_xgrid() +
+    theme(axis.text.x = element_blank())
 
+
+  ggsave("out/lollipop.png", dpi = 320, height = 5.625, width = 10)
 
 # HEAT MAP TABLE ----------------------------------------------------------
 
@@ -168,7 +175,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
 
   df_heatmap %>%
     ggplot(aes(fct_reorder(primepartner, HTS_TST, sum, .desc = TRUE), fct_reorder(modality, positivity), fill = positivity)) +
-    geom_tile(color = "white") +
+    geom_tile(color = "white", size = .9) +
     geom_text(aes(label = percent(positivity, 1)),
               family = "Source Sans Pro", color = "white", size = 3) +
     scale_x_discrete(position = "top") +
@@ -177,5 +184,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
          subtitle = "caption/description",
          caption = "data source") +
     si_style_nolines() +
-    theme(legend.position = "none")
+    theme(legend.position = "none",
+          axis.text.x = element_text(size = 8))
 
+  ggsave("out/heatmap.png", dpi = 320, height = 5.625, width = 10)
