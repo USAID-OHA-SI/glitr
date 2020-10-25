@@ -17,7 +17,7 @@ library(fs)
 
 # OUTPUT FOLDER -----------------------------------------------------------
 
-dir_create("out")
+dir_create("Images")
 
 # CHART ELEMENTS ----------------------------------------------------------
 
@@ -32,7 +32,7 @@ tibble(x = c("FY50Q1", "FY50Q2", "FY50Q3", "FY50Q4"),
        caption = "data source") +
   si_style()
 
-ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
+ggsave("Images/chart_elements.png", dpi = 320, height = 5.625, width = 10)
 
 # SCATTER PLOT ------------------------------------------------------------
 
@@ -54,7 +54,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
     si_style() +
     theme(legend.position = "none")
 
-  ggsave("out/scatter.png", dpi = 320, height = 5.625, width = 10)
+  ggsave("Images/scatter.png", dpi = 320, height = 5.625, width = 10)
 
 # LINE CHART --------------------------------------------------------------
 
@@ -92,7 +92,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
     si_style() +
     theme(legend.position = "none")
 
-  ggsave("out/line.png", dpi = 320, height = 5.625, width = 10)
+  ggsave("Images/line.png", dpi = 320, height = 5.625, width = 10)
 
 # BAR CHART ---------------------------------------------------------------
 
@@ -131,7 +131,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
          caption = "data source") +
     si_style_xgrid()
 
-  ggsave("out/bar.png", dpi = 320, height = 5.625, width = 10)
+  ggsave("Images/bar.png", dpi = 320, height = 5.625, width = 10)
 
 # LOLLIPOP CHART ----------------------------------------------------------
 
@@ -159,7 +159,7 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
     theme(axis.text.x = element_blank())
 
 
-  ggsave("out/lollipop.png", dpi = 320, height = 5.625, width = 10)
+  ggsave("Images/lollipop.png", dpi = 320, height = 5.625, width = 10)
 
 # HEAT MAP TABLE ----------------------------------------------------------
 
@@ -187,4 +187,4 @@ ggsave("out/chart_elements.png", dpi = 320, height = 5.625, width = 10)
     theme(legend.position = "none",
           axis.text.x = element_text(size = 8))
 
-  ggsave("out/heatmap.png", dpi = 320, height = 5.625, width = 10)
+  ggsave("Images/heatmap.png", dpi = 320, height = 5.625, width = 10)
