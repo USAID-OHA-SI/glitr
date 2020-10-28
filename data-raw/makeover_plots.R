@@ -2,7 +2,7 @@
 ## AUTHOR:  AChafetz | USAID
 ## PURPOSE: makeover plots for style guide
 ## DATE:    2020-10-25
-## UPDATED:
+## UPDATED: 2020-10-28
 
 
 # DEPENDENCIES ------------------------------------------------------------
@@ -84,7 +84,8 @@ library(RColorBrewer)
   #   excel_style()
   #
   #
-  # ggsave("Images/line_default.png", dpi = 300, height = 4.71, width = 7.31)
+  # # ggsave("Images/line_default.png", dpi = 300, height = 4.71, width = 7.31)
+  # ggsave("Images/line_default.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
 
 
   df_line %>%
@@ -109,7 +110,8 @@ library(RColorBrewer)
     theme(plot.title = element_markdown(),
           legend.position = "none")
 
-  ggsave("Images/line_remake.png", dpi = 300, height = 4.71, width = 7.31)
+  # ggsave("Images/line_remake.png", dpi = 300, height = 4.71, width = 7.31)
+  ggsave("Images/line_remake.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
 
 
 
@@ -147,7 +149,8 @@ library(RColorBrewer)
       theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
 
-    ggsave("Images/bar_default.png", dpi = 300, height = 4.71, width = 7.31)
+    # ggsave("Images/bar_default.png", dpi = 300, height = 4.71, width = 7.31)
+    ggsave("Images/bar_default.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
 
 
 
@@ -189,7 +192,8 @@ library(RColorBrewer)
             axis.text.x = element_blank())
 
 
-    ggsave("Images/bar_makeover.png", dpi = 300, height = 4.71, width = 7.31)
+    # ggsave("Images/bar_makeover.png", dpi = 300, height = 4.71, width = 7.31)
+    ggsave("Images/bar_makeover.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
 
 
 
@@ -222,7 +226,8 @@ library(RColorBrewer)
       # excel_style() +
       labs(title = "TX_NEW in Saturn Partners")
 
-    ggsave("Images/stacked_default.png", dpi = 300, height = 4.71, width = 7.31)
+    # ggsave("Images/stacked_default.png", dpi = 300, height = 4.71, width = 7.31)
+    ggsave("Images/stacked_default.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
 
 
     df_stack %>%
@@ -241,4 +246,5 @@ library(RColorBrewer)
       theme(legend.position = "none",
             plot.title = element_markdown())
 
-    ggsave("Images/stacked_makeover.png", dpi = 300, height = 4.71, width = 7.31)
+    # ggsave("Images/stacked_makeover.png", dpi = 300, height = 4.71, width = 7.31)
+    ggsave("Images/stacked_makeover.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
