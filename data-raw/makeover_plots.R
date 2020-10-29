@@ -16,6 +16,7 @@ library(fs)
 library(glue)
 library(ggtext)
 library(RColorBrewer)
+library(svglite)
 
 # GLOBAL VARIABLES --------------------------------------------------------
 
@@ -85,7 +86,7 @@ library(RColorBrewer)
   #
   #
   # # ggsave("Images/line_default.png", dpi = 300, height = 4.71, width = 7.31)
-  # ggsave("Images/line_default.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
+  # ggsave("Images/line_default.svg", dpi = 300, height = 4.71, width = 7.31)
 
 
   df_line %>%
@@ -111,7 +112,7 @@ library(RColorBrewer)
           legend.position = "none")
 
   # ggsave("Images/line_remake.png", dpi = 300, height = 4.71, width = 7.31)
-  ggsave("Images/line_remake.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
+  ggsave("Images/line_remake.svg", dpi = 300, height = 4.71, width = 7.31)
 
 
 
@@ -150,7 +151,7 @@ library(RColorBrewer)
 
 
     # ggsave("Images/bar_default.png", dpi = 300, height = 4.71, width = 7.31)
-    ggsave("Images/bar_default.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
+    ggsave("Images/bar_default.svg", dpi = 300, height = 4.71, width = 7.31)
 
 
 
@@ -193,7 +194,7 @@ library(RColorBrewer)
 
 
     # ggsave("Images/bar_makeover.png", dpi = 300, height = 4.71, width = 7.31)
-    ggsave("Images/bar_makeover.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
+    ggsave("Images/bar_makeover.svg", dpi = 300, height = 4.71, width = 7.31)
 
 
 
@@ -227,7 +228,7 @@ library(RColorBrewer)
       labs(title = "TX_NEW in Saturn Partners")
 
     # ggsave("Images/stacked_default.png", dpi = 300, height = 4.71, width = 7.31)
-    ggsave("Images/stacked_default.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
+    ggsave("Images/stacked_default.svg", dpi = 300, height = 4.71, width = 7.31)
 
 
     df_stack %>%
@@ -247,4 +248,4 @@ library(RColorBrewer)
             plot.title = element_markdown())
 
     # ggsave("Images/stacked_makeover.png", dpi = 300, height = 4.71, width = 7.31)
-    ggsave("Images/stacked_makeover.pdf", dpi = 300, height = 4.71, width = 7.31, device = cairo_pdf)
+    ggsave("Images/stacked_makeover.svg", dpi = 300, height = 4.71, width = 7.31)
