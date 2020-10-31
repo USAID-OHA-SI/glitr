@@ -96,6 +96,7 @@ si_style <- function(font_title = "Source Sans Pro",
       family = font_title,
       size  = 11,
       hjust = 0,
-      color = color_plot_text)
+      color = color_plot_text,
+      margin = margin(0.8 * half_line, 0.8 * half_line, 0.8 * half_line, 0.8 * half_line))
   )
 }
