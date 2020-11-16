@@ -32,7 +32,7 @@ tibble(x = c("FY50Q1", "FY50Q2", "FY50Q3", "FY50Q4"),
        caption = "data source") +
   si_style()
 
-ggsave("Images/chart_elements.png", dpi = 320, height = 5.625, width = 10)
+ggsave("Images/chart_elements.pdf", dpi = 320, height = 5.625, width = 10, device = "pdf")
 
 # SCATTER PLOT ------------------------------------------------------------
 

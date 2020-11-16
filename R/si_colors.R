@@ -17,6 +17,7 @@
 
 si_palettes <- list(
 
+    siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f"),
     contrast = c("#E4F4EA", "#364352", "#768491", "#C5CAD0", "#BE311F"),
     compliment = c("#6F472E", "#6F827C", "#E4F4EA", "#E4F4EA", "#E4F4EA"),
 
@@ -283,4 +284,42 @@ USAID_mgrey = "#8C8985"
 #' @description usaid dark grey
 #' @title usaid dark grey
 USAID_dgrey = "#6C6463"
+
+
+
+# SIEI Recommended  colors
+#' @export
+#' @description siei denim
+#' @title denim
+denim = "#2057a7"
+
+#' @export
+#' @description siei old rose
+#' @title old rose
+old_rose = "#c43d4d"
+
+#' @export
+#' @description siei moody blue
+#' @title moody blue
+moody_blue = "#8980cb"
+
+#' @export
+#' @description siei burnt sienna
+#' @title burnt sienna
+burnt_sienna = "#e07653"
+
+#' @export
+#' @description siei scooter
+#' @title scotter (grenish blue)
+scooter = "#1e87a5"
+
+#' @export
+#' @description siei golden sand
+#' @title golden sand
+golden_sand = "#f2bc40"
+
+#' @export
+#' @description siei genoa
+#' @title genoa (green)
+genoa = "#287c6f"
 

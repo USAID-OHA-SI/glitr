@@ -97,6 +97,6 @@ si_style <- function(font_title = "Source Sans Pro",
       size  = 11,
       hjust = 0,
       color = color_plot_text,
-      margin = margin(0.8 * half_line, 0.8 * half_line, 0.8 * half_line, 0.8 * half_line))
+      margin = ggplot2::margin(0.8 * half_line, 0.8 * half_line, 0.8 * half_line, 0.8 * half_line))
   )
 }
