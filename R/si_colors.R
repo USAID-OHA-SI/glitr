@@ -128,6 +128,30 @@ si_palettes <- list(
   }
 
 
+#' Chooses palette to use with ggplot2
+#'
+#' @description Show palette with n values
+#' @title Palette interpolation preview
+#' @param pal_name name of the palette
+#' @param n number of interpolation points
+#' @export
+#' @import grDevices
+#' @importFrom scales show_col
+#'
+#' @examples
+#' \dontrun{
+#' #
+#' View different interpolations of palettes
+#' si_preview(si_palettes$royal_flow)
+#' si_preview(si_palettes$old_rose_flow, n = 20)
+#'}
+
+
+  si_preview <- function(pal_name, n = 10) {
+    scales::show_col(colorRampPalette({{pal_name}})(n), labels = FALSE, borders = NA)
+  }
+
+
 #' @export
 #' @description blue color
 #' @title si inspired blue
