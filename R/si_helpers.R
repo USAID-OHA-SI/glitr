@@ -119,7 +119,6 @@
   scale_color_si <- scale_color_si
 
 
-#' #' si_rampr fill scale for ggplot2
 #' @rdname scale_fill_si
 #'
 #' @param palette Choose from 'si_palettes' list
