@@ -137,6 +137,7 @@
 #' @examples
 #' \dontrun{
 #' library(ggplot2)
+#' library(tibble)
 #' library(sf)
 #' library(rnaturalearth)
 #' library(glitr)
