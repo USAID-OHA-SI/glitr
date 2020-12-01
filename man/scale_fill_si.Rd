@@ -2,7 +2,7 @@
 % Please edit documentation in R/si_helpers.R
 \name{scale_fill_si}
 \alias{scale_fill_si}
-\title{#' si_rampr fill scale for ggplot2}
+\title{SIEI colors for the scale_fill_ option}
 \usage{
 scale_fill_si(
   palette = "genoas",
@@ -32,11 +32,12 @@ scale_fill_si(
 \item{...}{additional arguments to pass to scale_fill_gradientn}
 }
 \description{
-#' si_rampr fill scale for ggplot2
+SIEI colors available through scale_fill_si
 }
 \examples{
 \dontrun{
 library(ggplot2)
+library(tibble)
 library(sf)
 library(rnaturalearth)
 library(glitr)

@@ -21,7 +21,7 @@ si_palettes <- list(
     siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f"),
 
     # SIEI recommended palettes build from base colors
-    royals = c("#000c4f", "#002065", "#00347d", "#074895", "#265bab", "#436ec1", "#5b82d8", "#7396ee", "#8badfe", "#a5c5ff", "#bfddff"),
+    denims = c("#000c4f", "#002065", "#00347d", "#074895", "#265bab", "#436ec1", "#5b82d8", "#7396ee", "#8badfe", "#a5c5ff", "#bfddff"),
 
     old_roses = c("#480000", "#630005", "#7f001c", "#990d2e", "#af273d", "#c33c4c", "#d8505d", "#ee636e", "#fc7a83", "#ff989f", "#ffb5ba"),
 

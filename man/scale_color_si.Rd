@@ -32,7 +32,7 @@ scale_color_si(
 \item{...}{additional arguments to pass to scale_color_gradientn}
 }
 \description{
-siei color scales for ggplot2
+SIEI colors available through scale_color_si
 }
 \examples{
 \dontrun{
@@ -48,9 +48,6 @@ scale_color_si("genoas")
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = price)) +
 scale_color_si("genoas", discrete = FALSE)
-
-
-
 }
 
 }

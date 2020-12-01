@@ -69,7 +69,7 @@
 
 #' siei color scales for ggplot2
 #' @rdname scale_color_si
-#'
+#' @description SIEI colors available through scale_color_si
 #' @param palette Choose from 'si_palettes' list
 #' @param reverse if true, reverses the order of palette
 #' @param alpha controls opacity of colors
@@ -77,7 +77,6 @@
 #' @param ... additional arguments to pass to scale_color_gradientn
 #'
 #' @inheritParams viridis::scale_color_viridis
-#' @inheritParams si_pal
 #'
 #' @importFrom ggplot2 scale_color_manual discrete_scale scale_color_gradientn
 #' @export
@@ -96,10 +95,6 @@
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = price)) +
 #' scale_color_si("genoas", discrete = FALSE)
-#'
-#'
-
-#'
 #'}
 #'
 
@@ -120,7 +115,8 @@
 
 
 #' @rdname scale_fill_si
-#'
+#' @title SIEI colors for the scale_fill_ option
+#' @description SIEI colors available through scale_fill_si
 #' @param palette Choose from 'si_palettes' list
 #' @param discrete if TRUE, reverses order of palette
 #' @param alpha sets transparency of colors
