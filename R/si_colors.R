@@ -20,6 +20,15 @@ si_palettes <- list(
     # SIEI recommended colors
     siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f"),
 
+    # SIEI recommended categorical palettes
+    denim = c("#2057a7","#1e87a5", "#e07653", "#f2bc40", "#8980cb"),
+    old_rose = c("#c43d4d", "#1e87a5", "#8980cb", "#e07653", "#287c6f"),
+    moody_blue = c("#8980cb", "#287c6f", "#2057a7", "#e07653", "#1e87a5"),
+    burnt_sienna = c("#e07653", "#8980cb", "#f2bc40", "#c43d4d", "#1e87a5"),
+    scooter = c("#1e87a5", "#c43d4d", "#8980cb", "#f2bc40", "#287c6f"),
+    golden_sand = c("#f2bc40", "#2057a7", "#287c6f", "#e07653", "#8980cb"),
+    genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
+
     # SIEI recommended palettes build from base colors
     denims = c("#000c4f", "#002065", "#00347d", "#074895", "#265bab", "#436ec1", "#5b82d8", "#7396ee", "#8badfe", "#a5c5ff", "#bfddff"),
 
