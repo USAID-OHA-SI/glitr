@@ -38,6 +38,11 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
       n <- length(pal)
     }
 
+    if(pal_name %in% names(si_palettes)[1:8] && n > length(pal)){
+      usethis::ui_warn("You selected a discrete palette. {usethis::ui_code('si_rampr()')} will only return n = {length(pal)} colors")
+      n <- length(pal)
+    }
+
     if (reverse) {
       pal <- rev(si_palettes[[pal_name]])
     }
