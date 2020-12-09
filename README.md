@@ -2,6 +2,8 @@
   [![Travis build status](https://travis-ci.org/USAID-OHA-SI/glitr.svg?branch=master)](https://travis-ci.org/USAID-OHA-SI/glitr)
   <!-- badges: end -->
 
+<img src='man/figures/logo.png' align="right" height="120" />
+
 # glitr
 SI graphics package to adorn your ggplots
 
