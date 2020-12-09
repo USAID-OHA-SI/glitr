@@ -24,13 +24,15 @@
 #'}
 
 
-  si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
+si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 
     pal <- si_palettes[[pal_name]]
 
     if (is.null(pal))
       stop("\nPlease enter a valid SIEI palette. Select from:\n",
-           paste0(names(si_palettes)[1:8], "\n"))
+           paste0(c(names(si_palettes[1]),
+                    paste0(names(si_palettes)[2:8], "(s)")
+           ), "\n"))
 
     if(missing(n)) {
       n <- length(pal)
