@@ -7,12 +7,13 @@
 #' @param pal_name name of the palette
 #' @param n number of interpolation points
 #' @param reverse if true, reverses order
-#' @param alpha controls opacity of color
+#' @param alpha sets transparency of each color
 #'
 #' @export
 #'
 #' @importFrom grDevices colorRampPalette
 #' @importFrom scales show_col
+#' @importFrom scales alpha
 #'
 #' @examples
 #' \dontrun{
@@ -47,7 +48,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
       pal <- rev(si_palettes[[pal_name]])
     }
 
-    pal <- colorRampPalette(pal, alpha)(n)
+    pal <- colorRampPalette(pal)(n)
+    pal <- scales::alpha(pal, alpha = alpha)
 
     return(pal)
   }
@@ -57,9 +59,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @description Helper function to incorporate siei colors into scale fills
 #'
 #' @param palette Choose from 'si_palettes' list
-#' @param alpha controls opacity of color
 #' @param reverse if true, reverses the order of palette
-#'
+#' @param alpha sets transparency of each color
 #' @importFrom grDevices colorRampPalette
 #'
 
@@ -79,8 +80,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @description SIEI colors available through scale_color_si
 #' @param palette Choose from 'si_palettes' list
 #' @param reverse if true, reverses the order of palette
-#' @param alpha controls opacity of colors
 #' @param discrete whether to use a discrete color palette
+#' @param alpha sets transparency of each color
 #' @param ... additional arguments to pass to scale_color_gradientn
 #'
 #' @inheritParams viridis::scale_color_viridis
@@ -105,7 +106,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'}
 #'
 
-  scale_color_si <- function(palette = "genoas", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
+  scale_color_si <- function(palette = "genoas", alpha = 1, discrete = TRUE, reverse = FALSE, ...) {
 
     if (discrete) {
       discrete_scale("colour", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
@@ -125,8 +126,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @title SIEI colors for the scale_fill_ option
 #' @description SIEI colors available through scale_fill_si
 #' @param palette Choose from 'si_palettes' list
-#' @param discrete if TRUE, reverses order of palette
-#' @param alpha sets transparency of colors
+#' @param alpha sets transparency of each color
+#' @param reverse if TRUE, reverses order of palette
 #' @param discrete whether to use a discrete colour palette
 #' @param ... additional arguments to pass to scale_fill_gradientn
 #'
@@ -156,7 +157,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'  si_style_void()
 #'  }
 
-  scale_fill_si <- function(palette = "genoas", discrete = TRUE, alpha = 1, reverse = FALSE, ...) {
+  scale_fill_si <- function(palette = "genoas", alpha = 1, discrete = TRUE, reverse = FALSE, ...) {
 
     if (discrete) {
       discrete_scale("fill", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)

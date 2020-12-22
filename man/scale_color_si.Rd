@@ -6,16 +6,16 @@
 \usage{
 scale_color_si(
   palette = "genoas",
-  discrete = TRUE,
   alpha = 1,
+  discrete = TRUE,
   reverse = FALSE,
   ...
 )
 
 scale_color_si(
   palette = "genoas",
-  discrete = TRUE,
   alpha = 1,
+  discrete = TRUE,
   reverse = FALSE,
   ...
 )
@@ -23,9 +23,9 @@ scale_color_si(
 \arguments{
 \item{palette}{Choose from 'si_palettes' list}
 
-\item{discrete}{whether to use a discrete color palette}
+\item{alpha}{sets transparency of each color}
 
-\item{alpha}{controls opacity of colors}
+\item{discrete}{whether to use a discrete color palette}
 
 \item{reverse}{if true, reverses the order of palette}
 

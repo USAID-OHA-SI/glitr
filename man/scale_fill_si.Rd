@@ -6,16 +6,16 @@
 \usage{
 scale_fill_si(
   palette = "genoas",
-  discrete = TRUE,
   alpha = 1,
+  discrete = TRUE,
   reverse = FALSE,
   ...
 )
 
 scale_fill_si(
   palette = "genoas",
-  discrete = TRUE,
   alpha = 1,
+  discrete = TRUE,
   reverse = FALSE,
   ...
 )
@@ -23,11 +23,11 @@ scale_fill_si(
 \arguments{
 \item{palette}{Choose from 'si_palettes' list}
 
+\item{alpha}{sets transparency of each color}
+
 \item{discrete}{whether to use a discrete colour palette}
 
-\item{alpha}{sets transparency of colors}
-
-\item{reverse}{if true, reverses the order of palette}
+\item{reverse}{if TRUE, reverses order of palette}
 
 \item{...}{additional arguments to pass to scale_fill_gradientn}
 }

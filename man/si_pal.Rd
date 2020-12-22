@@ -9,7 +9,7 @@ si_pal(palette = "siei", alpha = 1, reverse = FALSE)
 \arguments{
 \item{palette}{Choose from 'si_palettes' list}
 
-\item{alpha}{controls opacity of color}
+\item{alpha}{sets transparency of each color}
 
 \item{reverse}{if true, reverses the order of palette}
 }

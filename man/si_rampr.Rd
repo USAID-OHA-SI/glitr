@@ -11,7 +11,7 @@ si_rampr(pal_name = "siei", n, alpha = 1, reverse = FALSE)
 
 \item{n}{number of interpolation points}
 
-\item{alpha}{controls opacity of color}
+\item{alpha}{sets transparency of each color}
 
 \item{reverse}{if true, reverses order}
 }
