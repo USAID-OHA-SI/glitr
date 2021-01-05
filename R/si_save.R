@@ -2,7 +2,7 @@
 #'
 #' @description Wrapper around ggplot2::ggsave with SI standards
 #'
-#' @param filename File name to create on disk, png
+#' @param filename File name to create on disk, png unless otherwise specified
 #' @param plot Plot to save, defaults to last plot displayed.
 #' @param path Path of the directory to save plot to: path and filename are combined to create the fully qualified file name. Defaults to the working directory.
 #' @param scale Multiplicative scaling factor.
@@ -21,10 +21,10 @@
 #'   geom_point() + si_style()
 #' #default save
 #' si_save("out/sepal.png")
-#' #can be saved without png
+#' #defaults to png if not specified (.pdf, .svg, .jpeg)
 #' si_save("out/sepal")
 #' #change the width
-#' si_save("out/sepal.png", width = 5)  }
+#' si_save("out/sepal.jpeg", width = 5)  }
 
 si_save <- function(filename,
                      plot = last_plot(),
@@ -34,7 +34,7 @@ si_save <- function(filename,
                      height = 5.625,
                      dpi = 320){
 
-  if(!grepl("png$", filename))
+  if(!grepl("png$|pdf$|svg$|jpeg$|tiff$", filename))
      filename <- paste0(filename, ".png")
 
   ggplot2::ggsave(filename, plot, path = path,
