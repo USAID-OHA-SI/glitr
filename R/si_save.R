@@ -10,6 +10,8 @@
 #' @param height plot height in inches, default = 5.625
 #' @param dpi plot resolution
 #'
+#' @importFrom ggplot2 ggsave
+#'
 #' @return exports a png
 #' @export
 #'
