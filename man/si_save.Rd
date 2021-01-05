@@ -15,7 +15,7 @@ si_save(
 )
 }
 \arguments{
-\item{filename}{File name to create on disk, png}
+\item{filename}{File name to create on disk, png unless otherwise specified}
 
 \item{plot}{Plot to save, defaults to last plot displayed.}
 
@@ -43,8 +43,8 @@ ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style()
 #default save
 si_save("out/sepal.png")
-#can be saved without png
+#defaults to png if not specified (.pdf, .svg, .jpeg)
 si_save("out/sepal")
 #change the width
-si_save("out/sepal.png", width = 5)  }
+si_save("out/sepal.jpeg", width = 5)  }
 }
