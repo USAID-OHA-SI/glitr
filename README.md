@@ -1,5 +1,5 @@
   <!-- badges: start -->
-  [![Travis build status](https://travis-ci.org/USAID-OHA-SI/glitr.svg?branch=master)](https://travis-ci.org/USAID-OHA-SI/glitr)
+  [![R-CMD-check](https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/glitr/actions)
   <!-- badges: end -->
 
 <img src='man/figures/logo.png' align="right" height="120" />
