@@ -18,7 +18,7 @@
 si_palettes <- list(
 
     # SIEI recommended colors
-    siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f"),
+    siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f", "#808080"),
 
     # SIEI recommended categorical palettes
     denim = c("#2057a7","#1e87a5", "#e07653", "#f2bc40", "#8980cb"),
@@ -44,7 +44,7 @@ si_palettes <- list(
 
     genoas = c("#a0f2e2", "#89dacb", "#72c3b4", "#5cac9e", "#459688", "#2d8073", "#0d6c5f", "#01564b", "#004137", "#002e24", "#001b0e"),
 
-    siei_greys = c("#E6E7E8", "#d1d3d4", "#BCBEC0", "#a7a9ac", "#939598", "#808080", "#6d6e71", "#58595b", "#414042"),
+    trolley_greys = c("#E6E7E8", "#d1d3d4", "#BCBEC0", "#a7a9ac", "#939598", "#808080", "#6d6e71", "#58595b", "#414042"),
 
     usaid_colors = c("#002a6c", "#ba0c2f", "#212721", "#0067b9", "#a7c6ed", "#6c6463", "#8C8985", "#cfcdc9"),
 
@@ -306,3 +306,7 @@ si_palettes <- list(
 #' @title genoa (green)
   genoa = "#287c6f"
 
+#' @export
+#' @description siei trolley grey
+#' @title trolley grey
+  trolley_grey = "#808080"
