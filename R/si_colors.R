@@ -30,19 +30,19 @@ si_palettes <- list(
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
 
     # SIEI recommended palettes build from base colors
-    denims = c("#000c4f", "#002065", "#00347d", "#074895", "#265bab", "#436ec1", "#5b82d8", "#7396ee", "#8badfe", "#a5c5ff", "#bfddff"),
+    denims = c("#bfddff", "#a5c5ff", "#8badfe", "#7396ee", "#5b82d8", "#436ec1", "#265bab", "#074895", "#00347d", "#002065", "#000c4f"),
 
-    old_roses = c("#480000", "#630005", "#7f001c", "#990d2e", "#af273d", "#c33c4c", "#d8505d", "#ee636e", "#fc7a83", "#ff989f", "#ffb5ba"),
+    old_roses = c("#ffb5ba", "#ff989f", "#fc7a83", "#ee636e", "#d8505d", "#c33c4c", "#af273d", "#990d2e", "#7f001c", "#630005", "#480000"),
 
-    moody_blues = c("#000a45", "#171d5a", "#2f2e6f", "#454185", "#5a559b", "#7069b2", "#877ec9", "#9e94e0", "#b5aaf9", "#cfc3ff", "#e9ddff"),
+    moody_blues = c("#e9ddff", "#cfc3ff", "#b5aaf9", "#9e94e0", "#877ec9", "#7069b2", "#5a559b", "#454185", "#2f2e6f", "#171d5a", "#000a45"),
 
-    burnt_siennas = c("#4c0000", "#670901", "#7c2105", "#923417", "#a84728", "#bf5a39", "#d56d4b", "#ec815d", "#fd9873", "#ffb790", "#ffd4ac"),
+    burnt_siennas = c("#ffd4ac", "#ffb790", "#fd9873", "#ec815d", "#d56d4b", "#bf5a39", "#a84728", "#923417", "#7c2105", "#670901", "#4c0000"),
 
-    scooters = c("#00223a", "#00354f", "#004964", "#005e7a", "#047491", "#228aa8", "#419fbe", "#5bb5d5", "#74ccec", "#8ce4fe", "#a6fdff"),
+    scooters = c("#a6fdff", "#8ce4fe", "#74ccec", "#5bb5d5", "#419fbe", "#228aa8", "#047491", "#005e7a", "#004964", "#00354f", "#00223a"),
 
-    golden_sands = c("#3b1500", "#4b2900", "#5e3c00", "#734f00", "#8a6200", "#a27600", "#ba8b00", "#d2a01e", "#eab538", "#fcce52", "#ffec6f"),
+    golden_sands = c("#ffec6f", "#fcce52", "#eab538", "#d2a01e", "#ba8b00", "#a27600", "#8a6200", "#734f00", "#5e3c00", "#4b2900", "#3b1500"),
 
-    genoas = c("#001b0e", "#002e24", "#004137", "#01564b", "#0d6c5f", "#2d8073", "#459688", "#5cac9e", "#72c3b4", "#89dacb", "#a0f2e2"),
+    genoas = c("#a0f2e2", "#89dacb", "#72c3b4", "#5cac9e", "#459688", "#2d8073", "#0d6c5f", "#01564b", "#004137", "#002e24", "#001b0e"),
 
     siei_greys = c("#E6E7E8", "#d1d3d4", "#BCBEC0", "#a7a9ac", "#939598", "#808080", "#6d6e71", "#58595b", "#414042"),
 
@@ -85,7 +85,6 @@ si_palettes <- list(
     carto_sunset = c("#fcde9c", "#faa476", "#f0746e", "#e34f6f", "#dc3977", "#b9257a", "#7c1d6f"),
     carto_teal = c("#d1eeea", "#a8dbd9", "#85c4c9", "#68abb8", "#4f90a6", "#3b738f", "#2a5674"),
     carto_dmint = c("#d2fbd4", "#a5dbc2", "#7bbcb0", "#559c9e", "#3a7c89", "#235d72", "#123f5a"),
-    carto_sunset = c("#fcde9c", "#faa476", "#f0746e", "#e34f6f", "#dc3977", "#b9257a", "#7c1d6f"),
     carto_mint = c("#e4f1e1", "#b4d9cc", "#89c0b6", "#63a6a0", "#448c8a", "#287274", "#0d585f"),
     carto_brown = c("#ede5cf", "#e0c2a2", "#d39c83", "#c1766f", "#a65461", "#813753", "#541f3f"),
 
