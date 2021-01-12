@@ -3,7 +3,7 @@
 \docType{data}
 \name{old_rose}
 \alias{old_rose}
-\title{old rose}
+\title{old rose light}
 \format{
 An object of class \code{character} of length 1.
 }

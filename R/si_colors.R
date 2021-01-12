@@ -30,6 +30,8 @@ si_palettes <- list(
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
 
     # SIEI recommended palettes build from base colors
+    siei_pairs <- c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
+
     denims = c("#bfddff", "#a5c5ff", "#8badfe", "#7396ee", "#5b82d8", "#436ec1", "#265bab", "#074895", "#00347d", "#002065", "#000c4f"),
 
     old_roses = c("#ffb5ba", "#ff989f", "#fc7a83", "#ee636e", "#d8505d", "#c33c4c", "#af273d", "#990d2e", "#7f001c", "#630005", "#480000"),
@@ -277,9 +279,19 @@ si_palettes <- list(
   denim = "#2057a7"
 
 #' @export
+#' @description siei denim light
+#' @title denim light
+  denim_light = "#bfddff"
+
+#' @export
 #' @description siei old rose
-#' @title old rose
+#' @title old rose light
   old_rose = "#c43d4d"
+
+#' @export
+#' @description siei old rose light
+#' @title old rose light
+  old_rose_light = "#ff939a"
 
 #' @export
 #' @description siei moody blue
@@ -287,14 +299,30 @@ si_palettes <- list(
   moody_blue = "#8980cb"
 
 #' @export
+#' @description siei moody blue light
+#' @title moody blue light
+  moody_blue_light = "#dfd3ff"
+
+#' @export
 #' @description siei burnt sienna
 #' @title burnt sienna
   burnt_sienna = "#e07653"
 
 #' @export
+#' @description siei burnt sienna light
+#' @title burnt sienna light
+  burnt_sienna_light = "#ffcaa2"
+
+
+#' @export
 #' @description siei scooter
-#' @title scotter (grenish blue)
+#' @title scooter
   scooter = "#1e87a5"
+
+#' @export
+#' @description siei scooter light
+#' @title scooter light
+  scooter_light = "#83dbfb"
 
 #' @export
 #' @description siei golden sand
@@ -302,11 +330,25 @@ si_palettes <- list(
   golden_sand = "#f2bc40"
 
 #' @export
+#' @description siei golden sand light
+#' @title golden sand light
+  golden_sand_light = "#ffdda2"
+#' @export
 #' @description siei genoa
 #' @title genoa (green)
   genoa = "#287c6f"
 
 #' @export
+#' @description siei genoa light
+#' @title genoa light (green)
+  genoa_light = "#7ecfc0"
+
+#' @export
 #' @description siei trolley grey
 #' @title trolley grey
   trolley_grey = "#808080"
+
+#' @export
+#' @description siei trolley grey
+#' @title trolley grey
+  trolley_grey_light = "#e6e6e6"
