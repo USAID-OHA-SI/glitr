@@ -10,7 +10,7 @@
 
 Helps create and export ggplot2 charts in the style used by 
     the GH OHA SI team. Includes multiple styles and themes to tweak plots
-    to user needs.
+    to user needs. Sample testing data also available.
 }
 \seealso{
 Useful links:

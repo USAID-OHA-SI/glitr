@@ -264,7 +264,7 @@ si_palettes <- list(
 #' @export
 #' @description usaid med grey
 #' @title usaid med grey
-  usaid_medgrey = "#6c6463"
+  usaid_medgrey = "#8C8985"
 
 #' @export
 #' @description usaid light grey
