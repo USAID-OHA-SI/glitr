@@ -27,6 +27,7 @@ If you do not have the devtools package installed, you will have to run the `ins
 
 ## EXAMPLE WITH BASE SI STYLE
   library(ggplot2)
+  library(extrafont)
   ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) + geom_point() + si_style()
   
 ## LIST TYPES OF STYLES INCLUDED WITH PACKAGE
