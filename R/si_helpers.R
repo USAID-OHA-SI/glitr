@@ -32,14 +32,14 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
     if (is.null(pal))
       stop("\nPlease enter a valid SIEI palette. Select from:\n",
            paste0(c(names(si_palettes[1]),
-                    paste0(names(si_palettes)[2:8], "(s)")
+                    paste0(names(si_palettes)[2:9], "(s)")
            ), "\n"))
 
     if(missing(n)) {
       n <- length(pal)
     }
 
-    if(pal_name %in% names(si_palettes)[1:8] && n > length(pal)){
+    if(pal_name %in% names(si_palettes)[1:9] && n > length(pal)){
       usethis::ui_warn("You selected a discrete palette. {usethis::ui_code('si_rampr()')} will only return n = {length(pal)} colors")
       n <- length(pal)
     }
@@ -108,11 +108,11 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 
   scale_color_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
 
-    if (discrete) {
-      scale_color_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
+    if (discrete == TRUE) {
+      discrete_scale("colour", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
     }
     else {
-      discrete_scale("colour", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
+      scale_color_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
     }
   }
 
@@ -153,17 +153,17 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'  add_column(runif = runif(nrow(.))) %>%
 #'  ggplot() +
 #'  geom_sf(aes(fill = runif), color = "white", size = 0.25) +
-#'  scale_fill_si("old_roses"E, reverse = T) +
+#'  scale_fill_si("old_roses", reverse = T) +
 #'  si_style_void()
 #'  }
 
   scale_fill_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
 
-    if (discrete) {
-      scale_fill_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
+    if (discrete == TRUE) {
+      discrete_scale("fill", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
     }
     else {
-      discrete_scale("fill", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
+      scale_fill_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
     }
   }
 

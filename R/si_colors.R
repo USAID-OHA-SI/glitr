@@ -28,6 +28,7 @@ si_palettes <- list(
     scooter = c("#1e87a5", "#c43d4d", "#8980cb", "#f2bc40", "#287c6f"),
     golden_sand = c("#f2bc40", "#2057a7", "#287c6f", "#e07653", "#8980cb"),
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
+    siei_achv <- c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
 
     # SIEI recommended palettes build from base colors
     siei_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
@@ -49,8 +50,6 @@ si_palettes <- list(
     trolley_greys = c("#E6E7E8", "#D5D7D8", "#C4C6C8", "#B3B5B8", "#A3A4A8", "#939598", "#838484", "#747576", "#646568", "#535356", "#414042"),
 
     usaid_colors = c("#002a6c", "#ba0c2f", "#212721", "#0067b9", "#a7c6ed", "#6c6463", "#8C8985", "#cfcdc9"),
-
-    usaid_achv <- c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
 
     contrast = c("#E4F4EA", "#364352", "#768491", "#C5CAD0", "#BE311F"),
     compliment = c("#6F472E", "#6F827C", "#E4F4EA", "#E4F4EA", "#E4F4EA"),
