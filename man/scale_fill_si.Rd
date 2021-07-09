@@ -50,7 +50,7 @@ rnaturalearth::ne_countries(continent = "africa", returnclass = "sf") \%>\%
  add_column(runif = runif(nrow(.))) \%>\%
  ggplot() +
  geom_sf(aes(fill = runif), color = "white", size = 0.25) +
- scale_fill_si("old_roses"E, reverse = T) +
+ scale_fill_si("old_roses", reverse = T) +
  si_style_void()
  }
 }
