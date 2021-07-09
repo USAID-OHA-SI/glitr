@@ -12,7 +12,7 @@
 #'
 #' @importFrom ggplot2 ggsave
 #'
-#' @return exports a png
+#' @return exports a file with SI dimensions
 #' @export
 #'
 #' @examples
@@ -34,12 +34,15 @@ si_save <- function(filename,
                      scale = 1,
                      width = 10,
                      height = 5.625,
-                     dpi = 320){
+                     dpi = 320, ...){
 
   if(!grepl("png$|pdf$|svg$|jpeg$|tiff$", filename))
      filename <- paste0(filename, ".png")
 
   ggplot2::ggsave(filename, plot, path = path,
                   scale = scale, width = width, height = height,
-                  dpi = dpi)
+                  dpi = dpi, ...)
 }
+
+
+
