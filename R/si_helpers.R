@@ -98,21 +98,21 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' Apply palettes to discrete or continuous colors
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = cut)) +
-#' scale_color_si("genoas")
+#' scale_color_si("genoas", discrete = T)
 #'
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = price)) +
-#' scale_color_si("genoas", discrete = FALSE)
+#' scale_color_si("genoas")
 #'}
 #'
 
-  scale_color_si <- function(palette = "genoas", alpha = 1, discrete = TRUE, reverse = FALSE, ...) {
+  scale_color_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
 
     if (discrete) {
-      discrete_scale("colour", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
+      scale_color_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
     }
     else {
-      scale_color_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
+      discrete_scale("colour", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
     }
   }
 
@@ -147,23 +147,23 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'
 #' ggplot(diamonds) +
 #'   geom_bar(aes(x = cut, fill = clarity)) +
-#'   scale_fill_si("genoas")
+#'   scale_fill_si("genoas", discrete = T)
 #'
 #' rnaturalearth::ne_countries(continent = "africa", returnclass = "sf") %>%
 #'  add_column(runif = runif(nrow(.))) %>%
 #'  ggplot() +
 #'  geom_sf(aes(fill = runif), color = "white", size = 0.25) +
-#'  scale_fill_si("old_roses", discrete = FALSE, reverse = T) +
+#'  scale_fill_si("old_roses"E, reverse = T) +
 #'  si_style_void()
 #'  }
 
-  scale_fill_si <- function(palette = "genoas", alpha = 1, discrete = TRUE, reverse = FALSE, ...) {
+  scale_fill_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
 
     if (discrete) {
-      discrete_scale("fill", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
+      scale_fill_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
     }
     else {
-      scale_fill_gradientn(colours = si_rampr(palette, 256, alpha = alpha, reverse = reverse), ...)
+      discrete_scale("fill", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
     }
   }
 
