@@ -3,7 +3,8 @@ Title: Adorned SI style plots
 Version: 0.0.0.9000
 Authors@R: c(
     person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
-    person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut"))
+    person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
+    person("Baboyma", "Kagniniwa", ,"bkagniniwa@usaid.gov", c("aut"))
     )
 Description: Helps create and export ggplot2 charts in the style used by 
     the GH OHA SI team. Includes multiple styles and themes to tweak plots
@@ -13,7 +14,7 @@ URL: https://github.com/USAID-OHA-SI/glitr
 BugReports: https://github.com/USAID-OHA-SI/glitr/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.0
+RoxygenNote: 7.1.1
 Depends: 
     R (>= 3.1.2)
 Imports: 

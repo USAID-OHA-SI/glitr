@@ -123,8 +123,54 @@
           panel.grid.major.y = ggplot2::element_blank(),
           panel.grid.major.x = ggplot2::element_blank(),
         )
-    }
+  }
 
+
+#' @title Create Standard SI Map
+#'
+#' @export
+#' @importFrom ggplot2 %+replace%
+#' @examples
+#' \dontrun{
+#'
+#' library(extrafont)
+#' library(tidyverse)
+#' library(glitr)
+#' library(gisr)
+#' library(sf)
+#'
+#' sfdf <- gisr::get_admin1("Nigeria") %>%
+#'  select(name) %>%
+#'  mutate(value = runif(nrow(.), 0, 1))
+#'
+#' ggplot() +
+#'    geom_sf(data = sfdf,
+#'            aes(fill = value),
+#'            color = grey10k,
+#'            size = .1) +
+#'    scale_fill_si(palette = "genoas",
+#'                  discrete = FALSE,
+#'                  limits = c(0, 1),
+#'                  labels = scales::percent) +
+#'    labs(title = "NIGERIA - % OF PLHIV BY STATE",
+#'         subtitle = "States from XYZ Region are the most hit by HIV/AIDS",
+#'         caption = base::paste0("Produced by OHA/SIEI/SI, ON ", base::Sys.Date())) +
+#'   si_style_map()
+#'}
+#'
+  si_style_map <- function() {
+    ggplot2::theme_void() %+replace%
+    si_style() %+replace%
+      theme(
+        line = ggplot2::element_blank(),
+        rect = ggplot2::element_blank(),
+        axis.text.x = ggplot2::element_blank(),
+        axis.text.y = ggplot2::element_blank(),
+        legend.direction = "horizontal",
+        legend.title = ggplot2::element_blank(),
+        legend.key.width = ggplot2::unit(1.75, "cm")
+      )
+  }
 
 
 
