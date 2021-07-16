@@ -17,6 +17,39 @@
 
 si_palettes <- list(
 
+    # SIEI recommended colors
+    siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f", "#808080"),
+
+    # SIEI recommended categorical palettes
+    denim = c("#2057a7","#1e87a5", "#e07653", "#f2bc40", "#8980cb"),
+    old_rose = c("#c43d4d", "#1e87a5", "#8980cb", "#e07653", "#287c6f"),
+    moody_blue = c("#8980cb", "#287c6f", "#2057a7", "#e07653", "#1e87a5"),
+    burnt_sienna = c("#e07653", "#8980cb", "#f2bc40", "#c43d4d", "#1e87a5"),
+    scooter = c("#1e87a5", "#c43d4d", "#8980cb", "#f2bc40", "#287c6f"),
+    golden_sand = c("#f2bc40", "#2057a7", "#287c6f", "#e07653", "#8980cb"),
+    genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
+
+    # SIEI recommended palettes build from base colors
+    siei_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
+
+    denims = c("#bfddff", "#a5c5ff", "#8badfe", "#7396ee", "#5b82d8", "#436ec1", "#265bab", "#074895", "#00347d", "#002065", "#000c4f"),
+
+    old_roses = c("#ffb5ba", "#ff989f", "#fc7a83", "#ee636e", "#d8505d", "#c33c4c", "#af273d", "#990d2e", "#7f001c", "#630005", "#480000"),
+
+    moody_blues = c("#e9ddff", "#cfc3ff", "#b5aaf9", "#9e94e0", "#877ec9", "#7069b2", "#5a559b", "#454185", "#2f2e6f", "#171d5a", "#000a45"),
+
+    burnt_siennas = c("#ffd4ac", "#ffb790", "#fd9873", "#ec815d", "#d56d4b", "#bf5a39", "#a84728", "#923417", "#7c2105", "#670901", "#4c0000"),
+
+    scooters = c("#a6fdff", "#8ce4fe", "#74ccec", "#5bb5d5", "#419fbe", "#228aa8", "#047491", "#005e7a", "#004964", "#00354f", "#00223a"),
+
+    golden_sands = c("#ffec6f", "#fcce52", "#eab538", "#d2a01e", "#ba8b00", "#a27600", "#8a6200", "#734f00", "#5e3c00", "#4b2900", "#3b1500"),
+
+    genoas = c("#a0f2e2", "#89dacb", "#72c3b4", "#5cac9e", "#459688", "#2d8073", "#0d6c5f", "#01564b", "#004137", "#002e24", "#001b0e"),
+
+    trolley_greys = c("#E6E7E8", "#D5D7D8", "#C4C6C8", "#B3B5B8", "#A3A4A8", "#939598", "#838484", "#747576", "#646568", "#535356", "#414042"),
+
+    usaid_colors = c("#002a6c", "#ba0c2f", "#212721", "#0067b9", "#a7c6ed", "#6c6463", "#8C8985", "#cfcdc9"),
+
     contrast = c("#E4F4EA", "#364352", "#768491", "#C5CAD0", "#BE311F"),
     compliment = c("#6F472E", "#6F827C", "#E4F4EA", "#E4F4EA", "#E4F4EA"),
 
@@ -54,7 +87,6 @@ si_palettes <- list(
     carto_sunset = c("#fcde9c", "#faa476", "#f0746e", "#e34f6f", "#dc3977", "#b9257a", "#7c1d6f"),
     carto_teal = c("#d1eeea", "#a8dbd9", "#85c4c9", "#68abb8", "#4f90a6", "#3b738f", "#2a5674"),
     carto_dmint = c("#d2fbd4", "#a5dbc2", "#7bbcb0", "#559c9e", "#3a7c89", "#235d72", "#123f5a"),
-    carto_sunset = c("#fcde9c", "#faa476", "#f0746e", "#e34f6f", "#dc3977", "#b9257a", "#7c1d6f"),
     carto_mint = c("#e4f1e1", "#b4d9cc", "#89c0b6", "#63a6a0", "#448c8a", "#287274", "#0d585f"),
     carto_brown = c("#ede5cf", "#e0c2a2", "#d39c83", "#c1766f", "#a65461", "#813753", "#541f3f"),
 
@@ -70,46 +102,7 @@ si_palettes <- list(
 )
 
 
-#' Chooses palette to use with ggplot2
-#'
-#' @description Gnerate a palette by linear interpolation.
-#' @title Palette interpolation
-#' @param pal_name name of the palette
-#' @param n number of interpolation points
-#' @param reverse if true, reverses order
-#' @param alpha controls opacity of color
-#' @export
-#' @import grDevices
-#' @importFrom scales show_col
-#'
-#' @examples
-#' \dontrun{
-#' #
-#' View different interpolations of palettes
-#' si_pal("outbreak_or", n = 5) %>%  show_col()
-#' si_pal("outbreak_or", n = 10) %>% show_col()
-#' si_pal("outbreak_or", n = 100) %>% show_col(labels = FALSE)
-#'}
 
-
-  si_pal <- function(pal_name, alpha = 1, reverse = FALSE, n = 5) {
-
-    pal <- si_palettes[[pal_name]]
-
-      if (reverse) {
-      pal <- rev(si_palettes[[pal_name]])
-    }
-
-    pal <- colorRampPalette(pal, alpha)(n)
-
-
-     return(pal)
-  }
-
-
-
-
-# TODO: AC or BK, if you know a better way of doing this, let me know.
 #' @export
 #' @description blue color
 #' @title si inspired blue
@@ -190,8 +183,8 @@ si_palettes <- list(
 #' @title wapo inspired dark mauve
   wapo_dmauve = "#B68AB8"
 
- # Inspired by Laura Hughes who was inspired by Adobe
-   #grays
+
+# Inspired by Laura Hughes who was inspired by Adobe #grays
 #' @export
 #' @description lightest grey
 #' @title 10k grey
@@ -237,50 +230,125 @@ si_palettes <- list(
 #' @title 90k grey
   grey90k = "#414042"
 
-
 # USAID specific
 #' @export
 #' @description usaid blue
 #' @title usaid blue
-USAID_blue = "#002F6C"
+  usaid_blue = "#002a6c"
 
 #' @export
 #' @description usaid red
 #' @title usaid red
-USAID_red = "#BA0C2F"
-
-#' @export
-#' @description usaid medium blue
-#' @title usaid medium blue
-USAID_medblue = "#0067B9"
-
-#' @export
-#' @description usaid light blue
-#' @title usaid light blue
-USAID_ltblue = "#A7C6ED"
-
-#' @export
-#' @description usaid dark red
-#' @title usaid dark red
-USAID_dkred = "#651D32"
+  usaid_red = "#ba0c2f"
 
 #' @export
 #' @description usaid black
 #' @title usaid black
-USAID_black = "#212721"
+  usaid_black = "#212721"
 
 #' @export
-#' @description usaid light grey
-#' @title usaid light grey
-USAID_lgrey = "#CFCDC9"
+#' @description usaid medblue
+#' @title usaid mdeblue
+  usaid_medblue = "#0067b9"
 
 #' @export
-#' @description usaid medium grey
-#' @title usaid medium grey
-USAID_mgrey = "#8C8985"
+#' @description usaid light blue
+#' @title usaid light blue
+  usaid_lightblue = "#a7c6ed"
 
 #' @export
 #' @description usaid dark grey
 #' @title usaid dark grey
-USAID_dgrey = "#6C6463"
+  usaid_darkgrey = "#6c6463"
 
+#' @export
+#' @description usaid med grey
+#' @title usaid med grey
+  usaid_medgrey = "#8C8985"
+
+#' @export
+#' @description usaid light grey
+#' @title usaid light grey
+  usaid_lightgrey = "#cfcdc9"
+
+
+# SIEI Recommended  colors
+#' @export
+#' @description siei denim
+#' @title denim
+  denim = "#2057a7"
+
+#' @export
+#' @description siei denim light
+#' @title denim light
+  denim_light = "#bfddff"
+
+#' @export
+#' @description siei old rose
+#' @title old rose light
+  old_rose = "#c43d4d"
+
+#' @export
+#' @description siei old rose light
+#' @title old rose light
+  old_rose_light = "#ff939a"
+
+#' @export
+#' @description siei moody blue
+#' @title moody blue
+  moody_blue = "#8980cb"
+
+#' @export
+#' @description siei moody blue light
+#' @title moody blue light
+  moody_blue_light = "#dfd3ff"
+
+#' @export
+#' @description siei burnt sienna
+#' @title burnt sienna
+  burnt_sienna = "#e07653"
+
+#' @export
+#' @description siei burnt sienna light
+#' @title burnt sienna light
+  burnt_sienna_light = "#ffcaa2"
+
+
+#' @export
+#' @description siei scooter
+#' @title scooter
+  scooter = "#1e87a5"
+
+#' @export
+#' @description siei scooter light
+#' @title scooter light
+  scooter_light = "#83dbfb"
+
+#' @export
+#' @description siei golden sand
+#' @title golden sand
+  golden_sand = "#f2bc40"
+
+#' @export
+#' @description siei golden sand light
+#' @title golden sand light
+  golden_sand_light = "#ffdda2"
+#' @export
+#' @description siei genoa
+#' @title genoa (green)
+  genoa = "#287c6f"
+
+#' @export
+#' @description siei genoa light
+#' @title genoa light (green)
+  genoa_light = "#7ecfc0"
+
+#' @export
+#' @description siei trolley grey
+#' @title trolley grey
+  trolley_grey = "#808080"
+
+#' @export
+#' @description siei trolley grey
+#' @title trolley grey
+  trolley_grey_light = "#e6e6e6"

@@ -2,6 +2,7 @@
 ## AUTHOR:  AChafetz | USAID
 ## PURPOSE: example plots
 ## DATE:    2020-06-01
+## UPDATED: 2020-07-28
 
 
 # DEPENDENCIES ------------------------------------------------------------
@@ -10,8 +11,28 @@ library(tidyverse)
 library(scales)
 library(glitr)
 library(extrafont)
+library(fs)
 
 
+
+# OUTPUT FOLDER -----------------------------------------------------------
+
+dir_create("Images")
+
+# CHART ELEMENTS ----------------------------------------------------------
+
+
+tibble(x = c("FY50Q1", "FY50Q2", "FY50Q3", "FY50Q4"),
+       y = seq(0, 1200, length.out = 4)) %>%
+  ggplot(aes(x, y)) +
+  scale_y_continuous(label = comma) +
+  labs(x = NULL, y = NULL,
+       title = "TITLE",
+       subtitle = "caption/description",
+       caption = "data source") +
+  si_style()
+
+ggsave("Images/chart_elements.pdf", dpi = 320, height = 5.625, width = 10, device = "pdf")
 
 # SCATTER PLOT ------------------------------------------------------------
 
@@ -33,7 +54,7 @@ library(extrafont)
     si_style() +
     theme(legend.position = "none")
 
-
+  ggsave("Images/scatter.png", dpi = 320, height = 5.625, width = 10)
 
 # LINE CHART --------------------------------------------------------------
 
@@ -50,8 +71,9 @@ library(extrafont)
     top_n(5, wt = pt_end) %>%
     pull(primepartner)
 
-  df_line <- filter(df_line, primepartner %in% largest_partners)
-
+  df_line <- df_line %>%
+    filter(primepartner %in% largest_partners,
+           primepartner != "Eridanus")
 
 
   df_line %>%
@@ -61,6 +83,7 @@ library(extrafont)
     geom_point(aes(y = pt_start, fill = partner_focal), shape = 21, size = 4, na.rm = TRUE) +
     geom_text(aes(y = pt_end, label = primepartner), na.rm = TRUE,
               family = "Source Sans Pro", nudge_x = .4) +
+    scale_y_continuous(labels = comma) +
     labs(x = NULL, y = NULL,
          title = "TITLE",
          subtitle = "caption/description",
@@ -69,6 +92,7 @@ library(extrafont)
     si_style() +
     theme(legend.position = "none")
 
+  ggsave("Images/line.png", dpi = 320, height = 5.625, width = 10)
 
 # BAR CHART ---------------------------------------------------------------
 
@@ -107,7 +131,7 @@ library(extrafont)
          caption = "data source") +
     si_style_xgrid()
 
-
+  ggsave("Images/bar.png", dpi = 320, height = 5.625, width = 10)
 
 # LOLLIPOP CHART ----------------------------------------------------------
 
@@ -118,8 +142,11 @@ library(extrafont)
   df_lollipop %>%
     mutate(partner_order = tidytext::reorder_within(primepartner, achievement, agency)) %>%
     ggplot(aes(partner_order, achievement)) +
+    geom_blank(aes(y = achievement * 1.08)) +
     geom_segment(aes(x = partner_order, y = 0, xend = partner_order, yend = achievement), size = .9) +
     geom_point(size = 3) +
+    geom_text(aes(label = percent(achievement, 1)), hjust = -.25,
+              family = "Source Sans Pro", color = "gray30",size = 3.5) +
     tidytext::scale_x_reordered() +
     scale_y_continuous(label = percent, expand = c(.005, .005)) +
     facet_wrap(~ fct_rev(fundingagency), scales = "free_y") +
@@ -128,8 +155,11 @@ library(extrafont)
          title = "TITLE",
          subtitle = "caption/description",
          caption = "data source") +
-    si_style_xgrid()
+    si_style_xgrid() +
+    theme(axis.text.x = element_blank())
 
+
+  ggsave("Images/lollipop.png", dpi = 320, height = 5.625, width = 10)
 
 # HEAT MAP TABLE ----------------------------------------------------------
 
@@ -145,7 +175,7 @@ library(extrafont)
 
   df_heatmap %>%
     ggplot(aes(fct_reorder(primepartner, HTS_TST, sum, .desc = TRUE), fct_reorder(modality, positivity), fill = positivity)) +
-    geom_tile(color = "white") +
+    geom_tile(color = "white", size = .9) +
     geom_text(aes(label = percent(positivity, 1)),
               family = "Source Sans Pro", color = "white", size = 3) +
     scale_x_discrete(position = "top") +
@@ -154,5 +184,7 @@ library(extrafont)
          subtitle = "caption/description",
          caption = "data source") +
     si_style_nolines() +
-    theme(legend.position = "none")
+    theme(legend.position = "none",
+          axis.text.x = element_text(size = 8))
 
+  ggsave("Images/heatmap.png", dpi = 320, height = 5.625, width = 10)

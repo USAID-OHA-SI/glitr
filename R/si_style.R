@@ -62,6 +62,10 @@ si_style <- function(font_title = "Source Sans Pro",
     legend.background = ggplot2::element_blank(),
     #legend.title = ggplot2::element_blank(),
     legend.key = ggplot2::element_blank(),
+    legend.title = ggplot2::element_text(
+      family = font_title,
+      size = 11,
+      color = color_plot_text),
     legend.text = ggplot2::element_text(
       family = font_title,
       size = 11,
@@ -96,6 +100,7 @@ si_style <- function(font_title = "Source Sans Pro",
       family = font_title,
       size  = 11,
       hjust = 0,
-      color = color_plot_text)
+      color = color_plot_text,
+      margin = ggplot2::margin(0.8 * half_line, 0.8 * half_line, 0.8 * half_line, 0.8 * half_line))
   )
 }

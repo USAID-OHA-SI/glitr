@@ -8,7 +8,7 @@ Authors@R: c(
     )
 Description: Helps create and export ggplot2 charts in the style used by 
     the GH OHA SI team. Includes multiple styles and themes to tweak plots
-    to user needs. 
+    to user needs. Sample testing data also available. 
 License: MIT + file LICENSE
 URL: https://github.com/USAID-OHA-SI/glitr
 BugReports: https://github.com/USAID-OHA-SI/glitr/issues
@@ -16,7 +16,7 @@ Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
 Depends: 
-    R (>= 3.1.2)
+    R (>= 3.5.0)
 Imports: 
     ggplot2,
     magrittr,

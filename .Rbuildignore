@@ -5,3 +5,6 @@
 ^docs$
 ^pkgdown$
 ^\.travis\.yml$
+^out$
+^Images$
+^\.github$

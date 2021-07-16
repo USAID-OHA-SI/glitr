@@ -1,6 +1,8 @@
   <!-- badges: start -->
-  [![Travis build status](https://travis-ci.org/USAID-OHA-SI/glitr.svg?branch=master)](https://travis-ci.org/USAID-OHA-SI/glitr)
+  [![R-CMD-check](https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/glitr/actions)
   <!-- badges: end -->
+
+<img src='man/figures/logo.png' align="right" height="120" />
 
 # glitr
 SI graphics package to adorn your ggplots
@@ -25,6 +27,7 @@ If you do not have the devtools package installed, you will have to run the `ins
 
 ## EXAMPLE WITH BASE SI STYLE
   library(ggplot2)
+  library(extrafont)
   ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) + geom_point() + si_style()
   
 ## LIST TYPES OF STYLES INCLUDED WITH PACKAGE
