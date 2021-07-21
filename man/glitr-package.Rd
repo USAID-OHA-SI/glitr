@@ -26,6 +26,7 @@ Useful links:
 Authors:
 \itemize{
   \item Aaron Chafetz \email{achafetz@usaid.gov}
+  \item Baboyma Kagniniwa \email{bkagniniwa@usaid.gov}
 }
 
 }

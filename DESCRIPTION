@@ -3,7 +3,8 @@ Title: Adorned SI style plots
 Version: 0.0.0.9000
 Authors@R: c(
     person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
-    person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut"))
+    person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
+    person("Baboyma", "Kagniniwa", ,"bkagniniwa@usaid.gov", c("aut"))
     )
 Description: Helps create and export ggplot2 charts in the style used by 
     the GH OHA SI team. Includes multiple styles and themes to tweak plots
