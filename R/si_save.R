@@ -9,6 +9,7 @@
 #' @param width plot width in inches, default = 10
 #' @param height plot height in inches, default = 5.625
 #' @param dpi plot resolution
+#' @param ... additional arguments to that pass to ggsave
 #'
 #' @importFrom ggplot2 ggsave
 #'

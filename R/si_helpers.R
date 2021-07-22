@@ -27,32 +27,40 @@
 
 si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 
-    pal <- si_palettes[[pal_name]]
+  pal <- si_palettes[[pal_name]]
 
-    if (is.null(pal))
-      stop("\nPlease enter a valid SIEI palette. Select from:\n",
-           paste0(c(names(si_palettes[1]),
-                    paste0(names(si_palettes)[2:9], "(s)")
-           ), "\n"))
+  if (is.null(pal))
+    stop("\nPlease enter a valid SIEI palette. Select from:\n",
+         paste0(c(names(si_palettes[1]),
+                  paste0(names(si_palettes)[2:9], "(s)")
+         ), "\n"))
 
-    if(missing(n)) {
-      n <- length(pal)
-    }
+  if(missing(n)) {
+    n <- length(pal)
+  }
 
-    if(pal_name %in% names(si_palettes)[1:9] && n > length(pal)){
-      usethis::ui_warn("You selected a discrete palette. {usethis::ui_code('si_rampr()')} will only return n = {length(pal)} colors")
-      n <- length(pal)
-    }
+  # Do this when you pick a discrete color
+  if(pal_name %in% names(si_palettes)[2:9]){
 
-    if (reverse) {
-      pal <- rev(si_palettes[[pal_name]])
-    }
+    if(n > length(pal)) {
+    usethis::ui_warn("You selected a discrete palette for {n} colors. {usethis::ui_code('si_rampr()')} will only return n = {length(pal)} distinct colors. Some colors may be recycled.")
+      }
 
+    pal <- rep(pal, length.out = n)
+    pal <- scales::alpha(pal, alpha = alpha)
+  }
+
+  else {
     pal <- colorRampPalette(pal)(n)
     pal <- scales::alpha(pal, alpha = alpha)
-
-    return(pal)
   }
+
+  if (reverse) {
+    pal <- rev(si_palettes[[pal_name]])
+  }
+
+  return(pal)
+}
 
 
 #' siei palette with ramped colors
@@ -71,8 +79,6 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
     }
 
   }
-
-
 
 
 #' siei color scales for ggplot2
@@ -184,4 +190,10 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' print_si_pals()
 #'}
 
-  print_si_pals <- function() {print(names(si_palettes))}
+  print_si_pals <- function() {
+
+    data.frame(`palette` = names(si_palettes)[1:19]) %>%
+      dplyr::mutate(type = ifelse(row(.) %in% 2:9, "discrete", "continous"))
+
+    }
+
