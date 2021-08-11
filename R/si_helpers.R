@@ -1,7 +1,11 @@
 
 #' Chooses palette to use with ggplot2
 #'
-#' @description Generate a palette by linear interpolation.
+#' @description
+#' Generate a palette by linear interpolation.
+#' If a discrete palette is selected, colors are recycled to the length of the desired vector.
+#'
+#'
 #' @title Palette interpolation
 #'
 #' @param pal_name name of the palette
@@ -84,6 +88,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' siei color scales for ggplot2
 #' @rdname scale_color_si
 #' @description SIEI colors available through scale_color_si
+#'
+#'
 #' @param palette Choose from 'si_palettes' list
 #' @param reverse if true, reverses the order of palette
 #' @param discrete whether to use a discrete color palette
@@ -108,8 +114,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = price)) +
-#' scale_color_si("genoas")
-#'}
+#' scale_color_si("genoas")}
 #'
 
   scale_color_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
@@ -131,6 +136,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @rdname scale_fill_si
 #' @title SIEI colors for the scale_fill_ option
 #' @description SIEI colors available through scale_fill_si
+#'
+#'
 #' @param palette Choose from 'si_palettes' list
 #' @param alpha sets transparency of each color
 #' @param reverse if TRUE, reverses order of palette
@@ -177,23 +184,4 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @export
   scale_fill_si <- scale_fill_si
 
-
-#' Print available palettes
-#'
-#' @description Print color palettes available for use
-#' @title Print color palettes available in glitr package
-#' @export
-#' @examples
-#' \dontrun{
-#' #
-#' View different interpolations of palettes
-#' print_si_pals()
-#'}
-
-  print_si_pals <- function() {
-
-    data.frame(`palette` = names(si_palettes)[1:19]) %>%
-      dplyr::mutate(type = ifelse(row(.) %in% 2:9, "discrete", "continous"))
-
-    }
 

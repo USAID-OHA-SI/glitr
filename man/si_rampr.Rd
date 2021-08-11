@@ -17,6 +17,7 @@ si_rampr(pal_name = "siei", n, alpha = 1, reverse = FALSE)
 }
 \description{
 Generate a palette by linear interpolation.
+If a discrete palette is selected, colors are recycled to the length of the desired vector.
 }
 \details{
 Chooses palette to use with ggplot2

@@ -8,6 +8,13 @@
 
 <title>Function reference • glitr</title>
 
+<!-- favicons -->
+<link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="../favicon-32x32.png">
+<link rel="apple-touch-icon" type="image/png" sizes="180x180" href="../apple-touch-icon.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="120x120" href="../apple-touch-icon-120x120.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png" />
+<link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png" />
 
 <!-- jquery -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
@@ -40,6 +47,7 @@
 
 
 <meta property="og:title" content="Function reference" />
+<meta property="og:image" content="/logo.png" />
 
 
 
@@ -79,18 +87,33 @@
       <ul class="nav navbar-nav">
         <li>
   <a href="../index.html">
-    <span class="fas fa fas fa-home fa-lg"></span>
+    <span class="fas fa-home fa-lg"></span>
      
   </a>
 </li>
 <li>
   <a href="../reference/index.html">Reference</a>
 </li>
+<li class="dropdown">
+  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+    Articles
+     
+    <span class="caret"></span>
+  </a>
+  <ul class="dropdown-menu" role="menu">
+    <li>
+      <a></a>
+    </li>
+  </ul>
+</li>
+<li>
+  <a href="../news/index.html">Changelog</a>
+</li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
   <a href="https://github.com/USAID-OHA-SI/glitr/">
-    <span class="fab fa fab fa-github fa-lg"></span>
+    <span class="fab fa-github fa-lg"></span>
      
   </a>
 </li>
@@ -121,7 +144,7 @@
     <tbody>
       <tr>
         <th colspan="2">
-          <h2 id="section-all-functions" class="hasAnchor"><a href="#section-all-functions" class="anchor"></a>All functions</h2>
+          <h2 id="section-si-themes" class="hasAnchor"><a href="#section-si-themes" class="anchor"></a>SI Themes</h2>
           <p class="section-desc"></p>
         </th>
       </tr>
@@ -133,45 +156,27 @@
       <tr>
         
         <td>
-          <p><code><a href="cascade.html">cascade</a></code> </p>
-        </td>
-        <td><p>Cascade Indicators</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="check_fonts.html">check_fonts()</a></code> </p>
-        </td>
-        <td><p>Check for Imported Fonts</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="color_plot_text.html">color_plot_text</a></code> </p>
-        </td>
-        <td><p>Runs globals for plot configuration</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="hts.html">hts</a></code> </p>
-        </td>
-        <td><p>Testing (HTS_TST &amp; HTS_TST_POS) Indicators</p></td>
-      </tr><tr>
-        
-        <td>
-          <p><code><a href="si_colors.html">si_colors</a></code> </p>
-        </td>
-        <td><p>SI Colors</p></td>
-      </tr><tr>
-        
-        <td>
           <p><code><a href="si_style.html">si_style()</a></code> </p>
         </td>
         <td><p>Create Standard SI Plots</p></td>
       </tr><tr>
         
         <td>
+          <p><code><a href="si_style_map.html">si_style_map()</a></code> </p>
+        </td>
+        <td><p>Create Standard SI Map</p></td>
+      </tr><tr>
+        
+        <td>
           <p><code><a href="si_style_nolines.html">si_style_nolines()</a></code> </p>
         </td>
         <td><p>SI style plot with blank canvass</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_style_void.html">si_style_void()</a></code> </p>
+        </td>
+        <td><p>Create ggplot with no axes or no grid lines</p></td>
       </tr><tr>
         
         <td>
@@ -203,6 +208,512 @@
         </td>
         <td><p>SI style plot with y-axis line drawn</p></td>
       </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-plotting" class="hasAnchor"><a href="#section-plotting" class="anchor"></a>Plotting</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="color_caption.html">color_caption</a></code> </p>
+        </td>
+        <td><p>Color caption default</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="color_gridline.html">color_gridline</a></code> </p>
+        </td>
+        <td><p>Gridline color default</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="color_plot_text.html">color_plot_text</a></code> </p>
+        </td>
+        <td><p>Plot color default</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="color_title.html">color_title</a></code> </p>
+        </td>
+        <td><p>Title color default</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="scale_color_si.html">scale_color_si()</a></code> <code><a href="scale_color_si.html">scale_color_si()</a></code> </p>
+        </td>
+        <td><p>siei color scales for ggplot2</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="scale_fill_si.html">scale_fill_si()</a></code> <code><a href="scale_fill_si.html">scale_fill_si()</a></code> </p>
+        </td>
+        <td><p>SIEI colors for the scale_fill_ option</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_pal.html">si_pal()</a></code> </p>
+        </td>
+        <td><p>siei palette with ramped colors</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_palettes.html">si_palettes</a></code> </p>
+        </td>
+        <td><p>SI-theme color palettes</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_rampr.html">si_rampr()</a></code> </p>
+        </td>
+        <td><p>Palette interpolation</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_save.html">si_save()</a></code> </p>
+        </td>
+        <td><p>Save Plot</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-siei-colors" class="hasAnchor"><a href="#section-siei-colors" class="anchor"></a>SIEI Colors</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="burnt_sienna.html">burnt_sienna</a></code> </p>
+        </td>
+        <td><p>burnt sienna</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="burnt_sienna_light.html">burnt_sienna_light</a></code> </p>
+        </td>
+        <td><p>burnt sienna light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="denim.html">denim</a></code> </p>
+        </td>
+        <td><p>denim</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="denim_light.html">denim_light</a></code> </p>
+        </td>
+        <td><p>denim light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="genoa.html">genoa</a></code> </p>
+        </td>
+        <td><p>genoa (green)</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="genoa_light.html">genoa_light</a></code> </p>
+        </td>
+        <td><p>genoa light (green)</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="golden_sand.html">golden_sand</a></code> </p>
+        </td>
+        <td><p>golden sand</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="golden_sand_light.html">golden_sand_light</a></code> </p>
+        </td>
+        <td><p>golden sand light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="moody_blue.html">moody_blue</a></code> </p>
+        </td>
+        <td><p>moody blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="moody_blue_light.html">moody_blue_light</a></code> </p>
+        </td>
+        <td><p>moody blue light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="old_rose.html">old_rose</a></code> </p>
+        </td>
+        <td><p>old rose light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="old_rose_light.html">old_rose_light</a></code> </p>
+        </td>
+        <td><p>old rose light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="scooter.html">scooter</a></code> </p>
+        </td>
+        <td><p>scooter</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="scooter_light.html">scooter_light</a></code> </p>
+        </td>
+        <td><p>scooter light</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="scooter_med.html">scooter_med</a></code> </p>
+        </td>
+        <td><p>scooter medium</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="trolley_grey.html">trolley_grey</a></code> </p>
+        </td>
+        <td><p>trolley grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="trolley_grey_light.html">trolley_grey_light</a></code> </p>
+        </td>
+        <td><p>trolley grey light</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-siei-greys" class="hasAnchor"><a href="#section-siei-greys" class="anchor"></a>SIEI Greys</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="grey10k.html">grey10k</a></code> </p>
+        </td>
+        <td><p>10k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey20k.html">grey20k</a></code> </p>
+        </td>
+        <td><p>20k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey30k.html">grey30k</a></code> </p>
+        </td>
+        <td><p>30k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey40k.html">grey40k</a></code> </p>
+        </td>
+        <td><p>40k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey50k.html">grey50k</a></code> </p>
+        </td>
+        <td><p>50k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey60k.html">grey60k</a></code> </p>
+        </td>
+        <td><p>60k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey70k.html">grey70k</a></code> </p>
+        </td>
+        <td><p>70k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey80k.html">grey80k</a></code> </p>
+        </td>
+        <td><p>80k grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="grey90k.html">grey90k</a></code> </p>
+        </td>
+        <td><p>90k grey</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-siei-text-colors" class="hasAnchor"><a href="#section-siei-text-colors" class="anchor"></a>SIEI Text Colors</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="matterhorn.html">matterhorn</a></code> </p>
+        </td>
+        <td><p>matterhorn</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="nero.html">nero</a></code> </p>
+        </td>
+        <td><p>nero</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="suva_grey.html">suva_grey</a></code> </p>
+        </td>
+        <td><p>suva grey</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-sample-data" class="hasAnchor"><a href="#section-sample-data" class="anchor"></a>Sample Data</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="hts.html">hts</a></code> </p>
+        </td>
+        <td><p>Testing (HTS_TST &amp; HTS_TST_POS) Indicators</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="hts_geo.html">hts_geo</a></code> </p>
+        </td>
+        <td><p>Spatial data for mapping testing indicators</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="cascade.html">cascade</a></code> </p>
+        </td>
+        <td><p>Cascade Indicators</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-usaid-colors" class="hasAnchor"><a href="#section-usaid-colors" class="anchor"></a>USAID Colors</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="usaid_black.html">usaid_black</a></code> </p>
+        </td>
+        <td><p>usaid black</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_blue.html">usaid_blue</a></code> </p>
+        </td>
+        <td><p>usaid blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_darkgrey.html">usaid_darkgrey</a></code> </p>
+        </td>
+        <td><p>usaid dark grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_lightblue.html">usaid_lightblue</a></code> </p>
+        </td>
+        <td><p>usaid light blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_lightgrey.html">usaid_lightgrey</a></code> </p>
+        </td>
+        <td><p>usaid light grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_medblue.html">usaid_medblue</a></code> </p>
+        </td>
+        <td><p>usaid mdeblue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_medgrey.html">usaid_medgrey</a></code> </p>
+        </td>
+        <td><p>usaid med grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="usaid_red.html">usaid_red</a></code> </p>
+        </td>
+        <td><p>usaid red</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-washington-post-colors" class="hasAnchor"><a href="#section-washington-post-colors" class="anchor"></a>Washington Post Colors</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="wapo_dblue.html">wapo_dblue</a></code> </p>
+        </td>
+        <td><p>wapo inspired dark blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_dmauve.html">wapo_dmauve</a></code> </p>
+        </td>
+        <td><p>wapo inspired dark mauve</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_dorange.html">wapo_dorange</a></code> </p>
+        </td>
+        <td><p>wapo inspired dark orange</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_lblue.html">wapo_lblue</a></code> </p>
+        </td>
+        <td><p>wapo inspired light blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_lgreen.html">wapo_lgreen</a></code> </p>
+        </td>
+        <td><p>wapo inspired light green</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_lmauve.html">wapo_lmauve</a></code> </p>
+        </td>
+        <td><p>wapo inspired light mauve</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_lorange.html">wapo_lorange</a></code> </p>
+        </td>
+        <td><p>wapo inspired light orange</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_lorange2.html">wapo_lorange2</a></code> </p>
+        </td>
+        <td><p>wapo inspired light orange 2</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_lpurple.html">wapo_lpurple</a></code> </p>
+        </td>
+        <td><p>wapo inspired light purple</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="wapo_pushpop.html">wapo_pushpop</a></code> </p>
+        </td>
+        <td><p>wapo inspired pushpop orange</p></td>
+      </tr>
+    </tbody><tbody>
+      <tr>
+        <th colspan="2">
+          <h2 id="section-miscellaneous" class="hasAnchor"><a href="#section-miscellaneous" class="anchor"></a>Miscellaneous</h2>
+          <p class="section-desc"></p>
+        </th>
+      </tr>
+      
+      
+    </tbody><tbody>
+      
+      
+      <tr>
+        
+        <td>
+          <p><code><a href="check_fonts.html">check_fonts()</a></code> </p>
+        </td>
+        <td><p>Check for Imported Fonts</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_blue.html">si_blue</a></code> </p>
+        </td>
+        <td><p>si inspired blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_dgrey.html">si_dgrey</a></code> </p>
+        </td>
+        <td><p>si inspired dark grey</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_dorange.html">si_dorange</a></code> </p>
+        </td>
+        <td><p>si inspired dark orange</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_lblue.html">si_lblue</a></code> </p>
+        </td>
+        <td><p>si inspired  light blue</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_lorange.html">si_lorange</a></code> </p>
+        </td>
+        <td><p>si inspired light orange</p></td>
+      </tr><tr>
+        
+        <td>
+          <p><code><a href="si_orange.html">si_orange</a></code> </p>
+        </td>
+        <td><p>si inspired orange</p></td>
+      </tr>
     </tbody>
     </table>
   </div>
@@ -217,11 +728,11 @@
 
       <footer>
       <div class="copyright">
-  <p>Developed by Tim Essam, Aaron Chafetz.</p>
+  <p>Developed by Tim Essam, Aaron Chafetz, Baboyma Kagniniwa.</p>
 </div>
 
 <div class="pkgdown">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.5.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/">pkgdown</a> 1.6.1.</p>
 </div>
 
       </footer>

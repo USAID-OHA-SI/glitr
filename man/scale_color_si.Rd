@@ -47,7 +47,6 @@ scale_color_si("genoas", discrete = T)
 
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = price)) +
-scale_color_si("genoas")
-}
+scale_color_si("genoas")}
 
 }
