@@ -76,7 +76,6 @@ si_style <- function(font_title = "Source Sans Pro",
       family = font_plot,
       size = 10,
       color = color_plot_text),
-    axis.text.x = ggplot2::element_text(),
     axis.ticks = ggplot2::element_blank(),
     axis.line = ggplot2::element_blank(),
     axis.title = ggplot2::element_text(

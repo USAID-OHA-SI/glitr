@@ -28,6 +28,7 @@ si_palettes <- list(
     scooter = c("#1e87a5", "#c43d4d", "#8980cb", "#f2bc40", "#287c6f"),
     golden_sand = c("#f2bc40", "#2057a7", "#287c6f", "#e07653", "#8980cb"),
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
+    siei_achv = c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
 
     # SIEI recommended palettes build from base colors
     siei_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
@@ -320,6 +321,11 @@ si_palettes <- list(
   scooter = "#1e87a5"
 
 #' @export
+#' @description siei scooter medium
+#' @title scooter medium
+  scooter_med = "#5BB5D5"
+
+#' @export
 #' @description siei scooter light
 #' @title scooter light
   scooter_light = "#83dbfb"
@@ -333,6 +339,7 @@ si_palettes <- list(
 #' @description siei golden sand light
 #' @title golden sand light
   golden_sand_light = "#ffdda2"
+
 #' @export
 #' @description siei genoa
 #' @title genoa (green)
@@ -349,6 +356,22 @@ si_palettes <- list(
   trolley_grey = "#808080"
 
 #' @export
-#' @description siei trolley grey
-#' @title trolley grey
+#' @description siei trolley grey light
+#' @title trolley grey light
   trolley_grey_light = "#e6e6e6"
+
+#' @export
+#' @description siei nerp
+#' @title nero
+  nero = "#202020"
+
+#' @export
+#' @description siei matterhorn
+#' @title matterhorn
+  matterhorn = "#505050"
+
+#' @export
+#' @description siei suva grey
+#' @title suva grey
+  suva_grey = "#909090"
+

@@ -1,8 +1,141 @@
-destination: docs
+navbar:
+  structure:
+    left:
+    - home
+    - intro
+    - reference
+    - articles
+    - tutorials
+    - news
+    right: github
+  components:
+    home:
+      icon: fas fa-home fa-lg
+      href: index.html
+    reference:
+      text: Reference
+      href: reference/index.html
+    news:
+      text: Changelog
+      href: news/index.html
+    github:
+      icon: fab fa-github fa-lg
+      href: https://github.com/USAID-OHA-SI/glitr/
+    articles:
+      text: Articles
+      menu:
+        -text:
+         href:
 
-template:
-  params:
-    bootswatch: flatly
+
+
+reference:
+- title: SI Themes
+  contents:
+  - si_style
+  - si_style_map
+  - si_style_nolines
+  - si_style_void
+  - si_style_xgrid
+  - si_style_xline
+  - si_style_xyline
+  - si_style_ygrid
+  - si_style_yline
+
+
+- title: Plotting
+  contents:
+  - color_caption
+  - color_gridline
+  - color_plot_text
+  - color_title
+  - scale_color_si
+  - scale_fill_si
+  - si_pal
+  - si_palettes
+  - si_rampr
+  - si_save
+
+
+- title: SIEI Colors
+  contents:
+  - burnt_sienna
+  - burnt_sienna_light
+  - denim
+  - denim_light
+  - genoa
+  - genoa_light
+  - golden_sand
+  - golden_sand_light
+  - moody_blue
+  - moody_blue_light
+  - old_rose
+  - old_rose_light
+  - scooter
+  - scooter_light
+  - scooter_med
+  - trolley_grey
+  - trolley_grey_light
+
+- title: SIEI Greys
+  contents:
+  - grey10k
+  - grey20k
+  - grey30k
+  - grey40k
+  - grey50k
+  - grey60k
+  - grey70k
+  - grey80k
+  - grey90k
+
+- title: SIEI Text Colors
+  contents:
+  - matterhorn
+  - nero
+  - suva_grey
+
+- title: Sample Data
+  contents:
+  - hts
+  - hts_geo
+  - cascade
+
+- title: USAID Colors
+  contents:
+  - usaid_black
+  - usaid_blue
+  - usaid_darkgrey
+  - usaid_lightblue
+  - usaid_lightgrey
+  - usaid_medblue
+  - usaid_medgrey
+  - usaid_red
+
+- title: Washington Post Colors
+  contents:
+  - wapo_dblue
+  - wapo_dmauve
+  - wapo_dorange
+  - wapo_lblue
+  - wapo_lgreen
+  - wapo_lmauve
+  - wapo_lorange
+  - wapo_lorange2
+  - wapo_lpurple
+  - wapo_pushpop
+
+- title: Miscellaneous
+  contents:
+  - check_fonts
+  - si_blue
+  - si_dgrey
+  - si_dorange
+  - si_lblue
+  - si_lorange
+  - si_orange
+
+
 
 
 

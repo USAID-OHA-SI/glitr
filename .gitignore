@@ -2,6 +2,9 @@
 .Rhistory
 .RData
 .Ruserdata
+inst/doc
 
 out/*
 Images/*
+
+

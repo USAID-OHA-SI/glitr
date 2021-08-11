@@ -1,7 +1,11 @@
 
 #' Chooses palette to use with ggplot2
 #'
-#' @description Generate a palette by linear interpolation.
+#' @description
+#' Generate a palette by linear interpolation.
+#' If a discrete palette is selected, colors are recycled to the length of the desired vector.
+#'
+#'
 #' @title Palette interpolation
 #'
 #' @param pal_name name of the palette
@@ -27,32 +31,40 @@
 
 si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 
-    pal <- si_palettes[[pal_name]]
+  pal <- si_palettes[[pal_name]]
 
-    if (is.null(pal))
-      stop("\nPlease enter a valid SIEI palette. Select from:\n",
-           paste0(c(names(si_palettes[1]),
-                    paste0(names(si_palettes)[2:8], "(s)")
-           ), "\n"))
+  if (is.null(pal))
+    stop("\nPlease enter a valid SIEI palette. Select from:\n",
+         paste0(c(names(si_palettes[1]),
+                  paste0(names(si_palettes)[2:9], "(s)")
+         ), "\n"))
 
-    if(missing(n)) {
-      n <- length(pal)
-    }
+  if(missing(n)) {
+    n <- length(pal)
+  }
 
-    if(pal_name %in% names(si_palettes)[1:8] && n > length(pal)){
-      usethis::ui_warn("You selected a discrete palette. {usethis::ui_code('si_rampr()')} will only return n = {length(pal)} colors")
-      n <- length(pal)
-    }
+  # Do this when you pick a discrete color
+  if(pal_name %in% names(si_palettes)[2:9]){
 
-    if (reverse) {
-      pal <- rev(si_palettes[[pal_name]])
-    }
+    if(n > length(pal)) {
+    usethis::ui_warn("You selected a discrete palette for {n} colors. {usethis::ui_code('si_rampr()')} will only return n = {length(pal)} distinct colors. Some colors may be recycled.")
+      }
 
+    pal <- rep(pal, length.out = n)
+    pal <- scales::alpha(pal, alpha = alpha)
+  }
+
+  else {
     pal <- colorRampPalette(pal)(n)
     pal <- scales::alpha(pal, alpha = alpha)
-
-    return(pal)
   }
+
+  if (reverse) {
+    pal <- rev(si_palettes[[pal_name]])
+  }
+
+  return(pal)
+}
 
 
 #' siei palette with ramped colors
@@ -73,11 +85,11 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
   }
 
 
-
-
 #' siei color scales for ggplot2
 #' @rdname scale_color_si
 #' @description SIEI colors available through scale_color_si
+#'
+#'
 #' @param palette Choose from 'si_palettes' list
 #' @param reverse if true, reverses the order of palette
 #' @param discrete whether to use a discrete color palette
@@ -98,17 +110,16 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' Apply palettes to discrete or continuous colors
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = cut)) +
-#' scale_color_si("genoas")
+#' scale_color_si("genoas", discrete = T)
 #'
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = price)) +
-#' scale_color_si("genoas", discrete = FALSE)
-#'}
+#' scale_color_si("genoas")}
 #'
 
-  scale_color_si <- function(palette = "genoas", alpha = 1, discrete = TRUE, reverse = FALSE, ...) {
+  scale_color_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
 
-    if (discrete) {
+    if (discrete == TRUE) {
       discrete_scale("colour", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
     }
     else {
@@ -125,6 +136,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @rdname scale_fill_si
 #' @title SIEI colors for the scale_fill_ option
 #' @description SIEI colors available through scale_fill_si
+#'
+#'
 #' @param palette Choose from 'si_palettes' list
 #' @param alpha sets transparency of each color
 #' @param reverse if TRUE, reverses order of palette
@@ -147,19 +160,19 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'
 #' ggplot(diamonds) +
 #'   geom_bar(aes(x = cut, fill = clarity)) +
-#'   scale_fill_si("genoas")
+#'   scale_fill_si("genoas", discrete = T)
 #'
 #' rnaturalearth::ne_countries(continent = "africa", returnclass = "sf") %>%
 #'  add_column(runif = runif(nrow(.))) %>%
 #'  ggplot() +
 #'  geom_sf(aes(fill = runif), color = "white", size = 0.25) +
-#'  scale_fill_si("old_roses", discrete = FALSE, reverse = T) +
+#'  scale_fill_si("old_roses", reverse = T) +
 #'  si_style_void()
 #'  }
 
-  scale_fill_si <- function(palette = "genoas", alpha = 1, discrete = TRUE, reverse = FALSE, ...) {
+  scale_fill_si <- function(palette = "genoas", alpha = 1, discrete = FALSE, reverse = FALSE, ...) {
 
-    if (discrete) {
+    if (discrete == TRUE) {
       discrete_scale("fill", "si_rampr", si_pal(palette, alpha = alpha, reverse = reverse), ...)
     }
     else {
@@ -172,16 +185,3 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
   scale_fill_si <- scale_fill_si
 
 
-#' Print available palettes
-#'
-#' @description Print color palettes available for use
-#' @title Print color palettes available in glitr package
-#' @export
-#' @examples
-#' \dontrun{
-#' #
-#' View different interpolations of palettes
-#' print_si_pals()
-#'}
-
-  print_si_pals <- function() {print(names(si_palettes))}

@@ -7,7 +7,7 @@
 scale_color_si(
   palette = "genoas",
   alpha = 1,
-  discrete = TRUE,
+  discrete = FALSE,
   reverse = FALSE,
   ...
 )
@@ -15,7 +15,7 @@ scale_color_si(
 scale_color_si(
   palette = "genoas",
   alpha = 1,
-  discrete = TRUE,
+  discrete = FALSE,
   reverse = FALSE,
   ...
 )
@@ -43,11 +43,10 @@ library(glitr)
 Apply palettes to discrete or continuous colors
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = cut)) +
-scale_color_si("genoas")
+scale_color_si("genoas", discrete = T)
 
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = price)) +
-scale_color_si("genoas", discrete = FALSE)
-}
+scale_color_si("genoas")}
 
 }

@@ -3,7 +3,7 @@
 \docType{data}
 \name{trolley_grey_light}
 \alias{trolley_grey_light}
-\title{trolley grey}
+\title{trolley grey light}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 trolley_grey_light
 }
 \description{
-siei trolley grey
+siei trolley grey light
 }
 \keyword{datasets}

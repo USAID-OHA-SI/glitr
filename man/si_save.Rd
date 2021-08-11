@@ -11,7 +11,8 @@ si_save(
   scale = 1,
   width = 10,
   height = 5.625,
-  dpi = 320
+  dpi = 320,
+  ...
 )
 }
 \arguments{
@@ -28,9 +29,11 @@ si_save(
 \item{height}{plot height in inches, default = 5.625}
 
 \item{dpi}{plot resolution}
+
+\item{...}{additional arguments to that pass to ggsave}
 }
 \value{
-exports a png
+exports a file with SI dimensions
 }
 \description{
 Wrapper around ggplot2::ggsave with SI standards
