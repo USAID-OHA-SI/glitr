@@ -24,8 +24,8 @@ navbar:
     articles:
       text: Articles
       menu:
-        -text: How to adorn your plots
-         href: articles/adorn-your-plots.html
+      - text: How to adorn your plots
+        href: articles/adorn-your-plots.html
 
 
 
