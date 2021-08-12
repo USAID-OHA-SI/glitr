@@ -26,5 +26,10 @@ Imports:
 Suggests: 
     rmarkdown,
     knitr,
-    testthat
+    testthat,
+    dplyr, 
+    forcats,
+    ggtext,
+    tidyr
+BuildVignettes: true
 VignetteBuilder: knitr
