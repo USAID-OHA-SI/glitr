@@ -36,11 +36,10 @@ SIEI colors available through scale_color_si
 }
 \examples{
 \dontrun{
-#
 library(ggplot2)
 library(glitr)
 
-Apply palettes to discrete or continuous colors
+# Apply palettes to discrete or continuous colors
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = cut)) +
 scale_color_si("genoas", discrete = T)

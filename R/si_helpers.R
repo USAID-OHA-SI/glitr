@@ -21,8 +21,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' #
-#' View different interpolations of palettes
+#' #View different interpolations of palettes
 #' si_rampr("royals") %>%  scales::show_col()
 #' si_rampr("royals", n = 10) %>% scales::show_col()
 #' si_rampr("royals", n = 100)
@@ -103,11 +102,10 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #'
 #' @examples
 #' \dontrun{
-#' #
 #' library(ggplot2)
 #' library(glitr)
 #'
-#' Apply palettes to discrete or continuous colors
+#' # Apply palettes to discrete or continuous colors
 #' ggplot(diamonds) +
 #' geom_point(aes(x = carat, y = price, color = cut)) +
 #' scale_color_si("genoas", discrete = T)

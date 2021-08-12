@@ -11,8 +11,9 @@
 ```{r, include = FALSE}
 knitr::opts_chunk$set(
   collapse = TRUE,
-  comment = "#>"
-)
+  comment = "#>", 
+  warning = FALSE, 
+  message = FALSE)
 ```
 ### Introduction
 
@@ -21,19 +22,119 @@ This vignette provides best practices for applying SIEI recommended colors to vi
 ### Getting Started
 
 To get started, load the standard OHA-SI libraries that are often used in analysis. 
-```{r setup, echo = T, eval = F}
+```{r setup, echo = T, eval = T}
 library(tidyverse)
 library(glitr)
 library(scales)
 library(ggtext)
+library(extrafont)
 ```
 
-Take a look at what functions and objects are included with `glitr'.
-```{r explore glitr, echo = T, eval = T}
+
+```{r what is inside glitr, echo = T, eval = T}
+# Take a look at what's inside the package
 ls('package:glitr')
 ```
 
-The `glitr` package can be divided into three main parts i) colors, that come bundled as objects, ii) si themes, that can be used to quickly apply SI plot defaults, and iii) helper functions, that interpolate palettes or apply palettes to ggplots. We will explore the colors first.
+The package can be divided into three main parts i) colors, that come as objects (such as grey30k or usaid_blue), ii) SI themes, that can be used to quickly apply SI plot defaults, and iii) helper functions, that interpolate palettes or apply palettes to a visualization. This vignette will focus on exploring colors and the SI themes. 
 
 ### Colors
-A number of pre-defined colors come with the `glitr` package. The set that is probably of most interest is the SIEI recommended colors. As you may recall from the [Data Visualization Style Guild](https://usaid-oha-si.github.io/styleguide/), the SI team has created seven core colors: [denim](https://via.placeholder.com/50/2057a7/000000?text=+), old_rose, moody blues, burnt sienna, scooter, golden sand and genoa. 
+A number of pre-defined colors come with the `glitr` package. All objects starting with 'grey' belong to a family of gray colors where `grey10k` is the lightest and `grey90k` the darkest. Objects starting with 'usaid_' are the official USAID colors while those starting with 'wapo_' are Washington Post inspired colors. `color_` flags predefined colors that can be used to for filling in captions, gridlines, plot text or plot titles.  
+
+```{r}
+# Colors belonging to greys, usaid_, wapo_ or siei_.
+grep("(grey|siei_|wapo_|usaid_)", ls('package:glitr'), value = T)
+```
+
+
+The set that is probably of most interest is the SIEI recommended colors. As you may recall from the [Data Visualization Style Guild](https://usaid-oha-si.github.io/styleguide/), the SI team has created seven core colors:
+
+![#2057a7](https://via.placeholder.com/10/2057a7/000000?text=+) denim  
+![#c43d4d](https://via.placeholder.com/10/c43d4d/000000?text=+) old_rose  
+![#8980cb](https://via.placeholder.com/10/8980cb/000000?text=+) moody_blue    
+![#e07653](https://via.placeholder.com/10/e07653/000000?text=+) burnt_sienna  
+![#1e87a5](https://via.placeholder.com/10/1e87a5/000000?text=+) scooter  
+![#f2bc40](https://via.placeholder.com/10/f2bc40/000000?text=+) golden_sand   
+![#287c6f](https://via.placeholder.com/10/287c6f/000000?text=+) genoa  
+
+The hex codes for all these colors are added to your workspace when you load `glitr`. 
+```{r show colors, echo = T, fig.height = 2, fig.width = 2}
+# Any of these colors can be called by simply typing in the name of the color. 
+# The `show_col` function is from the `scales` package and is a handy way to preview a color. 
+show_col(genoa)
+show_col(c(denim, old_rose, moody_blue, burnt_sienna), borders = F)
+```
+
+To access to full list of discrete or continuous palettes, see the si_palettes list or call the color palette directly using the name. Color names that are singular (genoa, old_rose) are categorical palettes based on suggested color pairs. Color names that are plural (genoa) are continuous palettes that can be applied to continuous variables. If you attempt to apply a discrete palette to a continuous variable, the color pairs will be recycled to the length of the vector you are attempting to encode.
+
+```{r palettes, echo = TRUE, fig.height = 2, fig.width= 3}
+si_palettes$genoa %>% show_col(labels = F, borders = F)
+si_palettes$genoas %>% show_col(labels = F, borders = F)
+```
+
+Finally, if you want to create a custom palette from one of the color sets in the si_palettes list, you can do this using the `si_rampr()` function. 
+
+```{r custom palettes, fig.height = 2, fig.width= 3}
+# si_rampr takes a palette name and the number of interpolated colors (n) you wish to return as arguments. 
+denim_pal <- si_rampr(pal_name = "denims", n = 25)
+denim_pal
+
+show_col(denim_pal, labels = FALSE, borders = FALSE)
+
+```
+
+
+### Applying Colors
+
+To add any of these colors to a graph, pass them as arguments in a ggplot2 call. We will work with one of the sample data sets to create a bar graph where positive testing results are colored with scooter. 
+
+```{r bar graph with colors, fig.height = 3, fig.width = 6}
+# Munge the hts data down to testing yields for a given year
+  hts_bar <-
+    hts %>%
+    filter(period == "FY50", period_type == "cumulative") %>%
+    group_by(indicator, primepartner) %>%
+    summarise(total = sum(value, na.rm = TRUE)) %>%
+    ungroup() %>%
+    spread(indicator, total) %>%
+    mutate(yield = (HTS_TST_POS / HTS_TST),
+           prime_order = fct_reorder(primepartner, HTS_TST)) %>% 
+  arrange(prime_order)
+
+# Define testing results to be grey30k and positive results to be scooter. 
+# Play close attention to where the fill is placed in the geom_col() call. 
+# If placed inside the aesthetics, you will need to apply scale_fill_identity() to get the colors to render.
+  p <- hts_bar %>% 
+    ggplot(aes(y = prime_order)) +
+    geom_col(aes(x = HTS_TST), fill = grey30k) +
+    geom_col(aes(x = HTS_TST_POS), fill = scooter) +
+    labs(x = NULL, y = NULL, title = "HTS_TST_POS FILLED WITH SCOOTER COLOR") +
+    coord_cartesian(expand = F) # Move names closer to y-axis
+  p
+```
+
+### SI Themes
+In order to create visualizations that appear to belong to the same family ([Think Baldwin Brothers](https://live.staticflickr.com/4111/5195907338_df50404c30_b.jpg)), `glitr` includes nine ggplot themes that simplify a plot down to its core elements. At the base of these themes is the `si_style`. 
+
+```{r}
+grep("(si_style)", ls('package:glitr'), value = T)
+```
+
+
+We can see how this differs from the default ggplot2 theme by applying the theme to the plot above.
+
+```{r si_style, fig.height = 3, fig.width = 6}
+p + si_style()
+```
+
+You will notice the si_style strips the background gray color and converts the grid lines to a light shade of gray. As this plot is oriented horizontally, we can remove the extra y gridlines by using the `si_style_xgrid` theme. All of the si themes also come with pre-formatted titles, subtitles, and captions following the style guild standards. 
+
+```{r, fig.height = 3, fig.width = 6}
+p + 
+  si_style_xgrid() + 
+  scale_x_continuous(labels = comma)+
+  labs(caption = paste("Generated on ", Sys.Date(), " by the SI team."),
+      subtitle = "Not real data, but it still looks pretty good.") 
+```
+
+
