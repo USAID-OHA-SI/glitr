@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 old_rose
 }
 \description{
-siei old rose
+SIEI old rose
 }
 \keyword{datasets}

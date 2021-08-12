@@ -3,7 +3,7 @@
 \docType{data}
 \name{usaid_blue}
 \alias{usaid_blue}
-\title{usaid blue}
+\title{USAID blue}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,17 @@ An object of class \code{character} of length 1.
 usaid_blue
 }
 \description{
-usaid blue
+USAID blue "#002a6c"
 }
+\seealso{
+Other USAID colors: 
+\code{\link{usaid_black}},
+\code{\link{usaid_darkgrey}},
+\code{\link{usaid_lightblue}},
+\code{\link{usaid_lightgrey}},
+\code{\link{usaid_medblue}},
+\code{\link{usaid_medgrey}},
+\code{\link{usaid_red}}
+}
+\concept{USAID colors}
 \keyword{datasets}

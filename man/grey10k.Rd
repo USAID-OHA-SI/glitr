@@ -3,7 +3,7 @@
 \docType{data}
 \name{grey10k}
 \alias{grey10k}
-\title{10k grey}
+\title{grey10k}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,20 @@ An object of class \code{character} of length 1.
 grey10k
 }
 \description{
-lightest grey
+One of the nine shades of grey included. The lower the k-value, the lighter the shade.
+grey10k is the lightest grey. hex value: "#E6E7E8".
+Useful for light reference lines, boxes or other areas.
 }
+\seealso{
+Other greys: 
+\code{\link{grey20k}},
+\code{\link{grey30k}},
+\code{\link{grey40k}},
+\code{\link{grey50k}},
+\code{\link{grey60k}},
+\code{\link{grey70k}},
+\code{\link{grey80k}},
+\code{\link{grey90k}}
+}
+\concept{greys}
 \keyword{datasets}

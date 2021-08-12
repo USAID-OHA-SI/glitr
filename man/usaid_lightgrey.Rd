@@ -3,7 +3,7 @@
 \docType{data}
 \name{usaid_lightgrey}
 \alias{usaid_lightgrey}
-\title{usaid light grey}
+\title{USAID light grey}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,17 @@ An object of class \code{character} of length 1.
 usaid_lightgrey
 }
 \description{
-usaid light grey
+USAID light grey "#cfcdc9"
 }
+\seealso{
+Other USAID colors: 
+\code{\link{usaid_black}},
+\code{\link{usaid_blue}},
+\code{\link{usaid_darkgrey}},
+\code{\link{usaid_lightblue}},
+\code{\link{usaid_medblue}},
+\code{\link{usaid_medgrey}},
+\code{\link{usaid_red}}
+}
+\concept{USAID colors}
 \keyword{datasets}

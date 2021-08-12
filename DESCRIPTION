@@ -24,4 +24,7 @@ Imports:
     usethis,
     extrafont
 Suggests: 
+    rmarkdown,
+    knitr,
     testthat
+VignetteBuilder: knitr

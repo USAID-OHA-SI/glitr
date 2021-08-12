@@ -11,6 +11,25 @@ An object of class \code{character} of length 1.
 trolley_grey
 }
 \description{
-siei trolley grey
+SIEI trolley grey
 }
+\seealso{
+Other SIEI colors: 
+\code{\link{burnt_sienna_light}},
+\code{\link{burnt_sienna}},
+\code{\link{denim_light}},
+\code{\link{denim}},
+\code{\link{genoa_light}},
+\code{\link{genoa}},
+\code{\link{golden_sand_light}},
+\code{\link{golden_sand}},
+\code{\link{moody_blue_light}},
+\code{\link{moody_blue}},
+\code{\link{old_rose_light}},
+\code{\link{scooter_light}},
+\code{\link{scooter_med}},
+\code{\link{scooter}},
+\code{\link{trolley_grey_light}}
+}
+\concept{SIEI colors}
 \keyword{datasets}
