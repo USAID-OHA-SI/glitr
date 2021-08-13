@@ -147,6 +147,7 @@ Another way to use colors in plots is to assign color values to a new column in 
       labs(x = NULL, y = NULL, title = "HTS_TST FILLED BASED ON IDENTITY",
          subtitle = "ggplot2 default settings | Not real data.")
 ```
+
 To apply a continuous SIEI palette to a visualization, you can use the `scale_fill_si()` or `scale_color_si()` function. In the example below, we create a heat map, using `geom_tile()`, to show how testing targets vary across modality.
 
 ```{r encoding a heat map with continuous colors, fig.height = 5, fig.width = 7.5}
@@ -165,6 +166,7 @@ hts_hm %>%
          subtitle = "ggplot2 default settings | Not real data.")
   
 ```
+
 As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the `scale_fill_si()` function takes the `...` argument, we can pass a transformation option to the plot as well as define a new set of breaks. 
 
 ```{r using dot-dot-dot to transform color encoding, fig.height = 5, fig.width = 7.5}
@@ -173,7 +175,7 @@ As is, this graphic is not too informative. Everything is a light shade of scoot
     ggplot(aes(x = modality, y = partner_order, fill = value)) + 
     geom_tile(color = "white") +
     scale_fill_si(palette = "scooters", alpha = 0.85, trans = "log", 
-                  breaks = c(10, 100, 1000, 10000),
+                  breaks = c(1 * 10^(1:5)),
                   labels = comma,
                   name = "Targets") +
     labs(x = NULL, y = NULL, title = "LOG-TRANSFORMED COLOR ENCODING",

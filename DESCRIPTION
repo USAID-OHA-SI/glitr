@@ -35,5 +35,5 @@ Suggests:
     patchwork,
     sf, 
     purrr
-BuildVignettes: true
+BuildVignettes: false
 VignetteBuilder: knitr
