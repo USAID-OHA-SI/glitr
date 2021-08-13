@@ -25,6 +25,7 @@ Imports:
     extrafont
 Suggests: 
     rmarkdown,
+    markdown,
     knitr,
     testthat,
     dplyr, 
