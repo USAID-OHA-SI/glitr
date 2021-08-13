@@ -11,14 +11,6 @@ scale_fill_si(
   reverse = FALSE,
   ...
 )
-
-scale_fill_si(
-  palette = "genoas",
-  alpha = 1,
-  discrete = FALSE,
-  reverse = FALSE,
-  ...
-)
 }
 \arguments{
 \item{palette}{Choose from 'si_palettes' list}

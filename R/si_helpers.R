@@ -125,7 +125,6 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
   }
 
 
-#' @rdname scale_color_si
 #' @export
   scale_color_si <- scale_color_si
 
@@ -177,7 +176,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
     }
   }
 
-#' @rdname scale_fill_si
+
 #' @export
   scale_fill_si <- scale_fill_si
 
