@@ -39,6 +39,7 @@ library(ggtext)
 library(extrafont)
 library(patchwork)
 library(purrr)
+library(sf)
 ```
 
 
@@ -67,7 +68,7 @@ The set of colors that is probably of most interest is the SIEI recommended colo
 ![#f2bc40](https://via.placeholder.com/15/f2bc40/000000?text=+) golden_sand (#f2bc40)  
 ![#287c6f](https://via.placeholder.com/15/287c6f/000000?text=+) genoa (#287c6f)  
 
-```{r show colors, echo = T, fig.height = 2, fig.width = 6}
+```{r show colors, echo = T, fig.height = 2, fig.width = 4}
 # Any of these colors can be called by typing in the name of the color. 
 # The `show_col` function is from the `scales` package and is a handy way to preview a color. 
 show_col(genoa)
