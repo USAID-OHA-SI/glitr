@@ -173,15 +173,15 @@
 <span class="co">#&gt; [31] "wapo_lgreen"        "wapo_lmauve"        "wapo_lorange"      </span>
 <span class="co">#&gt; [34] "wapo_lorange2"      "wapo_lpurple"       "wapo_pushpop"</span></code></pre></div>
 <p>The set of colors that is probably of most interest is the SIEI recommended colors. As you may recall from the <a href="https://usaid-oha-si.github.io/styleguide/">Data Visualization Style Guild</a>, the SI team has created seven core colors:</p>
-<p><img src="https://via.placeholder.com/15/2057a7/000000?text=+" alt="#2057a7"> denim (#2057a7)<br><img src="https://via.placeholder.com/15/c43d4d/000000?text=+" alt="#c43d4d"> old_rose (#c43d4d)<br><img src="https://via.placeholder.com/15/8980cb/000000?text=+" alt="#8980cb"> moody_blue (#8980cb)<br><img src="https://via.placeholder.com/15/e07653/000000?text=+" alt="#e07653"> burnt_sienna (#e07653)<br><img src="https://via.placeholder.com/15/1e87a5/000000?text=+" alt="#1e87a5"> scooter (#1e87a5)<br><img src="https://via.placeholder.com/15/f2bc40/000000?text=+" alt="#f2bc40"> golden_sand (#f2bc40)<br><img src="https://via.placeholder.com/15/287c6f/000000?text=+" alt="#287c6f"> genoa (#287c6f)</p>
+<p><img src="https://via.placeholder.com/15/2057a7/000000?text=+" alt="#2057a7"> denim (#2057a7)<br><img src="https://via.placeholder.com/15/c43d4d/000000?text=+" alt="#c43d4d"> old_rose (#c43d4d)<br><img src="https://via.placeholder.com/15/8980cb/000000?text=+" alt="#8980cb"> moody_blue (#8980cb)<br><img src="https://via.placeholder.com/15/e07653/000000?text=+" alt="#e07653"> burnt_sienna (#e07653)<br><img src="https://via.placeholder.com/15/1e87a5/000000?text=+" alt="#1e87a5"> scooter (#1e87a5)<br><img src="https://via.placeholder.com/15/f2bc40/000000?text=+" alt="#f2bc40"> golden_sand (#f2bc40)<br><img src="https://via.placeholder.com/15/287c6f/000000?text=+" alt="#287c6f"> genoa (#287c6f)<br><img src="https://via.placeholder.com/15/808080/000000?text=+" alt="#808080"> trolley_grey (#808080)</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Any of these colors can be called by typing in the name of the color. </span>
 <span class="co"># The `show_col` function is from the `scales` package and is a handy way to preview a color. </span>
 <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span><span class="va">genoa</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/show%20colors-1.png" width="384"></p>
+<p><img src="adorn-your-plots_files/figure-html/show_colors-1.png" width="384"></p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html">c</a></span><span class="op">(</span><span class="va">denim</span>, <span class="va">old_rose</span>, <span class="va">moody_blue</span>, <span class="va">burnt_sienna</span><span class="op">)</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/show%20colors-2.png" width="384"></p>
+<p><img src="adorn-your-plots_files/figure-html/show_colors-2.png" width="384"></p>
 <p>To access to full list of discrete or continuous palettes, see the si_palettes list or call the color palette directly using the name (<code>si_palettes$color_name</code>). Color names that are singular (<code>genoa</code>, <code>old_rose</code>) are categorical palettes based on suggested color pairs. Color names that are plural (<code>genoas</code>) are continuous palettes that can be applied to continuous variables. If you attempt to apply a discrete palette to a continuous variable, the color pairs will be recycled to the length of the vector you are attempting to encode.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Returns the recommended paired colors with genoa as the base</span>
@@ -203,7 +203,7 @@
 <span class="co">#&gt; [22] "#00256B" "#001C61" "#001458" "#000C4F"</span>
 
 <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span><span class="va">denim_pal</span>, labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/custom%20palettes-1.png" width="576"></p>
+<p><img src="adorn-your-plots_files/figure-html/custom_palettes-1.png" width="576"></p>
 </div>
 <div id="applying-colors" class="section level3">
 <h3 class="hasAnchor">
@@ -232,7 +232,7 @@
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"HTS_TST_POS FILLED WITH SCOOTER COLOR"</span>,
          subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span>
   <span class="va">p</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/bar%20graph%20with%20colors-1.png" width="720"></p>
+<p><img src="adorn-your-plots_files/figure-html/bar_graph_colors-1.png" width="720"></p>
 <p>Another way to use colors in plots is to assign color values to a new column in a data frame. For example, say we would like to highlight the the two partners that have conducted the greatest number of tests. First, we will create a ranking variable that ranks partners by total testing. Then we will assign a set of colors based on the rankings.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Create a rank column, then assign colors based on threshold (&lt;=2)</span>
@@ -262,7 +262,7 @@
    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_identity.html">scale_fill_identity</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
       <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"HTS_TST FILLED BASED ON IDENTITY"</span>,
          subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/applying%20colors%20through%20columns-1.png" width="720"></p>
+<p><img src="adorn-your-plots_files/figure-html/apply_colors-1.png" width="720"></p>
 <p>To apply a continuous SIEI palette to a visualization, you can use the <code><a href="../reference/scale_fill_si.html">scale_fill_si()</a></code> or <code><a href="../reference/scale_color_si.html">scale_color_si()</a></code> function. In the example below, we create a heat map, using <code><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html">geom_tile()</a></code>, to show how testing targets vary across modality.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="va">hts_hm</span> <span class="op">&lt;-</span> <span class="va">hts</span> <span class="op">%&gt;%</span> 
@@ -278,7 +278,7 @@
   <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"scooters"</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"UNIMPRESSIVE HEAT MAP WITH SCOOTERS FILL"</span>,
          subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/encoding%20a%20heat%20map%20with%20continuous%20colors-1.png" width="720"></p>
+<p><img src="adorn-your-plots_files/figure-html/encode_a_heatmap-1.png" width="720"></p>
 <p>As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the <code><a href="../reference/scale_fill_si.html">scale_fill_si()</a></code> function takes the <code>...</code> argument, we can pass a transformation option to the plot as well as define a new set of breaks.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="co"># Log transform data, clean up legend, apply semi-transparency (alpha) and label</span>
@@ -296,7 +296,7 @@
               size <span class="op">=</span> <span class="fl">8</span><span class="op">/</span><span class="va">.pt</span>, family <span class="op">=</span> <span class="st">"Source Sans Pro"</span>, color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span>
     <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_discrete.html">scale_x_discrete</a></span><span class="op">(</span>guide <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/guide_axis.html">guide_axis</a></span><span class="op">(</span>n.dodge <span class="op">=</span> <span class="fl">2</span><span class="op">)</span>, position <span class="op">=</span> <span class="st">"top"</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/using%20dot-dot-dot%20to%20transform%20color%20encoding-1.png" width="720"></p>
+<p><img src="adorn-your-plots_files/figure-html/using_dot_dot_dot-1.png" width="720"></p>
 </div>
 <div id="si-themes" class="section level3">
 <h3 class="hasAnchor">
@@ -320,7 +320,7 @@
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html">labs</a></span><span class="op">(</span>caption <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html">paste</a></span><span class="op">(</span><span class="st">"Generated on "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">" by the SI team."</span><span class="op">)</span>,
       subtitle <span class="op">=</span> <span class="st">"si_style_xgrid() | Title, subtitle and caption formatted."</span><span class="op">)</span> <span class="op">+</span>
   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_cartesian.html">coord_cartesian</a></span><span class="op">(</span>expand <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="co"># Move names closer to y-axis</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/unnamed-chunk-4-1.png" width="720"></p>
+<p><img src="adorn-your-plots_files/figure-html/si_style_xgrid-1.png" width="720"></p>
 </div>
 <div id="comparing-themes" class="section level3">
 <h3 class="hasAnchor">
@@ -362,7 +362,7 @@
     <span class="va">hts_map</span> <span class="op">+</span>
     <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html">plot_annotation</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">"A comparison of si_style() themes"</span><span class="op">)</span> <span class="op">+</span>
     <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_layout.html">plot_layout</a></span><span class="op">(</span>ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
-<p><img src="adorn-your-plots_files/figure-html/generate%20all%20themes-1.png" width="720"></p>
+<p><img src="adorn-your-plots_files/figure-html/theme_comparison-1.png" width="720"></p>
 </div>
   </div>
 
