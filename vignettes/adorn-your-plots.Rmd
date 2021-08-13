@@ -43,7 +43,7 @@ library(sf)
 ```
 
 
-```{r what is inside glitr, echo = T, eval = T}
+```{r whats_inside, echo = T, eval = T}
 # Take a look at what's inside the package
 ls('package:glitr')
 ```
@@ -53,7 +53,7 @@ The package can be divided into three main parts i) __colors__, that come as obj
 ### Colors
 A number of pre-defined colors come with the `glitr` package. All objects starting with 'grey' belong to a family of gray colors where `grey10k` is the lightest and `grey90k` the darkest. Objects starting with `usaid_` are the official [USAID colors](https://www.usaid.gov/node/194331) while those starting with `wapo_` are Washington Post inspired colors. `seie_` colors are largely out of style but included for posterity. color_` denote objects that can be used to for filling in captions, gridlines, plot text or plot titles. The family of `color_` objects follows the colors recommended in the style guide. 
 
-```{r}
+```{r list_colors}
 # Colors belonging to greys, usaid_, wapo_ or siei_.
 grep("(grey|siei_|wapo_|usaid_)", ls('package:glitr'), value = T)
 ```
@@ -67,8 +67,9 @@ The set of colors that is probably of most interest is the SIEI recommended colo
 ![#1e87a5](https://via.placeholder.com/15/1e87a5/000000?text=+) scooter (#1e87a5)  
 ![#f2bc40](https://via.placeholder.com/15/f2bc40/000000?text=+) golden_sand (#f2bc40)  
 ![#287c6f](https://via.placeholder.com/15/287c6f/000000?text=+) genoa (#287c6f)  
+![#808080](https://via.placeholder.com/15/808080/000000?text=+) trolley_grey (#808080)
 
-```{r show colors, echo = T, fig.height = 2, fig.width = 4}
+```{r show_colors, echo = T, fig.height = 2, fig.width = 4}
 # Any of these colors can be called by typing in the name of the color. 
 # The `show_col` function is from the `scales` package and is a handy way to preview a color. 
 show_col(genoa)
@@ -87,7 +88,7 @@ si_palettes$genoas %>% show_col(labels = F, borders = F)
 
 Finally, if you want to create a custom palette from one of the color sets in the si_palettes list, you can do this using the `si_rampr()` function. 
 
-```{r custom palettes, fig.height = 3, fig.width = 6}
+```{r custom_palettes, fig.height = 3, fig.width = 6}
 # si_rampr takes a palette name and the number of interpolated colors (n) you wish to return as arguments. 
 denim_pal <- si_rampr(pal_name = "denims", n = 25)
 denim_pal
@@ -100,7 +101,7 @@ show_col(denim_pal, labels = F, borders = F)
 
 To add any of these colors to a graph, pass them as arguments in a ggplot2 call. We will work with one of the sample data sets to create a bar graph where positive testing results are colored with scooter. 
 
-```{r bar graph with colors, fig.height = 4, fig.width = 7.5}
+```{r bar_graph_colors, fig.height = 4, fig.width = 7.5}
 # Munge the hts data down to testing yields for a given year
   hts_bar <-
     hts %>%
@@ -127,7 +128,7 @@ To add any of these colors to a graph, pass them as arguments in a ggplot2 call.
 
 Another way to use colors in plots is to assign color values to a new column in a data frame. For example, say we would like to highlight the the two partners that have conducted the greatest number of tests. First, we will create a ranking variable that ranks partners by total testing. Then we will assign a set of colors based on the rankings.
 
-```{r applying colors through columns, fig.height = 4, fig.width = 7.5}
+```{r apply_colors, fig.height = 4, fig.width = 7.5}
 # Create a rank column, then assign colors based on threshold (<=2)
  hts_bar_rnkd <- hts_bar %>% 
   mutate(hts_rank = dense_rank(desc(HTS_TST)), 
@@ -150,7 +151,7 @@ Another way to use colors in plots is to assign color values to a new column in 
 
 To apply a continuous SIEI palette to a visualization, you can use the `scale_fill_si()` or `scale_color_si()` function. In the example below, we create a heat map, using `geom_tile()`, to show how testing targets vary across modality.
 
-```{r encoding a heat map with continuous colors, fig.height = 5, fig.width = 7.5}
+```{r encode_a_heatmap, fig.height = 5, fig.width = 7.5}
 hts_hm <- hts %>% 
   filter(period_type == "targets", period == "FY50") %>% 
   group_by(primepartner) %>% 
@@ -169,7 +170,7 @@ hts_hm %>%
 
 As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the `scale_fill_si()` function takes the `...` argument, we can pass a transformation option to the plot as well as define a new set of breaks. 
 
-```{r using dot-dot-dot to transform color encoding, fig.height = 5, fig.width = 7.5}
+```{r using_dot_dot_dot, fig.height = 5, fig.width = 7.5}
 # Log transform data, clean up legend, apply semi-transparency (alpha) and label
   hts_hm %>% 
     ggplot(aes(x = modality, y = partner_order, fill = value)) + 
@@ -193,7 +194,7 @@ As is, this graphic is not too informative. Everything is a light shade of scoot
 ### SI Themes
 In order to create visualizations that appear to belong to the same family ([Think Baldwin Brothers](https://live.staticflickr.com/4111/5195907338_df50404c30_b.jpg)), `glitr` includes nine ggplot themes that simplify a plot down to its core elements. At the base of these themes is the `si_style()`. 
 
-```{r}
+```{r list_themes}
 grep("(si_style)", ls('package:glitr'), value = T)
 ```
 
@@ -208,7 +209,7 @@ p + si_style() +
 
 You will notice the si_style strips the background gray color and converts the grid lines to a light shade of gray. As this plot is oriented horizontally, we can remove the extra y gridlines by using the `si_style_xgrid` theme. All of the si themes also come with pre-formatted titles, subtitles, and captions following the style guild standards. 
 
-```{r, fig.height = 4, fig.width = 7.5}
+```{r si_style_xgrid, fig.height = 4, fig.width = 7.5}
 p + 
   si_style_xgrid() + 
   scale_x_continuous(labels = comma) +
@@ -221,7 +222,7 @@ p +
 
 Below is a summary graphic showing all the available SI themes. 
 
-```{r generate all themes, fig.height = 7.5, fig.width = 7.5}
+```{r theme_comparison, fig.height = 7.5, fig.width = 7.5}
 
 # Create a list of all themes to loop over
   theme_list <- list('si_style()' = si_style(), 
