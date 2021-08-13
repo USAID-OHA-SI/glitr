@@ -2,7 +2,7 @@
 % Please edit documentation in R/si_helpers.R
 \name{scale_color_si}
 \alias{scale_color_si}
-\title{siei color scales for ggplot2}
+\title{scale_color_si}
 \usage{
 scale_color_si(
   palette = "genoas",
@@ -33,6 +33,9 @@ scale_color_si(
 }
 \description{
 SIEI colors available through scale_color_si
+}
+\details{
+siei color scales for ggplot2
 }
 \examples{
 \dontrun{

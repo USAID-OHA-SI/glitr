@@ -57,17 +57,17 @@ grep("(grey|siei_|wapo_|usaid_)", ls('package:glitr'), value = T)
 
 The set that is probably of most interest is the SIEI recommended colors. As you may recall from the [Data Visualization Style Guild](https://usaid-oha-si.github.io/styleguide/), the SI team has created seven core colors:
 
-![#2057a7](https://via.placeholder.com/10/2057a7/000000?text=+) denim  
-![#c43d4d](https://via.placeholder.com/10/c43d4d/000000?text=+) old_rose  
-![#8980cb](https://via.placeholder.com/10/8980cb/000000?text=+) moody_blue    
-![#e07653](https://via.placeholder.com/10/e07653/000000?text=+) burnt_sienna  
-![#1e87a5](https://via.placeholder.com/10/1e87a5/000000?text=+) scooter  
-![#f2bc40](https://via.placeholder.com/10/f2bc40/000000?text=+) golden_sand   
-![#287c6f](https://via.placeholder.com/10/287c6f/000000?text=+) genoa  
+![#2057a7](https://via.placeholder.com/15/2057a7/000000?text=+) denim (#2057a7)    
+![#c43d4d](https://via.placeholder.com/15/c43d4d/000000?text=+) old_rose (#c43d4d)   
+![#8980cb](https://via.placeholder.com/15/8980cb/000000?text=+) moody_blue (#8980cb)      
+![#e07653](https://via.placeholder.com/15/e07653/000000?text=+) burnt_sienna (#e07653)  
+![#1e87a5](https://via.placeholder.com/15/1e87a5/000000?text=+) scooter (#1e87a5)  
+![#f2bc40](https://via.placeholder.com/15/f2bc40/000000?text=+) golden_sand (#f2bc40)  
+![#287c6f](https://via.placeholder.com/15/287c6f/000000?text=+) genoa (#287c6f)  
 
 The hex codes for all these colors are added to your workspace when you load `glitr`. 
 ```{r show colors, echo = T, fig.height = 2, fig.width = 2}
-# Any of these colors can be called by simply typing in the name of the color. 
+# Any of these colors can be called by typing in the name of the color. 
 # The `show_col` function is from the `scales` package and is a handy way to preview a color. 
 show_col(genoa)
 show_col(c(denim, old_rose, moody_blue, burnt_sienna), borders = F)

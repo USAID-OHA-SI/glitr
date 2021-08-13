@@ -85,9 +85,8 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 
 
 #' siei color scales for ggplot2
-#' @rdname scale_color_si
+#' @title scale_color_si
 #' @description SIEI colors available through scale_color_si
-#'
 #'
 #' @param palette Choose from 'si_palettes' list
 #' @param reverse if true, reverses the order of palette
@@ -131,7 +130,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
   scale_color_si <- scale_color_si
 
 
-#' @rdname scale_fill_si
+#' @title  scale_fill_si
 #' @title SIEI colors for the scale_fill_ option
 #' @description SIEI colors available through scale_fill_si
 #'
