@@ -3,3 +3,5 @@
 
 * Migrate to website
 * Fix scale_fill_si and scale_color_si defaults
+* Renamed some color stubs (old si_ colors) to siei_
+* Started vignetted on how to use glitr themes and colors

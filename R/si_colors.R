@@ -1,18 +1,32 @@
-#' SI-themed color palettes
+#' @title List of SI Color Palettes
 #'
-#' A collection of color palettes gathered by the si team
-#' @title SI-theme color palettes
-#' @description Sets of color palettes that have been collected by the SI team
+#' @description
+#' Sets of color palettes that have been collected by the SI team.
+#' Includes all colors from the SIEI data visualization guide and a few additional palettes.
+#' Colors are stored as a named list. Use palette name or position to call in colors.
+#'
+#' Color sets are stored as the name of the first color.
+#' Calling `si_palettes$old_rose` will return the five color pairs where old_rose is the base.
+#' Calling `si_palettes$old_roses` will return an interpolated ramp of 11 colors for old_rose.
+#' See the SIEI data visualization guide for additional details.
+#'
 #' @importFrom scales show_col
+#'
 #' @export
+#'
+#' @seealso [si_rampr] for details on creating interpolated palettes of varying lengths.
+#'
 #' @examples
-#' # List the palettes available
 #' \dontrun{
+#' # List names of palettes available
 #' names(si_palettes)
 #'
+#' scales::show_col(si_palettes$siei)
+#' scales::show_col(si_palettes$old_roses)
+#'
 #' # Show palettes interpolated
-#' si_pal("carto_div_earth", n = 10) %>% scales::show_col(labels = FALSE)
-#' si_pal("carto_div_earth", n = 100) %>% scales::show_col(labels = FALSE)
+#' si_rampr("carto_div_earth", n = 10) %>% scales::show_col(labels = T)
+#' si_rampr("carto_div_earth", n = 100) %>% scales::show_col(labels = FALSE)
 #'}
 
 si_palettes <- list(
@@ -105,273 +119,351 @@ si_palettes <- list(
 
 
 #' @export
-#' @description blue color
-#' @title si inspired blue
-  si_blue = "#2166AC"
+#' @description blue color "#2166AC"
+#' @title SIEI inspired blue
+  siei_blue = "#2166AC"
 
 #' @export
-#' @description light blue
-#' @title si inspired  light blue
-  si_lblue = "#67A9CF"
+#' @description light blue "#67A9CF"
+#' @title SIEI inspired light blue
+  siei_lblue = "#67A9CF"
 
 #' @export
-#' @description dark grey
-#' @title si inspired dark grey
-  si_dgrey = "#595959"
+#' @description dark grey "#595959"
+#' @title SIEI inspired dark grey
+  siei_dgrey = "#595959"
 
 #' @export
-#' @description light orange
-#' @title si inspired light orange
-  si_lorange = "#f5b9a1"
+#' @description light orange "#f5b9a1"
+#' @title SIEI inspired light orange
+  siei_lorange = "#f5b9a1"
 
 #' @export
-#' @description normal orange
-#' @title si inspired orange
-  si_orange = "#EF8A62"
+#' @description normal orange "#EF8A62"
+#' @title SIEI inspired orange
+  siei_orange = "#EF8A62"
 
 #' @export
-#' @description dark shade of orange
-#' @title si inspired dark orange
-  si_dorange = "#D95709"
+#' @description dark shade of orange "#D95709"
+#' @title SIEI inspired dark orange
+  siei_dorange = "#D95709"
 
 #' @export
-#' @description wapo inspired purple
+#' @description wapo inspired purple "#C7ABC7"
 #' @title wapo inspired light purple
+#' @family Washington Post inspired
   wapo_lpurple = "#C7ABC7"
 
 #' @export
-#' @description wapo inspired light orange
+#' @description wapo inspired light orange "#F4AB67"
 #' @title wapo inspired light orange
+#' @family Washington Post inspired
   wapo_lorange = "#F4AB67"
 
 #' @export
-#' @description wapo inspired push-popish orange
+#' @description wapo inspired push-popish orange "#FEC693"
 #' @title wapo inspired pushpop orange
+#' @family Washington Post inspired
   wapo_pushpop = "#FEC693"
 
 #' @export
-#' @description wapo inspired light green
+#' @description wapo inspired light green "#B5D1D0"
 #' @title wapo inspired light green
+#' @family Washington Post inspired
   wapo_lgreen = "#B5D1D0"
 
 #' @export
-#' @description wapo inspired light orange
+#' @description wapo inspired light orange "#EFCAB4"
 #' @title wapo inspired light orange 2
+#' @family Washington Post inspired
   wapo_lorange2 = "#EFCAB4"
 
 #' @export
-#' @description wapo inspired dark orange
+#' @description wapo inspired dark orange "#DC7C33"
 #' @title wapo inspired dark orange
+#' @family Washington Post inspired
   wapo_dorange = "#DC7C33"
 
 #' @export
-#' @description wapo inspired light blue
+#' @description wapo inspired light blue "#B4D5E5"
 #' @title wapo inspired light blue
+#' @family Washington Post inspired
   wapo_lblue = "#B4D5E5"
 
 #' @export
-#' @description wapo inspired dark blue
+#' @description wapo inspired dark blue "#3579A8"
 #' @title wapo inspired dark blue
+#' @family Washington Post inspired
   wapo_dblue = "#3579A8"
 
 #' @export
-#' @description wapo inspired light mauve
+#' @description wapo inspired light mauve "#D8B3D4"
 #' @title wapo inspired light mauve
+#' @family Washington Post inspired
   wapo_lmauve = "#D8B3D4"
 
 #' @export
-#' @description wapo inspired dark mauve
+#' @description wapo inspired dark mauve "#B68AB8"
 #' @title wapo inspired dark mauve
+#' @family Washington Post inspired
   wapo_dmauve = "#B68AB8"
 
 
-# Inspired by Laura Hughes who was inspired by Adobe #grays
+# Inspired by Laura D. Hughes who was inspired by Adobe #grays
+
+
 #' @export
-#' @description lightest grey
-#' @title 10k grey
+#' @description
+#' One of the nine shades of grey included. The lower the k-value, the lighter the shade.
+#' grey10k is the lightest grey. hex value: "#E6E7E8".
+#' Useful for light reference lines, boxes or other areas.
+#' @title grey10k
+#' @family greys
   grey10k = "#E6E7E8"
 
 #' @export
-#' @description 20k grey
-#' @title 20k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#d1d3d4"
+#' @title grey20k
+#' @family greys
   grey20k = "#d1d3d4"
 
+#' One of the nine shades of grey included.
 #' @export
-#' @description 30k grey
-#' @title 30k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#BCBEC0"
+#' @title grey30k
+#' @family greys
   grey30k = "#BCBEC0"
 
 #' @export
-#' @description 40k grey
-#' @title 40k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#a7a9ac"
+#' @title grey40k
+#' @family greys
   grey40k = "#a7a9ac"
 
 #' @export
-#' @description 50k grey
-#' @title 50k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#939598"
+#' @title grey50k
+#' @family greys
   grey50k = "#939598"
 
 #' @export
-#' @description 60k grey
-#' @title 60k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#808080"
+#' @title grey60k
+#' @family greys
   grey60k = "#808080"
 
 #' @export
-#' @description 70k grey
-#' @title 70k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#6d6e71"
+#' @title grey70k
+#' @family greys
   grey70k = "#6d6e71"
 
 #' @export
-#' @description 80k grey
-#' @title 80k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' hex value: "#58595b"
+#' @title grey80k
+#' @family greys
   grey80k = "#58595b"
 
 #' @export
-#' @description 90k grey
-#' @title 90k grey
+#' @description
+#' One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+#' grey90k is the darkest grey.
+#' hex value: "#414042"
+#' @title grey90k
+#' @family greys
   grey90k = "#414042"
 
 # USAID specific
 #' @export
-#' @description usaid blue
-#' @title usaid blue
+#' @description
+#' USAID blue "#002a6c"
+#' @title USAID blue
+#' @family USAID colors
   usaid_blue = "#002a6c"
 
 #' @export
-#' @description usaid red
-#' @title usaid red
+#' @description
+#' USAID red "#ba0c2f"
+#' @title USAID red
+#' @family USAID colors
   usaid_red = "#ba0c2f"
 
 #' @export
-#' @description usaid black
-#' @title usaid black
+#' @description
+#' USAID black "#212721"
+#' @title USAID black
+#' @family USAID colors
   usaid_black = "#212721"
 
 #' @export
-#' @description usaid medblue
-#' @title usaid mdeblue
+#' @description
+#' USAID medium blue "#0067b9"
+#' @title USAID medium blue
+#' @family USAID colors
   usaid_medblue = "#0067b9"
 
 #' @export
-#' @description usaid light blue
-#' @title usaid light blue
+#' @description
+#' USAID light blue "#a7c6ed"
+#' @title USAID light blue
+#' @family USAID colors
   usaid_lightblue = "#a7c6ed"
 
 #' @export
-#' @description usaid dark grey
-#' @title usaid dark grey
+#' @description
+#' USAID dark grey "#6c6463"
+#' @title USAID dark grey
+#' @family USAID colors
   usaid_darkgrey = "#6c6463"
 
 #' @export
-#' @description usaid med grey
-#' @title usaid med grey
+#' @description
+#' USAID med grey "#8C8985"
+#' @title USAID med grey
+#' @family USAID colors
   usaid_medgrey = "#8C8985"
 
 #' @export
-#' @description usaid light grey
-#' @title usaid light grey
+#' @description
+#' USAID light grey "#cfcdc9"
+#' @title USAID light grey
+#' @family USAID colors
   usaid_lightgrey = "#cfcdc9"
 
 
 # SIEI Recommended  colors
+#' @family SIEI colors
 #' @export
-#' @description siei denim
+#' @description SIEI denim
 #' @title denim
   denim = "#2057a7"
 
+
+#' @family SIEI colors
 #' @export
-#' @description siei denim light
+#' @description SIEI denim light
 #' @title denim light
   denim_light = "#bfddff"
 
 #' @export
-#' @description siei old rose
+#' @description SIEI old rose
 #' @title old rose light
   old_rose = "#c43d4d"
 
+#' @family SIEI colors
 #' @export
-#' @description siei old rose light
+#' @description SIEI old rose light
 #' @title old rose light
   old_rose_light = "#ff939a"
 
+#' @family SIEI colors
 #' @export
-#' @description siei moody blue
+#' @description SIEI moody blue
 #' @title moody blue
   moody_blue = "#8980cb"
 
+#' @family SIEI colors
 #' @export
-#' @description siei moody blue light
+#' @description SIEI moody blue light
 #' @title moody blue light
   moody_blue_light = "#dfd3ff"
 
+#' @family SIEI colors
 #' @export
-#' @description siei burnt sienna
+#' @description SIEI burnt sienna
 #' @title burnt sienna
   burnt_sienna = "#e07653"
 
+#' @family SIEI colors
 #' @export
-#' @description siei burnt sienna light
+#' @description SIEI burnt sienna light
 #' @title burnt sienna light
   burnt_sienna_light = "#ffcaa2"
 
-
+#' @family SIEI colors
 #' @export
-#' @description siei scooter
+#' @description SIEI scooter
 #' @title scooter
   scooter = "#1e87a5"
 
+#' @family SIEI colors
 #' @export
-#' @description siei scooter medium
+#' @description SIEI scooter medium
 #' @title scooter medium
   scooter_med = "#5BB5D5"
 
+#' @family SIEI colors
 #' @export
-#' @description siei scooter light
+#' @description SIEI scooter light
 #' @title scooter light
   scooter_light = "#83dbfb"
 
+#' @family SIEI colors
 #' @export
-#' @description siei golden sand
+#' @description SIEI golden sand
 #' @title golden sand
   golden_sand = "#f2bc40"
 
+
+#' @family SIEI colors
 #' @export
-#' @description siei golden sand light
+#' @description SIEI golden sand light
 #' @title golden sand light
   golden_sand_light = "#ffdda2"
 
+
+#' @family SIEI colors
 #' @export
-#' @description siei genoa
+#' @description SIEI genoa
 #' @title genoa (green)
   genoa = "#287c6f"
 
+#' @family SIEI colors
 #' @export
-#' @description siei genoa light
+#' @description SIEI genoa light
 #' @title genoa light (green)
   genoa_light = "#7ecfc0"
 
+#' @family SIEI colors
 #' @export
-#' @description siei trolley grey
+#' @description SIEI trolley grey
 #' @title trolley grey
   trolley_grey = "#808080"
 
+#' @family SIEI colors
 #' @export
-#' @description siei trolley grey light
+#' @description SIEI trolley grey light
 #' @title trolley grey light
   trolley_grey_light = "#e6e6e6"
 
 #' @export
-#' @description siei nerp
+#' @description SIEI nero
 #' @title nero
   nero = "#202020"
 
 #' @export
-#' @description siei matterhorn
+#' @description SIEI matterhorn
 #' @title matterhorn
   matterhorn = "#505050"
 
 #' @export
-#' @description siei suva grey
+#' @description SIEI suva grey
 #' @title suva grey
   suva_grey = "#909090"
+
+
 

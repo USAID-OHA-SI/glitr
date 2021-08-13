@@ -3,7 +3,7 @@
 \docType{data}
 \name{si_palettes}
 \alias{si_palettes}
-\title{SI-theme color palettes}
+\title{List of SI Color Palettes}
 \format{
 An object of class \code{list} of length 41.
 }
@@ -11,21 +11,29 @@ An object of class \code{list} of length 41.
 si_palettes
 }
 \description{
-Sets of color palettes that have been collected by the SI team
-}
-\details{
-SI-themed color palettes
+Sets of color palettes that have been collected by the SI team.
+Includes all colors from the SIEI data visualization guide and a few additional palettes.
+Colors are stored as a named list. Use palette name or position to call in colors.
 
-A collection of color palettes gathered by the si team
+Color sets are stored as the name of the first color.
+Calling `si_palettes$old_rose` will return the five color pairs where old_rose is the base.
+Calling `si_palettes$old_roses` will return an interpolated ramp of 11 colors for old_rose.
+See the SIEI data visualization guide for additional details.
 }
 \examples{
-# List the palettes available
 \dontrun{
+# List names of palettes available
 names(si_palettes)
 
+scales::show_col(si_palettes$siei)
+scales::show_col(si_palettes$old_roses)
+
 # Show palettes interpolated
-si_pal("carto_div_earth", n = 10) \%>\% scales::show_col(labels = FALSE)
-si_pal("carto_div_earth", n = 100) \%>\% scales::show_col(labels = FALSE)
+si_rampr("carto_div_earth", n = 10) \%>\% scales::show_col(labels = T)
+si_rampr("carto_div_earth", n = 100) \%>\% scales::show_col(labels = FALSE)
 }
+}
+\seealso{
+[si_rampr] for details on creating interpolated palettes of varying lengths.
 }
 \keyword{datasets}

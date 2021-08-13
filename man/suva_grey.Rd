@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 suva_grey
 }
 \description{
-siei suva grey
+SIEI suva grey
 }
 \keyword{datasets}

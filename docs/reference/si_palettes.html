@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>SI-theme color palettes — si_palettes • glitr</title>
+<title>List of SI Color Palettes — si_palettes • glitr</title>
 
 <!-- favicons -->
 <link rel="icon" type="image/png" sizes="16x16" href="../favicon-16x16.png">
@@ -46,8 +46,14 @@
 
 
 
-<meta property="og:title" content="SI-theme color palettes — si_palettes" />
-<meta property="og:description" content="Sets of color palettes that have been collected by the SI team" />
+<meta property="og:title" content="List of SI Color Palettes — si_palettes" />
+<meta property="og:description" content="Sets of color palettes that have been collected by the SI team.
+Includes all colors from the SIEI data visualization guide and a few additional palettes.
+Colors are stored as a named list. Use palette name or position to call in colors.
+Color sets are stored as the name of the first color.
+Calling `si_palettes$old_rose` will return the five color pairs where old_rose is the base.
+Calling `si_palettes$old_roses` will return an interpolated ramp of 11 colors for old_rose.
+See the SIEI data visualization guide for additional details." />
 <meta property="og:image" content="/logo.png" />
 
 
@@ -103,7 +109,7 @@
   </a>
   <ul class="dropdown-menu" role="menu">
     <li>
-      <a></a>
+      <a href="../articles/adorn-your-plots.html">How to adorn your plots</a>
     </li>
   </ul>
 </li>
@@ -131,13 +137,19 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>SI-theme color palettes</h1>
+    <h1>List of SI Color Palettes</h1>
     <small class="dont-index">Source: <a href='https://github.com/USAID-OHA-SI/glitr/blob/master/R/si_colors.R'><code>R/si_colors.R</code></a></small>
     <div class="hidden name"><code>si_palettes.Rd</code></div>
     </div>
 
     <div class="ref-description">
-    <p>Sets of color palettes that have been collected by the SI team</p>
+    <p>Sets of color palettes that have been collected by the SI team.
+Includes all colors from the SIEI data visualization guide and a few additional palettes.
+Colors are stored as a named list. Use palette name or position to call in colors.</p>
+<p>Color sets are stored as the name of the first color.
+Calling `si_palettes$old_rose` will return the five color pairs where old_rose is the base.
+Calling `si_palettes$old_roses` will return an interpolated ramp of 11 colors for old_rose.
+See the SIEI data visualization guide for additional details.</p>
     </div>
 
     <pre class="usage"><span class='va'>si_palettes</span></pre>
@@ -146,19 +158,21 @@
     <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
 
     <p>An object of class <code>list</code> of length 41.</p>
-    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
+    <h2 class="hasAnchor" id="see-also"><a class="anchor" href="#see-also"></a>See also</h2>
 
-    <p>SI-themed color palettes</p>
-<p>A collection of color palettes gathered by the si team</p>
+    <div class='dont-index'><p>[si_rampr] for details on creating interpolated palettes of varying lengths.</p></div>
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='co'># List the palettes available</span>
-<span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
+    <pre class="examples"><div class='input'><span class='kw'>if</span> <span class='op'>(</span><span class='cn'>FALSE</span><span class='op'>)</span> <span class='op'>{</span>
+<span class='co'># List names of palettes available</span>
 <span class='fu'><a href='https://rdrr.io/r/base/names.html'>names</a></span><span class='op'>(</span><span class='va'>si_palettes</span><span class='op'>)</span>
 
+<span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/show_col.html'>show_col</a></span><span class='op'>(</span><span class='va'>si_palettes</span><span class='op'>$</span><span class='va'>siei</span><span class='op'>)</span>
+<span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/show_col.html'>show_col</a></span><span class='op'>(</span><span class='va'>si_palettes</span><span class='op'>$</span><span class='va'>old_roses</span><span class='op'>)</span>
+
 <span class='co'># Show palettes interpolated</span>
-<span class='fu'><a href='si_pal.html'>si_pal</a></span><span class='op'>(</span><span class='st'>"carto_div_earth"</span>, n <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/show_col.html'>show_col</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
-<span class='fu'><a href='si_pal.html'>si_pal</a></span><span class='op'>(</span><span class='st'>"carto_div_earth"</span>, n <span class='op'>=</span> <span class='fl'>100</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/show_col.html'>show_col</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
+<span class='fu'><a href='si_rampr.html'>si_rampr</a></span><span class='op'>(</span><span class='st'>"carto_div_earth"</span>, n <span class='op'>=</span> <span class='fl'>10</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/show_col.html'>show_col</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='cn'>T</span><span class='op'>)</span>
+<span class='fu'><a href='si_rampr.html'>si_rampr</a></span><span class='op'>(</span><span class='st'>"carto_div_earth"</span>, n <span class='op'>=</span> <span class='fl'>100</span><span class='op'>)</span> <span class='op'>%&gt;%</span> <span class='fu'>scales</span><span class='fu'>::</span><span class='fu'><a href='https://scales.r-lib.org/reference/show_col.html'>show_col</a></span><span class='op'>(</span>labels <span class='op'>=</span> <span class='cn'>FALSE</span><span class='op'>)</span>
 <span class='op'>}</span>
 </div></pre>
   </div>

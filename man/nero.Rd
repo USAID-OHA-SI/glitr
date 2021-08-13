@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 nero
 }
 \description{
-siei nerp
+SIEI nero
 }
 \keyword{datasets}

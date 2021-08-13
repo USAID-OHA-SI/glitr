@@ -3,7 +3,7 @@
 \docType{data}
 \name{grey50k}
 \alias{grey50k}
-\title{50k grey}
+\title{grey50k}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,19 @@ An object of class \code{character} of length 1.
 grey50k
 }
 \description{
-50k grey
+One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+hex value: "#939598"
 }
+\seealso{
+Other greys: 
+\code{\link{grey10k}},
+\code{\link{grey20k}},
+\code{\link{grey30k}},
+\code{\link{grey40k}},
+\code{\link{grey60k}},
+\code{\link{grey70k}},
+\code{\link{grey80k}},
+\code{\link{grey90k}}
+}
+\concept{greys}
 \keyword{datasets}

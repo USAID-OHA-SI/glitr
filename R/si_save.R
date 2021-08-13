@@ -41,7 +41,8 @@ si_save <- function(filename,
      filename <- paste0(filename, ".png")
 
   ggplot2::ggsave(filename, plot, path = path,
-                  scale = scale, width = width, height = height,
+                  scale = scale, width = width,
+                  height = height,
                   dpi = dpi, ...)
 }
 

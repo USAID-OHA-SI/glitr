@@ -11,6 +11,25 @@ An object of class \code{character} of length 1.
 golden_sand
 }
 \description{
-siei golden sand
+SIEI golden sand
 }
+\seealso{
+Other SIEI colors: 
+\code{\link{burnt_sienna_light}},
+\code{\link{burnt_sienna}},
+\code{\link{denim_light}},
+\code{\link{denim}},
+\code{\link{genoa_light}},
+\code{\link{genoa}},
+\code{\link{golden_sand_light}},
+\code{\link{moody_blue_light}},
+\code{\link{moody_blue}},
+\code{\link{old_rose_light}},
+\code{\link{scooter_light}},
+\code{\link{scooter_med}},
+\code{\link{scooter}},
+\code{\link{trolley_grey_light}},
+\code{\link{trolley_grey}}
+}
+\concept{SIEI colors}
 \keyword{datasets}

@@ -11,6 +11,6 @@ An object of class \code{character} of length 1.
 matterhorn
 }
 \description{
-siei matterhorn
+SIEI matterhorn
 }
 \keyword{datasets}

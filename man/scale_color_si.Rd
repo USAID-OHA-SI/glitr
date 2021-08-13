@@ -2,16 +2,8 @@
 % Please edit documentation in R/si_helpers.R
 \name{scale_color_si}
 \alias{scale_color_si}
-\title{siei color scales for ggplot2}
+\title{scale_color_si}
 \usage{
-scale_color_si(
-  palette = "genoas",
-  alpha = 1,
-  discrete = FALSE,
-  reverse = FALSE,
-  ...
-)
-
 scale_color_si(
   palette = "genoas",
   alpha = 1,
@@ -34,13 +26,15 @@ scale_color_si(
 \description{
 SIEI colors available through scale_color_si
 }
+\details{
+siei color scales for ggplot2
+}
 \examples{
 \dontrun{
-#
 library(ggplot2)
 library(glitr)
 
-Apply palettes to discrete or continuous colors
+# Apply palettes to discrete or continuous colors
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = cut)) +
 scale_color_si("genoas", discrete = T)

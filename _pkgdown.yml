@@ -24,8 +24,8 @@ navbar:
     articles:
       text: Articles
       menu:
-        -text:
-         href:
+      - text: How to adorn your plots
+        href: articles/adorn-your-plots.html
 
 
 
@@ -43,7 +43,7 @@ reference:
   - si_style_yline
 
 
-- title: Plotting
+- title: Plotting Helpers
   contents:
   - color_caption
   - color_gridline
@@ -128,12 +128,12 @@ reference:
 - title: Miscellaneous
   contents:
   - check_fonts
-  - si_blue
-  - si_dgrey
-  - si_dorange
-  - si_lblue
-  - si_lorange
-  - si_orange
+  - siei_blue
+  - siei_dgrey
+  - siei_dorange
+  - siei_lblue
+  - siei_lorange
+  - siei_orange
 
 
 

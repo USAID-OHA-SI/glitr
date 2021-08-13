@@ -11,6 +11,19 @@ An object of class \code{character} of length 1.
 wapo_dblue
 }
 \description{
-wapo inspired dark blue
+wapo inspired dark blue "#3579A8"
 }
+\seealso{
+Other Washington Post inspired: 
+\code{\link{wapo_dmauve}},
+\code{\link{wapo_dorange}},
+\code{\link{wapo_lblue}},
+\code{\link{wapo_lgreen}},
+\code{\link{wapo_lmauve}},
+\code{\link{wapo_lorange2}},
+\code{\link{wapo_lorange}},
+\code{\link{wapo_lpurple}},
+\code{\link{wapo_pushpop}}
+}
+\concept{Washington Post inspired}
 \keyword{datasets}

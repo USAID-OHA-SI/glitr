@@ -3,7 +3,7 @@
 \docType{data}
 \name{grey90k}
 \alias{grey90k}
-\title{90k grey}
+\title{grey90k}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -11,6 +11,20 @@ An object of class \code{character} of length 1.
 grey90k
 }
 \description{
-90k grey
+One of the nine shades of grey included. The lower (higher) the k-value, the lighter (darker) the shade.
+grey90k is the darkest grey.
+hex value: "#414042"
 }
+\seealso{
+Other greys: 
+\code{\link{grey10k}},
+\code{\link{grey20k}},
+\code{\link{grey30k}},
+\code{\link{grey40k}},
+\code{\link{grey50k}},
+\code{\link{grey60k}},
+\code{\link{grey70k}},
+\code{\link{grey80k}}
+}
+\concept{greys}
 \keyword{datasets}

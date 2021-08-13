@@ -2,16 +2,8 @@
 % Please edit documentation in R/si_helpers.R
 \name{scale_fill_si}
 \alias{scale_fill_si}
-\title{SIEI colors for the scale_fill_ option}
+\title{scale_fill_si}
 \usage{
-scale_fill_si(
-  palette = "genoas",
-  alpha = 1,
-  discrete = FALSE,
-  reverse = FALSE,
-  ...
-)
-
 scale_fill_si(
   palette = "genoas",
   alpha = 1,
