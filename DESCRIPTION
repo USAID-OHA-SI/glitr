@@ -19,6 +19,7 @@ Depends:
     R (>= 3.5.0)
 Imports: 
     ggplot2,
+    ggtext,
     magrittr,
     scales,
     usethis,
@@ -30,7 +31,6 @@ Suggests:
     testthat,
     dplyr, 
     forcats,
-    ggtext,
     tidyr, 
     patchwork,
     sf, 
