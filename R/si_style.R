@@ -30,7 +30,7 @@ si_style <- function(font_title = "Source Sans Pro",
   ggplot2::theme_minimal() %+replace%
 
   ggplot2::theme(
-    plot.title = ggplot2::element_text(
+    plot.title = ggplot2::element_markdown(
       family = font_title,
       size = 14,
       face = "bold",
@@ -39,13 +39,13 @@ si_style <- function(font_title = "Source Sans Pro",
       hjust = 0),
 
     #This sets the font, size, type and colour of text for the chart's subtitle, as well as setting a margin between the title and the subtitle
-    plot.subtitle = ggplot2::element_text(
+    plot.subtitle = ggplot2::element_markdown(
       family = font_subtitle,
       size = 12,
       color = color_title,
       margin = ggplot2::margin(b = half_line),
       hjust = 0),
-    plot.caption = ggplot2::element_text(
+    plot.caption = ggplot2::element_markdown(
       family = font_caption,
       size = 9,
       color = color_caption,
@@ -62,23 +62,23 @@ si_style <- function(font_title = "Source Sans Pro",
     legend.background = ggplot2::element_blank(),
     #legend.title = ggplot2::element_blank(),
     legend.key = ggplot2::element_blank(),
-    legend.title = ggplot2::element_text(
+    legend.title = ggplot2::element_markdown(
       family = font_title,
       size = 11,
       color = color_plot_text),
-    legend.text = ggplot2::element_text(
+    legend.text = ggplot2::element_markdown(
       family = font_title,
       size = 11,
       color = color_plot_text),
 
     #Axis format
-    axis.text = ggplot2::element_text(
+    axis.text = ggplot2::element_markdown(
       family = font_plot,
       size = 10,
       color = color_plot_text),
     axis.ticks = ggplot2::element_blank(),
     axis.line = ggplot2::element_blank(),
-    axis.title = ggplot2::element_text(
+    axis.title = ggplot2::element_markdown(
       family = font_plot,
       size = 10,
       colour = color_plot_text),
@@ -95,7 +95,7 @@ si_style <- function(font_title = "Source Sans Pro",
 
     #Strip background (This sets the panel background for facet-wrapped plots to white)
     strip.background = ggplot2::element_blank(),
-    strip.text = ggplot2::element_text(
+    strip.text = ggplot2::element_markdown(
       family = font_title,
       size  = 11,
       hjust = 0,
