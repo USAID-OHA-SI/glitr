@@ -19,8 +19,8 @@ If you do not have the devtools package installed, you will have to run the `ins
 ## SETUP
 
   #install
-    install.packages("devtools")
-    devtools::install_github("USAID-OHA-SI/glitr")
+    install.packages("remotes")
+    remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
     
   #load the package
     library(glitr)
