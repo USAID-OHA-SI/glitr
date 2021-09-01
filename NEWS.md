@@ -1,6 +1,7 @@
 
 # glitr 0.0.0.9000
 
+* Add white background to plots rather than having them be tranparent
 * Migrate to website
 * Fix scale_fill_si and scale_color_si defaults
 * Renamed some color stubs (old si_ colors) to siei_
