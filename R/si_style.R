@@ -92,6 +92,7 @@ si_style <- function(font_title = "Source Sans Pro",
     panel.background = ggplot2::element_blank(),
     panel.border = ggplot2::element_blank(),
     panel.spacing = unit(2, "lines"),
+    plot.background = ggplot2::element_rect(fill = "white", color = NA),
 
     #Strip background (This sets the panel background for facet-wrapped plots to white)
     strip.background = ggplot2::element_blank(),
