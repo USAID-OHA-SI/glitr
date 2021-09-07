@@ -18,7 +18,7 @@ RoxygenNote: 7.1.1
 Depends: 
     R (>= 3.5.0)
 Imports: 
-    ggplot2,
+    ggplot2 (>= 3.3.0),
     magrittr,
     scales,
     usethis,
