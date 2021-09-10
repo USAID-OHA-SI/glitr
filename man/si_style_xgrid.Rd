@@ -4,7 +4,10 @@
 \alias{si_style_xgrid}
 \title{SI style plot with only x-axis gridlines}
 \usage{
-si_style_xgrid()
+si_style_xgrid(...)
+}
+\arguments{
+\item{...}{inherits parameters from [si_style()]}
 }
 \description{
 Incorporates the default si_style graph and modifies it to include on x-axis gridlines. Useful for when you are highlighting a vertical comparison, such as rotated bar graphs

@@ -4,7 +4,10 @@
 \alias{si_style_ygrid}
 \title{SI style plot with only y-axis gridlines}
 \usage{
-si_style_ygrid()
+si_style_ygrid(...)
+}
+\arguments{
+\item{...}{inherits parameters from [si_style()]}
 }
 \description{
 Incorporates the default si_style graph and modifies it to include on y-axis gridlines. Useful for when you are highlighting a horizontal comparison.

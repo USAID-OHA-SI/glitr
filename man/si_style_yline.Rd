@@ -4,7 +4,10 @@
 \alias{si_style_yline}
 \title{SI style plot with y-axis line drawn}
 \usage{
-si_style_yline()
+si_style_yline(...)
+}
+\arguments{
+\item{...}{inherits parameters from [si_style()]}
 }
 \description{
 May be used in place of si_style_blank if you would like to anchor the y-axis.

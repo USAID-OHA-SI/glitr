@@ -4,7 +4,10 @@
 \alias{si_style_xyline}
 \title{Create Standard SI Plots showing only both x and y axis lines}
 \usage{
-si_style_xyline()
+si_style_xyline(...)
+}
+\arguments{
+\item{...}{inherits parameters from [si_style()]}
 }
 \description{
 Create Standard SI Plots showing only both x and y axis lines

@@ -4,7 +4,10 @@
 \alias{si_style_map}
 \title{Create Standard SI Map}
 \usage{
-si_style_map()
+si_style_map(...)
+}
+\arguments{
+\item{...}{inherits parameters from [si_style()]}
 }
 \description{
 Create Standard SI Map
@@ -34,7 +37,8 @@ ggplot() +
    labs(title = "NIGERIA - \% OF PLHIV BY STATE",
         subtitle = "States from XYZ Region are the most hit by HIV/AIDS",
         caption = base::paste0("Produced by OHA/SIEI/SI, ON ", base::Sys.Date())) +
-  si_style_map()
+  si_style_map() +
+  si_legend_fill()
 }
 
 }

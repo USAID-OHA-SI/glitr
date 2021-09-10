@@ -8,7 +8,10 @@ si_style(
   font_title = "Source Sans Pro",
   font_subtitle = "Source Sans Pro",
   font_plot = "Source Sans Pro",
-  font_caption = "Source Sans Pro"
+  font_caption = "Source Sans Pro",
+  facet_space = 2,
+  text_scale = 1,
+  ...
 )
 }
 \arguments{
@@ -19,6 +22,12 @@ si_style(
 \item{font_plot}{font family for the plot space}
 
 \item{font_caption}{font family for captions}
+
+\item{facet_space}{controls how far apart facets are from each other}
+
+\item{text_scale}{scalar that will grow/shrink all text defined within}
+
+\item{...}{pass any parameters from theme that are not already defined within}
 }
 \description{
 This function adorns your ggplot to convert it into a SI style plot. The default font is Source Sans Pro

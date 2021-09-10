@@ -1,6 +1,7 @@
 
 #' @title SI style plot with only y-axis gridlines
 #' @description Incorporates the default si_style graph and modifies it to include on y-axis gridlines. Useful for when you are highlighting a horizontal comparison.
+#' @param ... inherits parameters from [si_style()]
 #' @export
 #' @examples
 #' \dontrun{
@@ -11,8 +12,8 @@
 #'}
 
   # Show only y axis lines
-    si_style_ygrid <- function() {
-      si_style() %+replace%
+    si_style_ygrid <- function(...) {
+      si_style(...) %+replace%
         theme(
           panel.grid.major.x = ggplot2::element_blank()
         )
@@ -23,6 +24,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme
+#' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
 #' ibrary(extrafont)
@@ -32,8 +34,8 @@
 #'}
 
   # Show only x axis lines
-    si_style_xgrid <- function() {
-      si_style() %+replace%
+    si_style_xgrid <- function(...) {
+      si_style(...) %+replace%
         theme(
           panel.grid.major.y = ggplot2::element_blank()
         )
@@ -44,6 +46,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme
+#' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
 #' library(extrafont)
@@ -53,8 +56,8 @@
 #'}
 
   # Show no axis lines
-    si_style_nolines <- function() {
-      si_style() %+replace%
+    si_style_nolines <- function(...) {
+      si_style(...) %+replace%
         theme(
           panel.grid.major.y = ggplot2::element_blank(),
           panel.grid.major.x = ggplot2::element_blank(),
@@ -67,6 +70,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
+#' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
 #' library(extrafont)
@@ -75,8 +79,8 @@
 #'   geom_point() + si_style_xline()
 #'}
 
-    si_style_xline <- function() {
-      si_style_nolines() %+replace%
+    si_style_xline <- function(...) {
+      si_style_nolines(...) %+replace%
         theme(
           axis.line.x = element_line(colour = color_gridline)
         )
@@ -88,6 +92,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
+#' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
 #' library(extrafont)
@@ -96,8 +101,8 @@
 #'   geom_point() + si_style_yline()
 #'}
 
-    si_style_yline <- function() {
-      si_style_nolines() %+replace%
+    si_style_yline <- function(...) {
+      si_style_nolines(...) %+replace%
         theme(
           axis.line.y = element_line(colour = color_gridline)
         )
@@ -108,6 +113,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
+#' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
 #' library(extrafont)
@@ -116,8 +122,8 @@
 #'   geom_point() + si_style_xyline()
 #'}
 #'
-  si_style_xyline <- function() {
-      si_style() %+replace%
+  si_style_xyline <- function(...) {
+      si_style(...) %+replace%
         theme(
           axis.line = element_line(colour = color_gridline),
           panel.grid.major.y = ggplot2::element_blank(),
@@ -130,6 +136,7 @@
 #'
 #' @export
 #' @importFrom ggplot2 %+replace%
+#' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
 #'
@@ -155,20 +162,18 @@
 #'    labs(title = "NIGERIA - % OF PLHIV BY STATE",
 #'         subtitle = "States from XYZ Region are the most hit by HIV/AIDS",
 #'         caption = base::paste0("Produced by OHA/SIEI/SI, ON ", base::Sys.Date())) +
-#'   si_style_map()
+#'   si_style_map() +
+#'   si_legend_fill()
 #'}
 #'
-  si_style_map <- function() {
+  si_style_map <- function(...) {
     ggplot2::theme_void() %+replace%
-    si_style() %+replace%
+      si_style(...) %+replace%
       theme(
         line = ggplot2::element_blank(),
         rect = ggplot2::element_blank(),
         axis.text.x = ggplot2::element_blank(),
         axis.text.y = ggplot2::element_blank(),
-        legend.direction = "horizontal",
-        legend.title = ggplot2::element_blank(),
-        legend.key.width = ggplot2::unit(1.75, "cm")
       )
   }
 
