@@ -2,30 +2,27 @@
 % Please edit documentation in R/si_legends.R
 \name{si_legend_fill}
 \alias{si_legend_fill}
-\title{SI recommended legend style for fill aesthetics
-
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}} Function attempts to create a well
-formatted fill-based legend to adorn an existing plot.}
+\title{SI legend for fill aesthetics}
 \usage{
 si_legend_fill()
 }
-\arguments{
-\item{.keep}{\Sexpr[results=rd]{lifecycle::badge("experimental")}
-This is an experimental argument that allows you to control which columns
-from \code{.data} are retained in the output:}
-}
 \description{
-SI recommended legend style for fill aesthetics
-
-\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}} Function attempts to create a well
-formatted fill-based legend to adorn an existing plot.
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}}
+Function attempts to create a well
+formatted color-based legend to adorn an existing plot.
+}
+\details{
+This helper function compliments the various \code{\link[=si_style]{si_style()}} themes.
+The main action is to move a fill-based legend to the top left
+of the plot and stretch the legend. The same action can be done
+using the \code{\link[ggplot2:guides]{ggplot2::guides()}} function.
 }
 \examples{
 \dontrun{
 library(extrafont)
 library(ggplot2)
-ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
-  geom_point() + si_style_xyline()
+ggplot(iris, aes(Sepal.Length, y = Sepal.Width, fill = Sepal.Width)) +
+geom_point(shape = 21, size = 4) + si_legend_fill() + si_style()
 }
 
 }

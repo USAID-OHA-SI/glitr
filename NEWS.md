@@ -1,4 +1,14 @@
 # glitr 0.0.1
+* Add `...` to all `si_style()` functions
+  * Allows for passing of theme elements not defined in `si_sytle()`  
+  
+* Add experimental legend functions to create nice legends
+  * `si_legend_fill()` adds a fill-based legend
+  * `si_legend_color()` adds a color-based legend
+
+* New parameters incorporated into si_style() function
+  * `facet_space` lets you change space between facets
+  * `text_scale` allows for scaling of text size for entire plot
 
 
 # glitr 0.0.0.9000

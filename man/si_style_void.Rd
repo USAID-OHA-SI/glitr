@@ -4,7 +4,10 @@
 \alias{si_style_void}
 \title{Create ggplot with no axes or no grid lines}
 \usage{
-si_style_void()
+si_style_void(...)
+}
+\arguments{
+\item{...}{inherits parameters from \code{\link[=si_style]{si_style()}}}
 }
 \description{
 Create ggplot with no axes or no grid lines
