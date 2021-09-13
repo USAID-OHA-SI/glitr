@@ -2,12 +2,18 @@
 % Please edit documentation in R/si_legends.R
 \name{si_legend_color}
 \alias{si_legend_color}
-\title{Creates an SI recommended legend style for colored aesthics}
+\title{SI recommended legend style for color aesthetics
+
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}} Function attempts to create a well
+formatted color-based legend to adorn an existing plot.}
 \usage{
 si_legend_color()
 }
 \description{
-Creates an SI recommended legend style for colored aesthics
+SI recommended legend style for color aesthetics
+
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}} Function attempts to create a well
+formatted color-based legend to adorn an existing plot.
 }
 \examples{
 \dontrun{

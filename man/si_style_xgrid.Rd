@@ -7,7 +7,7 @@
 si_style_xgrid(...)
 }
 \arguments{
-\item{...}{inherits parameters from [si_style()]}
+\item{...}{inherits parameters from \code{\link[=si_style]{si_style()}}}
 }
 \description{
 Incorporates the default si_style graph and modifies it to include on x-axis gridlines. Useful for when you are highlighting a vertical comparison, such as rotated bar graphs

@@ -2,12 +2,23 @@
 % Please edit documentation in R/si_legends.R
 \name{si_legend_fill}
 \alias{si_legend_fill}
-\title{Creates an SI recommended legend style for filled aesthics}
+\title{SI recommended legend style for fill aesthetics
+
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}} Function attempts to create a well
+formatted fill-based legend to adorn an existing plot.}
 \usage{
 si_legend_fill()
 }
+\arguments{
+\item{.keep}{\Sexpr[results=rd]{lifecycle::badge("experimental")}
+This is an experimental argument that allows you to control which columns
+from \code{.data} are retained in the output:}
+}
 \description{
-Creates an SI recommended legend style for filled aesthics
+SI recommended legend style for fill aesthetics
+
+\ifelse{html}{\href{https://lifecycle.r-lib.org/articles/stages.html#experimental}{\figure{lifecycle-experimental.svg}{options: alt='[Experimental]'}}}{\strong{[Experimental]}} Function attempts to create a well
+formatted fill-based legend to adorn an existing plot.
 }
 \examples{
 \dontrun{

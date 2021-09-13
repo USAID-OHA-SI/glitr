@@ -1,4 +1,16 @@
-#' @title Creates an SI recommended legend style for filled aesthics
+#' @param .keep \Sexpr[results=rd]{lifecycle::badge("experimental")}
+#'   This is an experimental argument that allows you to control which columns
+#'   from `.data` are retained in the output:
+
+
+
+
+#' @title SI recommended legend style for fill aesthetics
+#'
+#' `r lifecycle::badge('experimental')` Function attempts to create a well
+#' formatted fill-based legend to adorn an existing plot.
+#'
+#'
 #'
 #' @export
 #' @examples
@@ -20,7 +32,10 @@ si_legend_fill <- function(){
   )
 }
 
-#' @title Creates an SI recommended legend style for colored aesthics
+#' @title SI recommended legend style for color aesthetics
+#'
+#' `r lifecycle::badge('experimental')` Function attempts to create a well
+#' formatted color-based legend to adorn an existing plot.
 #'
 #' @export
 #' @examples

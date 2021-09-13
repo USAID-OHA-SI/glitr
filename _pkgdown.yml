@@ -42,6 +42,11 @@ reference:
   - si_style_ygrid
   - si_style_yline
 
+- title: SI Legends
+  contents:
+  - si_legend_color
+  - si_legend_fill
+
 
 - title: Plotting Helpers
   contents:

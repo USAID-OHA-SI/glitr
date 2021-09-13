@@ -22,7 +22,8 @@ Imports:
     magrittr,
     scales,
     usethis,
-    extrafont
+    extrafont,
+    lifecycle
 Suggests: 
     rmarkdown,
     markdown,
@@ -37,3 +38,4 @@ Suggests:
     purrr
 BuildVignettes: false
 VignetteBuilder: knitr
+Roxygen: list(markdown = TRUE)

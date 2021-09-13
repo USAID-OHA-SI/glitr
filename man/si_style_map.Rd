@@ -7,7 +7,7 @@
 si_style_map(...)
 }
 \arguments{
-\item{...}{inherits parameters from [si_style()]}
+\item{...}{inherits parameters from \code{\link[=si_style]{si_style()}}}
 }
 \description{
 Create Standard SI Map

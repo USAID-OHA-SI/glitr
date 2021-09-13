@@ -16,8 +16,8 @@ Includes all colors from the SIEI data visualization guide and a few additional 
 Colors are stored as a named list. Use palette name or position to call in colors.
 
 Color sets are stored as the name of the first color.
-Calling `si_palettes$old_rose` will return the five color pairs where old_rose is the base.
-Calling `si_palettes$old_roses` will return an interpolated ramp of 11 colors for old_rose.
+Calling \code{si_palettes$old_rose} will return the five color pairs where old_rose is the base.
+Calling \code{si_palettes$old_roses} will return an interpolated ramp of 11 colors for old_rose.
 See the SIEI data visualization guide for additional details.
 }
 \examples{
@@ -34,6 +34,6 @@ si_rampr("carto_div_earth", n = 100) \%>\% scales::show_col(labels = FALSE)
 }
 }
 \seealso{
-[si_rampr] for details on creating interpolated palettes of varying lengths.
+\link{si_rampr} for details on creating interpolated palettes of varying lengths.
 }
 \keyword{datasets}

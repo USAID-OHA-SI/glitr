@@ -140,8 +140,16 @@
     <p>Create Standard SI Map</p>
     </div>
 
-    <pre class="usage"><span class='fu'>si_style_map</span><span class='op'>(</span><span class='op'>)</span></pre>
+    <pre class="usage"><span class='fu'>si_style_map</span><span class='op'>(</span><span class='va'>...</span><span class='op'>)</span></pre>
 
+    <h2 class="hasAnchor" id="arguments"><a class="anchor" href="#arguments"></a>Arguments</h2>
+    <table class="ref-arguments">
+    <colgroup><col class="name" /><col class="desc" /></colgroup>
+    <tr>
+      <th>...</th>
+      <td><p>inherits parameters from [si_style()]</p></td>
+    </tr>
+    </table>
 
 
     <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
@@ -169,7 +177,8 @@
    <span class='fu'><a href='https://ggplot2.tidyverse.org/reference/labs.html'>labs</a></span><span class='op'>(</span>title <span class='op'>=</span> <span class='st'>"NIGERIA - % OF PLHIV BY STATE"</span>,
         subtitle <span class='op'>=</span> <span class='st'>"States from XYZ Region are the most hit by HIV/AIDS"</span>,
         caption <span class='op'>=</span> <span class='fu'>base</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/r/base/paste.html'>paste0</a></span><span class='op'>(</span><span class='st'>"Produced by OHA/SIEI/SI, ON "</span>, <span class='fu'>base</span><span class='fu'>::</span><span class='fu'><a href='https://rdrr.io/r/base/Sys.time.html'>Sys.Date</a></span><span class='op'>(</span><span class='op'>)</span><span class='op'>)</span><span class='op'>)</span> <span class='op'>+</span>
-  <span class='fu'>si_style_map</span><span class='op'>(</span><span class='op'>)</span>
+  <span class='fu'>si_style_map</span><span class='op'>(</span><span class='op'>)</span> <span class='op'>+</span>
+  <span class='fu'><a href='si_legend_fill.html'>si_legend_fill</a></span><span class='op'>(</span><span class='op'>)</span>
 <span class='op'>}</span>
 
 </div></pre>

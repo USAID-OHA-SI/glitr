@@ -6,14 +6,14 @@
 \title{Testing (HTS_TST & HTS_TST_POS) Indicators}
 \format{
 A data frame with seven variables: \code{operatingunit},
-   \code{primepartner}, \code{indicator}, \code{modality}, \code{period},
-    \code{period_type}, and \code{value}.
+\code{primepartner}, \code{indicator}, \code{modality}, \code{period},
+\code{period_type}, and \code{value}.
 }
 \usage{
 hts
 }
 \description{
 Masked & subset MSD data on the testing indicators and their modalities for Saturn
- Operating Unit (Modality/Age/Sex/Result). Data sourced from ICPI/TrainingDataset.
+Operating Unit (Modality/Age/Sex/Result). Data sourced from ICPI/TrainingDataset.
 }
 \keyword{datasets}

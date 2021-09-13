@@ -7,7 +7,7 @@
 si_style_xline(...)
 }
 \arguments{
-\item{...}{inherits parameters from [si_style()]}
+\item{...}{inherits parameters from \code{\link[=si_style]{si_style()}}}
 }
 \description{
 May be used in place of si_style_blank if you would like to anchor the x-axis.

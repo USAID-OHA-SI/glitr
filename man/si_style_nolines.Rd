@@ -7,7 +7,7 @@
 si_style_nolines(...)
 }
 \arguments{
-\item{...}{inherits parameters from [si_style()]}
+\item{...}{inherits parameters from \code{\link[=si_style]{si_style()}}}
 }
 \description{
 Incorporates the default si_style graph and strips all gridlines. Useful for when you want to focus attention on a few parts of a plot -- such as a bar graph with fewer than four categories.

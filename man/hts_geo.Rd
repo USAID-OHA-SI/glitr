@@ -6,13 +6,13 @@
 \title{Spatial data for mapping testing indicators}
 \format{
 A spatial data frame with three variables and geometry: \code{iso_no},
-   \code{primepartner}, \code{iso_1}, \code{geometry},
+\code{primepartner}, \code{iso_1}, \code{geometry},
 }
 \usage{
 hts_geo
 }
 \description{
 Mock spatial data for partners operating geographies for Saturn
- Data sourced from hts and rnaturalearth (Slovenia, Jugovzhodna Slovenija).
+Data sourced from hts and rnaturalearth (Slovenia, Jugovzhodna Slovenija).
 }
 \keyword{datasets}

@@ -7,7 +7,7 @@
 si_style_xyline(...)
 }
 \arguments{
-\item{...}{inherits parameters from [si_style()]}
+\item{...}{inherits parameters from \code{\link[=si_style]{si_style()}}}
 }
 \description{
 Create Standard SI Plots showing only both x and y axis lines

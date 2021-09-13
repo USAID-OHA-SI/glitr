@@ -6,14 +6,14 @@
 \title{Cascade Indicators}
 \format{
 A data frame with six variables: \code{operatingunit},
-   \code{primepartner}, \code{indicator}, \code{period},
-    \code{period_type}, and \code{value}.
+\code{primepartner}, \code{indicator}, \code{period},
+\code{period_type}, and \code{value}.
 }
 \usage{
 cascade
 }
 \description{
 Masked & subset MSD data on the clinical cascade for Saturn
- Operating Unit (Total Numerators only). Data sourced from ICPI/TrainingDataset.
+Operating Unit (Total Numerators only). Data sourced from ICPI/TrainingDataset.
 }
 \keyword{datasets}
