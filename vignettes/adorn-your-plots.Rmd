@@ -170,7 +170,7 @@ hts_hm %>%
 
 As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the `scale_fill_si()` function takes the `...` argument, we can pass a transformation option to the plot as well as define a new set of breaks. 
 
-```{r using_dot_dot_dot, fig.height = 5, fig.width = 7.5}
+```{r using_dots, fig.height = 5, fig.width = 7.5}
 # Log transform data, clean up legend, apply semi-transparency (alpha) and label
   hts_hm %>% 
     ggplot(aes(x = modality, y = partner_order, fill = value)) + 
