@@ -110,8 +110,8 @@
 <pre class="{r}"><code><a href="https://rdrr.io/r/utils/install.packages.html">## SETUP
 
   #install
-    install.packages("devtools")
-    devtools::install_github("USAID-OHA-SI/glitr")
+    install.packages("remotes")
+    remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
     
   #load the package
     library(glitr)
