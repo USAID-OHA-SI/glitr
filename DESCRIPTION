@@ -18,12 +18,8 @@ RoxygenNote: 7.1.1
 Depends: 
     R (>= 3.5.0)
 Imports: 
-<<<<<<< HEAD
     ggplot2 (>= 3.3.0),
-=======
-    ggplot2,
     ggtext,
->>>>>>> 3e921693d09761b015f20aa968bc6905f0b38835
     magrittr,
     scales,
     usethis,
