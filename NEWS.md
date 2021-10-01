@@ -1,3 +1,5 @@
+# glitr 0.1.0
+
 # glitr 0.0.1
 * Add `...` to all `si_style()` functions
   * Allows for passing of theme elements not defined in `si_sytle()`  
