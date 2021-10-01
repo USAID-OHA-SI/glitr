@@ -166,14 +166,29 @@
 #'   si_legend_fill()
 #'}
 #'
+<<<<<<< HEAD
   si_style_map <- function(...) {
     ggplot2::theme_void() %+replace%
       si_style(...) %+replace%
+=======
+  si_style_map <- function() {
+    si_style_void() %+replace%
+>>>>>>> 3e921693d09761b015f20aa968bc6905f0b38835
       theme(
         line = ggplot2::element_blank(),
         rect = ggplot2::element_blank(),
         axis.text.x = ggplot2::element_blank(),
         axis.text.y = ggplot2::element_blank(),
+<<<<<<< HEAD
+=======
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank(),
+        legend.position =  "bottom",
+        legend.justification = "center",
+        legend.direction = "horizontal",
+        legend.title = ggplot2::element_blank(),
+        legend.key.width = ggplot2::unit(1.75, "cm")
+>>>>>>> 3e921693d09761b015f20aa968bc6905f0b38835
       )
   }
 
