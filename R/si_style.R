@@ -7,6 +7,7 @@
 #' @param font_caption font family for captions
 #' @param facet_space controls how far apart facets are from each other
 #' @param text_scale scalar that will grow/shrink all text defined within
+#' @param FO make everything black (why, who knows)
 #' @param ... pass any parameters from theme that are not already defined within
 #'
 #' @export
@@ -28,10 +29,100 @@ si_style <- function(font_title = "Source Sans Pro",
                      font_caption = "Source Sans Pro",
                      facet_space = 2,
                      text_scale = 1,
+                     FO = FALSE,
                      ...) {
 
 
   half_line <- 5.5
+
+  if(FO == TRUE) {
+    # Use only black colors b/c grey color non grato
+    color_plot_text <- "#000000"
+    color_title <- "#000000"
+    color_caption <- "#000000"
+
+    ggplot2::theme_minimal() %+replace%
+
+      ggplot2::theme(
+        plot.title = ggplot2::element_text(
+          family = font_title,
+          size = 14 * text_scale,
+          face = "bold",
+          color = color_title,
+          margin = ggplot2::margin(b = half_line),
+          hjust = 0),
+
+        #This sets the font, size, type and colour of text for the chart's subtitle, as well as setting a margin between the title and the subtitle
+        plot.subtitle = ggplot2::element_text(
+          family = font_subtitle,
+          size = 12  * text_scale,
+          color = color_title,
+          margin = ggplot2::margin(b = half_line),
+          hjust = 0),
+        plot.caption = ggplot2::element_text(
+          family = font_caption,
+          size = 9 * text_scale,
+          color = color_caption,
+          margin = ggplot2::margin(t = half_line/2),
+          hjust = 1, vjust = 1),
+        plot.margin = ggplot2::margin(25, 25, 10, 25), #changed from half_line defaults
+        plot.title.position = "plot", #Move plot.title to the left
+        plot.caption.position = "plot",
+
+        #Legend format
+        # Set the legend to be at the top left of the graphic, below title
+        legend.position = "top",
+        legend.text.align = 0,
+        legend.justification = c(0, 0),
+        legend.background = ggplot2::element_blank(),
+        #legend.title = ggplot2::element_blank(),
+        legend.key = ggplot2::element_blank(),
+        legend.title = ggplot2::element_text(
+          family = font_title,
+          size = 11 * text_scale,
+          color = color_plot_text),
+        legend.text = ggplot2::element_text(
+          family = font_title,
+          size = 11 * text_scale,
+          color = color_plot_text),
+
+        #Axis format
+        axis.text = ggplot2::element_text(
+          family = font_plot,
+          size = 10 * text_scale,
+          color = color_plot_text),
+        axis.ticks = ggplot2::element_blank(),
+        axis.line = ggplot2::element_blank(),
+        axis.title = ggplot2::element_text(
+          family = font_plot,
+          size = 10 * text_scale,
+          colour = color_plot_text),
+
+        #Grid lines
+        panel.grid.minor = ggplot2::element_blank(),
+        panel.grid.major.y = ggplot2::element_line(colour = color_gridline),
+        panel.grid.major.x = ggplot2::element_line(colour = color_gridline),
+
+        #Blank background
+        panel.background = ggplot2::element_blank(),
+        panel.border = ggplot2::element_blank(),
+        panel.spacing = unit(facet_space, "lines"),
+
+        # Plot fill and margins
+        plot.background = ggplot2::element_rect(fill = "white", color = NA),
+
+        #Strip background (This sets the panel background for facet-wrapped plots to white)
+        strip.background = ggplot2::element_blank(),
+        strip.text = ggplot2::element_text(
+          family = font_title,
+          size  = 11 * text_scale,
+          hjust = 0,
+          color = color_plot_text,
+          margin = ggplot2::margin(0.6 * half_line, 0.6 * half_line, 0.6 * half_line, 0.6 * half_line)
+        ),
+        ...
+      )
+  }
 
   # build off of theme_minimal settings
   ggplot2::theme_minimal() %+replace%

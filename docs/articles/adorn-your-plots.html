@@ -39,7 +39,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="../index.html">glitr</a>
-        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.0.1</span>
+        <span class="version label label-default" data-toggle="tooltip" data-placement="bottom" title="Released version">0.1.0</span>
       </span>
     </div>
 
@@ -87,7 +87,7 @@
 
       
 
-      </header><script src="adorn-your-plots_files/header-attrs-2.10/header-attrs.js"></script><div class="row">
+      </header><script src="adorn-your-plots_files/header-attrs-2.11/header-attrs.js"></script><div class="row">
   <div class="col-md-9 contents">
     <div class="page-header toc-ignore">
       <h1 data-toc-skip>How to adorn your plots</h1>
@@ -188,8 +188,7 @@
 <span class="va">si_palettes</span><span class="op">$</span><span class="va">genoa</span> <span class="op">%&gt;%</span> <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/palettes-1.png" width="576"></p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="co"># Returns an interpolated vector of color values around the base genoa color</span>
+<code class="sourceCode R"><span class="co"># Returns an interpolated vector of color values around the base genoa color</span>
 <span class="va">si_palettes</span><span class="op">$</span><span class="va">genoas</span> <span class="op">%&gt;%</span> <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/palettes-2.png" width="576"></p>
 <p>Finally, if you want to create a custom palette from one of the color sets in the si_palettes list, you can do this using the <code><a href="../reference/si_rampr.html">si_rampr()</a></code> function.</p>
@@ -201,7 +200,6 @@
 <span class="co">#&gt;  [8] "#7597EF" "#6B8FE6" "#6187DD" "#577ED4" "#4D76CA" "#436EC1" "#3666B7"</span>
 <span class="co">#&gt; [15] "#2A5EAE" "#1E56A5" "#114E9C" "#064693" "#033E89" "#00357F" "#002D75"</span>
 <span class="co">#&gt; [22] "#00256B" "#001C61" "#001458" "#000C4F"</span>
-
 <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html">show_col</a></span><span class="op">(</span><span class="va">denim_pal</span>, labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/custom_palettes-1.png" width="576"></p>
 </div>
@@ -244,7 +242,7 @@
            <span class="op">)</span>
          <span class="op">)</span> 
  <span class="va">hts_bar_rnkd</span> <span class="op">%&gt;%</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html">filter</a></span><span class="op">(</span><span class="va">hts_rank</span> <span class="op">&lt;</span> <span class="fl">7</span><span class="op">)</span>
-<span class="co">#&gt; # A tibble: 6 x 7</span>
+<span class="co">#&gt; # A tibble: 6 × 7</span>
 <span class="co">#&gt;   primepartner HTS_TST HTS_TST_POS positivity prime_order hts_rank rnk_color</span>
 <span class="co">#&gt;   &lt;chr&gt;          &lt;dbl&gt;       &lt;dbl&gt;      &lt;dbl&gt; &lt;fct&gt;          &lt;int&gt; &lt;chr&gt;    </span>
 <span class="co">#&gt; 1 Ursa Major     14360        1740     0.121  Ursa Major         6 #f2bc40  </span>
@@ -253,7 +251,6 @@
 <span class="co">#&gt; 4 Eridanus       36620        1560     0.0426 Eridanus           3 #f2bc40  </span>
 <span class="co">#&gt; 5 Libra          64580        2460     0.0381 Libra              2 #2057a7  </span>
 <span class="co">#&gt; 6 Sagittarius    66470        3870     0.0582 Sagittarius        1 #2057a7</span>
- 
  <span class="co"># Assign colors to top two ranked prime partners and plot.</span>
  <span class="co"># Use the scale_fill_identity() to let ggplot2 know where fill is from.</span>
  <span class="va">hts_bar_rnkd</span> <span class="op">%&gt;%</span> 
@@ -327,8 +324,7 @@
 <a href="#comparing-themes" class="anchor"></a>Comparing Themes</h3>
 <p>Below is a summary graphic showing all the available SI themes.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="co"># Create a list of all themes to loop over</span>
+<code class="sourceCode R"><span class="co"># Create a list of all themes to loop over</span>
   <span class="va">theme_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html">list</a></span><span class="op">(</span><span class="st">'si_style()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style.html">si_style</a></span><span class="op">(</span><span class="op">)</span>, 
                      <span class="st">'si_style_xline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xline.html">si_style_xline</a></span><span class="op">(</span><span class="op">)</span>, 
                      <span class="st">'si_style_xgrid()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xgrid.html">si_style_xgrid</a></span><span class="op">(</span><span class="op">)</span>,

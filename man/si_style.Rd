@@ -11,6 +11,7 @@ si_style(
   font_caption = "Source Sans Pro",
   facet_space = 2,
   text_scale = 1,
+  FO = FALSE,
   ...
 )
 }
@@ -26,6 +27,8 @@ si_style(
 \item{facet_space}{controls how far apart facets are from each other}
 
 \item{text_scale}{scalar that will grow/shrink all text defined within}
+
+\item{FO}{make everything black (why, who knows)}
 
 \item{...}{pass any parameters from theme that are not already defined within}
 }

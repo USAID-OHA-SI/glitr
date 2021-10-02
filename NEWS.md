@@ -1,5 +1,8 @@
 # glitr 0.1.0
 
+* New parameter in`si_sytle()` to allow for all black text
+  * `FO = TRUE` sets all text to be black throughout
+
 # glitr 0.0.1
 * Add `...` to all `si_style()` functions
   * Allows for passing of theme elements not defined in `si_sytle()`  
@@ -11,7 +14,7 @@
 * New parameters incorporated into si_style() function
   * `facet_space` lets you change space between facets
   * `text_scale` allows for scaling of text size for entire plot
-
+  
 
 # glitr 0.0.0.9000
 
