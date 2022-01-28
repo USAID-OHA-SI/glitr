@@ -65,7 +65,7 @@ si_style <- function(font_title = "Source Sans Pro",
           color = color_caption,
           margin = ggplot2::margin(t = half_line/2),
           hjust = 1, vjust = 1),
-        plot.margin = ggplot2::margin(25, 25, 10, 25), #changed from half_line defaults
+        plot.margin = ggplot2::margin(15, 15, 10, 15), #top, right, bottom, left
         plot.title.position = "plot", #Move plot.title to the left
         plot.caption.position = "plot",
 
@@ -100,8 +100,8 @@ si_style <- function(font_title = "Source Sans Pro",
 
         #Grid lines
         panel.grid.minor = ggplot2::element_blank(),
-        panel.grid.major.y = ggplot2::element_line(colour = color_gridline),
-        panel.grid.major.x = ggplot2::element_line(colour = color_gridline),
+        panel.grid.major.y = ggplot2::element_line(colour = color_gridline, size = 0.25),
+        panel.grid.major.x = ggplot2::element_line(colour = color_gridline, size = 0.25),
 
         #Blank background
         panel.background = ggplot2::element_blank(),
@@ -149,7 +149,7 @@ si_style <- function(font_title = "Source Sans Pro",
         color = color_caption,
         margin = ggplot2::margin(t = half_line/2),
         hjust = 1, vjust = 1),
-      plot.margin = ggplot2::margin(25, 25, 10, 25), #changed from half_line defaults
+      plot.margin = ggplot2::margin(15, 15, 10, 15), #top, right, bottom, left
       plot.title.position = "plot", #Move plot.title to the left
       plot.caption.position = "plot",
 
@@ -184,8 +184,8 @@ si_style <- function(font_title = "Source Sans Pro",
 
       #Grid lines
       panel.grid.minor = ggplot2::element_blank(),
-      panel.grid.major.y = ggplot2::element_line(colour = color_gridline),
-      panel.grid.major.x = ggplot2::element_line(colour = color_gridline),
+      panel.grid.major.y = ggplot2::element_line(colour = color_gridline, size = 0.25),
+      panel.grid.major.x = ggplot2::element_line(colour = color_gridline, size = 0.25),
 
       #Blank background
       panel.background = ggplot2::element_blank(),
