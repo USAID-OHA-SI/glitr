@@ -1,5 +1,6 @@
 # glitr 0.1.0
-* New parameter in`si_style()` to allow for all black text
+* Added a new masked dataset for training/demoing, `hfr_mmd`
+* New parameter in`si_sytle()` to allow for all black text
   * `FO = TRUE` sets all text to be black throughout
 
 # glitr 0.0.1
