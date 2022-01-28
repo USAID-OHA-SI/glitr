@@ -5,7 +5,7 @@
 
 # glitr 0.0.1
 * Add `...` to all `si_style()` functions
-  * Allows for passing of theme elements not defined in `si_sytle()`  
+  * Allows for passing of theme elements not defined in `si_style()`  
   
 * Add experimental legend functions to create nice legends
   * `si_legend_fill()` adds a fill-based legend

@@ -76,7 +76,7 @@ show_col(genoa)
 show_col(c(denim, old_rose, moody_blue, burnt_sienna), borders = F)
 ```
 
-To access to full list of discrete or continuous palettes, see the si_palettes list or call the color palette directly using the name (`si_palettes$color_name`). Color names that are singular (`genoa`, `old_rose`) are categorical palettes based on suggested color pairs. Color names that are plural (`genoas`) are continuous palettes that can be applied to continuous variables. If you attempt to apply a discrete palette to a continuous variable, the color pairs will be recycled to the length of the vector you are attempting to encode.
+To access the full list of discrete or continuous palettes, see the si_palettes list or call the color palette directly using the name (`si_palettes$color_name`). Color names that are singular (`genoa`, `old_rose`) are categorical palettes based on suggested color pairs. Color names that are plural (`genoas`) are continuous palettes that can be applied to continuous variables. If you attempt to apply a discrete palette to a continuous variable, the color pairs will be recycled to the length of the vector you are attempting to encode.
 
 ```{r palettes, echo = TRUE, fig.height = 3, fig.width = 6}
 # Returns the recommended paired colors with genoa as the base
@@ -126,7 +126,7 @@ To add any of these colors to a graph, pass them as arguments in a ggplot2 call.
   p
 ```
 
-Another way to use colors in plots is to assign color values to a new column in a data frame. For example, say we would like to highlight the the two partners that have conducted the greatest number of tests. First, we will create a ranking variable that ranks partners by total testing. Then we will assign a set of colors based on the rankings.
+Another way to use colors in plots is to assign color values to a new column in a data frame. For example, say we would like to highlight the two partners that have conducted the greatest number of tests. First, we will create a ranking variable that ranks partners by total testing. Then we will assign a set of colors based on the rankings.
 
 ```{r apply_colors, fig.height = 4, fig.width = 7.5}
 # Create a rank column, then assign colors based on threshold (<=2)
@@ -168,7 +168,7 @@ hts_hm %>%
   
 ```
 
-As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the `scale_fill_si()` function takes the `...` argument, we can pass a transformation option to the plot as well as define a new set of breaks. 
+As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we were to look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the `scale_fill_si()` function takes the `...` argument, we can pass a transformation option to the plot, as well as define a new set of breaks. 
 
 ```{r using_dots, fig.height = 5, fig.width = 7.5}
 # Log transform data, clean up legend, apply semi-transparency (alpha) and label
