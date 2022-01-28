@@ -1,10 +1,10 @@
 # glitr 0.1.0
-* New parameter in`si_sytle()` to allow for all black text
+* New parameter in`si_style()` to allow for all black text
   * `FO = TRUE` sets all text to be black throughout
 
 # glitr 0.0.1
 * Add `...` to all `si_style()` functions
-  * Allows for passing of theme elements not defined in `si_sytle()`  
+  * Allows for passing of theme elements not defined in `si_style()`  
   
 * Add experimental legend functions to create nice legends
   * `si_legend_fill()` adds a fill-based legend

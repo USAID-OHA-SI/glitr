@@ -3,7 +3,7 @@ pkgdown: 2.0.2
 pkgdown_sha: ~
 articles:
   adorn-your-plots: adorn-your-plots.html
-last_built: 2022-01-28T14:00Z
+last_built: 2022-01-28T15:39Z
 urls:
   reference: https://usaid-oha-si.github.io/glitr/reference
   article: https://usaid-oha-si.github.io/glitr/articles
