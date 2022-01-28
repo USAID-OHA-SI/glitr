@@ -44,6 +44,7 @@ Sans Source Pro is an open source font available from Google Fonts. To install i
 To use non-naitive fonts in R, you must run a program called `extrafonts` which is installed with `glitr`. You will need to run the following code below to install all the fonts on your computer (if desired) and the ones you just downloaded. You will only need to import fonts only once. However, to use these fonts with any plotting in R, you will need to load the `extrafont` as with any other package.
 
 ```{r}
+# Required library
 library(extrafont)
 
 #import fonts for the first time
@@ -61,6 +62,7 @@ library(extrafont)
 #restart your R session - CTRL + SHIFT + F10
 
 library(extrafont)
+
 ```
 
 ---

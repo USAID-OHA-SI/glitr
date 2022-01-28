@@ -1,3 +1,8 @@
+
+url: https://usaid-oha-si.github.io/glitr/
+template:
+  bootstrap: 5
+
 navbar:
   structure:
     left:

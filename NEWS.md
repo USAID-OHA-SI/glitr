@@ -1,5 +1,4 @@
 # glitr 0.1.0
-
 * New parameter in`si_sytle()` to allow for all black text
   * `FO = TRUE` sets all text to be black throughout
 
@@ -17,7 +16,6 @@
   
 
 # glitr 0.0.0.9000
-
 * Add white background to plots rather than having them be tranparent
 * Migrate to website
 * Fix scale_fill_si and scale_color_si defaults
