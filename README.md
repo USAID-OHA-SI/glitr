@@ -2,9 +2,7 @@
   [![R-CMD-check](https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/glitr/actions)
   <!-- badges: end -->
 
-<img src='man/figures/logo.png' align="right" height="120" />
-
-# glitr
+# glitr <a href="https://usaid-oha-si.github.io/glitr/"><img src="man/figures/logo.png" align="right" height="120" /></a>
 SI graphics package to adorn your ggplots
 
 ### OHA SI Graphics
