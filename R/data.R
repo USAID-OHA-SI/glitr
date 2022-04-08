@@ -4,7 +4,7 @@
 #'  Operating Unit (Total Numerators only). Data sourced from ICPI/TrainingDataset.
 #'
 #' @format A data frame with six variables: `operatingunit`,
-#'    `primepartner`, `indicator`, `period`,
+#'    `prime_partner_name`, `indicator`, `period`,
 #'     `period_type`, and `value`.
 "cascade"
 
@@ -17,7 +17,7 @@
 #'  Operating Unit (Modality/Age/Sex/Result). Data sourced from ICPI/TrainingDataset.
 #'
 #' @format A data frame with seven variables: `operatingunit`,
-#'    `primepartner`, `indicator`, `modality`, `period`,
+#'    `prime_partner_name`, `indicator`, `modality`, `period`,
 #'     `period_type`, and `value`.
 "hts"
 

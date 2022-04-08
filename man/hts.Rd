@@ -6,7 +6,7 @@
 \title{Testing (HTS_TST & HTS_TST_POS) Indicators}
 \format{
 A data frame with seven variables: \code{operatingunit},
-\code{primepartner}, \code{indicator}, \code{modality}, \code{period},
+\code{prime_partner_name}, \code{indicator}, \code{modality}, \code{period},
 \code{period_type}, and \code{value}.
 }
 \usage{
