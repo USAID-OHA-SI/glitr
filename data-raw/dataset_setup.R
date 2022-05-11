@@ -30,7 +30,7 @@ library(lubridate)
       rename(value = val) %>%
      ungroup()
 
-    write_csv(cascade, "data-raw/cascade.csv")
+    cascade <- cascade %>% rename(prime_partner_name = primepartner)
     use_data(cascade, overwrite = TRUE)
 
   hts <- df %>%
@@ -45,7 +45,7 @@ library(lubridate)
     rename(value = val) %>%
     ungroup()
 
-  write_csv(hts, "data-raw/hts.csv")
+  hts <- hts %>% rename(prime_partner_name = primepartner)
   use_data(hts, overwrite = TRUE)
 
   hfr_mmd <- df_hfr %>%

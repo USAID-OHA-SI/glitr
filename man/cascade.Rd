@@ -6,7 +6,7 @@
 \title{Cascade Indicators}
 \format{
 A data frame with six variables: \code{operatingunit},
-\code{primepartner}, \code{indicator}, \code{period},
+\code{prime_partner_name}, \code{indicator}, \code{period},
 \code{period_type}, and \code{value}.
 }
 \usage{
