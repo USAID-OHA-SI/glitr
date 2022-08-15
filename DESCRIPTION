@@ -36,6 +36,8 @@ Suggests:
     patchwork,
     sf, 
     purrr
+Remotes:
+    USAID-OHA-SI/gagglr
 BuildVignettes: false
 VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)

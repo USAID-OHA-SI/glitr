@@ -1,4 +1,5 @@
 # glitr 0.1.1
+* Add in package status check from `gagglr` [2022-08-15]
 * Update data to reflect new naming conventions as of FY22Q2 (2022-04-08)
 
 # glitr 0.1.0
