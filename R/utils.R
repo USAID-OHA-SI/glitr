@@ -42,12 +42,12 @@ choose_font <- function(){
   ssp_exists <- "Source Sans Pro" %in% localfonts
 
   if(.Platform$OS.type == "windows" && ssp_exists){
-    windowsFonts(glitr_font_default = windowsFont("Source Sans Pro"))
+    grDevices::windowsFonts(glitr_font_default = grDevices::windowsFont("Source Sans Pro"))
     return(invisible())
   }
 
   if(.Platform$OS.type == "windows" && !ssp_exists){
-    windowsFonts(glitr_font_default = windowsFonts()$sans)
+    grDevices::windowsFonts(glitr_font_default = grDevices::windowsFonts()$sans)
     return(invisible())
   }
 

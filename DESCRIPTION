@@ -33,12 +33,14 @@ Suggests:
     testthat,
     dplyr, 
     forcats,
-    tidyr, 
+    tidyr,
     patchwork,
     sf, 
     purrr
 Remotes:
     USAID-OHA-SI/gagglr
 BuildVignettes: false
-VignetteBuilder: knitr
+VignetteBuilder: 
+  knitr,
+  sf
 Roxygen: list(markdown = TRUE)
