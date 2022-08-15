@@ -24,7 +24,9 @@ Imports:
     scales,
     usethis,
     extrafont,
-    lifecycle
+    lifecycle,
+    sf, 
+    grDevices
 Suggests: 
     rmarkdown,
     markdown,
@@ -32,12 +34,13 @@ Suggests:
     testthat,
     dplyr, 
     forcats,
-    tidyr, 
+    tidyr,
     patchwork,
-    sf, 
     purrr
 Remotes:
     USAID-OHA-SI/gagglr
 BuildVignettes: false
-VignetteBuilder: knitr
+VignetteBuilder: 
+  knitr,
+  sf
 Roxygen: list(markdown = TRUE)

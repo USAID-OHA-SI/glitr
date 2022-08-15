@@ -1,10 +1,10 @@
 #' @title Create Standard SI Plots
 #'
 #' @description This function adorns your ggplot to convert it into a SI style plot. The default font is Source Sans Pro
-#' @param font_title font family for titles
-#' @param font_subtitle font family for subtitles
-#' @param font_plot font family for the plot space
-#' @param font_caption font family for captions
+#' @param font_title font family for titles, defaults to Source Sans Pro/Arial
+#' @param font_subtitle font family for subtitles, defaults to Source Sans Pro/Arial
+#' @param font_plot font family for the plot space, defaults to Source Sans Pro/Arial
+#' @param font_caption font family for captions, defaults to Source Sans Pro/Arial
 #' @param facet_space controls how far apart facets are from each other
 #' @param text_scale scalar that will grow/shrink all text defined within
 #' @param FO make everything black (why, who knows)
@@ -23,20 +23,31 @@
 #'   }
 
 
-si_style <- function(font_title = "Source Sans Pro",
-                     font_subtitle = "Source Sans Pro",
-                     font_plot = "Source Sans Pro",
-                     font_caption = "Source Sans Pro",
+si_style <- function(font_title,
+                     font_subtitle,
+                     font_plot,
+                     font_caption,
                      facet_space = 2,
                      text_scale = 1,
                      FO = FALSE,
                      ...) {
 
+  if(!isNamespaceLoaded("extrafont"))
+    usethis::ui_warn("The extrafont package is not loaded. Add the following to your code: {usethis::ui_code('library(extrafont)')}")
+
+  if(missing(font_title))
+    font_title <- "glitr_font_default"
+  if(missing(font_subtitle))
+    font_subtitle <- "glitr_font_default"
+  if(missing(font_plot))
+    font_plot <- "glitr_font_default"
+  if(missing(font_caption))
+    font_caption <- "glitr_font_default"
 
   half_line <- 5.5
 
   if(FO == TRUE) {
-    # Use only black colors b/c grey color non grato
+    # Use only black colors b/c grey color non gray
     color_plot_text <- "#000000"
     color_title <- "#000000"
     color_caption <- "#000000"
