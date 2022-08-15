@@ -5,10 +5,10 @@
 \title{Create Standard SI Plots}
 \usage{
 si_style(
-  font_title = "Source Sans Pro",
-  font_subtitle = "Source Sans Pro",
-  font_plot = "Source Sans Pro",
-  font_caption = "Source Sans Pro",
+  font_title,
+  font_subtitle,
+  font_plot,
+  font_caption,
   facet_space = 2,
   text_scale = 1,
   FO = FALSE,
@@ -16,13 +16,13 @@ si_style(
 )
 }
 \arguments{
-\item{font_title}{font family for titles}
+\item{font_title}{font family for titles, defaults to Source Sans Pro/Arial}
 
-\item{font_subtitle}{font family for subtitles}
+\item{font_subtitle}{font family for subtitles, defaults to Source Sans Pro/Arial}
 
-\item{font_plot}{font family for the plot space}
+\item{font_plot}{font family for the plot space, defaults to Source Sans Pro/Arial}
 
-\item{font_caption}{font family for captions}
+\item{font_caption}{font family for captions, defaults to Source Sans Pro/Arial}
 
 \item{facet_space}{controls how far apart facets are from each other}
 
