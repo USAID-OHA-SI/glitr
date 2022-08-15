@@ -25,6 +25,7 @@ Imports:
     usethis,
     extrafont,
     lifecycle,
+    sf, 
     grDevices
 Suggests: 
     rmarkdown,
@@ -35,7 +36,6 @@ Suggests:
     forcats,
     tidyr,
     patchwork,
-    sf, 
     purrr
 Remotes:
     USAID-OHA-SI/gagglr
