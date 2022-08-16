@@ -41,6 +41,5 @@ Remotes:
     USAID-OHA-SI/gagglr
 BuildVignettes: false
 VignetteBuilder: 
-  knitr,
-  sf
+  knitr
 Roxygen: list(markdown = TRUE)
