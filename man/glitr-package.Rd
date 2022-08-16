@@ -6,7 +6,7 @@
 \alias{glitr-package}
 \title{glitr: Adorned SI style plots}
 \description{
-\if{html}{\figure{logo.png}{options: align='right' alt='logo' width='120'}}
+\if{html}{\figure{logo.png}{options: style='float: right' alt='logo' width='120'}}
 
 Helps create and export ggplot2 charts in the style used by the GH OHA SI team. Includes multiple styles and themes to tweak plots to user needs. Sample testing data also available.
 }
