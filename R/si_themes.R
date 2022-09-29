@@ -167,13 +167,14 @@
 #'}
 #'
   si_style_map <- function(...) {
-    ggplot2::theme_void() %+replace%
-      si_style(...) %+replace%
-      theme(
+    si_style_void(...) %+replace%
+      ggplot2::theme(
         line = ggplot2::element_blank(),
         rect = ggplot2::element_blank(),
         axis.text.x = ggplot2::element_blank(),
         axis.text.y = ggplot2::element_blank(),
+        axis.title.x = ggplot2::element_blank(),
+        axis.title.y = ggplot2::element_blank()
       )
   }
 
