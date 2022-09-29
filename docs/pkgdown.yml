@@ -1,9 +1,9 @@
-pandoc: '2.18'
+pandoc: 2.7.3
 pkgdown: 2.0.3
 pkgdown_sha: ~
 articles:
   adorn-your-plots: adorn-your-plots.html
-last_built: 2022-08-15T17:58Z
+last_built: 2022-09-29T19:11Z
 urls:
   reference: https://usaid-oha-si.github.io/glitr/reference
   article: https://usaid-oha-si.github.io/glitr/articles

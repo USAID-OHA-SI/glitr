@@ -1,4 +1,5 @@
 # glitr 0.1.1
+* Add new tranparent style - `si_style_transparent()`
 * Provide alternative font if Source Sans Pro is not available [2022-08-15]
 * Add in package status check from `gagglr` [2022-08-15]
 * Update data to reflect new naming conventions as of FY22Q2 (2022-04-08)
@@ -22,7 +23,7 @@
   
 
 # glitr 0.0.0.9000
-* Add white background to plots rather than having them be tranparent
+* Add white background to plots rather than having them be tranaparent
 * Migrate to website
 * Fix scale_fill_si and scale_color_si defaults
 * Renamed some color stubs (old si_ colors) to siei_
