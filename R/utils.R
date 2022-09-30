@@ -4,7 +4,7 @@
 
   choose_font()
 
-  invisible ()
+  invisible()
 }
 
 
