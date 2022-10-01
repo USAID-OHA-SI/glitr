@@ -18,25 +18,25 @@ RoxygenNote: 7.2.1
 Depends: 
     R (>= 3.5.0)
 Imports: 
+    extrafont,
     ggplot2 (>= 3.3.0),
     ggtext,
+    grDevices,
+    lifecycle,
     magrittr,
     scales,
-    usethis,
-    extrafont,
-    lifecycle,
-    sf, 
-    grDevices
+    sf,
+    usethis
 Suggests: 
-    rmarkdown,
-    markdown,
-    knitr,
-    testthat,
     dplyr, 
     forcats,
-    tidyr,
+    knitr,
     patchwork,
-    purrr
+    purrr,
+    rmarkdown,
+    markdown,
+    testthat,
+    tidyr
 Remotes:
     USAID-OHA-SI/gagglr
 BuildVignettes: false
