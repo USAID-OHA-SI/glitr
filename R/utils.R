@@ -51,13 +51,13 @@ choose_font <- function(){
     return(invisible())
   }
 
-  # if(.Platform$OS.type == "unix" && ssp_exists){
-  #   grDevices::quartzFonts(glitr_font_default = ("Source Sans Pro"))
-  #   return(invisible())
-  # }
+  if(.Platform$OS.type == "unix" && ssp_exists){
+    grDevices::quartzFonts(glitr_font_default = ("Source Sans Pro"))
+    return(invisible())
+  }
 
   if(.Platform$OS.type == "unix" && !ssp_exists){
-    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont("sans"))
+    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep("Helvetica", 4)))
     return(invisible())
   }
   # default_font <- ifelse(ssp_exists, "Source Sans Pro", "Arial")
