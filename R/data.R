@@ -29,7 +29,7 @@
 #'  Data sourced from hts and rnaturalearth (Slovenia, Jugovzhodna Slovenija).
 #'
 #' @format A spatial data frame with three variables and geometry: `iso_no`,
-#'    `primepartner`, `iso_1`, `geometry`,
+#'    `prime_partner_name`, `iso_1`, `geometry`,
 "hts_geo"
 
 #' HFR Multi-Month Dispensing (MMD) data
