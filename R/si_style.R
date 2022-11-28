@@ -111,8 +111,8 @@ si_style <- function(font_title,
 
         #Grid lines
         panel.grid.minor = ggplot2::element_blank(),
-        panel.grid.major.y = ggplot2::element_line(colour = color_gridline, size = 0.25),
-        panel.grid.major.x = ggplot2::element_line(colour = color_gridline, size = 0.25),
+        panel.grid.major.y = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
+        panel.grid.major.x = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
 
         #Blank background
         panel.background = ggplot2::element_blank(),
@@ -195,8 +195,8 @@ si_style <- function(font_title,
 
       #Grid lines
       panel.grid.minor = ggplot2::element_blank(),
-      panel.grid.major.y = ggplot2::element_line(colour = color_gridline, size = 0.25),
-      panel.grid.major.x = ggplot2::element_line(colour = color_gridline, size = 0.25),
+      panel.grid.major.y = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
+      panel.grid.major.x = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
 
       #Blank background
       panel.background = ggplot2::element_blank(),
