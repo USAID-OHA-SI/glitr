@@ -117,37 +117,6 @@ si_palettes <- list(
 )
 
 
-
-#' @export
-#' @description blue color "#2166AC"
-#' @title SIEI inspired blue
-  siei_blue = "#2166AC"
-
-#' @export
-#' @description light blue "#67A9CF"
-#' @title SIEI inspired light blue
-  siei_lblue = "#67A9CF"
-
-#' @export
-#' @description dark grey "#595959"
-#' @title SIEI inspired dark grey
-  siei_dgrey = "#595959"
-
-#' @export
-#' @description light orange "#f5b9a1"
-#' @title SIEI inspired light orange
-  siei_lorange = "#f5b9a1"
-
-#' @export
-#' @description normal orange "#EF8A62"
-#' @title SIEI inspired orange
-  siei_orange = "#EF8A62"
-
-#' @export
-#' @description dark shade of orange "#D95709"
-#' @title SIEI inspired dark orange
-  siei_dorange = "#D95709"
-
 #' @export
 #' @description wapo inspired purple "#C7ABC7"
 #' @title wapo inspired light purple
