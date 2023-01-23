@@ -33,7 +33,8 @@ Other SIEI colors:
 \code{\link{scooter_med}},
 \code{\link{scooter}},
 \code{\link{suva_grey}},
-\code{\link{trolley_grey_light}}
+\code{\link{trolley_grey_light}},
+\code{\link{whisper}}
 }
 \concept{SIEI colors}
 \keyword{datasets}
