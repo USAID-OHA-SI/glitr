@@ -448,12 +448,13 @@ si_palettes <- list(
 #' @export
 #' @description SIEI whisper
 #' @title whisper
-suva_grey = "#ebebeb"
+  whisper = "#ebebeb"
 
 #' @family SIEI colors
 #' @export
 #' @description SIEI light grey
-light_grey = "#e3d3d3"
+#' @title light grey
+light_grey = "#d3d3d3"
 
 
 #' cerulean
