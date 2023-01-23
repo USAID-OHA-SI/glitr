@@ -5,7 +5,7 @@
 \alias{si_palettes}
 \title{List of SI Color Palettes}
 \format{
-An object of class \code{list} of length 41.
+An object of class \code{list} of length 42.
 }
 \usage{
 si_palettes

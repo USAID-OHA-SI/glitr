@@ -22,12 +22,16 @@ Other SIEI colors:
 \code{\link{genoa}},
 \code{\link{golden_sand_light}},
 \code{\link{golden_sand}},
+\code{\link{light_grey}},
+\code{\link{matterhorn}},
 \code{\link{moody_blue_light}},
 \code{\link{moody_blue}},
+\code{\link{nero}},
 \code{\link{old_rose_light}},
 \code{\link{scooter_light}},
 \code{\link{scooter_med}},
 \code{\link{scooter}},
+\code{\link{suva_grey}},
 \code{\link{trolley_grey_light}},
 \code{\link{trolley_grey}}
 }

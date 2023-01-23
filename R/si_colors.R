@@ -112,7 +112,14 @@ si_palettes <- list(
     carto_div_temps = c("#009392", "#39b185", "#9ccb86", "#e9e29c", "#eeb479", "#e88471", "#cf597e"),
     carto_div_teal = c("#009392", "#72aaa1", "#b1c7b3", "#f1eac8", "#e5b9ad", "#d98994", "#d0587e"),
     carto_div_tropic = c("#009B9E", "#42B7B9", "#A7D3D4", "#F1F1F1", "#E4C1D9", "#D691C1", "#C75DAB"),
-    carto_div_earth = c("#A16928", "#bd925a", "#d6bd8d", "#edeac2", "#b5c8b8", "#79a7ac", "#2887a1")
+    carto_div_earth = c("#A16928", "#bd925a", "#d6bd8d", "#edeac2", "#b5c8b8", "#79a7ac", "#2887a1"),
+
+  #Pantone Colors of the Year (descending)
+    pantone = c("#BE3455", "#6768AB", "#F5DF4D", "#939597", "#0F4C81", "#FF6F61",
+                "#5F4B8B", "#88B04B", "#F7CACA", "#93A9D1", "#964F4C", "#AD5E99",
+                "#009473", "#DD4124", "#45B5AA", "#D94F70", "#F0C05A", "#5A5B9F",
+                "#9B1B30", "#DECDBE", "#53B0AE", "#E2583E", "#7BC4C4", "#BF1932",
+                "#C74375", "#9BB7D4")
 
 )
 
@@ -419,20 +426,188 @@ si_palettes <- list(
 #' @title trolley grey light
   trolley_grey_light = "#e6e6e6"
 
+#' @family SIEI colors
 #' @export
 #' @description SIEI nero
 #' @title nero
   nero = "#202020"
 
+#' @family SIEI colors
 #' @export
 #' @description SIEI matterhorn
 #' @title matterhorn
   matterhorn = "#505050"
 
+#' @family SIEI colors
 #' @export
 #' @description SIEI suva grey
 #' @title suva grey
   suva_grey = "#909090"
 
+#' @family SIEI colors
+#' @export
+#' @description SIEI whisper
+#' @title whisper
+suva_grey = "#ebebeb"
+
+#' @family SIEI colors
+#' @export
+#' @description SIEI light grey
+light_grey = "#e3d3d3"
 
 
+#' cerulean
+#' Pantone Color of the Year 2000
+#' @export
+#' @family pantone
+pantone_cerulean = "#9BB7D4"
+
+#' fuchsia rose
+#' Pantone Color of the Year 2001
+#' @export
+#' @family pantone
+pantone_fuchsia_rose = "#C74375"
+
+#' true_red
+#' Pantone Color of the Year 2002
+#' @export
+#' @family pantone
+pantone_true_red = "#BF1932"
+
+#' aqua sky
+#' Pantone Color of the Year 2003
+#' @export
+#' @family pantone
+pantone_aqua_sky = "#7BC4C4"
+
+#' tigerlilly
+#' Pantone Color of the Year 2004
+#' @export
+#' @family pantone
+pantone_tigerlily = "#E2583E"
+
+#' blue_turquoise
+#' Pantone Color of the Year 2005
+#' @export
+#' @family pantone
+pantone_blue_turquoise = "#53B0AE"
+
+#' sand dollar
+#' Pantone Color of the Year 2006
+#' @export
+#' @family pantone
+pantone_sand_dollar = "#DECDBE"
+
+#' chili pepper
+#' Pantone Color of the Year 2007
+#' @export
+#' @family pantone
+pantone_chili_pepper = "#9B1B30"
+
+#' blue iris
+#' Pantone Color of the Year 2008
+#' @export
+#' @family pantone
+pantone_blue_iris = "#5A5B9F"
+
+#' mimosa
+#' Pantone Color of the Year 2009
+#' @export
+#' @family pantone
+pantone_mimosa = "#F0C05A"
+
+#' honeysuckle
+#' Pantone Color of the Year 2010
+#' @export
+#' @family pantone
+pantone_honeysuckle  = "#D94F70"
+
+#' turquoise
+#' Pantone Color of the Year 2011
+#' @export
+#' @family pantone
+pantone_turquoise  = "#45B5AA"
+
+#' tangerine tango
+#' Pantone Color of the Year 2012
+#' @export
+#' @family pantone
+pantone_tangerine_tango = "#DD4124"
+
+#' emerald
+#' Pantone Color of the Year 2013
+#' @export
+#' @family pantone
+pantone_emerald = "#009473"
+
+#' radiant orchid
+#' Pantone Color of the Year 2014
+#' @export
+#' @family pantone
+pantone_radiant_orchid = "#AD5E99"
+
+#' marsala
+#' Pantone Color of the Year 2015
+#' @export
+#' @family pantone
+pantone_marsala = "#964F4C"
+
+#' serenity
+#' Pantone Color of the Year 2016
+#' @export
+#' @family pantone
+pantone_serenity = "#93A9D1"
+
+#' rose quartz
+#' Pantone Color of the Year 2016
+#' @export
+#' @family pantone
+pantone_rose_quartz = "#F7CACA"
+
+#' greenery
+#' Pantone Color of the Year 2017
+#' @export
+#' @family pantone
+pantone_greenery = "#88B04B"
+
+#' ultra violet
+#' Pantone Color of the Year 2018
+#' @export
+#' @family pantone
+pantone_ultra_violet = "#5F4B8B"
+
+#' living coral
+#' Pantone Color of the Year 2019
+#' @export
+#' @family pantone
+pantone_living_coral = "#FF6F61"
+
+#' classic blue
+#' Pantone Color of the Year 2020
+#' @export
+#' @family pantone
+pantone_classic_blue = "#0F4C81"
+
+#' ultimate gray
+#' Pantone Color of the Year 2021
+#' @export
+#' @family pantone
+pantone_ultimate_gray = "#939597"
+
+#' illuminating
+#' Pantone Color of the Year 2021
+#' @export
+#' @family pantone
+pantone_illuminating = "#F5DF4D"
+
+#' very peri
+#' Pantone Color of the Year 2022
+#' @export
+#' @family pantone
+pantone_very_peri = "#6768AB"
+
+#' viva magenta
+#' Pantone Color of the Year 2023
+#' @export
+#' @family pantone
+pantone_viva_magenta = "#BE3455"
