@@ -33,6 +33,8 @@ navbar:
         href: articles/adorn-your-plots.html
       - text: What the f*nt?
         href: articles/what-the-f_nt.html
+      - text: Available Colors
+        href: articles/available-colors.html
 
 
 
@@ -69,7 +71,7 @@ reference:
   - si_save
 
 
-- title: SIEI Colors
+- title: OHA Colors
   contents:
   - burnt_sienna
   - burnt_sienna_light
@@ -89,7 +91,7 @@ reference:
   - trolley_grey
   - trolley_grey_light
 
-- title: SIEI Greys
+- title: OHA Greys
   contents:
   - grey10k
   - grey20k
@@ -101,11 +103,13 @@ reference:
   - grey80k
   - grey90k
 
-- title: SIEI Text Colors
+- title: OHA Text/Shading/Line Colors
   contents:
   - matterhorn
   - nero
   - suva_grey
+  - whisper
+  - light_grey
 
 - title: Sample Data
   contents:
@@ -138,15 +142,38 @@ reference:
   - wapo_lpurple
   - wapo_pushpop
 
+- title: Pantone Color of the Year Colors
+  contents:
+  - pantone_cerulean
+  - pantone_fuchsia_rose
+  - pantone_true_red
+  - pantone_aqua_sky
+  - pantone_tigerlily
+  - pantone_blue_turquoise
+  - pantone_sand_dollar
+  - pantone_chili_pepper
+  - pantone_blue_iris
+  - pantone_mimosa
+  - pantone_honeysuckle
+  - pantone_turquoise
+  - pantone_tangerine_tango
+  - pantone_emerald
+  - pantone_radiant_orchid
+  - pantone_marsala
+  - pantone_serenity
+  - pantone_rose_quartz
+  - pantone_greenery
+  - pantone_ultra_violet
+  - pantone_living_coral
+  - pantone_classic_blue
+  - pantone_ultimate_gray
+  - pantone_illuminating
+  - pantone_very_peri
+  - pantone_viva_magenta
+
 - title: Miscellaneous
   contents:
   - check_fonts
-  - siei_blue
-  - siei_dgrey
-  - siei_dorange
-  - siei_lblue
-  - siei_lorange
-  - siei_orange
 
 
 

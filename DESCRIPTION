@@ -20,21 +20,21 @@ Depends:
 Imports: 
     extrafont,
     ggplot2 (>= 3.3.0),
-    ggtext,
     grDevices,
-    lifecycle,
     magrittr,
     scales,
-    sf,
     usethis
 Suggests: 
     dplyr, 
     forcats,
+    ggtext,
     knitr,
+    lifecycle,
     patchwork,
     purrr,
     rmarkdown,
     markdown,
+    sf,
     testthat,
     tidyr
 Remotes:

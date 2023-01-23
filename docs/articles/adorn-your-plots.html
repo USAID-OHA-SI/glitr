@@ -58,6 +58,7 @@
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/adorn-your-plots.html">How to adorn your plots</a>
     <a class="dropdown-item" href="../articles/what-the-f_nt.html">What the f*nt?</a>
+    <a class="dropdown-item" href="../articles/available-colors.html">Available Colors</a>
   </div>
 </li>
 <li class="nav-item">
@@ -121,33 +122,57 @@
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="co"># Take a look at what's inside the package</span></span>
 <span><span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "%&gt;%"                "burnt_sienna"       "burnt_sienna_light"</span></span>
-<span><span class="co">#&gt;  [4] "cascade"            "check_fonts"        "color_caption"     </span></span>
-<span><span class="co">#&gt;  [7] "color_gridline"     "color_plot_text"    "color_title"       </span></span>
-<span><span class="co">#&gt; [10] "denim"              "denim_light"        "genoa"             </span></span>
-<span><span class="co">#&gt; [13] "genoa_light"        "golden_sand"        "golden_sand_light" </span></span>
-<span><span class="co">#&gt; [16] "grey10k"            "grey20k"            "grey30k"           </span></span>
-<span><span class="co">#&gt; [19] "grey40k"            "grey50k"            "grey60k"           </span></span>
-<span><span class="co">#&gt; [22] "grey70k"            "grey80k"            "grey90k"           </span></span>
-<span><span class="co">#&gt; [25] "hfr_mmd"            "hts"                "hts_geo"           </span></span>
-<span><span class="co">#&gt; [28] "matterhorn"         "moody_blue"         "moody_blue_light"  </span></span>
-<span><span class="co">#&gt; [31] "nero"               "old_rose"           "old_rose_light"    </span></span>
-<span><span class="co">#&gt; [34] "scale_color_si"     "scale_fill_si"      "scooter"           </span></span>
-<span><span class="co">#&gt; [37] "scooter_light"      "scooter_med"        "si_legend_color"   </span></span>
-<span><span class="co">#&gt; [40] "si_legend_fill"     "si_palettes"        "si_rampr"          </span></span>
-<span><span class="co">#&gt; [43] "si_save"            "si_style"           "si_style_map"      </span></span>
-<span><span class="co">#&gt; [46] "si_style_nolines"   "si_style_void"      "si_style_xgrid"    </span></span>
-<span><span class="co">#&gt; [49] "si_style_xline"     "si_style_xyline"    "si_style_ygrid"    </span></span>
-<span><span class="co">#&gt; [52] "si_style_yline"     "siei_blue"          "siei_dgrey"        </span></span>
-<span><span class="co">#&gt; [55] "siei_dorange"       "siei_lblue"         "siei_lorange"      </span></span>
-<span><span class="co">#&gt; [58] "siei_orange"        "suva_grey"          "trolley_grey"      </span></span>
-<span><span class="co">#&gt; [61] "trolley_grey_light" "usaid_black"        "usaid_blue"        </span></span>
-<span><span class="co">#&gt; [64] "usaid_darkgrey"     "usaid_lightblue"    "usaid_lightgrey"   </span></span>
-<span><span class="co">#&gt; [67] "usaid_medblue"      "usaid_medgrey"      "usaid_red"         </span></span>
-<span><span class="co">#&gt; [70] "wapo_dblue"         "wapo_dmauve"        "wapo_dorange"      </span></span>
-<span><span class="co">#&gt; [73] "wapo_lblue"         "wapo_lgreen"        "wapo_lmauve"       </span></span>
-<span><span class="co">#&gt; [76] "wapo_lorange"       "wapo_lorange2"      "wapo_lpurple"      </span></span>
-<span><span class="co">#&gt; [79] "wapo_pushpop"</span></span></code></pre></div>
+<span><span class="co">#&gt;   [1] "%&gt;%"                     "burnt_sienna"           </span></span>
+<span><span class="co">#&gt;   [3] "burnt_sienna_light"      "cascade"                </span></span>
+<span><span class="co">#&gt;   [5] "check_fonts"             "color_caption"          </span></span>
+<span><span class="co">#&gt;   [7] "color_gridline"          "color_plot_text"        </span></span>
+<span><span class="co">#&gt;   [9] "color_title"             "denim"                  </span></span>
+<span><span class="co">#&gt;  [11] "denim_light"             "genoa"                  </span></span>
+<span><span class="co">#&gt;  [13] "genoa_light"             "golden_sand"            </span></span>
+<span><span class="co">#&gt;  [15] "golden_sand_light"       "grey10k"                </span></span>
+<span><span class="co">#&gt;  [17] "grey20k"                 "grey30k"                </span></span>
+<span><span class="co">#&gt;  [19] "grey40k"                 "grey50k"                </span></span>
+<span><span class="co">#&gt;  [21] "grey60k"                 "grey70k"                </span></span>
+<span><span class="co">#&gt;  [23] "grey80k"                 "grey90k"                </span></span>
+<span><span class="co">#&gt;  [25] "hfr_mmd"                 "hts"                    </span></span>
+<span><span class="co">#&gt;  [27] "hts_geo"                 "light_grey"             </span></span>
+<span><span class="co">#&gt;  [29] "matterhorn"              "moody_blue"             </span></span>
+<span><span class="co">#&gt;  [31] "moody_blue_light"        "nero"                   </span></span>
+<span><span class="co">#&gt;  [33] "old_rose"                "old_rose_light"         </span></span>
+<span><span class="co">#&gt;  [35] "pantone_aqua_sky"        "pantone_blue_iris"      </span></span>
+<span><span class="co">#&gt;  [37] "pantone_blue_turquoise"  "pantone_cerulean"       </span></span>
+<span><span class="co">#&gt;  [39] "pantone_chili_pepper"    "pantone_classic_blue"   </span></span>
+<span><span class="co">#&gt;  [41] "pantone_emerald"         "pantone_fuchsia_rose"   </span></span>
+<span><span class="co">#&gt;  [43] "pantone_greenery"        "pantone_honeysuckle"    </span></span>
+<span><span class="co">#&gt;  [45] "pantone_illuminating"    "pantone_living_coral"   </span></span>
+<span><span class="co">#&gt;  [47] "pantone_marsala"         "pantone_mimosa"         </span></span>
+<span><span class="co">#&gt;  [49] "pantone_radiant_orchid"  "pantone_rose_quartz"    </span></span>
+<span><span class="co">#&gt;  [51] "pantone_sand_dollar"     "pantone_serenity"       </span></span>
+<span><span class="co">#&gt;  [53] "pantone_tangerine_tango" "pantone_tigerlily"      </span></span>
+<span><span class="co">#&gt;  [55] "pantone_true_red"        "pantone_turquoise"      </span></span>
+<span><span class="co">#&gt;  [57] "pantone_ultimate_gray"   "pantone_ultra_violet"   </span></span>
+<span><span class="co">#&gt;  [59] "pantone_very_peri"       "pantone_viva_magenta"   </span></span>
+<span><span class="co">#&gt;  [61] "scale_color_si"          "scale_fill_si"          </span></span>
+<span><span class="co">#&gt;  [63] "scooter"                 "scooter_light"          </span></span>
+<span><span class="co">#&gt;  [65] "scooter_med"             "si_legend_color"        </span></span>
+<span><span class="co">#&gt;  [67] "si_legend_fill"          "si_palettes"            </span></span>
+<span><span class="co">#&gt;  [69] "si_rampr"                "si_save"                </span></span>
+<span><span class="co">#&gt;  [71] "si_style"                "si_style_map"           </span></span>
+<span><span class="co">#&gt;  [73] "si_style_nolines"        "si_style_void"          </span></span>
+<span><span class="co">#&gt;  [75] "si_style_xgrid"          "si_style_xline"         </span></span>
+<span><span class="co">#&gt;  [77] "si_style_xyline"         "si_style_ygrid"         </span></span>
+<span><span class="co">#&gt;  [79] "si_style_yline"          "suva_grey"              </span></span>
+<span><span class="co">#&gt;  [81] "trolley_grey"            "trolley_grey_light"     </span></span>
+<span><span class="co">#&gt;  [83] "usaid_black"             "usaid_blue"             </span></span>
+<span><span class="co">#&gt;  [85] "usaid_darkgrey"          "usaid_lightblue"        </span></span>
+<span><span class="co">#&gt;  [87] "usaid_lightgrey"         "usaid_medblue"          </span></span>
+<span><span class="co">#&gt;  [89] "usaid_medgrey"           "usaid_red"              </span></span>
+<span><span class="co">#&gt;  [91] "wapo_dblue"              "wapo_dmauve"            </span></span>
+<span><span class="co">#&gt;  [93] "wapo_dorange"            "wapo_lblue"             </span></span>
+<span><span class="co">#&gt;  [95] "wapo_lgreen"             "wapo_lmauve"            </span></span>
+<span><span class="co">#&gt;  [97] "wapo_lorange"            "wapo_lorange2"          </span></span>
+<span><span class="co">#&gt;  [99] "wapo_lpurple"            "wapo_pushpop"           </span></span>
+<span><span class="co">#&gt; [101] "whisper"</span></span></code></pre></div>
 <p>The package can be divided into three main parts i) <strong>colors</strong>, that come as objects (such as <code>grey30k</code> or <code>genoa</code>), ii) <strong>SI themes</strong>, that can be used to quickly apply SI plot defaults, and iii) <strong>helper functions</strong>, that interpolate palettes or apply palettes to a visualization. This vignette will focus on exploring colors and the SI themes.</p>
 </div>
 <div class="section level3">
@@ -160,15 +185,14 @@
 <span><span class="co">#&gt;  [1] "grey10k"            "grey20k"            "grey30k"           </span></span>
 <span><span class="co">#&gt;  [4] "grey40k"            "grey50k"            "grey60k"           </span></span>
 <span><span class="co">#&gt;  [7] "grey70k"            "grey80k"            "grey90k"           </span></span>
-<span><span class="co">#&gt; [10] "siei_blue"          "siei_dgrey"         "siei_dorange"      </span></span>
-<span><span class="co">#&gt; [13] "siei_lblue"         "siei_lorange"       "siei_orange"       </span></span>
-<span><span class="co">#&gt; [16] "suva_grey"          "trolley_grey"       "trolley_grey_light"</span></span>
-<span><span class="co">#&gt; [19] "usaid_black"        "usaid_blue"         "usaid_darkgrey"    </span></span>
-<span><span class="co">#&gt; [22] "usaid_lightblue"    "usaid_lightgrey"    "usaid_medblue"     </span></span>
-<span><span class="co">#&gt; [25] "usaid_medgrey"      "usaid_red"          "wapo_dblue"        </span></span>
-<span><span class="co">#&gt; [28] "wapo_dmauve"        "wapo_dorange"       "wapo_lblue"        </span></span>
-<span><span class="co">#&gt; [31] "wapo_lgreen"        "wapo_lmauve"        "wapo_lorange"      </span></span>
-<span><span class="co">#&gt; [34] "wapo_lorange2"      "wapo_lpurple"       "wapo_pushpop"</span></span></code></pre></div>
+<span><span class="co">#&gt; [10] "light_grey"         "suva_grey"          "trolley_grey"      </span></span>
+<span><span class="co">#&gt; [13] "trolley_grey_light" "usaid_black"        "usaid_blue"        </span></span>
+<span><span class="co">#&gt; [16] "usaid_darkgrey"     "usaid_lightblue"    "usaid_lightgrey"   </span></span>
+<span><span class="co">#&gt; [19] "usaid_medblue"      "usaid_medgrey"      "usaid_red"         </span></span>
+<span><span class="co">#&gt; [22] "wapo_dblue"         "wapo_dmauve"        "wapo_dorange"      </span></span>
+<span><span class="co">#&gt; [25] "wapo_lblue"         "wapo_lgreen"        "wapo_lmauve"       </span></span>
+<span><span class="co">#&gt; [28] "wapo_lorange"       "wapo_lorange2"      "wapo_lpurple"      </span></span>
+<span><span class="co">#&gt; [31] "wapo_pushpop"</span></span></code></pre></div>
 <p>The set of colors that is probably of most interest is the SIEI recommended colors. As you may recall from the <a href="https://usaid-oha-si.github.io/styleguide/" class="external-link">Data Visualization Style Guild</a>, the SI team has created seven core colors:</p>
 <p><img src="https://via.placeholder.com/15/2057a7/000000?text=+" alt="#2057a7"> denim (#2057a7)<br><img src="https://via.placeholder.com/15/c43d4d/000000?text=+" alt="#c43d4d"> old_rose (#c43d4d)<br><img src="https://via.placeholder.com/15/8980cb/000000?text=+" alt="#8980cb"> moody_blue (#8980cb)<br><img src="https://via.placeholder.com/15/e07653/000000?text=+" alt="#e07653"> burnt_sienna (#e07653)<br><img src="https://via.placeholder.com/15/1e87a5/000000?text=+" alt="#1e87a5"> scooter (#1e87a5)<br><img src="https://via.placeholder.com/15/f2bc40/000000?text=+" alt="#f2bc40"> golden_sand (#f2bc40)<br><img src="https://via.placeholder.com/15/287c6f/000000?text=+" alt="#287c6f"> genoa (#287c6f)<br><img src="https://via.placeholder.com/15/808080/000000?text=+" alt="#808080"> trolley_grey (#808080)</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">

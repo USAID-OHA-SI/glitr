@@ -1,4 +1,5 @@
 # glitr 0.1.1
+* Include Pantone Color of the Year palette and color vignette [2023-01-23]
 * Update README with font installation instructions and duplicated in a vignette [2023-01-23]
 * Provide alternative font if Source Sans Pro is not available [2022-08-15]
 * Add in package status check from `gagglr` [2022-08-15]
