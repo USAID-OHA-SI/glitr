@@ -31,6 +31,8 @@ navbar:
       menu:
       - text: How to adorn your plots
         href: articles/adorn-your-plots.html
+      - text: What the f*nt?
+        href: articles/what-the-f_nt.html
 
 
 

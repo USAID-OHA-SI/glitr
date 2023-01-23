@@ -15,8 +15,8 @@
 <link rel="apple-touch-icon" type="image/png" sizes="76x76" href="../apple-touch-icon-76x76.png">
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link href="../deps/bootstrap-5.1.0/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.1.0/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<link href="../deps/bootstrap-5.1.3/bootstrap.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.1.3/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="How to adorn your plots">
 <meta property="og:description" content="This vignette covers the core features (SI colors and styles) of the glitr package.
@@ -57,6 +57,7 @@
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
     <a class="dropdown-item" href="../articles/adorn-your-plots.html">How to adorn your plots</a>
+    <a class="dropdown-item" href="../articles/what-the-f_nt.html">What the f*nt?</a>
   </div>
 </li>
 <li class="nav-item">
@@ -85,7 +86,7 @@
 
 
 <div class="row">
-  <main id="main"><div class="page-header">
+  <main id="main" class="col-md-9"><div class="page-header">
       <img src="../logo.png" class="logo" alt=""><h1>How to adorn your plots</h1>
             
       
@@ -105,48 +106,48 @@
 </h3>
 <p>To get started, load the standard OHA-SI libraries used in analysis.</p>
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://magrittr.tidyverse.org" class="external-link">magrittr</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org" class="external-link">tidyr</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://forcats.tidyverse.org" class="external-link">forcats</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/USAID-OHA-SI/glitr" class="external-link">glitr</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://scales.r-lib.org" class="external-link">scales</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://wilkelab.org/ggtext/" class="external-link">ggtext</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wch/extrafont" class="external-link">extrafont</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com" class="external-link">patchwork</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="http://purrr.tidyverse.org" class="external-link">purrr</a></span><span class="op">)</span>
-<span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://dplyr.tidyverse.org" class="external-link">dplyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://magrittr.tidyverse.org" class="external-link">magrittr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://tidyr.tidyverse.org" class="external-link">tidyr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://forcats.tidyverse.org/" class="external-link">forcats</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/USAID-OHA-SI/glitr" class="external-link">glitr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://scales.r-lib.org" class="external-link">scales</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://wilkelab.org/ggtext/" class="external-link">ggtext</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/wch/extrafont" class="external-link">extrafont</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://patchwork.data-imaginist.com" class="external-link">patchwork</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://purrr.tidyverse.org/" class="external-link">purrr</a></span><span class="op">)</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://r-spatial.github.io/sf/" class="external-link">sf</a></span><span class="op">)</span></span></code></pre></div>
 <div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Take a look at what's inside the package</span>
-<span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span>
-<span class="co">#&gt;  [1] "%&gt;%"                "burnt_sienna"       "burnt_sienna_light"</span>
-<span class="co">#&gt;  [4] "cascade"            "check_fonts"        "color_caption"     </span>
-<span class="co">#&gt;  [7] "color_gridline"     "color_plot_text"    "color_title"       </span>
-<span class="co">#&gt; [10] "denim"              "denim_light"        "genoa"             </span>
-<span class="co">#&gt; [13] "genoa_light"        "golden_sand"        "golden_sand_light" </span>
-<span class="co">#&gt; [16] "grey10k"            "grey20k"            "grey30k"           </span>
-<span class="co">#&gt; [19] "grey40k"            "grey50k"            "grey60k"           </span>
-<span class="co">#&gt; [22] "grey70k"            "grey80k"            "grey90k"           </span>
-<span class="co">#&gt; [25] "hfr_mmd"            "hts"                "hts_geo"           </span>
-<span class="co">#&gt; [28] "matterhorn"         "moody_blue"         "moody_blue_light"  </span>
-<span class="co">#&gt; [31] "nero"               "old_rose"           "old_rose_light"    </span>
-<span class="co">#&gt; [34] "scale_color_si"     "scale_fill_si"      "scooter"           </span>
-<span class="co">#&gt; [37] "scooter_light"      "scooter_med"        "si_legend_color"   </span>
-<span class="co">#&gt; [40] "si_legend_fill"     "si_palettes"        "si_rampr"          </span>
-<span class="co">#&gt; [43] "si_save"            "si_style"           "si_style_map"      </span>
-<span class="co">#&gt; [46] "si_style_nolines"   "si_style_void"      "si_style_xgrid"    </span>
-<span class="co">#&gt; [49] "si_style_xline"     "si_style_xyline"    "si_style_ygrid"    </span>
-<span class="co">#&gt; [52] "si_style_yline"     "siei_blue"          "siei_dgrey"        </span>
-<span class="co">#&gt; [55] "siei_dorange"       "siei_lblue"         "siei_lorange"      </span>
-<span class="co">#&gt; [58] "siei_orange"        "suva_grey"          "trolley_grey"      </span>
-<span class="co">#&gt; [61] "trolley_grey_light" "usaid_black"        "usaid_blue"        </span>
-<span class="co">#&gt; [64] "usaid_darkgrey"     "usaid_lightblue"    "usaid_lightgrey"   </span>
-<span class="co">#&gt; [67] "usaid_medblue"      "usaid_medgrey"      "usaid_red"         </span>
-<span class="co">#&gt; [70] "wapo_dblue"         "wapo_dmauve"        "wapo_dorange"      </span>
-<span class="co">#&gt; [73] "wapo_lblue"         "wapo_lgreen"        "wapo_lmauve"       </span>
-<span class="co">#&gt; [76] "wapo_lorange"       "wapo_lorange2"      "wapo_lpurple"      </span>
-<span class="co">#&gt; [79] "wapo_pushpop"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Take a look at what's inside the package</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  [1] "%&gt;%"                "burnt_sienna"       "burnt_sienna_light"</span></span>
+<span><span class="co">#&gt;  [4] "cascade"            "check_fonts"        "color_caption"     </span></span>
+<span><span class="co">#&gt;  [7] "color_gridline"     "color_plot_text"    "color_title"       </span></span>
+<span><span class="co">#&gt; [10] "denim"              "denim_light"        "genoa"             </span></span>
+<span><span class="co">#&gt; [13] "genoa_light"        "golden_sand"        "golden_sand_light" </span></span>
+<span><span class="co">#&gt; [16] "grey10k"            "grey20k"            "grey30k"           </span></span>
+<span><span class="co">#&gt; [19] "grey40k"            "grey50k"            "grey60k"           </span></span>
+<span><span class="co">#&gt; [22] "grey70k"            "grey80k"            "grey90k"           </span></span>
+<span><span class="co">#&gt; [25] "hfr_mmd"            "hts"                "hts_geo"           </span></span>
+<span><span class="co">#&gt; [28] "matterhorn"         "moody_blue"         "moody_blue_light"  </span></span>
+<span><span class="co">#&gt; [31] "nero"               "old_rose"           "old_rose_light"    </span></span>
+<span><span class="co">#&gt; [34] "scale_color_si"     "scale_fill_si"      "scooter"           </span></span>
+<span><span class="co">#&gt; [37] "scooter_light"      "scooter_med"        "si_legend_color"   </span></span>
+<span><span class="co">#&gt; [40] "si_legend_fill"     "si_palettes"        "si_rampr"          </span></span>
+<span><span class="co">#&gt; [43] "si_save"            "si_style"           "si_style_map"      </span></span>
+<span><span class="co">#&gt; [46] "si_style_nolines"   "si_style_void"      "si_style_xgrid"    </span></span>
+<span><span class="co">#&gt; [49] "si_style_xline"     "si_style_xyline"    "si_style_ygrid"    </span></span>
+<span><span class="co">#&gt; [52] "si_style_yline"     "siei_blue"          "siei_dgrey"        </span></span>
+<span><span class="co">#&gt; [55] "siei_dorange"       "siei_lblue"         "siei_lorange"      </span></span>
+<span><span class="co">#&gt; [58] "siei_orange"        "suva_grey"          "trolley_grey"      </span></span>
+<span><span class="co">#&gt; [61] "trolley_grey_light" "usaid_black"        "usaid_blue"        </span></span>
+<span><span class="co">#&gt; [64] "usaid_darkgrey"     "usaid_lightblue"    "usaid_lightgrey"   </span></span>
+<span><span class="co">#&gt; [67] "usaid_medblue"      "usaid_medgrey"      "usaid_red"         </span></span>
+<span><span class="co">#&gt; [70] "wapo_dblue"         "wapo_dmauve"        "wapo_dorange"      </span></span>
+<span><span class="co">#&gt; [73] "wapo_lblue"         "wapo_lgreen"        "wapo_lmauve"       </span></span>
+<span><span class="co">#&gt; [76] "wapo_lorange"       "wapo_lorange2"      "wapo_lpurple"      </span></span>
+<span><span class="co">#&gt; [79] "wapo_pushpop"</span></span></code></pre></div>
 <p>The package can be divided into three main parts i) <strong>colors</strong>, that come as objects (such as <code>grey30k</code> or <code>genoa</code>), ii) <strong>SI themes</strong>, that can be used to quickly apply SI plot defaults, and iii) <strong>helper functions</strong>, that interpolate palettes or apply palettes to a visualization. This vignette will focus on exploring colors and the SI themes.</p>
 </div>
 <div class="section level3">
@@ -154,51 +155,51 @@
 </h3>
 <p>A number of pre-defined colors come with the <code>glitr</code> package. All objects starting with ‘grey’ belong to a family of gray colors where <code>grey10k</code> is the lightest and <code>grey90k</code> the darkest. Objects starting with <code>usaid_</code> are the official <a href="https://www.usaid.gov/node/194331" class="external-link">USAID colors</a> while those starting with <code>wapo_</code> are Washington Post inspired colors. <code>seie_</code> colors are largely out of style but included for posterity. color_<code>denote objects that can be used to for filling in captions, gridlines, plot text or plot titles. The family of</code>color_` objects follows the colors recommended in the style guide.</p>
 <div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Colors belonging to greys, usaid_, wapo_ or siei_.</span>
-<span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"(grey|siei_|wapo_|usaid_)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span>, value <span class="op">=</span> <span class="cn">T</span><span class="op">)</span>
-<span class="co">#&gt;  [1] "grey10k"            "grey20k"            "grey30k"           </span>
-<span class="co">#&gt;  [4] "grey40k"            "grey50k"            "grey60k"           </span>
-<span class="co">#&gt;  [7] "grey70k"            "grey80k"            "grey90k"           </span>
-<span class="co">#&gt; [10] "siei_blue"          "siei_dgrey"         "siei_dorange"      </span>
-<span class="co">#&gt; [13] "siei_lblue"         "siei_lorange"       "siei_orange"       </span>
-<span class="co">#&gt; [16] "suva_grey"          "trolley_grey"       "trolley_grey_light"</span>
-<span class="co">#&gt; [19] "usaid_black"        "usaid_blue"         "usaid_darkgrey"    </span>
-<span class="co">#&gt; [22] "usaid_lightblue"    "usaid_lightgrey"    "usaid_medblue"     </span>
-<span class="co">#&gt; [25] "usaid_medgrey"      "usaid_red"          "wapo_dblue"        </span>
-<span class="co">#&gt; [28] "wapo_dmauve"        "wapo_dorange"       "wapo_lblue"        </span>
-<span class="co">#&gt; [31] "wapo_lgreen"        "wapo_lmauve"        "wapo_lorange"      </span>
-<span class="co">#&gt; [34] "wapo_lorange2"      "wapo_lpurple"       "wapo_pushpop"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Colors belonging to greys, usaid_, wapo_ or siei_.</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"(grey|siei_|wapo_|usaid_)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span>, value <span class="op">=</span> <span class="cn">T</span><span class="op">)</span></span>
+<span><span class="co">#&gt;  [1] "grey10k"            "grey20k"            "grey30k"           </span></span>
+<span><span class="co">#&gt;  [4] "grey40k"            "grey50k"            "grey60k"           </span></span>
+<span><span class="co">#&gt;  [7] "grey70k"            "grey80k"            "grey90k"           </span></span>
+<span><span class="co">#&gt; [10] "siei_blue"          "siei_dgrey"         "siei_dorange"      </span></span>
+<span><span class="co">#&gt; [13] "siei_lblue"         "siei_lorange"       "siei_orange"       </span></span>
+<span><span class="co">#&gt; [16] "suva_grey"          "trolley_grey"       "trolley_grey_light"</span></span>
+<span><span class="co">#&gt; [19] "usaid_black"        "usaid_blue"         "usaid_darkgrey"    </span></span>
+<span><span class="co">#&gt; [22] "usaid_lightblue"    "usaid_lightgrey"    "usaid_medblue"     </span></span>
+<span><span class="co">#&gt; [25] "usaid_medgrey"      "usaid_red"          "wapo_dblue"        </span></span>
+<span><span class="co">#&gt; [28] "wapo_dmauve"        "wapo_dorange"       "wapo_lblue"        </span></span>
+<span><span class="co">#&gt; [31] "wapo_lgreen"        "wapo_lmauve"        "wapo_lorange"      </span></span>
+<span><span class="co">#&gt; [34] "wapo_lorange2"      "wapo_lpurple"       "wapo_pushpop"</span></span></code></pre></div>
 <p>The set of colors that is probably of most interest is the SIEI recommended colors. As you may recall from the <a href="https://usaid-oha-si.github.io/styleguide/" class="external-link">Data Visualization Style Guild</a>, the SI team has created seven core colors:</p>
 <p><img src="https://via.placeholder.com/15/2057a7/000000?text=+" alt="#2057a7"> denim (#2057a7)<br><img src="https://via.placeholder.com/15/c43d4d/000000?text=+" alt="#c43d4d"> old_rose (#c43d4d)<br><img src="https://via.placeholder.com/15/8980cb/000000?text=+" alt="#8980cb"> moody_blue (#8980cb)<br><img src="https://via.placeholder.com/15/e07653/000000?text=+" alt="#e07653"> burnt_sienna (#e07653)<br><img src="https://via.placeholder.com/15/1e87a5/000000?text=+" alt="#1e87a5"> scooter (#1e87a5)<br><img src="https://via.placeholder.com/15/f2bc40/000000?text=+" alt="#f2bc40"> golden_sand (#f2bc40)<br><img src="https://via.placeholder.com/15/287c6f/000000?text=+" alt="#287c6f"> genoa (#287c6f)<br><img src="https://via.placeholder.com/15/808080/000000?text=+" alt="#808080"> trolley_grey (#808080)</p>
 <div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Any of these colors can be called by typing in the name of the color. </span>
-<span class="co"># The `show_col` function is from the `scales` package and is a handy way to preview a color. </span>
-<span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="va">genoa</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Any of these colors can be called by typing in the name of the color. </span></span>
+<span><span class="co"># The `show_col` function is from the `scales` package and is a handy way to preview a color. </span></span>
+<span><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="va">genoa</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/show_colors-1.png" width="384"></p>
 <div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">denim</span>, <span class="va">old_rose</span>, <span class="va">moody_blue</span>, <span class="va">burnt_sienna</span><span class="op">)</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="va">denim</span>, <span class="va">old_rose</span>, <span class="va">moody_blue</span>, <span class="va">burnt_sienna</span><span class="op">)</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/show_colors-2.png" width="384"></p>
 <p>To access the full list of discrete or continuous palettes, see the si_palettes list or call the color palette directly using the name (<code>si_palettes$color_name</code>). Color names that are singular (<code>genoa</code>, <code>old_rose</code>) are categorical palettes based on suggested color pairs. Color names that are plural (<code>genoas</code>) are continuous palettes that can be applied to continuous variables. If you attempt to apply a discrete palette to a continuous variable, the color pairs will be recycled to the length of the vector you are attempting to encode.</p>
 <div class="sourceCode" id="cb6"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Returns the recommended paired colors with genoa as the base</span>
-<span class="va">si_palettes</span><span class="op">$</span><span class="va">genoa</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Returns the recommended paired colors with genoa as the base</span></span>
+<span><span class="va">si_palettes</span><span class="op">$</span><span class="va">genoa</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/palettes-1.png" width="576"></p>
 <div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="co"># Returns an interpolated vector of color values around the base genoa color</span>
-<span class="va">si_palettes</span><span class="op">$</span><span class="va">genoas</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="co"># Returns an interpolated vector of color values around the base genoa color</span></span>
+<span><span class="va">si_palettes</span><span class="op">$</span><span class="va">genoas</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/palettes-2.png" width="576"></p>
 <p>Finally, if you want to create a custom palette from one of the color sets in the si_palettes list, you can do this using the <code><a href="../reference/si_rampr.html">si_rampr()</a></code> function.</p>
 <div class="sourceCode" id="cb8"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># si_rampr takes a palette name and the number of interpolated colors (n) you wish to return as arguments. </span>
-<span class="va">denim_pal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/si_rampr.html">si_rampr</a></span><span class="op">(</span>pal_name <span class="op">=</span> <span class="st">"denims"</span>, n <span class="op">=</span> <span class="fl">25</span><span class="op">)</span>
-<span class="va">denim_pal</span>
-<span class="co">#&gt;  [1] "#BFDDFF" "#B4D3FF" "#A9C9FF" "#9EBFFE" "#93B5FE" "#89ABFC" "#7FA1F6"</span>
-<span class="co">#&gt;  [8] "#7597EF" "#6B8FE6" "#6187DD" "#577ED4" "#4D76CA" "#436EC1" "#3666B7"</span>
-<span class="co">#&gt; [15] "#2A5EAE" "#1E56A5" "#114E9C" "#064693" "#033E89" "#00357F" "#002D75"</span>
-<span class="co">#&gt; [22] "#00256B" "#001C61" "#001458" "#000C4F"</span>
-
-<span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="va">denim_pal</span>, labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># si_rampr takes a palette name and the number of interpolated colors (n) you wish to return as arguments. </span></span>
+<span><span class="va">denim_pal</span> <span class="op">&lt;-</span> <span class="fu"><a href="../reference/si_rampr.html">si_rampr</a></span><span class="op">(</span>pal_name <span class="op">=</span> <span class="st">"denims"</span>, n <span class="op">=</span> <span class="fl">25</span><span class="op">)</span></span>
+<span><span class="va">denim_pal</span></span>
+<span><span class="co">#&gt;  [1] "#BFDDFF" "#B4D3FF" "#A9C9FF" "#9EBFFE" "#93B5FE" "#89ABFC" "#7FA1F6"</span></span>
+<span><span class="co">#&gt;  [8] "#7597EF" "#6B8FE6" "#6187DD" "#577ED4" "#4D76CA" "#436EC1" "#3666B7"</span></span>
+<span><span class="co">#&gt; [15] "#2A5EAE" "#1E56A5" "#114E9C" "#064693" "#033E89" "#00357F" "#002D75"</span></span>
+<span><span class="co">#&gt; [22] "#00256B" "#001C61" "#001458" "#000C4F"</span></span>
+<span></span>
+<span><span class="fu"><a href="https://scales.r-lib.org/reference/show_col.html" class="external-link">show_col</a></span><span class="op">(</span><span class="va">denim_pal</span>, labels <span class="op">=</span> <span class="cn">F</span>, borders <span class="op">=</span> <span class="cn">F</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/custom_palettes-1.png" width="576"></p>
 </div>
 <div class="section level3">
@@ -206,92 +207,93 @@
 </h3>
 <p>To add any of these colors to a graph, pass them as arguments in a ggplot2 call. We will work with one of the sample data sets to create a bar graph where positive testing results are colored with scooter.</p>
 <div class="sourceCode" id="cb9"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Munge the hts data down to testing yields for a given year</span>
-  <span class="va">hts_bar</span> <span class="op">&lt;-</span>
-    <span class="va">hts</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"FY50"</span>, <span class="va">period_type</span> <span class="op">==</span> <span class="st">"cumulative"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">indicator</span>, <span class="va">primepartner</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span>total <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">value</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://tidyr.tidyverse.org/reference/spread.html" class="external-link">spread</a></span><span class="op">(</span><span class="va">indicator</span>, <span class="va">total</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span>
-    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>positivity <span class="op">=</span> <span class="op">(</span><span class="va">HTS_TST_POS</span> <span class="op">/</span> <span class="va">HTS_TST</span><span class="op">)</span>,
-           prime_order <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_reorder.html" class="external-link">fct_reorder</a></span><span class="op">(</span><span class="va">primepartner</span>, <span class="va">HTS_TST</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">prime_order</span><span class="op">)</span>
-
-<span class="co"># Define testing results to be grey30k and positive results to be scooter. </span>
-<span class="co"># Play close attention to where the fill is placed in the geom_col() call. </span>
-<span class="co"># If placed inside the aesthetics, you will need to apply scale_fill_identity() to get the colors to render.</span>
-  <span class="va">p</span> <span class="op">&lt;-</span> <span class="va">hts_bar</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>y <span class="op">=</span> <span class="va">prime_order</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">HTS_TST</span><span class="op">)</span>, fill <span class="op">=</span> <span class="va">grey30k</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">HTS_TST_POS</span><span class="op">)</span>, fill <span class="op">=</span> <span class="va">scooter</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"HTS_TST_POS FILLED WITH SCOOTER COLOR"</span>,
-         subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span>
-  <span class="va">p</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Munge the hts data down to testing yields for a given year</span></span>
+<span>  <span class="va">hts_bar</span> <span class="op">&lt;-</span></span>
+<span>    <span class="va">hts</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period</span> <span class="op">==</span> <span class="st">"FY50"</span>, <span class="va">period_type</span> <span class="op">==</span> <span class="st">"cumulative"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">indicator</span>, <span class="va">prime_partner_name</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/summarise.html" class="external-link">summarise</a></span><span class="op">(</span>total <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">value</span>, na.rm <span class="op">=</span> <span class="cn">TRUE</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://tidyr.tidyverse.org/reference/spread.html" class="external-link">spread</a></span><span class="op">(</span><span class="va">indicator</span>, <span class="va">total</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span></span>
+<span>    <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>positivity <span class="op">=</span> <span class="op">(</span><span class="va">HTS_TST_POS</span> <span class="op">/</span> <span class="va">HTS_TST</span><span class="op">)</span>,</span>
+<span>           prime_order <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_reorder.html" class="external-link">fct_reorder</a></span><span class="op">(</span><span class="va">prime_partner_name</span>, <span class="va">HTS_TST</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/arrange.html" class="external-link">arrange</a></span><span class="op">(</span><span class="va">prime_order</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Define testing results to be grey30k and positive results to be scooter. </span></span>
+<span><span class="co"># Play close attention to where the fill is placed in the geom_col() call. </span></span>
+<span><span class="co"># If placed inside the aesthetics, you will need to apply scale_fill_identity() to get the colors to render.</span></span>
+<span>  <span class="va">p</span> <span class="op">&lt;-</span> <span class="va">hts_bar</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>y <span class="op">=</span> <span class="va">prime_order</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">HTS_TST</span><span class="op">)</span>, fill <span class="op">=</span> <span class="va">grey30k</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">HTS_TST_POS</span><span class="op">)</span>, fill <span class="op">=</span> <span class="va">scooter</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"HTS_TST_POS FILLED WITH SCOOTER COLOR"</span>,</span>
+<span>         subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></span>
+<span>  <span class="va">p</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/bar_graph_colors-1.png" width="720"></p>
 <p>Another way to use colors in plots is to assign color values to a new column in a data frame. For example, say we would like to highlight the two partners that have conducted the greatest number of tests. First, we will create a ranking variable that ranks partners by total testing. Then we will assign a set of colors based on the rankings.</p>
 <div class="sourceCode" id="cb10"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Create a rank column, then assign colors based on threshold (&lt;=2)</span>
- <span class="va">hts_bar_rnkd</span> <span class="op">&lt;-</span> <span class="va">hts_bar</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>hts_rank <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/ranking.html" class="external-link">dense_rank</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">HTS_TST</span><span class="op">)</span><span class="op">)</span>, 
-         rnk_color <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html" class="external-link">case_when</a></span><span class="op">(</span>
-           <span class="va">hts_rank</span> <span class="op">&lt;=</span> <span class="fl">2</span> <span class="op">~</span> <span class="va">denim</span>, 
-           <span class="cn">TRUE</span> <span class="op">~</span> <span class="va">golden_sand</span>
-           <span class="op">)</span>
-         <span class="op">)</span> 
- <span class="va">hts_bar_rnkd</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">hts_rank</span> <span class="op">&lt;</span> <span class="fl">7</span><span class="op">)</span>
-<span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 x 7</span></span>
-<span class="co">#&gt;   primepartner HTS_TST HTS_TST_POS positivity prime_order hts_rank rnk_color</span>
-<span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>    </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Ursa Major     <span style="text-decoration: underline;">14</span>360        <span style="text-decoration: underline;">1</span>740     0.121  Ursa Major         6 #f2bc40  </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Capricornus    <span style="text-decoration: underline;">21</span>920        <span style="text-decoration: underline;">2</span>020     0.092<span style="text-decoration: underline;">2</span> Capricornus        5 #f2bc40  </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Corvus         <span style="text-decoration: underline;">24</span>430        <span style="text-decoration: underline;">1</span>240     0.050<span style="text-decoration: underline;">8</span> Corvus             4 #f2bc40  </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Eridanus       <span style="text-decoration: underline;">36</span>620        <span style="text-decoration: underline;">1</span>560     0.042<span style="text-decoration: underline;">6</span> Eridanus           3 #f2bc40  </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Libra          <span style="text-decoration: underline;">64</span>580        <span style="text-decoration: underline;">2</span>460     0.038<span style="text-decoration: underline;">1</span> Libra              2 #2057a7  </span>
-<span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Sagittarius    <span style="text-decoration: underline;">66</span>470        <span style="text-decoration: underline;">3</span>870     0.058<span style="text-decoration: underline;">2</span> Sagittarius        1 #2057a7</span>
- 
- <span class="co"># Assign colors to top two ranked prime partners and plot.</span>
- <span class="co"># Use the scale_fill_identity() to let ggplot2 know where fill is from.</span>
- <span class="va">hts_bar_rnkd</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>y <span class="op">=</span> <span class="va">prime_order</span>, x <span class="op">=</span> <span class="va">HTS_TST</span>, fill <span class="op">=</span> <span class="va">rnk_color</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span>
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_identity.html" class="external-link">scale_fill_identity</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-      <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"HTS_TST FILLED BASED ON IDENTITY"</span>,
-         subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Create a rank column, then assign colors based on threshold (&lt;=2)</span></span>
+<span> <span class="va">hts_bar_rnkd</span> <span class="op">&lt;-</span> <span class="va">hts_bar</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>hts_rank <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/ranking.html" class="external-link">dense_rank</a></span><span class="op">(</span><span class="fu"><a href="https://dplyr.tidyverse.org/reference/desc.html" class="external-link">desc</a></span><span class="op">(</span><span class="va">HTS_TST</span><span class="op">)</span><span class="op">)</span>, </span>
+<span>         rnk_color <span class="op">=</span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/case_when.html" class="external-link">case_when</a></span><span class="op">(</span></span>
+<span>           <span class="va">hts_rank</span> <span class="op">&lt;=</span> <span class="fl">2</span> <span class="op">~</span> <span class="va">denim</span>, </span>
+<span>           <span class="cn">TRUE</span> <span class="op">~</span> <span class="va">golden_sand</span></span>
+<span>           <span class="op">)</span></span>
+<span>         <span class="op">)</span> </span>
+<span> <span class="va">hts_bar_rnkd</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">hts_rank</span> <span class="op">&lt;</span> <span class="fl">7</span><span class="op">)</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># A tibble: 6 × 7</span></span></span>
+<span><span class="co">#&gt;   prime_partner_name HTS_TST HTS_TST_POS positivity prime_order hts_rank rnk_c…¹</span></span>
+<span><span class="co">#&gt;   <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>                <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>       <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span>      <span style="color: #949494; font-style: italic;">&lt;dbl&gt;</span> <span style="color: #949494; font-style: italic;">&lt;fct&gt;</span>          <span style="color: #949494; font-style: italic;">&lt;int&gt;</span> <span style="color: #949494; font-style: italic;">&lt;chr&gt;</span>  </span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">1</span> Ursa Major           <span style="text-decoration: underline;">14</span>360        <span style="text-decoration: underline;">1</span>740     0.121  Ursa Major         6 #f2bc40</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">2</span> Capricornus          <span style="text-decoration: underline;">21</span>920        <span style="text-decoration: underline;">2</span>020     0.092<span style="text-decoration: underline;">2</span> Capricornus        5 #f2bc40</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">3</span> Corvus               <span style="text-decoration: underline;">24</span>430        <span style="text-decoration: underline;">1</span>240     0.050<span style="text-decoration: underline;">8</span> Corvus             4 #f2bc40</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">4</span> Eridanus             <span style="text-decoration: underline;">36</span>620        <span style="text-decoration: underline;">1</span>560     0.042<span style="text-decoration: underline;">6</span> Eridanus           3 #f2bc40</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">5</span> Libra                <span style="text-decoration: underline;">64</span>580        <span style="text-decoration: underline;">2</span>460     0.038<span style="text-decoration: underline;">1</span> Libra              2 #2057a7</span></span>
+<span><span class="co">#&gt; <span style="color: #BCBCBC;">6</span> Sagittarius          <span style="text-decoration: underline;">66</span>470        <span style="text-decoration: underline;">3</span>870     0.058<span style="text-decoration: underline;">2</span> Sagittarius        1 #2057a7</span></span>
+<span><span class="co">#&gt; <span style="color: #949494;"># … with abbreviated variable name ¹​rnk_color</span></span></span>
+<span> </span>
+<span> <span class="co"># Assign colors to top two ranked prime partners and plot.</span></span>
+<span> <span class="co"># Use the scale_fill_identity() to let ggplot2 know where fill is from.</span></span>
+<span> <span class="va">hts_bar_rnkd</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>y <span class="op">=</span> <span class="va">prime_order</span>, x <span class="op">=</span> <span class="va">HTS_TST</span>, fill <span class="op">=</span> <span class="va">rnk_color</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_bar.html" class="external-link">geom_col</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_identity.html" class="external-link">scale_fill_identity</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>      <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"HTS_TST FILLED BASED ON IDENTITY"</span>,</span>
+<span>         subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/apply_colors-1.png" width="720"></p>
 <p>To apply a continuous SIEI palette to a visualization, you can use the <code><a href="../reference/scale_fill_si.html">scale_fill_si()</a></code> or <code><a href="../reference/scale_color_si.html">scale_color_si()</a></code> function. In the example below, we create a heat map, using <code><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html" class="external-link">geom_tile()</a></code>, to show how testing targets vary across modality.</p>
 <div class="sourceCode" id="cb11"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">hts_hm</span> <span class="op">&lt;-</span> <span class="va">hts</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period_type</span> <span class="op">==</span> <span class="st">"targets"</span>, <span class="va">period</span> <span class="op">==</span> <span class="st">"FY50"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">primepartner</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>total_targets <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">value</span>, na.rm <span class="op">=</span> <span class="cn">T</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>partner_order <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_reorder.html" class="external-link">fct_reorder</a></span><span class="op">(</span><span class="va">primepartner</span>, <span class="va">total_targets</span><span class="op">)</span><span class="op">)</span>
-
-<span class="va">hts_hm</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">modality</span>, y <span class="op">=</span> <span class="va">partner_order</span>, fill <span class="op">=</span> <span class="va">value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html" class="external-link">geom_tile</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"scooters"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"UNIMPRESSIVE HEAT MAP WITH SCOOTERS FILL"</span>,
-         subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">hts_hm</span> <span class="op">&lt;-</span> <span class="va">hts</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/filter.html" class="external-link">filter</a></span><span class="op">(</span><span class="va">period_type</span> <span class="op">==</span> <span class="st">"targets"</span>, <span class="va">period</span> <span class="op">==</span> <span class="st">"FY50"</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">group_by</a></span><span class="op">(</span><span class="va">prime_partner_name</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>total_targets <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/sum.html" class="external-link">sum</a></span><span class="op">(</span><span class="va">value</span>, na.rm <span class="op">=</span> <span class="cn">T</span><span class="op">)</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/group_by.html" class="external-link">ungroup</a></span><span class="op">(</span><span class="op">)</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://dplyr.tidyverse.org/reference/mutate.html" class="external-link">mutate</a></span><span class="op">(</span>partner_order <span class="op">=</span> <span class="fu"><a href="https://forcats.tidyverse.org/reference/fct_reorder.html" class="external-link">fct_reorder</a></span><span class="op">(</span><span class="va">prime_partner_name</span>, <span class="va">total_targets</span><span class="op">)</span><span class="op">)</span></span>
+<span></span>
+<span><span class="va">hts_hm</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">modality</span>, y <span class="op">=</span> <span class="va">partner_order</span>, fill <span class="op">=</span> <span class="va">value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html" class="external-link">geom_tile</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"scooters"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"UNIMPRESSIVE HEAT MAP WITH SCOOTERS FILL"</span>,</span>
+<span>         subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/encode_a_heatmap-1.png" width="720"></p>
 <p>As is, this graphic is not too informative. Everything is a light shade of scooter. Why is this the case? If we were to look at the distribution of the data, we would see that it skews heavily toward 0. Many targets appear to be on the lower end, but a few outliers are really mucking up the color encoding. We can do a couple things to make this graphic more informative. Because the <code><a href="../reference/scale_fill_si.html">scale_fill_si()</a></code> function takes the <code>...</code> argument, we can pass a transformation option to the plot, as well as define a new set of breaks.</p>
 <div class="sourceCode" id="cb12"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="co"># Log transform data, clean up legend, apply semi-transparency (alpha) and label</span>
-  <span class="va">hts_hm</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">modality</span>, y <span class="op">=</span> <span class="va">partner_order</span>, fill <span class="op">=</span> <span class="va">value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html" class="external-link">geom_tile</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"scooters"</span>, alpha <span class="op">=</span> <span class="fl">0.85</span>, trans <span class="op">=</span> <span class="st">"log"</span>, 
-                  breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span> <span class="op">*</span> <span class="fl">10</span><span class="op">^</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span>,
-                  labels <span class="op">=</span> <span class="va">comma</span>,
-                  name <span class="op">=</span> <span class="st">"Targets"</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"LOG-TRANSFORMED COLOR ENCODING"</span>,
-           subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span>,
-         <span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html" class="external-link">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">value</span> <span class="op">&gt;</span> <span class="fl">10000</span>, <span class="fu"><a href="https://scales.r-lib.org/reference/label_number.html" class="external-link">comma</a></span><span class="op">(</span><span class="va">value</span><span class="op">)</span>, <span class="cn">NA_real_</span><span class="op">)</span><span class="op">)</span>,
-              size <span class="op">=</span> <span class="fl">8</span><span class="op">/</span><span class="va">.pt</span>, family <span class="op">=</span> <span class="st">"Source Sans Pro"</span>, color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_discrete.html" class="external-link">scale_x_discrete</a></span><span class="op">(</span>guide <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/guide_axis.html" class="external-link">guide_axis</a></span><span class="op">(</span>n.dodge <span class="op">=</span> <span class="fl">2</span><span class="op">)</span>, position <span class="op">=</span> <span class="st">"top"</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span><span class="co"># Log transform data, clean up legend, apply semi-transparency (alpha) and label</span></span>
+<span>  <span class="va">hts_hm</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">modality</span>, y <span class="op">=</span> <span class="va">partner_order</span>, fill <span class="op">=</span> <span class="va">value</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_tile.html" class="external-link">geom_tile</a></span><span class="op">(</span>color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"scooters"</span>, alpha <span class="op">=</span> <span class="fl">0.85</span>, trans <span class="op">=</span> <span class="st">"log"</span>, </span>
+<span>                  breaks <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="fl">1</span> <span class="op">*</span> <span class="fl">10</span><span class="op">^</span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>                  labels <span class="op">=</span> <span class="va">comma</span>,</span>
+<span>                  name <span class="op">=</span> <span class="st">"Targets"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>x <span class="op">=</span> <span class="cn">NULL</span>, y <span class="op">=</span> <span class="cn">NULL</span>, title <span class="op">=</span> <span class="st">"LOG-TRANSFORMED COLOR ENCODING"</span>,</span>
+<span>           subtitle <span class="op">=</span> <span class="st">"ggplot2 default settings | Not real data."</span>,</span>
+<span>         <span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_text.html" class="external-link">geom_text</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>label <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/ifelse.html" class="external-link">ifelse</a></span><span class="op">(</span><span class="va">value</span> <span class="op">&gt;</span> <span class="fl">10000</span>, <span class="fu"><a href="https://scales.r-lib.org/reference/comma.html" class="external-link">comma</a></span><span class="op">(</span><span class="va">value</span><span class="op">)</span>, <span class="cn">NA_real_</span><span class="op">)</span><span class="op">)</span>,</span>
+<span>              size <span class="op">=</span> <span class="fl">8</span><span class="op">/</span><span class="va">.pt</span>, family <span class="op">=</span> <span class="st">"Source Sans Pro"</span>, color <span class="op">=</span> <span class="st">"white"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_discrete.html" class="external-link">scale_x_discrete</a></span><span class="op">(</span>guide <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/guide_axis.html" class="external-link">guide_axis</a></span><span class="op">(</span>n.dodge <span class="op">=</span> <span class="fl">2</span><span class="op">)</span>, position <span class="op">=</span> <span class="st">"top"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggtheme.html" class="external-link">theme_minimal</a></span><span class="op">(</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/using_dots-1.png" width="720"></p>
 </div>
 <div class="section level3">
@@ -299,23 +301,23 @@
 </h3>
 <p>In order to create visualizations that appear to belong to the same family (<a href="https://live.staticflickr.com/4111/5195907338_df50404c30_b.jpg" class="external-link">Think Baldwin Brothers</a>), <code>glitr</code> includes nine ggplot themes that simplify a plot down to its core elements. At the base of these themes is the <code><a href="../reference/si_style.html">si_style()</a></code>.</p>
 <div class="sourceCode" id="cb13"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"(si_style)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span>, value <span class="op">=</span> <span class="cn">T</span><span class="op">)</span>
-<span class="co">#&gt; [1] "si_style"         "si_style_map"     "si_style_nolines" "si_style_void"   </span>
-<span class="co">#&gt; [5] "si_style_xgrid"   "si_style_xline"   "si_style_xyline"  "si_style_ygrid"  </span>
-<span class="co">#&gt; [9] "si_style_yline"</span></code></pre></div>
+<code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"(si_style)"</span>, <span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span>, value <span class="op">=</span> <span class="cn">T</span><span class="op">)</span></span>
+<span><span class="co">#&gt; [1] "si_style"         "si_style_map"     "si_style_nolines" "si_style_void"   </span></span>
+<span><span class="co">#&gt; [5] "si_style_xgrid"   "si_style_xline"   "si_style_xyline"  "si_style_ygrid"  </span></span>
+<span><span class="co">#&gt; [9] "si_style_yline"</span></span></code></pre></div>
 <p>We can see how this differs from the default ggplot2 theme by applying the theme to the plot above.</p>
 <div class="sourceCode" id="cb14"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">p</span> <span class="op">+</span> <span class="fu"><a href="../reference/si_style.html">si_style</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">"si_style_() | Title, subtitle and caption formatted."</span><span class="op">)</span> </code></pre></div>
+<code class="sourceCode R"><span><span class="va">p</span> <span class="op">+</span> <span class="fu"><a href="../reference/si_style.html">si_style</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">"si_style_() | Title, subtitle and caption formatted."</span><span class="op">)</span> </span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/si_style-1.png" width="720"></p>
 <p>You will notice the si_style strips the background gray color and converts the grid lines to a light shade of gray. As this plot is oriented horizontally, we can remove the extra y gridlines by using the <code>si_style_xgrid</code> theme. All of the si themes also come with pre-formatted titles, subtitles, and captions following the style guild standards.</p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="va">p</span> <span class="op">+</span> 
-  <span class="fu"><a href="../reference/si_style_xgrid.html">si_style_xgrid</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> 
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="va">comma</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>caption <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Generated on "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">" by the SI team."</span><span class="op">)</span>,
-      subtitle <span class="op">=</span> <span class="st">"si_style_xgrid() | Title, subtitle and caption formatted."</span><span class="op">)</span> <span class="op">+</span>
-  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_cartesian.html" class="external-link">coord_cartesian</a></span><span class="op">(</span>expand <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="co"># Move names closer to y-axis</span></code></pre></div>
+<code class="sourceCode R"><span><span class="va">p</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="../reference/si_style_xgrid.html">si_style_xgrid</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/scale_continuous.html" class="external-link">scale_x_continuous</a></span><span class="op">(</span>labels <span class="op">=</span> <span class="va">comma</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>caption <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="st">"Generated on "</span>, <span class="fu"><a href="https://rdrr.io/r/base/Sys.time.html" class="external-link">Sys.Date</a></span><span class="op">(</span><span class="op">)</span>, <span class="st">" by the SI team."</span><span class="op">)</span>,</span>
+<span>      subtitle <span class="op">=</span> <span class="st">"si_style_xgrid() | Title, subtitle and caption formatted."</span><span class="op">)</span> <span class="op">+</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/coord_cartesian.html" class="external-link">coord_cartesian</a></span><span class="op">(</span>expand <span class="op">=</span> <span class="cn">F</span><span class="op">)</span> <span class="co"># Move names closer to y-axis</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/si_style_xgrid-1.png" width="720"></p>
 </div>
 <div class="section level3">
@@ -323,44 +325,45 @@
 </h3>
 <p>Below is a summary graphic showing all the available SI themes.</p>
 <div class="sourceCode" id="cb16"><pre class="downlit sourceCode r">
-<code class="sourceCode R">
-<span class="co"># Create a list of all themes to loop over</span>
-  <span class="va">theme_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">'si_style()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style.html">si_style</a></span><span class="op">(</span><span class="op">)</span>, 
-                     <span class="st">'si_style_xline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xline.html">si_style_xline</a></span><span class="op">(</span><span class="op">)</span>, 
-                     <span class="st">'si_style_xgrid()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xgrid.html">si_style_xgrid</a></span><span class="op">(</span><span class="op">)</span>,
-                     <span class="st">'si_style_xyline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xyline.html">si_style_xyline</a></span><span class="op">(</span><span class="op">)</span>, 
-                     <span class="st">'si_style_yline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_yline.html">si_style_yline</a></span><span class="op">(</span><span class="op">)</span>, 
-                     <span class="st">'si_style_ygrid()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_ygrid.html">si_style_ygrid</a></span><span class="op">(</span><span class="op">)</span>, 
-                     <span class="st">'si_style_nolines()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_nolines.html">si_style_nolines</a></span><span class="op">(</span><span class="op">)</span>, 
-                     <span class="st">'si_style_void()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_void.html">si_style_void</a></span><span class="op">(</span><span class="op">)</span>
-                     <span class="op">)</span>
-
-<span class="co"># Custom plot function to incorporate themes</span>
-  <span class="va">custom_plot</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span>
-    <span class="va">p</span> <span class="op">+</span> <span class="op">{</span><span class="op">{</span><span class="va">x</span><span class="op">}</span><span class="op">}</span>
-  <span class="op">}</span>
-
-<span class="co"># Make all the plots  </span>
-  <span class="va">plots</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map2.html" class="external-link">map2</a></span><span class="op">(</span><span class="va">theme_list</span>, <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">theme_list</span><span class="op">)</span>,  <span class="op">~</span><span class="fu">custom_plot</span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op">+</span> 
-                  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">.y</span><span class="op">)</span>, title <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span>
-                  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>axis.text <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">12</span><span class="op">/</span><span class="va">.pt</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> 
-  
-<span class="co"># Create a sample map</span>
- <span class="va">hts_map</span> <span class="op">&lt;-</span>  <span class="va">hts_geo</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> 
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> 
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">primepartner</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> 
-   <span class="fu"><a href="../reference/si_style_map.html">si_style_map</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> 
-   <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"siei"</span>, discrete <span class="op">=</span> <span class="cn">T</span><span class="op">)</span> <span class="op">+</span>
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> <span class="op">+</span> 
-   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">'si_style_map()'</span><span class="op">)</span>
-  
-  <span class="fu"><a href="https://purrr.tidyverse.org/reference/reduce.html" class="external-link">reduce</a></span><span class="op">(</span><span class="va">plots</span>, <span class="va">`+`</span><span class="op">)</span> <span class="op">+</span> 
-    <span class="va">hts_map</span> <span class="op">+</span>
-    <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html" class="external-link">plot_annotation</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">"A comparison of si_style() themes"</span><span class="op">)</span> <span class="op">+</span>
-    <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_layout.html" class="external-link">plot_layout</a></span><span class="op">(</span>ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></code></pre></div>
+<code class="sourceCode R"><span></span>
+<span><span class="co"># Create a list of all themes to loop over</span></span>
+<span>  <span class="va">theme_list</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span><span class="st">'si_style()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style.html">si_style</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>                     <span class="st">'si_style_xline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xline.html">si_style_xline</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>                     <span class="st">'si_style_xgrid()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xgrid.html">si_style_xgrid</a></span><span class="op">(</span><span class="op">)</span>,</span>
+<span>                     <span class="st">'si_style_xyline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_xyline.html">si_style_xyline</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>                     <span class="st">'si_style_yline()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_yline.html">si_style_yline</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>                     <span class="st">'si_style_ygrid()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_ygrid.html">si_style_ygrid</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>                     <span class="st">'si_style_nolines()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_nolines.html">si_style_nolines</a></span><span class="op">(</span><span class="op">)</span>, </span>
+<span>                     <span class="st">'si_style_void()'</span> <span class="op">=</span> <span class="fu"><a href="../reference/si_style_void.html">si_style_void</a></span><span class="op">(</span><span class="op">)</span></span>
+<span>                     <span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Custom plot function to incorporate themes</span></span>
+<span>  <span class="va">custom_plot</span> <span class="op">&lt;-</span> <span class="kw">function</span><span class="op">(</span><span class="va">x</span><span class="op">)</span> <span class="op">{</span></span>
+<span>    <span class="va">p</span> <span class="op">+</span> <span class="op">{</span><span class="op">{</span><span class="va">x</span><span class="op">}</span><span class="op">}</span></span>
+<span>  <span class="op">}</span></span>
+<span></span>
+<span><span class="co"># Make all the plots  </span></span>
+<span>  <span class="va">plots</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://purrr.tidyverse.org/reference/map2.html" class="external-link">map2</a></span><span class="op">(</span><span class="va">theme_list</span>, <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">theme_list</span><span class="op">)</span>,  <span class="op">~</span><span class="fu">custom_plot</span><span class="op">(</span><span class="va">.x</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>                  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/paste.html" class="external-link">paste</a></span><span class="op">(</span><span class="va">.y</span><span class="op">)</span>, title <span class="op">=</span> <span class="cn">NULL</span><span class="op">)</span> <span class="op">+</span></span>
+<span>                  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>axis.text <span class="op">=</span> <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/element.html" class="external-link">element_text</a></span><span class="op">(</span>size <span class="op">=</span> <span class="fl">12</span><span class="op">/</span><span class="va">.pt</span><span class="op">)</span><span class="op">)</span><span class="op">)</span> </span>
+<span>  </span>
+<span><span class="co"># Create a sample map</span></span>
+<span> <span class="va">hts_map</span> <span class="op">&lt;-</span>  <span class="va">hts_geo</span> <span class="op"><a href="../reference/pipe.html">%&gt;%</a></span> </span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggsf.html" class="external-link">geom_sf</a></span><span class="op">(</span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>fill <span class="op">=</span> <span class="va">prime_partner_name</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>   <span class="fu"><a href="../reference/si_style_map.html">si_style_map</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>   <span class="fu"><a href="../reference/scale_fill_si.html">scale_fill_si</a></span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"siei"</span>, discrete <span class="op">=</span> <span class="cn">T</span><span class="op">)</span> <span class="op">+</span></span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/theme.html" class="external-link">theme</a></span><span class="op">(</span>legend.position <span class="op">=</span> <span class="st">"none"</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>   <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/labs.html" class="external-link">labs</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">'si_style_map()'</span><span class="op">)</span></span>
+<span>  </span>
+<span>  <span class="fu"><a href="https://purrr.tidyverse.org/reference/reduce.html" class="external-link">reduce</a></span><span class="op">(</span><span class="va">plots</span>, <span class="va">`+`</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>    <span class="va">hts_map</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_annotation.html" class="external-link">plot_annotation</a></span><span class="op">(</span>subtitle <span class="op">=</span> <span class="st">"A comparison of si_style() themes"</span><span class="op">)</span> <span class="op">+</span></span>
+<span>    <span class="fu"><a href="https://patchwork.data-imaginist.com/reference/plot_layout.html" class="external-link">plot_layout</a></span><span class="op">(</span>ncol <span class="op">=</span> <span class="fl">3</span><span class="op">)</span></span></code></pre></div>
 <p><img src="adorn-your-plots_files/figure-html/theme_comparison-1.png" width="720"></p>
 </div>
-  </main>
+  </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
+    </nav></aside>
 </div>
 
 
@@ -372,7 +375,7 @@
 
 <div class="pkgdown-footer-right">
   <p></p>
-<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.2.</p>
+<p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.0.6.</p>
 </div>
 
     </footer>
