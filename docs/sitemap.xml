@@ -259,6 +259,9 @@
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_blue.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/si_clear_preview.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_colors.html</loc>
   </url>
   <url>
@@ -287,6 +290,9 @@
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_palettes.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/si_preview.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_rampr.html</loc>

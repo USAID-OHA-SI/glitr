@@ -68,8 +68,12 @@ reference:
   - si_pal
   - si_palettes
   - si_rampr
-  - si_save
 
+- title: Plot Saving
+  contents:
+  - si_clear_preview
+  - si_preview
+  - si_save
 
 - title: OHA Colors
   contents:
