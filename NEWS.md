@@ -1,4 +1,5 @@
 # glitr 0.1.1
+* Adds `si_preview` to output a png to see how it looks iteration stage as well as a `si_clear_preview` which can be used to clear out the temporary folder [2023-02-15]
 * Include Pantone Color of the Year palette and color vignette [2023-01-23]
 * Update README with font installation instructions and duplicated in a vignette [2023-01-23]
 * Provide alternative font if Source Sans Pro is not available [2022-08-15]
