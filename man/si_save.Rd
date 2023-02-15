@@ -51,3 +51,9 @@ si_save("out/sepal")
 #change the width
 si_save("out/sepal.jpeg", width = 5)  }
 }
+\seealso{
+Other saving: 
+\code{\link{si_clear_preview}()},
+\code{\link{si_preview}()}
+}
+\concept{saving}
