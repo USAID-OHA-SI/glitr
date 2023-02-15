@@ -117,7 +117,7 @@ si_style <- function(font_title,
         #Blank background
         panel.background = ggplot2::element_blank(),
         panel.border = ggplot2::element_blank(),
-        panel.spacing = unit(facet_space, "lines"),
+        panel.spacing = ggplot2::unit(facet_space, "lines"),
 
         # Plot fill and margins
         plot.background = ggplot2::element_rect(fill = "white", color = NA),
@@ -201,7 +201,7 @@ si_style <- function(font_title,
       #Blank background
       panel.background = ggplot2::element_blank(),
       panel.border = ggplot2::element_blank(),
-      panel.spacing = unit(facet_space, "lines"),
+      panel.spacing = ggplot2::unit(facet_space, "lines"),
 
       # Plot fill and margins
       plot.background = ggplot2::element_rect(fill = "white", color = NA),
