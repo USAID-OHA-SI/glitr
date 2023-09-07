@@ -39,7 +39,7 @@ choose_font <- function(){
 
   localfonts <- extrafont::fonts()
 
-  ssp_exists <- "Source Sans Pro3" %in% localfonts
+  ssp_exists <- "Source Sans Pro2" %in% localfonts
 
   if(.Platform$OS.type == "windows" && ssp_exists){
     grDevices::windowsFonts(glitr_font_default = grDevices::windowsFont("Source Sans Pro"))
@@ -58,7 +58,8 @@ choose_font <- function(){
 
   if(.Platform$OS.type == "unix" && !ssp_exists){
     # grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep("Helvetica", 4)))
-    grDevices::quartzFonts(glitr_font_default = grDevices::X11Fonts()$sans)
+    # grDevices::quartzFonts(glitr_font_default = grDevices::X11Fonts()$sans)
+    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep(grDevices::X11Fonts()$sans, 4)))
     return(invisible())
   }
   # default_font <- ifelse(ssp_exists, "Source Sans Pro", "Arial")
