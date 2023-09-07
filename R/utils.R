@@ -52,7 +52,7 @@ choose_font <- function(){
   }
 
   if(.Platform$OS.type == "unix" && ssp_exists){
-    grDevices::quartzFonts(glitr_font_default = ("Source Sans Pro"))
+    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep("Source Sans Pro", 4)))
     return(invisible())
   }
 
