@@ -45,7 +45,7 @@ choose_font <- function(){
 
   localfonts <- extrafont::fonts()
 
-  ssp_exists <- "Source Sans Pro" %in% localfonts
+  ssp_exists <- "Source Sans Pro3" %in% localfonts
 
   if(.Platform$OS.type == "windows" && ssp_exists){
     grDevices::windowsFonts(glitr_font_default = grDevices::windowsFont("Source Sans Pro"))
