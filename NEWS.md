@@ -1,3 +1,6 @@
+# glitr 0.2.0
+* Change the default font to look for and use either Source Sans 3 (preferred) and Source Sans Pro [2023-09-07]
+
 # glitr 0.1.1
 * Adds `si_preview` to output a png to see how it looks iteration stage as well as a `si_clear_preview` which can be used to clear out the temporary folder [2023-02-15]
 * Include Pantone Color of the Year palette and color vignette [2023-01-23]

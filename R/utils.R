@@ -8,6 +8,18 @@
 }
 
 
+#' Check if font exists
+#'
+#' @param font typeface to check, defaults to Source Sans 3 and Pro
+#'
+#' @export
+
+font_exists <- function(font = c("Source Sans 3", "Source Sans Pro")){
+  #list of all fonts available
+  localfonts <- extrafont::fonts()
+  #check if any of the fonts exists
+  any(font %in% localfonts)
+}
 
 #' Check for Imported Fonts
 #'
@@ -20,13 +32,13 @@ check_fonts <- function(){
 
   #check if fonts are loaded
     if(is.null(localfonts)) {
-      usethis::ui_warn("Before proceeding, need to import local fonts (only happens once). This may take a few minutes")
+      usethis::ui_warn("Before proceeding, you need to import local fonts (only happens once). This may take a few minutes")
       extrafont::font_import(prompt = TRUE)
     }
 
     #check if font (Source Sans Pro) is installed
-    if(!"Source Sans Pro" %in% localfonts)
-      usethis::ui_warn("Before proceeding, we recommend installing the Source Sans Pro from USAID Software Center or Google Fonts. In the absense of Source Sans Pro, we will default to using Arial")
+    if(!font_exists())
+      usethis::ui_warn("Before proceeding, we recommend installing the Source Sans 3 or Pro from USAID Software Center or Google Fonts. In the absense of Source Sans 3 or Pro, we will default to using Arial")
 
 }
 
@@ -37,30 +49,34 @@ check_fonts <- function(){
 #'
 choose_font <- function(){
 
+  is_pc <- .Platform$OS.type == "windows"
+  ssp_exists <- font_exists()
+
+  ss_fonts <- c("Source Sans 3", "Source Sans Pro", "Arial")
   localfonts <- extrafont::fonts()
+  preferred_font <- localfonts[localfonts %in% ss_fonts]
+  preferred_font <- factor(preferred_font, ss_fonts) %>% sort() %>% as.character()
+  preferred_font <- preferred_font[1]
 
-  ssp_exists <- "Source Sans Pro" %in% localfonts
-
-  if(.Platform$OS.type == "windows" && ssp_exists){
-    grDevices::windowsFonts(glitr_font_default = grDevices::windowsFont("Source Sans Pro"))
+  if(is_pc && ssp_exists){
+    grDevices::windowsFonts(glitr_font_default = grDevices::windowsFont(preferred_font))
     return(invisible())
   }
 
-  if(.Platform$OS.type == "windows" && !ssp_exists){
+  if(is_pc && !ssp_exists){
     grDevices::windowsFonts(glitr_font_default = grDevices::windowsFonts()$sans)
     return(invisible())
   }
 
-  if(.Platform$OS.type == "unix" && ssp_exists){
-    grDevices::quartzFonts(glitr_font_default = ("Source Sans Pro"))
+  if(!is_pc && ssp_exists){
+    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep(preferred_font, 4)))
     return(invisible())
   }
 
-  if(.Platform$OS.type == "unix" && !ssp_exists){
-    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep("Helvetica", 4)))
+  if(!is_pc && !ssp_exists){
+    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep(preferred_font, 4)))
+    # grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep(grDevices::X11Fonts()$sans, 4)))
     return(invisible())
   }
-  # default_font <- ifelse(ssp_exists, "Source Sans Pro", "Arial")
-  #
-  # options("glitr_font" = default_font)
+
 }
