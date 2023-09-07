@@ -57,7 +57,8 @@ choose_font <- function(){
   }
 
   if(.Platform$OS.type == "unix" && !ssp_exists){
-    grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep("Helvetica", 4)))
+    # grDevices::quartzFonts(glitr_font_default = grDevices::quartzFont(rep("Helvetica", 4)))
+    grDevices::quartzFonts(glitr_font_default = X11Fonts()$sans)
     return(invisible())
   }
   # default_font <- ifelse(ssp_exists, "Source Sans Pro", "Arial")
