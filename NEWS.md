@@ -2,6 +2,7 @@
 * Change the default font to look for and use either Source Sans 3 (preferred) and Source Sans Pro [2023-09-07]
 
 # glitr 0.1.1
+* Add documentation on how Tableau TPS file was rendered to `data-raw` for documentaiton purposes [2023-10-05]
 * Adds `si_preview` to output a png to see how it looks iteration stage as well as a `si_clear_preview` which can be used to clear out the temporary folder [2023-02-15]
 * Include Pantone Color of the Year palette and color vignette [2023-01-23]
 * Update README with font installation instructions and duplicated in a vignette [2023-01-23]
