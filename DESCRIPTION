@@ -18,12 +18,12 @@ RoxygenNote: 7.2.3
 Depends: 
     R (>= 3.5.0)
 Imports: 
-    extrafont,
+    systemfonts,
     ggplot2 (>= 3.3.0),
-    grDevices,
     magrittr,
     scales,
-    usethis
+    usethis,
+    grDevices
 Suggests: 
     dplyr, 
     forcats,
