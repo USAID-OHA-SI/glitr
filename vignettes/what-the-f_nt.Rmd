@@ -21,25 +21,18 @@ To create standard visualizations across our team, we rely on one of USAID's alt
 ### Downloading/Installing
 Sans Source 3 (formerly Pro) is an open source font available from Google Fonts and from Software Center on USAID GFEs. 
   - To install from Google Fonts, navigate to this [link](https://fonts.google.com/specimen/Source+Sans+3) and click the "Download family". After the folder finishes downloading, unzip it. 
-  - To install on your GFE, open Softare Center App, click on "Source Sans Pro (Google Web Font)", and then select install.
+  - To install on your GFE, open Software Center App, click on "Source Sans Pro (Google Web Font)", and then select install.
 
 ### Accessing Fonts in R 
-To use non-native fonts in R, you must run a program called `extrafonts` which is installed as a dependency from `glitr`. You will need to run the following code below to install all the fonts on your computer (if desired), including your newly downloaded Source Sans 3 (fomerly Pro) typeface. You will only need to import fonts only once. However, to use these fonts with any plotting in R, you will need to load the `extrafont` library as with any other package.
+To use non-native fonts in R, you must run a program called `systemfonts` which is installed as a dependency from `glitr`. To use Source Sans 3 typeface with `ggplot2` in R, you will need to load the `systemfonts` library as with any other package at the start of your code.
 
 ```{r}
-# Required library
-library(extrafont)
-library(remotes)
+library(ggplot2)
+library(systemfonts)
+library(glitr)
 
-# Downgrade a package dependency for extrafont
-#https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext/68642855#68642855
-install_version("Rttf2pt1", version = "1.3.8")
+ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
+  geom_point() + 
+  si_style()
 
-#import all Windows fonts
-  font_import()
-  
-#restart your R session - CTRL + SHIFT + F10
-
-library(extrafont)
-fonts()
 ```
