@@ -13,7 +13,7 @@ previews taking up space and slowing down processing in the session.
 }
 \examples{
 \dontrun{
-library(extrafont)
+library(systemfonts)
 hts \%>\%
   dplyr::filter(period_type == "results",
                 indicator == "HTS_TST_POS") \%>\%

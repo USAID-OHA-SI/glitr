@@ -2,7 +2,7 @@
 
 library(tidyverse)
 library(glitr)
-library(extrafont)
+library(systemfonts)
 library(svglite)
 
 n <- 500

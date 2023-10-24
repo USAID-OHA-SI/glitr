@@ -14,7 +14,7 @@ Incorporates the default si_style graph and modifies it to include on x-axis gri
 }
 \examples{
 \dontrun{
-ibrary(extrafont)
+library(systemfonts)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_xgrid()

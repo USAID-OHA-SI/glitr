@@ -14,7 +14,7 @@ Create ggplot with no axes or no grid lines
 }
 \examples{
 \dontrun{
-library(extrafont)
+library(systemfonts)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_void()

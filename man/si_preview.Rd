@@ -27,7 +27,7 @@ preview.
 }
 \examples{
 \dontrun{
-library(extrafont)
+library(systemfonts)
 hts \%>\%
   dplyr::filter(period_type == "results",
                 indicator == "HTS_TST_POS") \%>\%

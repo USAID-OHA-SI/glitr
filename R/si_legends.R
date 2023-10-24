@@ -15,7 +15,7 @@
 #' @export
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, fill = Sepal.Width)) +
 #' geom_point(shape = 21, size = 4) + si_legend_fill() + si_style()
@@ -47,7 +47,7 @@ si_legend_fill <- function(){
 #' @export
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, color = Sepal.Width)) +
 #' geom_point(size = 4) + si_legend_color() + si_style()
