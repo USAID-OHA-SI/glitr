@@ -12,53 +12,38 @@ Inspired by the BBC bbplot, this repo contains proposed functions for the glitr 
 ### Installing glitr
 glitr is not on CRAN, so you will have to install it directly from Github using devtools.
 
-If you do not have the devtools package installed, you will have to run the `install.packages("devtools")` line in the code below as well.
+If you do not have the devtools package installed, you will have to run the `install.packages("pak")` line in the code below as well.
 
 ```{r}
 ## SETUP
 
   #install
-    install.packages("remotes")
-    remotes::install_github("USAID-OHA-SI/glitr", build_vignettes = TRUE)
+    install.packages("pak")
+    pak::pak("USAID-OHA-SI/glitr")
     
   #load the package
     library(glitr)
 
 ## EXAMPLE WITH BASE SI STYLE
   library(ggplot2)
-  library(extrafont)
-  ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) + geom_point() + si_style()
+  library(systemfonts)
+  ggplot(iris, 
+         aes(Sepal.Length, y = Sepal.Width, colour = Species)) + 
+  geom_point() + 
+  si_style()
   
 ## LIST TYPES OF STYLES INCLUDED WITH PACKAGE
-  ls(package:glitr)
+  ls('package:glitr')
   
 ```
 
 ### What the f*nt?
 
-To create standard visualizations across our team, we rely on one of USAID's alternate fonts, Sans Source Pro. This font is not only not native to R, nor is it a standard to Windows. 
+To create standard visualizations across our team, we rely on one of USAID's alternate fonts, [Sans Source 3 (formerly Source Sans Pro)](https://fonts.google.com/specimen/Source+Sans+3). This font is not only not native to R, nor is it a standard to Windows. 
 
-Sans Source Pro is an open source font available from Google Fonts and from Software Center on USAID GFEs. To install from Google Fonts, navigate to this [link](https://fonts.google.com/specimen/Source+Sans+Pro) and click the "Download family". After the folder finishes downloading, unzip it. To install on your GFE, oepn Softare Center App, click on "Source Sans Pro (Google Web Font)", and then select install.
+Sans Source Pro is an open source font available from [Google Fonts](https://fonts.google.com/specimen/Source+Sans+3) and from Software Center on USAID GFEs. To install from Google Fonts, navigate to this [link](https://fonts.google.com/specimen/Source+Sans+3) and click the "Download family". After the folder finishes downloading, unzip it. To install on your GFE, open Software Center App, click on "Source Sans Pro (Google Web Font)", and then select install.
 
-To use non-native fonts in R, you must run a program called `extrafonts` which is installed as a dependency from `glitr`. You will need to run the following code below to install all the fonts on your computer (if desired), including your newly downloaded Source Sans Pro typeface. You will only need to import fonts only once. However, to use these fonts with any plotting in R, you will need to load the `extrafont` library as with any other package.
-
-```{r}
-# Required library
-library(extrafont)
-library(remotes)
-
-# Downgrade a package dependency for extrafont
-#https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext/68642855#68642855
-install_version("Rttf2pt1", version = "1.3.8")
-
-#import all Windows fonts
-  font_import()
-  
-#restart your R session - CTRL + SHIFT + F10
-
-library(extrafont)
-fonts()
-```
+To use non-native fonts in R, you must run a program called `systemfonts` which is installed as a dependency from `glitr`. To use Source Sans 3 typeface with `ggplot2` in R, you will need to load the `systemfonts` library as with any other package at the start of your code.
 
 ---
 

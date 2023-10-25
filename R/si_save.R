@@ -20,7 +20,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style()
@@ -69,7 +69,7 @@ si_save <- function(filename,
 #'
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' hts %>%
 #'   dplyr::filter(period_type == "results",
 #'                 indicator == "HTS_TST_POS") %>%
@@ -122,7 +122,7 @@ si_preview <- function(scale = 1,
 #' @family saving
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' hts %>%
 #'   dplyr::filter(period_type == "results",
 #'                 indicator == "HTS_TST_POS") %>%
