@@ -1,4 +1,3 @@
-
 url: https://usaid-oha-si.github.io/glitr/
 template:
   bootstrap: 5
@@ -6,7 +5,6 @@ template:
 navbar:
   structure:
     left:
-    - home
     - intro
     - reference
     - articles
@@ -14,9 +12,6 @@ navbar:
     - news
     right: github
   components:
-    home:
-      icon: fas fa-home fa-lg
-      href: index.html
     reference:
       text: Reference
       href: reference/index.html
@@ -26,160 +21,152 @@ navbar:
     github:
       icon: fab fa-github fa-lg
       href: https://github.com/USAID-OHA-SI/glitr/
+      aria-label: github
     articles:
       text: Articles
       menu:
       - text: How to adorn your plots
         href: articles/adorn-your-plots.html
-      - text: What the f*nt?
-        href: articles/what-the-f_nt.html
       - text: Available Colors
         href: articles/available-colors.html
-
-
+      - text: "What the f*nt?""
+        href: articles/what-the-f_nt.html
 
 reference:
-- title: SI Themes
+- title: Themes
   contents:
-  - si_style
-  - si_style_map
-  - si_style_nolines
-  - si_style_void
-  - si_style_xgrid
-  - si_style_xline
-  - si_style_xyline
-  - si_style_ygrid
-  - si_style_yline
+  - '`si_style`'
+  - '`si_style_map`'
+  - '`si_style_nolines`'
+  - '`si_style_void`'
+  - '`si_style_xgrid`'
+  - '`si_style_xline`'
+  - '`si_style_xyline`'
+  - '`si_style_ygrid`'
+  - '`si_style_yline`'
 
-- title: SI Legends
+- title: Legends
   contents:
-  - si_legend_color
-  - si_legend_fill
-
+  - '`si_legend_color`'
+  - '`si_legend_fill`'
 
 - title: Plotting Helpers
   contents:
-  - color_caption
-  - color_gridline
-  - color_plot_text
-  - color_title
-  - scale_color_si
-  - scale_fill_si
-  - si_pal
-  - si_palettes
-  - si_rampr
+  - '`color_caption`'
+  - '`color_gridline`'
+  - '`color_plot_text`'
+  - '`color_title`'
+  - '`scale_color_si`'
+  - '`scale_fill_si`'
+  - '`si_pal`'
+  - '`si_palettes`'
+  - '`si_rampr`'
 
-- title: Plot Saving
+- title: Saving
   contents:
-  - si_clear_preview
-  - si_preview
-  - si_save
+  - '`si_save`'
+  - '`si_preview`'
+  - '`si_clear_preview`'
+
 
 - title: OHA Colors
   contents:
-  - burnt_sienna
-  - burnt_sienna_light
-  - denim
-  - denim_light
-  - genoa
-  - genoa_light
-  - golden_sand
-  - golden_sand_light
-  - moody_blue
-  - moody_blue_light
-  - old_rose
-  - old_rose_light
-  - scooter
-  - scooter_light
-  - scooter_med
-  - trolley_grey
-  - trolley_grey_light
+  - '`burnt_sienna`'
+  - '`burnt_sienna_light`'
+  - '`denim`'
+  - '`denim_light`'
+  - '`genoa`'
+  - '`genoa_light`'
+  - '`golden_sand`'
+  - '`golden_sand_light`'
+  - '`moody_blue`'
+  - '`moody_blue_light`'
+  - '`old_rose`'
+  - '`old_rose_light`'
+  - '`scooter`'
+  - '`scooter_light`'
+  - '`scooter_med`'
+  - '`trolley_grey`'
+  - '`trolley_grey_light`'
 
 - title: OHA Greys
   contents:
-  - grey10k
-  - grey20k
-  - grey30k
-  - grey40k
-  - grey50k
-  - grey60k
-  - grey70k
-  - grey80k
-  - grey90k
+  - '`grey10k`'
+  - '`grey20k`'
+  - '`grey30k`'
+  - '`grey40k`'
+  - '`grey50k`'
+  - '`grey60k`'
+  - '`grey70k`'
+  - '`grey80k`'
+  - '`grey90k`'
 
 - title: OHA Text/Shading/Line Colors
   contents:
-  - matterhorn
-  - nero
-  - suva_grey
-  - whisper
-  - light_grey
+  - '`matterhorn`'
+  - '`nero`'
+  - '`suva_grey`'
+  - '`whisper`'
+  - '`light_grey`'
 
 - title: Sample Data
   contents:
-  - hts
-  - hts_geo
-  - cascade
-  - hfr_mmd
+  - '`cascade`'
+  - '`hts`'
+  - '`hts_geo`'
+  - '`hfr_mmd`'
 
 - title: USAID Colors
   contents:
-  - usaid_black
-  - usaid_blue
-  - usaid_darkgrey
-  - usaid_lightblue
-  - usaid_lightgrey
-  - usaid_medblue
-  - usaid_medgrey
-  - usaid_red
+  - '`usaid_black`'
+  - '`usaid_blue`'
+  - '`usaid_darkgrey`'
+  - '`usaid_lightblue`'
+  - '`usaid_lightgrey`'
+  - '`usaid_medblue`'
+  - '`usaid_medgrey`'
+  - '`usaid_red`'
 
 - title: Washington Post Colors
   contents:
-  - wapo_dblue
-  - wapo_dmauve
-  - wapo_dorange
-  - wapo_lblue
-  - wapo_lgreen
-  - wapo_lmauve
-  - wapo_lorange
-  - wapo_lorange2
-  - wapo_lpurple
-  - wapo_pushpop
+  - '`wapo_dblue`'
+  - '`wapo_dmauve`'
+  - '`wapo_dorange`'
+  - '`wapo_lblue`'
+  - '`wapo_lgreen`'
+  - '`wapo_lmauve`'
+  - '`wapo_lorange`'
+  - '`wapo_lorange2`'
+  - '`wapo_lpurple`'
+  - '`wapo_pushpop`'
 
 - title: Pantone Color of the Year Colors
   contents:
-  - pantone_cerulean
-  - pantone_fuchsia_rose
-  - pantone_true_red
-  - pantone_aqua_sky
-  - pantone_tigerlily
-  - pantone_blue_turquoise
-  - pantone_sand_dollar
-  - pantone_chili_pepper
-  - pantone_blue_iris
-  - pantone_mimosa
-  - pantone_honeysuckle
-  - pantone_turquoise
-  - pantone_tangerine_tango
-  - pantone_emerald
-  - pantone_radiant_orchid
-  - pantone_marsala
-  - pantone_serenity
-  - pantone_rose_quartz
-  - pantone_greenery
-  - pantone_ultra_violet
-  - pantone_living_coral
-  - pantone_classic_blue
-  - pantone_ultimate_gray
-  - pantone_illuminating
-  - pantone_very_peri
-  - pantone_viva_magenta
-
-- title: Miscellaneous
-  contents:
-  - check_fonts
-
-
-
+  - '`pantone_aqua_sky`'
+  - '`pantone_blue_iris`'
+  - '`pantone_blue_turquoise`'
+  - '`pantone_cerulean`'
+  - '`pantone_chili_pepper`'
+  - '`pantone_classic_blue`'
+  - '`pantone_emerald`'
+  - '`pantone_fuchsia_rose`'
+  - '`pantone_greenery`'
+  - '`pantone_honeysuckle`'
+  - '`pantone_illuminating`'
+  - '`pantone_living_coral`'
+  - '`pantone_marsala`'
+  - '`pantone_mimosa`'
+  - '`pantone_radiant_orchid`'
+  - '`pantone_rose_quartz`'
+  - '`pantone_sand_dollar`'
+  - '`pantone_serenity`'
+  - '`pantone_tangerine_tango`'
+  - '`pantone_tigerlily`'
+  - '`pantone_true_red`'
+  - '`pantone_turquoise`'
+  - '`pantone_ultimate_gray`'
+  - '`pantone_ultra_violet`'
+  - '`pantone_very_peri`'
+  - '`pantone_viva_magenta`'
 
 
