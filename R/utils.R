@@ -12,7 +12,7 @@
 #'
 #' @param font typeface to check, defaults to Source Sans 3 and Pro
 #'
-#' @export
+#' @keywords internal
 
 font_exists <- function(font = c("Source Sans 3", "Source Sans Pro")){
   #list of all fonts available
@@ -23,7 +23,7 @@ font_exists <- function(font = c("Source Sans 3", "Source Sans Pro")){
 
 #' Check for Imported Fonts
 #'
-#' @export
+#' @keywords internal
 
 check_fonts <- function(){
 
