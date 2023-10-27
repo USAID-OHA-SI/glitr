@@ -21,7 +21,7 @@ scale_fill_si(
 
 \item{reverse}{if TRUE, reverses order of palette}
 
-\item{...}{additional arguments to pass to scale_fill_gradientn}
+\item{...}{additional arguments to pass to scale_color_gradientn}
 }
 \description{
 SIEI colors available through scale_fill_si
@@ -33,6 +33,7 @@ library(tibble)
 library(sf)
 library(rnaturalearth)
 library(glitr)
+library(systemfonts)
 
 ggplot(diamonds) +
   geom_bar(aes(x = cut, fill = clarity)) +
