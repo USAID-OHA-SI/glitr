@@ -2,7 +2,7 @@
 title: "What the f*nt?"
 output: rmarkdown::html_vignette
 description: |
-  This vignette covers how to access Source Sans Pro (or other fonts) and use them in R
+  This vignette covers how to access Source Sans 3 or Pro to use in R
 vignette: >
   %\VignetteIndexEntry{what-the-f_nt}
   %\VignetteEngine{knitr::rmarkdown}
@@ -20,11 +20,11 @@ To create standard visualizations across our team, we rely on one of USAID's alt
 
 ### Downloading/Installing
 Sans Source 3 (formerly Pro) is an open source font available from Google Fonts and from Software Center on USAID GFEs. 
-  - To install from Google Fonts, navigate to this [link](https://fonts.google.com/specimen/Source+Sans+3) and click the "Download family". After the folder finishes downloading, unzip it. 
   - To install on your GFE, open Software Center App, click on "Source Sans Pro (Google Web Font)", and then select install.
+  - To install from Google Fonts, navigate to this [link](https://fonts.google.com/specimen/Source+Sans+3) and click the "Download family". After the folder finishes downloading, unzip it. 
 
 ### Accessing Fonts in R 
-To use non-native fonts in R, you must run a program called `systemfonts` which is installed as a dependency from `glitr`. To use Source Sans 3 typeface with `ggplot2` in R, you will need to load the `systemfonts` library as with any other package at the start of your code.
+To use non-native fonts in R, you must load the `systemfonts`, which is installed as a dependency from `glitr`. To use Source Sans 3 typeface with `ggplot2` in R, you will need to load the `systemfonts` library as with any other package at the start of your code.
 
 ```{r}
 library(ggplot2)

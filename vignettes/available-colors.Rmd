@@ -17,15 +17,11 @@ knitr::opts_chunk$set(
 ### Background (from OHA Style Guide)
 The [USAID Graphics Standard Manual](https://www.usaid.gov/branding/gsm) lays out the two colors found in the agency’s logo as the primary color palette, USAID Blue and USAID Red. These colors are used to “reinforce that the aid is From the American people” but provide a limited range of colors to work with for data visualization.
 
-OHA has developed an offshoot of these colors for visualization, expanding the number of categorical colors to choose from and creating a color-blind friendly palette (508 compliant). We started with Medium Blue and USAID Red and used a combination of platforms ([Adobe Color](https://color.adobe.com/), [Palettable](https://www.palettable.io/), [Viz Palette](https://projects.susielu.com/viz-palette) and [chroma.
-js](https://gka.github.io/palettes/)), modifying them into Denim and Old Rose. From there, we expanded these colors into a full palette of categorical (each with a paired lighter version) and continuous/sequential colors.
+OHA has developed an offshoot of these colors for visualization, expanding the number of categorical colors to choose from and creating a color-blind friendly palette (508 compliant). We started with Medium Blue and USAID Red and used a combination of platforms ([Adobe Color](https://color.adobe.com/), [Palettable](https://www.palettable.io/), [Viz Palette](https://projects.susielu.com/viz-palette) and [chroma.js](https://gka.github.io/palettes/)), modifying them into Denim and Old Rose. From there, we expanded these colors into a full palette of categorical (each with a paired lighter version) and continuous/sequential colors.
 
-Strategic use of the OHA palette allows for consistent branding and reduces the time needed to think through color choices in every visualization. That said, colors should be used meaningfully and thought should be given to how these
-standard colors accentuate the visual/message.
+Strategic use of the OHA palette allows for consistent branding and reduces the time needed to think through color choices in every visualization. That said, colors should be used meaningfully and thought should be given to how these standard colors accentuate the visual/message.
 
-Use USAID colors and text for all banners, text and text boxes. The USAID colors
-are available for use in graphs and charts, however the OHA palette is specifically
-for use in data visualization products (charts, graphs, visuals etc.). If in doubt of what color to use, try creating a visualization in black and white first. Then, add colors one at a time until data are sufficiently encoded to reinforce the message.
+Use USAID colors and text for all banners, text and text boxes. The USAID colors are available for use in graphs and charts, however the OHA palette is specifically for use in data visualization products (charts, graphs, visuals etc.). If in doubt of what color to use, try creating a visualization in black and white first. Then, add colors one at a time until data are sufficiently encoded to reinforce the message.
 
 ## Standalone Colors
 

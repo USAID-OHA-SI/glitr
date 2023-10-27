@@ -28,17 +28,16 @@ This vignette provides best practices for applying SIEI recommended colors to vi
 
 To get started, load the standard OHA-SI libraries used in analysis. 
 ```{r setup, echo = T, eval = T}
-library(ggplot2)
 library(dplyr)
-library(magrittr)
 library(tidyr)
 library(forcats)
+library(purrr)
+library(ggplot2)
 library(glitr)
+library(systemfonts)
 library(scales)
 library(ggtext)
-library(systemfonts)
 library(patchwork)
-library(purrr)
 library(sf)
 ```
 
@@ -105,13 +104,16 @@ To add any of these colors to a graph, pass them as arguments in a ggplot2 call.
 # Munge the hts data down to testing yields for a given year
   hts_bar <-
     hts %>%
-    filter(period == "FY50", period_type == "cumulative") %>%
+    filter(period == "FY50", 
+           period_type == "cumulative") %>%
     group_by(indicator, prime_partner_name) %>%
-    summarise(total = sum(value, na.rm = TRUE)) %>%
-    ungroup() %>%
-    spread(indicator, total) %>%
-    mutate(positivity = (HTS_TST_POS / HTS_TST),
-           prime_order = fct_reorder(prime_partner_name, HTS_TST)) %>% 
+    summarise(total = sum(value, na.rm = TRUE),
+              .groups = "drop") %>%
+    pivot_wider(names_from = indicator, 
+                values_from = total,
+                names_glue = "{tolower(indicator)}") %>%
+    mutate(positivity = (hts_tst_pos / hts_tst),
+           prime_order = fct_reorder(prime_partner_name, hts_tst)) %>% 
   arrange(prime_order)
 
 # Define testing results to be grey30k and positive results to be scooter. 
@@ -119,8 +121,8 @@ To add any of these colors to a graph, pass them as arguments in a ggplot2 call.
 # If placed inside the aesthetics, you will need to apply scale_fill_identity() to get the colors to render.
   p <- hts_bar %>% 
     ggplot(aes(y = prime_order)) +
-    geom_col(aes(x = HTS_TST), fill = grey30k) +
-    geom_col(aes(x = HTS_TST_POS), fill = scooter) +
+    geom_col(aes(x = hts_tst), fill = grey30k) +
+    geom_col(aes(x = hts_tst_pos), fill = scooter) +
     labs(x = NULL, y = NULL, title = "HTS_TST_POS FILLED WITH SCOOTER COLOR",
          subtitle = "ggplot2 default settings | Not real data.")
   p
@@ -131,7 +133,7 @@ Another way to use colors in plots is to assign color values to a new column in 
 ```{r apply_colors, fig.height = 4, fig.width = 7.5}
 # Create a rank column, then assign colors based on threshold (<=2)
  hts_bar_rnkd <- hts_bar %>% 
-  mutate(hts_rank = dense_rank(desc(HTS_TST)), 
+  mutate(hts_rank = dense_rank(desc(hts_tst)), 
          rnk_color = case_when(
            hts_rank <= 2 ~ denim, 
            TRUE ~ golden_sand
@@ -142,7 +144,7 @@ Another way to use colors in plots is to assign color values to a new column in 
  # Assign colors to top two ranked prime partners and plot.
  # Use the scale_fill_identity() to let ggplot2 know where fill is from.
  hts_bar_rnkd %>% 
-   ggplot(aes(y = prime_order, x = HTS_TST, fill = rnk_color)) +
+   ggplot(aes(y = prime_order, x = hts_tst, fill = rnk_color)) +
    geom_col() +
    scale_fill_identity() +
       labs(x = NULL, y = NULL, title = "HTS_TST FILLED BASED ON IDENTITY",
@@ -187,9 +189,6 @@ As is, this graphic is not too informative. Everything is a light shade of scoot
     scale_x_discrete(guide = guide_axis(n.dodge = 2), position = "top") +
   theme_minimal()
 ```
-
-
-
 
 ### SI Themes
 In order to create visualizations that appear to belong to the same family ([Think Baldwin Brothers](https://live.staticflickr.com/4111/5195907338_df50404c30_b.jpg)), `glitr` includes nine ggplot themes that simplify a plot down to its core elements. At the base of these themes is the `si_style()`. 
