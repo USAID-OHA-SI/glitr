@@ -65,10 +65,10 @@ library(lubridate)
     pivot_wider(names_from = indicator,
                 names_glue = "{tolower(indicator)}") %>%
     rowwise() %>%
-    mutate(tx_mmd_unk = tx_curr - sum(tx_mmd.o3mo, tx_mmd.u3mo, na.rm = TRUE),
-           tx_mmd_unk = ifelse(tx_mmd_unk < 0, 0, tx_mmd_unk),
+    mutate(tx_mmd.unk = tx_curr - sum(tx_mmd.o3mo, tx_mmd.u3mo, na.rm = TRUE),
+           tx_mmd.unk = ifelse(tx_mmd.unk < 0, 0, tx_mmd.unk),
            across(starts_with("tx_mmd"), ~ round(., -1)),
-           tx_curr = sum(tx_mmd.o3mo, tx_mmd.u3mo, tx_mmd_unk, na.rm = TRUE)) %>%
+           tx_curr = sum(tx_mmd.o3mo, tx_mmd.u3mo, tx_mmd.unk, na.rm = TRUE)) %>%
     ungroup() %>%
     mutate(share_tx_mmd.o3mo = round(tx_mmd.o3mo/tx_curr, 2),
            across(starts_with("tx_mmd"), ~ ifelse(is.na(.), 0, .))) %>%

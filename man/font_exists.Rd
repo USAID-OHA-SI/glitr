@@ -12,3 +12,4 @@ font_exists(font = c("Source Sans 3", "Source Sans Pro"))
 \description{
 Check if font exists
 }
+\keyword{internal}

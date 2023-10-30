@@ -1,4 +1,7 @@
 # glitr 0.2.0
+* Flag if `extrafonts` is loaded to suggest removal and restart [2023-10-17]
+* Update vignettes and examples with `systemfonts` [2023-10-27]
+* Implement site build via GitHub Action [2023-10-27]
 * Replace the use of `extrafont` with `systemfonts` to work more efficiently across platforms and [obviated need for having to stick with an old version of `Rttf2pt1`](https://stackoverflow.com/questions/61204259/how-can-i-resolve-the-no-font-name-issue-when-importing-fonts-into-r-using-ext/68642855#68642855) [2023-10-23]
 * Change the default font to look for and use either Source Sans 3 (preferred) and Source Sans Pro [2023-09-07]
 

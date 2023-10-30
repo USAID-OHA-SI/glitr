@@ -138,7 +138,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' @param alpha sets transparency of each color
 #' @param reverse if TRUE, reverses order of palette
 #' @param discrete whether to use a discrete colour palette
-#' @param ... additional arguments to pass to scale_fill_gradientn
+#' @param ... additional arguments to pass to scale_color_gradientn
 #'
 #' @inheritParams viridis::scale_fill_viridis
 #' @inheritParams si_pal
@@ -153,6 +153,7 @@ si_rampr <- function(pal_name = "siei", n, alpha = 1, reverse = FALSE) {
 #' library(sf)
 #' library(rnaturalearth)
 #' library(glitr)
+#' library(systemfonts)
 #'
 #' ggplot(diamonds) +
 #'   geom_bar(aes(x = cut, fill = clarity)) +
