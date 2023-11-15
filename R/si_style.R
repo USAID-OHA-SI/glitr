@@ -35,7 +35,7 @@ si_style <- function(font_title,
   if(!isNamespaceLoaded("systemfonts"))
     cli::cli_alert_warning("The {.pkg systemfonts} package is not loaded. Run {.code library(systemfonts)}")
 
-  if(!isNamespaceLoaded("extrafont"))
+  if(isNamespaceLoaded("extrafont"))
     cli::cli_alert_warning("The {.pkg extrafont} package is loaded. Remove this library and restart your session as it conflicts with {.pkg systemfonts}")
 
   if(is.null(getOption('glitr_font')))
