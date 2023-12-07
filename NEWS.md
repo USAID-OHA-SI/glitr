@@ -1,4 +1,5 @@
-# glitr 0.2.0
+# glitr 0.2
+* Add new Patone 2024 color of the year [2023-12-07]
 * Resolve bug with `extrafonts` warning [2023-11-15]
 * Flag if `extrafonts` is loaded to suggest removal and restart [2023-10-17]
 * Update vignettes and examples with `systemfonts` [2023-10-27]

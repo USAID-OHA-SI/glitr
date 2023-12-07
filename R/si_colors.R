@@ -612,3 +612,9 @@ pantone_very_peri = "#6768AB"
 #' @export
 #' @family pantone
 pantone_viva_magenta = "#BE3455"
+
+#' peach_fuzz
+#' Pantone Color of the Year 2024
+#' @export
+#' @family pantone
+pantone_peach_fuzz = "#FEBE98"
