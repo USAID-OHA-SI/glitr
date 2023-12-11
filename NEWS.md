@@ -1,4 +1,5 @@
 # glitr 0.2
+* Add Hemsworth palette (`hw_*`) for testing [2023-12-11]
 * Add new Patone 2024 color of the year [2023-12-07]
 * Resolve bug with `extrafonts` warning [2023-11-15]
 * Flag if `extrafonts` is loaded to suggest removal and restart [2023-10-17]
