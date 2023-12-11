@@ -127,6 +127,18 @@ reference:
   - '`usaid_medgrey`'
   - '`usaid_red`'
 
+- title: Hemsworth Test Palette
+  contents:
+  - '`hw_midnight_blue`'
+  - '`hw_electric_indigo`'
+  - '`hw_viking`'
+  - '`hw_hunter`'
+  - '`hw_sun_kissed`'
+  - '`hw_tango`'
+  - '`hw_orchid_bloom`'
+  - '`hw_lavender_haze`'
+
+
 - title: Washington Post Colors
   contents:
   - '`wapo_dblue`'

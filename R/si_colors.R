@@ -115,11 +115,11 @@ si_palettes <- list(
     carto_div_earth = c("#A16928", "#bd925a", "#d6bd8d", "#edeac2", "#b5c8b8", "#79a7ac", "#2887a1"),
 
   #Pantone Colors of the Year (descending)
-    pantone = c("#BE3455", "#6768AB", "#F5DF4D", "#939597", "#0F4C81", "#FF6F61",
-                "#5F4B8B", "#88B04B", "#F7CACA", "#93A9D1", "#964F4C", "#AD5E99",
-                "#009473", "#DD4124", "#45B5AA", "#D94F70", "#F0C05A", "#5A5B9F",
-                "#9B1B30", "#DECDBE", "#53B0AE", "#E2583E", "#7BC4C4", "#BF1932",
-                "#C74375", "#9BB7D4")
+    pantone = c("#FEBE98", "#BE3455", "#6768AB", "#F5DF4D", "#939597", "#0F4C81",
+                "#FF6F61", "#5F4B8B", "#88B04B", "#F7CACA", "#93A9D1", "#964F4C",
+                "#AD5E99", "#009473", "#DD4124", "#45B5AA", "#D94F70", "#F0C05A",
+                "#5A5B9F", "#9B1B30", "#DECDBE", "#53B0AE", "#E2583E", "#7BC4C4",
+                "#BF1932", "#C74375", "#9BB7D4")
 
 )
 
@@ -455,6 +455,55 @@ si_palettes <- list(
 #' @description SIEI light grey
 #' @title light grey
 light_grey = "#d3d3d3"
+
+
+#' midnight_blue
+#' hemsworth midnight_blue aka usaid_blue
+#' @export
+#' @family hemsworth
+hw_midnight_blue = "#002A6C"
+
+#' electric_indigo
+#' hemsworth electric_indigo
+#' @export
+#' @family hemsworth
+hw_electric_indigo = "#3B5BBE"
+
+#' viking
+#' hemsworth viking aka baldwin scooter_med
+#' @export
+#' @family hemsworth
+hw_viking = "#5BB5D5"
+
+#' hunter
+#' hemsworth hunter
+#' @export
+#' @family hemsworth
+hw_hunter = "#419164"
+
+#' sun_kissed
+#' hemsworth sun_kissed
+#' @export
+#' @family hemsworth
+hw_sun_kissed = "#F9C555"
+
+#' tango
+#' hemsworth tango
+#' @export
+#' @family hemsworth
+hw_tango = "#F36428"
+
+#' orchid_bloom
+#' hemsworth orchid_bloom
+#' @export
+#' @family hemsworth
+hw_orchid_bloom = "#E14BA1"
+
+#' lavender_haze
+#' hemsworth lavender_haze
+#' @export
+#' @family hemsworth
+hw_lavender_haze = "#B98ABF"
 
 
 #' cerulean
