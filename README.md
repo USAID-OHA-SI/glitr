@@ -43,6 +43,8 @@ To create standard visualizations across our team, we rely on one of USAID's alt
 
 Sans Source Pro is an open source font available from [Google Fonts](https://fonts.google.com/specimen/Source+Sans+3) and from Software Center on USAID GFEs. To install from Google Fonts, navigate to this [link](https://fonts.google.com/specimen/Source+Sans+3) and click the "Download family". After the folder finishes downloading, unzip it. To install on your GFE, open Software Center App, click on "Source Sans Pro (Google Web Font)", and then select install.
 
+In order to take advantage of non-native R fonts, you will need to update your graphics device in your Global Options to "AGG". To change your graphic device to "AGG", from the menu bar, navigate to Tools > Global Options > General > Graphics > Graphic Device. From there, the Graphic Device selected will likely just be "(Default)." You will need to change it to "AGG".
+
 To use non-native fonts in R, you must run a program called `systemfonts` which is installed as a dependency from `glitr`. To use Source Sans 3 typeface with `ggplot2` in R, you will need to load the `systemfonts` library as with any other package at the start of your code.
 
 ---

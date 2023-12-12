@@ -1,4 +1,5 @@
 # glitr 0.2
+* Update font vignette to describe changing graphic options [2023-12-12]
 * Add Hemsworth palette (`hw_*`) for testing [2023-12-11]
 * Add new Patone 2024 color of the year [2023-12-07]
 * Resolve bug with `extrafonts` warning [2023-11-15]
