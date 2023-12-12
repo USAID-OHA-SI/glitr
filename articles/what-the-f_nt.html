@@ -35,7 +35,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">glitr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.3</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.4</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -104,6 +104,25 @@ Web Font)”, and then select install. - To install from Google Fonts,
 navigate to this <a href="https://fonts.google.com/specimen/Source+Sans+3" class="external-link">link</a> and
 click the “Download family”. After the folder finishes downloading,
 unzip it.</p>
+</div>
+<div class="section level3">
+<h3 id="updating-your-graphics-device">Updating your Graphics Device<a class="anchor" aria-label="anchor" href="#updating-your-graphics-device"></a>
+</h3>
+<p>In order to take advantage of non-native R fonts, you will need to
+update your graphics device in your Global Options to “AGG”.</p>
+<blockquote>
+<p>Graphics in R are plotted on a <em>graphics device</em>. You can
+manually specify a graphics device or let R use the default device. In
+an interactive R environment, the default is to use the device that
+plots graphics on the screen. On Microsoft Windows, the windows device
+is used.” <a href="https://www.oreilly.com/library/view/r-in-a/9781449377502/ch14s02.html" class="external-link">Joseph
+Adler - “R in a Nutshell”</a></p>
+</blockquote>
+<p>To change your graphic device to “AGG”, from the menu bar, navigate
+to Tools &gt; Global Options &gt; General &gt; Graphics &gt; Graphic
+Device. From there, the Graphic Device selected will likely just be
+“(Default).” You will need to change it to “AGG”.</p>
+<p><img src="global_options_agg.png"></p>
 </div>
 <div class="section level3">
 <h3 id="accessing-fonts-in-r">Accessing Fonts in R<a class="anchor" aria-label="anchor" href="#accessing-fonts-in-r"></a>
