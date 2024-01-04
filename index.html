@@ -37,7 +37,7 @@
     
     <a class="navbar-brand me-2" href="index.html">glitr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.4</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.5</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -79,7 +79,7 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><p><!-- badges: start --> <a href="https://github.com/USAID-OHA-SI/glitr/actions" class="external-link"><img src="https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <!-- badges: end --></p>
+  <main id="main" class="col-md-9"><p><!-- badges: start --> <a href="https://github.com/USAID-OHA-SI/glitr/actions" class="external-link"><img src="https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <a href="https://usaid-oha-si.r-universe.dev/glitr" class="external-link"><img src="https://usaid-oha-si.r-universe.dev/badges/glitr" alt="glitr status badge"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a> <a href="https://usaid-oha-si.r-universe.dev/" class="external-link"><img src="https://usaid-oha-si.r-universe.dev/badges/:name" alt=":name status badge"></a> <!-- badges: end --></p>
 <div class="section level1">
 <div class="page-header">
 <img src="logo.png" class="logo" alt=""><h1 id="glitr-">glitr <a class="anchor" aria-label="anchor" href="#glitr-"></a>
@@ -94,13 +94,15 @@
 <div class="section level3">
 <h3 id="installing-glitr">Installing glitr<a class="anchor" aria-label="anchor" href="#installing-glitr"></a>
 </h3>
-<p>glitr is not on CRAN, so you will have to install it directly from Github using devtools.</p>
-<p>If you do not have the devtools package installed, you will have to run the <code>install.packages("pak")</code> line in the code below as well.</p>
+<p><code>glitr</code> is not on CRAN, so you will have to install it directly from <a href="https://usaid-oha-si.r-universe.dev/packages" class="external-link">rOpenSci</a> or <a href="https://github.com/USAID-OHA-SI/" class="external-link">GitHub</a> using the code found below.</p>
 <pre class="{r}"><code><span><span class="co">## SETUP</span></span>
 <span></span>
-<span>  <span class="co">#install</span></span>
-<span>    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"pak"</span><span class="op">)</span></span>
-<span>    <span class="fu">pak</span><span class="fu">::</span><span class="fu"><a href="https://pak.r-lib.org/reference/pak.html" class="external-link">pak</a></span><span class="op">(</span><span class="st">"USAID-OHA-SI/glitr"</span><span class="op">)</span></span>
+<span>  <span class="co">#install from rOpenSci</span></span>
+<span>    <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'glitr'</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://usaid-oha-si.r-universe.dev'</span>, <span class="st">'https://cloud.r-project.org'</span><span class="op">)</span><span class="op">)</span></span>
+<span>    </span>
+<span>  <span class="co">#alt: install from GitHub using pak</span></span>
+<span>    <span class="co">#install.packages("pak")</span></span>
+<span>    <span class="co">#pak::pak("USAID-OHA-SI/glitr")</span></span>
 <span>    </span>
 <span>  <span class="co">#load the package</span></span>
 <span>    <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/USAID-OHA-SI/glitr" class="external-link">glitr</a></span><span class="op">)</span></span>
