@@ -1,5 +1,8 @@
   <!-- badges: start -->
   [![R-CMD-check](https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/glitr/actions)
+  [![glitr status badge](https://usaid-oha-si.r-universe.dev/badges/glitr)](https://usaid-oha-si.r-universe.dev/glitr)
+[![Lifecycle: stable](https://img.shields.io/badge/lifecycle-stable-brightgreen.svg)](https://lifecycle.r-lib.org/articles/stages.html#stable)
+[![:name status badge](https://usaid-oha-si.r-universe.dev/badges/:name)](https://usaid-oha-si.r-universe.dev/)
   <!-- badges: end -->
 
 # glitr <img src='man/figures/logo.png' align="right" height="120" />
@@ -10,16 +13,17 @@ SI graphics package to adorn your ggplots
 Inspired by the BBC bbplot, this repo contains proposed functions for the glitr package. Once installed, glitr adorns your plots in a standardized SI style. As this package develops, pre-built plot types will be available to allow you to make beautiful, standardized SI plots for an array of PEPFAR indicators and disaggregates. Detailed examples on how to use functions included in the `glitr` package can be found in the [glitr cookbook](vignettes/adorn-your-plots). For an explanation of how to install the default font, Source Sans Pro, see the [What the f*nt?] vignette(vignettes/what-the-f_nt).
 
 ### Installing glitr
-glitr is not on CRAN, so you will have to install it directly from Github using devtools.
-
-If you do not have the devtools package installed, you will have to run the `install.packages("pak")` line in the code below as well.
+`glitr` is not on CRAN, so you will have to install it directly from [rOpenSci](https://usaid-oha-si.r-universe.dev/packages) or [GitHub](https://github.com/USAID-OHA-SI/) using the code found below.
 
 ```{r}
 ## SETUP
 
-  #install
-    install.packages("pak")
-    pak::pak("USAID-OHA-SI/glitr")
+  #install from rOpenSci
+    install.packages('glitr', repos = c('https://usaid-oha-si.r-universe.dev', 'https://cloud.r-project.org'))
+    
+  #alt: install from GitHub using pak
+    #install.packages("pak")
+    #pak::pak("USAID-OHA-SI/glitr")
     
   #load the package
     library(glitr)
