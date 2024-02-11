@@ -21,6 +21,7 @@ Other hemsworth:
 \code{\link{hw_hunter}},
 \code{\link{hw_lavender_haze}},
 \code{\link{hw_midnight_blue}},
+\code{\link{hw_slate}},
 \code{\link{hw_sun_kissed}},
 \code{\link{hw_tango}},
 \code{\link{hw_viking}}
