@@ -72,6 +72,9 @@ si_palettes <- list(
     seablue = c("#4FAFB6", "#98CBD0", "#D5EAEB", "#086EA1"),
     seablue_text = c("#00949D", "#58B2BA", "#B2D8DD", "#2476A6"),
 
+  # Hemsworth (test)
+    hemsworth = c("#002A6C", "#3B5BBE", "#5BB5D5", "#419164", "#F9C555", "#F36428", "#E14BA1", "#B98ABF", "#626672"),
+
   # Vega palettes
     category10 = c(
       "#1f77b4", "#ff7f0e", "#2ca02c", "#d62728", "#9467bd", "#8c564b",
@@ -504,6 +507,12 @@ hw_orchid_bloom = "#E14BA1"
 #' @export
 #' @family hemsworth
 hw_lavender_haze = "#B98ABF"
+
+#' slate
+#' hemsworth slate
+#' @export
+#' @family hemsworth
+hw_slate= "#626672"
 
 
 #' cerulean
