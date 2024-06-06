@@ -1,4 +1,5 @@
 # glitr 0.2
+* Modify a few colors in the Hemsworth palette based on feedback - `midnight_blue`, `slate`, and `lavender_haze` [2024-06-06]
 * Add `hw_slate` to extend Hemsworth palette & add `hemsworth` as an option under `si_palettes` [2024-02-11]
 * Change instructions to install from rOpenSci [2024-01-04]
 * Update font vignette to describe changing graphic options [2023-12-12]
