@@ -19,7 +19,7 @@ Inspired by the BBC bbplot, this repo contains proposed functions for the glitr 
 ## SETUP
 
   #install from rOpenSci
-    install.packages('glitr', repos = c('https://usaid-oha-si.r-universe.dev', 'https://cloud.r-project.org'))
+  install.packages('glitr', repos = c('https://usaid-oha-si.r-universe.dev', getOption("repos")))
     
   #alt: install from GitHub using pak
     #install.packages("pak")
@@ -36,7 +36,7 @@ Inspired by the BBC bbplot, this repo contains proposed functions for the glitr 
   geom_point() + 
   si_style()
   
-## LIST TYPES OF STYLES INCLUDED WITH PACKAGE
+## LIST OF FUNCTIONS/STYLES INCLUDED WITH PACKAGE
   ls('package:glitr')
   
 ```

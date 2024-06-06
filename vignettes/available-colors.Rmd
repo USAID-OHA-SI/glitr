@@ -65,13 +65,14 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 
 ### Hemsworkth Palette (testing)
 - hw_midnight_blue <span style="background-color:#002A6C">#002A6C</span>
-- hw_electric_indigo <span style="background-color:#3B5BBE">#3B5BBE</span>
 - hw_viking <span style="background-color:#5BB5D5">#5BB5D5</span>
-- hw_hunter <span style="background-color:#419164">#419164</span>
-- hw_sun_kissed <span style="background-color:#F9C555">#F9C555</span>
-- hw_tango <span style="background-color:#F36428">#F36428</span>
+- hw_slate <span style="background-color:#8C8C91">#8C8C91</span>
 - hw_orchid_bloom <span style="background-color:#E14BA1">#E14BA1</span>
+- hw_electric_indigo <span style="background-color:#3B5BBE">#3B5BBE</span>
+- hw_sun_kissed <span style="background-color:#F9C555">#F9C555</span>
+- hw_hunter <span style="background-color:#419164">#419164</span>
 - hw_lavender_haze <span style="background-color:#B98ABF">#B98ABF</span>
+- hw_tango <span style="background-color:#F36428">#F36428</span>
 
 #### Gray Palette from Laura D. Hughes who was inspired by Adobe #grays
 - grey10k: <span style="background-color:#E6E7E8">#E6E7E8</span>
