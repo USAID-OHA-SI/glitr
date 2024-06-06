@@ -4,7 +4,7 @@
 \name{hw_midnight_blue}
 \alias{hw_midnight_blue}
 \title{midnight_blue
-hemsworth midnight_blue aka usaid_blue}
+hemsworth midnight_blue}
 \format{
 An object of class \code{character} of length 1.
 }
@@ -13,7 +13,7 @@ hw_midnight_blue
 }
 \description{
 midnight_blue
-hemsworth midnight_blue aka usaid_blue
+hemsworth midnight_blue
 }
 \seealso{
 Other hemsworth: 

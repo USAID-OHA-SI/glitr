@@ -15,25 +15,25 @@ SIEI moody blue light
 }
 \seealso{
 Other SIEI colors: 
-\code{\link{burnt_sienna_light}},
 \code{\link{burnt_sienna}},
-\code{\link{denim_light}},
+\code{\link{burnt_sienna_light}},
 \code{\link{denim}},
-\code{\link{genoa_light}},
+\code{\link{denim_light}},
 \code{\link{genoa}},
-\code{\link{golden_sand_light}},
+\code{\link{genoa_light}},
 \code{\link{golden_sand}},
+\code{\link{golden_sand_light}},
 \code{\link{light_grey}},
 \code{\link{matterhorn}},
 \code{\link{moody_blue}},
 \code{\link{nero}},
 \code{\link{old_rose_light}},
+\code{\link{scooter}},
 \code{\link{scooter_light}},
 \code{\link{scooter_med}},
-\code{\link{scooter}},
 \code{\link{suva_grey}},
-\code{\link{trolley_grey_light}},
 \code{\link{trolley_grey}},
+\code{\link{trolley_grey_light}},
 \code{\link{whisper}}
 }
 \concept{SIEI colors}

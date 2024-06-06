@@ -20,8 +20,8 @@ Other Washington Post inspired:
 \code{\link{wapo_dorange}},
 \code{\link{wapo_lgreen}},
 \code{\link{wapo_lmauve}},
-\code{\link{wapo_lorange2}},
 \code{\link{wapo_lorange}},
+\code{\link{wapo_lorange2}},
 \code{\link{wapo_lpurple}},
 \code{\link{wapo_pushpop}}
 }
