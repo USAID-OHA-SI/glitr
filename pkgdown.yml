@@ -1,11 +1,11 @@
-pandoc: 2.19.2
-pkgdown: 2.0.7
+pandoc: 3.1.11
+pkgdown: 2.0.9
 pkgdown_sha: ~
 articles:
   adorn-your-plots: adorn-your-plots.html
   available-colors: available-colors.html
   what-the-f_nt: what-the-f_nt.html
-last_built: 2024-02-11T11:47Z
+last_built: 2024-06-06T20:06Z
 urls:
   reference: https://usaid-oha-si.github.io/glitr/reference
   article: https://usaid-oha-si.github.io/glitr/articles
