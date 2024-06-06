@@ -33,7 +33,7 @@
     
     <a class="navbar-brand me-2" href="index.html">glitr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.6</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.7</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -92,7 +92,7 @@
 </h3>
 <p><code>glitr</code> is not on CRAN, so you will have to install it directly from <a href="https://usaid-oha-si.r-universe.dev/packages" class="external-link">rOpenSci</a> or <a href="https://github.com/USAID-OHA-SI/" class="external-link">GitHub</a> using the code found below.</p>
 <p>```{r} ## SETUP</p>
-<p>#install from rOpenSci install.packages(‘glitr’, repos = c(‘<a href="https://usaid-oha-si.r-universe.dev" class="external-link uri">https://usaid-oha-si.r-universe.dev</a>’, ‘<a href="https://cloud.r-project.org" class="external-link uri">https://cloud.r-project.org</a>’))</p>
+<p>#install from rOpenSci install.packages(‘glitr’, repos = c(‘<a href="https://usaid-oha-si.r-universe.dev" class="external-link uri">https://usaid-oha-si.r-universe.dev</a>’, getOption(“repos”)))</p>
 <p>#alt: install from GitHub using pak #install.packages(“pak”) #pak::pak(“USAID-OHA-SI/glitr”)</p>
 <p>#load the package library(glitr)</p>
 </div>
@@ -102,7 +102,7 @@
 <p>library(ggplot2) library(systemfonts) ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) + geom_point() + si_style()</p>
 </div>
 <div class="section level2">
-<h2 id="list-types-of-styles-included-with-package">LIST TYPES OF STYLES INCLUDED WITH PACKAGE<a class="anchor" aria-label="anchor" href="#list-types-of-styles-included-with-package"></a>
+<h2 id="list-of-functionsstyles-included-with-package">LIST OF FUNCTIONS/STYLES INCLUDED WITH PACKAGE<a class="anchor" aria-label="anchor" href="#list-of-functionsstyles-included-with-package"></a>
 </h2>
 <p>ls(‘package:glitr’)</p>
 <p>```</p>
