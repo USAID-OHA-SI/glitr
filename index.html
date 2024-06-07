@@ -75,13 +75,11 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><p><!-- badges: start --> <a href="https://github.com/USAID-OHA-SI/glitr/actions" class="external-link"><img src="https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <a href="https://usaid-oha-si.r-universe.dev/glitr" class="external-link"><img src="https://usaid-oha-si.r-universe.dev/badges/glitr" alt="glitr status badge"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a> <a href="https://usaid-oha-si.r-universe.dev/" class="external-link"><img src="https://usaid-oha-si.r-universe.dev/badges/:name" alt=":name status badge"></a> <!-- badges: end --></p>
-<div class="section level1">
-<div class="page-header">
-<img src="logo.png" class="logo" alt=""><h1 id="glitr-">glitr <a class="anchor" aria-label="anchor" href="#glitr-"></a>
-</h1>
-</div>
+  <main id="main" class="col-md-9"><div class="section level2">
+<h2 id="glitr-">glitr <img src="reference/figures/logo.png" align="right" height="120"><a class="anchor" aria-label="anchor" href="#glitr-"></a>
+</h2>
 <p>SI graphics package to adorn your ggplots</p>
+<p><!-- badges: start --> <a href="https://github.com/USAID-OHA-SI/glitr/actions" class="external-link"><img src="https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg" alt="R-CMD-check"></a> <a href="https://usaid-oha-si.r-universe.dev/glitr" class="external-link"><img src="https://usaid-oha-si.r-universe.dev/badges/glitr" alt="glitr status badge"></a> <a href="https://lifecycle.r-lib.org/articles/stages.html#stable" class="external-link"><img src="https://img.shields.io/badge/lifecycle-stable-brightgreen.svg" alt="Lifecycle: stable"></a> <a href="https://usaid-oha-si.r-universe.dev/" class="external-link"><img src="https://usaid-oha-si.r-universe.dev/badges/:name" alt=":name status badge"></a> <!-- badges: end --></p>
 <div class="section level3">
 <h3 id="oha-si-graphics">OHA SI Graphics<a class="anchor" aria-label="anchor" href="#oha-si-graphics"></a>
 </h3>
@@ -91,21 +89,31 @@
 <h3 id="installing-glitr">Installing glitr<a class="anchor" aria-label="anchor" href="#installing-glitr"></a>
 </h3>
 <p><code>glitr</code> is not on CRAN, so you will have to install it directly from <a href="https://usaid-oha-si.r-universe.dev/packages" class="external-link">rOpenSci</a> or <a href="https://github.com/USAID-OHA-SI/" class="external-link">GitHub</a> using the code found below.</p>
-<p>```{r} ## SETUP</p>
-<p>#install from rOpenSci install.packages(‘glitr’, repos = c(‘<a href="https://usaid-oha-si.r-universe.dev" class="external-link uri">https://usaid-oha-si.r-universe.dev</a>’, getOption(“repos”)))</p>
-<p>#alt: install from GitHub using pak #install.packages(“pak”) #pak::pak(“USAID-OHA-SI/glitr”)</p>
-<p>#load the package library(glitr)</p>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co">## SETUP</span></span>
+<span></span>
+<span>  <span class="co">#install from rOpenSci</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">'glitr'</span>, repos <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">'https://usaid-oha-si.r-universe.dev'</span>, <span class="fu"><a href="https://rdrr.io/r/base/options.html" class="external-link">getOption</a></span><span class="op">(</span><span class="st">"repos"</span><span class="op">)</span><span class="op">)</span><span class="op">)</span></span>
+<span>    </span>
+<span>  <span class="co">#alt: install from GitHub using pak</span></span>
+<span>    <span class="co">#install.packages("pak")</span></span>
+<span>    <span class="co">#pak::pak("USAID-OHA-SI/glitr")</span></span>
+<span>    </span>
+<span>  <span class="co">#load the package</span></span>
+<span>    <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/USAID-OHA-SI/glitr" class="external-link">glitr</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co">## EXAMPLE WITH BASE SI STYLE</span></span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span>
+<span>  <span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/r-lib/systemfonts" class="external-link">systemfonts</a></span><span class="op">)</span></span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">iris</span>, </span>
+<span>         <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span><span class="va">Sepal.Length</span>, y <span class="op">=</span> <span class="va">Sepal.Width</span>, colour <span class="op">=</span> <span class="va">Species</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span> </span>
+<span>  <span class="fu"><a href="reference/si_style.html">si_style</a></span><span class="op">(</span><span class="op">)</span></span>
+<span>  </span>
+<span><span class="co">## LIST OF FUNCTIONS/STYLES INCLUDED WITH PACKAGE</span></span>
+<span>  <span class="fu"><a href="https://rdrr.io/r/base/ls.html" class="external-link">ls</a></span><span class="op">(</span><span class="st">'package:glitr'</span><span class="op">)</span></span>
+<span>  </span></code></pre></div>
 </div>
-<div class="section level2">
-<h2 id="example-with-base-si-style">EXAMPLE WITH BASE SI STYLE<a class="anchor" aria-label="anchor" href="#example-with-base-si-style"></a>
-</h2>
-<p>library(ggplot2) library(systemfonts) ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) + geom_point() + si_style()</p>
-</div>
-<div class="section level2">
-<h2 id="list-of-functionsstyles-included-with-package">LIST OF FUNCTIONS/STYLES INCLUDED WITH PACKAGE<a class="anchor" aria-label="anchor" href="#list-of-functionsstyles-included-with-package"></a>
-</h2>
-<p>ls(‘package:glitr’)</p>
-<p>```</p>
 <div class="section level3">
 <h3 id="what-the-fnt">What the f*nt?<a class="anchor" aria-label="anchor" href="#what-the-fnt"></a>
 </h3>
@@ -117,8 +125,6 @@
 <p><em>Disclaimer: The findings, interpretation, and conclusions expressed herein are those of the authors and do not necessarily reflect the views of United States Agency for International Development. All errors remain our own.</em></p>
 </div>
 </div>
-</div>
-
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">
