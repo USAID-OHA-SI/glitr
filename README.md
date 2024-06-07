@@ -1,3 +1,6 @@
+## glitr <img src='man/figures/logo.png' align="right" height="120" />
+SI graphics package to adorn your ggplots
+
   <!-- badges: start -->
   [![R-CMD-check](https://github.com/USAID-OHA-SI/glitr/workflows/R-CMD-check/badge.svg)](https://github.com/USAID-OHA-SI/glitr/actions)
   [![glitr status badge](https://usaid-oha-si.r-universe.dev/badges/glitr)](https://usaid-oha-si.r-universe.dev/glitr)
@@ -5,9 +8,6 @@
 [![:name status badge](https://usaid-oha-si.r-universe.dev/badges/:name)](https://usaid-oha-si.r-universe.dev/)
   <!-- badges: end -->
 
-# glitr <img src='man/figures/logo.png' align="right" height="120" />
-
-SI graphics package to adorn your ggplots
 
 ### OHA SI Graphics
 Inspired by the BBC bbplot, this repo contains proposed functions for the glitr package. Once installed, glitr adorns your plots in a standardized SI style. As this package develops, pre-built plot types will be available to allow you to make beautiful, standardized SI plots for an array of PEPFAR indicators and disaggregates. Detailed examples on how to use functions included in the `glitr` package can be found in the [glitr cookbook](vignettes/adorn-your-plots). For an explanation of how to install the default font, Source Sans Pro, see the [What the f*nt?] vignette(vignettes/what-the-f_nt).
@@ -15,7 +15,7 @@ Inspired by the BBC bbplot, this repo contains proposed functions for the glitr 
 ### Installing glitr
 `glitr` is not on CRAN, so you will have to install it directly from [rOpenSci](https://usaid-oha-si.r-universe.dev/packages) or [GitHub](https://github.com/USAID-OHA-SI/) using the code found below.
 
-```{r}
+``` r
 ## SETUP
 
   #install from rOpenSci
