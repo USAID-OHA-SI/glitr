@@ -17,7 +17,7 @@ knitr::opts_chunk$set(
 ### Background (from OHA Style Guide)
 The [USAID Graphics Standard Manual](https://www.usaid.gov/branding/gsm) lays out the two colors found in the agency’s logo as the primary color palette, USAID Blue and USAID Red. These colors are used to “reinforce that the aid is From the American people” but provide a limited range of colors to work with for data visualization.
 
-OHA has developed an offshoot of these colors for visualization, expanding the number of categorical colors to choose from and creating a color-blind friendly palette (508 compliant). We started with Medium Blue and USAID Red and used a combination of platforms ([Adobe Color](https://color.adobe.com/), [Palettable](https://www.palettable.io/), [Viz Palette](https://projects.susielu.com/viz-palette) and [chroma.js](https://gka.github.io/palettes/)), modifying them into Denim and Old Rose. From there, we expanded these colors into a full palette of categorical (each with a paired lighter version) and continuous/sequential colors.
+OHA has developed an offshoot of these colors for visualization, expanding the number of categorical colors to choose from and creating a color-blind friendly palette (508 compliant). 
 
 Strategic use of the OHA palette allows for consistent branding and reduces the time needed to think through color choices in every visualization. That said, colors should be used meaningfully and thought should be given to how these standard colors accentuate the visual/message.
 
@@ -25,7 +25,18 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 
 ## Standalone Colors
 
-#### OHA Colors from OHA Style Guide
+### OHA Palette from OHA Style Guide
+- midnight_blue <span style="background-color:#15478A">#15478A</span>
+- viking <span style="background-color:#5BB5D5">#5BB5D5</span>
+- slate <span style="background-color:#8C8C91">#8C8C91</span>
+- orchid_bloom <span style="background-color:#E14BA1">#E14BA1</span>
+- electric_indigo <span style="background-color:#3B5BBE">#3B5BBE</span>
+- sun_kissed <span style="background-color:#F9C555">#F9C555</span>
+- hunter <span style="background-color:#419164">#419164</span>
+- lavender_haze <span style="background-color:#876EC4">#876EC4</span>
+- tango <span style="background-color:#F36428">#F36428</span>
+
+#### OHA Classic Colors 
 - denim: <span style="background-color:#2057a7">#2057a7</span>
 - old_rose: <span style="background-color:#c43d4d">#c43d4d</span>
 - moody_blue: <span style="background-color:#8980cb">#8980cb</span>
@@ -33,8 +44,9 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - scooter: <span style="background-color:#1e87a5">#1e87a5</span>
 - golden_sand: <span style="background-color:#f2bc40">#f2bc40</span>
 - genoa: <span style="background-color:#287c6f">#287c6f</span>
+- trolley_grey: <span style="background-color:#808080">#808080</span>
 
-#### OHA Light Colors from OHA Style Guide 
+#### OHA Classic Light Colors
 - denim_light: <span style="background-color:#bfddff">#bfddff</span>
 - old_rose_light: <span style="background-color:#ff939a">#ff939a</span>
 - moody_blue_light: <span style="background-color:#dfd3ff">#dfd3ff</span>
@@ -43,10 +55,9 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - scooter_light: <span style="background-color:#83dbfb">#83dbfb</span>
 - golden_sand_light: <span style="background-color:#ffdda2">#ffdda2</span>
 - genoa_light: <span style="background-color:#7ecfc0">#7ecfc0</span>
+- trolley_grey_light: <span style="background-color:#e6e6e6">#e6e6e6</span>
 
 #### OHA Grays from OHA Style Guide
-- trolley_grey: <span style="background-color:#808080">#808080</span>
-- trolley_grey_light: <span style="background-color:#e6e6e6">#e6e6e6</span>
 - nero: <span style="background-color:#202020">#202020</span>
 - matterhorn: <span style="background-color:#505050">#505050</span>
 - suva_grey: <span style="background-color:#909090">#909090</span>
@@ -63,17 +74,6 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - usaid_medgrey: <span style="background-color:#8C8985">#8C8985</span>
 - usaid_lightgrey: <span style="background-color:#cfcdc9">#cfcdc9</span>
 
-### Hemsworkth Palette (testing)
-- hw_midnight_blue <span style="background-color:#002A6C">#002A6C</span>
-- hw_viking <span style="background-color:#5BB5D5">#5BB5D5</span>
-- hw_slate <span style="background-color:#8C8C91">#8C8C91</span>
-- hw_orchid_bloom <span style="background-color:#E14BA1">#E14BA1</span>
-- hw_electric_indigo <span style="background-color:#3B5BBE">#3B5BBE</span>
-- hw_sun_kissed <span style="background-color:#F9C555">#F9C555</span>
-- hw_hunter <span style="background-color:#419164">#419164</span>
-- hw_lavender_haze <span style="background-color:#B98ABF">#B98ABF</span>
-- hw_tango <span style="background-color:#F36428">#F36428</span>
-
 #### Gray Palette from Laura D. Hughes who was inspired by Adobe #grays
 - grey10k: <span style="background-color:#E6E7E8">#E6E7E8</span>
 - grey20k: <span style="background-color:#d1d3d4">#d1d3d4</span>
@@ -85,7 +85,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - grey80k: <span style="background-color:#58595b">#58595b</span>
 - grey90k: <span style="background-color:#414042">#414042</span>
 
-#### Pantone Color of the Year (2000-2022)
+#### Pantone Color of the Year (2000-2024)
 - pantone_cerulean: <span style="background-color:#9BB7D4">#9BB7D4</span>
 - pantone_fuchsia_rose: <span style="background-color:#C74375">#C74375</span>
 - pantone_true_red: <span style="background-color:#BF1932">#BF1932</span>
@@ -112,6 +112,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - pantone_illuminating: <span style="background-color:#F5DF4D">#F5DF4D</span>
 - pantone_very_peri: <span style="background-color:#6768AB">#6768AB</span>
 - pantone_viva_magenta: <span style="background-color:#BE3455">#BE3455</span>
+- pantone_peach_fuzz: <span style="background-color:#FEBE98">#FEBE98</span>
 
 #### Washington Post Inspired colors
 - wapo_lpurple: <span style="background-color:#C7ABC7">#C7ABC7</span>
