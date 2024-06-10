@@ -1,16 +1,16 @@
 #' @title List of SI Color Palettes
 #'
 #' @description
-#' Sets of color palettes that have been collected by the SI team.
-#' Includes all colors from the SIEI data visualization guide and a few additional palettes.
-#' Colors are stored as a named list. Use palette name or position to call in colors.
+#' Sets of color palettes that have been collected by the SI team. Includes all
+#' colors from the SIEI data visualization guide and a few additional palettes.
+#' Colors are stored as a named list. Use palette name or position to call in
+#' colors.
 #'
 #' Color sets are stored as the name of the first color.
-#' Calling `si_palettes$old_rose` will return the five color pairs where old_rose is the base.
-#' Calling `si_palettes$old_roses` will return an interpolated ramp of 11 colors for old_rose.
+#' Calling `si_palettes$viking_d` will return the five color palette where viking is the base.
+#' Calling `si_palettes$viking_c` will return an interpolated ramp of 10 colors for viking
+#' Calling `si_palettes$viking_t` will return viking and four tints at 80%, 60%, 40%, and 20%.
 #' See the SIEI data visualization guide for additional details.
-#'
-#' @importFrom scales show_col
 #'
 #' @export
 #'
@@ -18,23 +18,63 @@
 #'
 #' @examples
 #' \dontrun{
+#' library(scales)
+#'
 #' # List names of palettes available
 #' names(si_palettes)
 #'
-#' scales::show_col(si_palettes$siei)
-#' scales::show_col(si_palettes$old_roses)
+#' show_col(si_palettes$siei)
+#' show_col(si_palettes$lavender_haze_d)
+#' show_col(si_palettes$hunter_t)
+#' show_col(si_palettes$sun_kissed_c)
 #'
 #' # Show palettes interpolated
-#' si_rampr("carto_div_earth", n = 10) %>% scales::show_col(labels = T)
-#' si_rampr("carto_div_earth", n = 100) %>% scales::show_col(labels = FALSE)
-#'}
+#' si_rampr("carto_div_earth", n = 10) %>% show_col(labels = T)
+#' si_rampr("carto_div_earth", n = 100) %>% show_col(labels = FALSE)
+#' }
 
 si_palettes <- list(
 
-    # SIEI recommended colors
-    siei = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f", "#808080"),
+    #SIEI recommended colors
+    siei = c("#15478A", "#5BB5D5", "#8C8C91",
+             "#E14BA1","#3B5BBE", "#F9C555","#419164", "#876EC4", "#F36428"),
 
-    # SIEI recommended categorical palettes
+    # SIEI recommended categorical palettes (discrete)
+    midnight_blue_d =    c("#15478A", "#5BB5D5", "#8AA3C4", "#9DD3E6", "#8C8C91"),
+    viking_d =           c("#5BB5D5", "#15478A", "#9DD3E6", "#8AA3C4", "#8C8C91"),
+    electric_indigo_d =  c("#3B5BBE", "#E14BA1", "#F9C555", "#876EC4", "#419164"),
+    orchid_bloom_d =     c("#E14BA1", "#3B5BBE", "#876EC4", "#419164", "#F9C555"),
+    sun_kissed_d =       c("#F9C555", "#3B5BBE", "#5BB5D5", "#F36428", "#419164"),
+    hunter_d =           c("#419164", "#5BB5D5", "#E14BA1", "#F9C555", "#F36428"),
+    lavender_haze_d =    c("#876EC4", "#F9C555", "#3B5BBE", "#E14BA1", "#5BB5D5"),
+    tango_d =            c("#F36428", "#876EC4", "#3B5BBE", "#419164", "#F9C555"),
+
+    # SIEI recommended tint palettes
+    midnight_blue_t =    c("#15478A", "#446CA1", "#7391B9", "#8AA3C5", "#D0DAE8"),
+    viking_t =           c("#5BB5D5", "#7CC4DD", "#9DD3E6", "#BDE1EE", "#DEF0F7"),
+    slate_t =            c("#8C8C91", "#A3A3A7", "#BABABD", "#D1D1D3", "#E8E8E9"),
+    electric_indigo_t =  c("#3B5BBE", "#627CCB", "#899DD8", "#B1BDE5", "#D8DEF2"),
+    orchid_bloom_t =     c("#E14BA1", "#E571B0", "#EB95C4", "#F2B8D7", "#F8DCEB"),
+    sun_kissed_t =       c("#F9C555", "#FAD177", "#FBDC99", "#FDE8BB", "#FEF3DD"),
+    hunter_t =           c("#419164", "#67A784", "#8DBDA2", "#B3D3C1", "#D9E9E0"),
+    lavender_haze_t =    c("#876EC4", "#9F8BD0",  "#B7A8DC","#CFC5E7", "#E7E2F3"),
+    tango_t =            c("#F36428", "#F58353", "#F8A27E", "#FAC1A9", "#FDE0D4"),
+
+    # SIEI recommended sequential palettes (continuous)
+    midnight_blue_c =    c('#1d263e', '#26365b', '#354772', '#485886', '#5c6b98', '#717ea8', '#8791b7', '#9ea5c5', '#b5bad2', '#cccfdf'),
+    viking_c =           c('#324d58', '#3a5e6c', '#446f80', '#508093', '#5f92a6', '#71a4b8', '#86b5c9', '#9ec7d8', '#bad8e5', '#dae8ef'),
+    slate_c =            c('#3f3f41', '#4f4f51', '#5f5f63', '#707074', '#828286', '#939398', '#a6a6aa', '#b9b9bb', '#ccccce', '#dfdfe0'),
+    electric_indigo_c =  c('#282d50', '#333c6f', '#424c89', '#545d9e', '#686fb1', '#7c82c1', '#9296ce', '#a8aada', '#bebfe3', '#d4d4eb'),
+    orchid_bloom_c =     c('#5e2c46', '#793559', '#92416d', '#a9507f', '#be6192', '#d075a4', '#de8bb5', '#eaa3c5', '#f2bcd5', '#f5d6e4'),
+    sun_kissed_c =       c('#66522d', '#796133', '#8c703a', '#9f8043', '#b2904f', '#c5a15c', '#d7b26e', '#e8c484', '#f5d7a3', '#faebd5'),
+    hunter_c =           c('#274131', '#2f533d', '#3a654b', '#48775a', '#59896b', '#6c9b7e', '#82ad91', '#9abfa7', '#b5d0be', '#d1e1d6'),
+    lavender_haze_c =    c('#4f3e51', '#644b67', '#79597c', '#8d6990', '#9f79a3', '#b18bb4', '#c29ec4', '#d1b3d3', '#dec8df', '#e9dfea'),
+    tango_c =            c('#65331e', '#803e22', '#9a4a29', '#b25934', '#c86a42', '#db7c55', '#eb916b', '#f7a786', '#febfa6', '#fdd9cb'),
+
+    # SIEI Classic colors
+    siei_classic = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f", "#808080"),
+
+    # SIEI Classic recommended categorical palettes
     denim = c("#2057a7","#1e87a5", "#e07653", "#f2bc40", "#8980cb"),
     old_rose = c("#c43d4d", "#1e87a5", "#8980cb", "#e07653", "#287c6f"),
     moody_blue = c("#8980cb", "#287c6f", "#2057a7", "#e07653", "#1e87a5"),
@@ -44,7 +84,7 @@ si_palettes <- list(
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
     siei_achv = c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
 
-    # SIEI recommended palettes build from base colors
+    # SIEI Classic recommended palettes build from base colors
     siei_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
 
     denims = c("#bfddff", "#a5c5ff", "#8badfe", "#7396ee", "#5b82d8", "#436ec1", "#265bab", "#074895", "#00347d", "#002065", "#000c4f"),
@@ -190,7 +230,6 @@ si_palettes <- list(
 
 # Inspired by Laura D. Hughes who was inspired by Adobe #grays
 
-
 #' @export
 #' @description
 #' One of the nine shades of grey included. The lower the k-value, the lighter the shade.
@@ -325,14 +364,14 @@ si_palettes <- list(
 
 
 # SIEI Recommended  colors
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI denim
 #' @title denim
   denim = "#2057a7"
 
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI denim light
 #' @title denim light
@@ -343,117 +382,117 @@ si_palettes <- list(
 #' @title old rose light
   old_rose = "#c43d4d"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI old rose light
 #' @title old rose light
   old_rose_light = "#ff939a"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI moody blue
 #' @title moody blue
   moody_blue = "#8980cb"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI moody blue light
 #' @title moody blue light
   moody_blue_light = "#dfd3ff"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI burnt sienna
 #' @title burnt sienna
   burnt_sienna = "#e07653"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI burnt sienna light
 #' @title burnt sienna light
   burnt_sienna_light = "#ffcaa2"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI scooter
 #' @title scooter
   scooter = "#1e87a5"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI scooter medium
 #' @title scooter medium
   scooter_med = "#5BB5D5"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI scooter light
 #' @title scooter light
   scooter_light = "#83dbfb"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI golden sand
 #' @title golden sand
   golden_sand = "#f2bc40"
 
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI golden sand light
 #' @title golden sand light
   golden_sand_light = "#ffdda2"
 
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI genoa
 #' @title genoa (green)
   genoa = "#287c6f"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI genoa light
 #' @title genoa light (green)
   genoa_light = "#7ecfc0"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI trolley grey
 #' @title trolley grey
   trolley_grey = "#808080"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI trolley grey light
 #' @title trolley grey light
   trolley_grey_light = "#e6e6e6"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI nero
 #' @title nero
   nero = "#202020"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI matterhorn
 #' @title matterhorn
   matterhorn = "#505050"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI suva grey
 #' @title suva grey
   suva_grey = "#909090"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI whisper
 #' @title whisper
   whisper = "#ebebeb"
 
-#' @family SIEI colors
+#' @family SIEI classic colors
 #' @export
 #' @description SIEI light grey
 #' @title light grey
@@ -463,55 +502,110 @@ light_grey = "#d3d3d3"
 #' midnight_blue
 #' hemsworth midnight_blue
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
+midnight_blue = "#15478A"
+
+#' electric_indigo
+#' hemsworth electric_indigo
+#' @export
+#' @family SIEI classic colors
+electric_indigo = "#3B5BBE"
+
+#' viking
+#' hemsworth viking aka baldwin scooter_med
+#' @export
+#' @family SIEI classic colors
+viking = "#5BB5D5"
+
+#' hunter
+#' hemsworth hunter
+#' @export
+#' @family SIEI classic colors
+hunter = "#419164"
+
+#' sun_kissed
+#' hemsworth sun_kissed
+#' @export
+#' @family SIEI classic colors
+sun_kissed = "#F9C555"
+
+#' tango
+#' hemsworth tango
+#' @export
+#' @family SIEI classic colors
+tango = "#F36428"
+
+#' orchid_bloom
+#' hemsworth orchid_bloom
+#' @export
+#' @family SIEI classic colors
+orchid_bloom = "#E14BA1"
+
+#' lavender_haze
+#' hemsworth lavender_haze
+#' @export
+#' @family SIEI classic colors
+lavender_haze = "#876EC4"
+
+#' slate
+#' hemsworth slate
+#' @export
+#' @family SIEI classic colors
+slate= "#8C8C91"
+
+
+#' midnight_blue
+#' hemsworth midnight_blue
+#' @export
+#' @family SIEI classic colors
 hw_midnight_blue = "#15478A"
 
 #' electric_indigo
 #' hemsworth electric_indigo
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_electric_indigo = "#3B5BBE"
 
 #' viking
 #' hemsworth viking aka baldwin scooter_med
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_viking = "#5BB5D5"
 
 #' hunter
 #' hemsworth hunter
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_hunter = "#419164"
 
 #' sun_kissed
 #' hemsworth sun_kissed
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_sun_kissed = "#F9C555"
 
 #' tango
 #' hemsworth tango
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_tango = "#F36428"
 
 #' orchid_bloom
 #' hemsworth orchid_bloom
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_orchid_bloom = "#E14BA1"
 
 #' lavender_haze
 #' hemsworth lavender_haze
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_lavender_haze = "#876EC4"
 
 #' slate
 #' hemsworth slate
 #' @export
-#' @family hemsworth
+#' @family SIEI classic colors
 hw_slate= "#8C8C91"
 
 

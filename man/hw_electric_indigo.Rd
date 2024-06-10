@@ -16,7 +16,17 @@ electric_indigo
 hemsworth electric_indigo
 }
 \seealso{
-Other hemsworth: 
+Other SIEI classic colors: 
+\code{\link{burnt_sienna}},
+\code{\link{burnt_sienna_light}},
+\code{\link{denim}},
+\code{\link{denim_light}},
+\code{\link{electric_indigo}},
+\code{\link{genoa}},
+\code{\link{genoa_light}},
+\code{\link{golden_sand}},
+\code{\link{golden_sand_light}},
+\code{\link{hunter}},
 \code{\link{hw_hunter}},
 \code{\link{hw_lavender_haze}},
 \code{\link{hw_midnight_blue}},
@@ -24,7 +34,27 @@ Other hemsworth:
 \code{\link{hw_slate}},
 \code{\link{hw_sun_kissed}},
 \code{\link{hw_tango}},
-\code{\link{hw_viking}}
+\code{\link{hw_viking}},
+\code{\link{lavender_haze}},
+\code{\link{light_grey}},
+\code{\link{matterhorn}},
+\code{\link{midnight_blue}},
+\code{\link{moody_blue}},
+\code{\link{moody_blue_light}},
+\code{\link{nero}},
+\code{\link{old_rose_light}},
+\code{\link{orchid_bloom}},
+\code{\link{scooter}},
+\code{\link{scooter_light}},
+\code{\link{scooter_med}},
+\code{\link{slate}},
+\code{\link{sun_kissed}},
+\code{\link{suva_grey}},
+\code{\link{tango}},
+\code{\link{trolley_grey}},
+\code{\link{trolley_grey_light}},
+\code{\link{viking}},
+\code{\link{whisper}}
 }
-\concept{hemsworth}
+\concept{SIEI classic colors}
 \keyword{datasets}

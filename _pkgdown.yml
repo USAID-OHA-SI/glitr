@@ -71,6 +71,26 @@ reference:
 
 - title: OHA Colors
   contents:
+  - '`midnight_blue`'
+  - '`viking`'
+  - '`slate`'
+  - '`electric_indigo`'
+  - '`orchid_bloom`'
+  - '`sun_kissed`'
+  - '`hunter`'
+  - '`lavender_haze`'
+  - '`tango`'
+
+- title: OHA Text/Shading/Line Colors
+  contents:
+  - '`matterhorn`'
+  - '`nero`'
+  - '`suva_grey`'
+  - '`whisper`'
+  - '`light_grey`'
+
+- title: Classic OHA Colors
+  contents:
   - '`burnt_sienna`'
   - '`burnt_sienna_light`'
   - '`denim`'
@@ -89,7 +109,7 @@ reference:
   - '`trolley_grey`'
   - '`trolley_grey_light`'
 
-- title: OHA Greys
+- title: Continuous Greys
   contents:
   - '`grey10k`'
   - '`grey20k`'
@@ -101,20 +121,6 @@ reference:
   - '`grey80k`'
   - '`grey90k`'
 
-- title: OHA Text/Shading/Line Colors
-  contents:
-  - '`matterhorn`'
-  - '`nero`'
-  - '`suva_grey`'
-  - '`whisper`'
-  - '`light_grey`'
-
-- title: Sample Data
-  contents:
-  - '`cascade`'
-  - '`hts`'
-  - '`hts_geo`'
-  - '`hfr_mmd`'
 
 - title: USAID Colors
   contents:
@@ -130,15 +136,14 @@ reference:
 - title: Hemsworth Test Palette
   contents:
   - '`hw_midnight_blue`'
-  - '`hw_electric_indigo`'
   - '`hw_viking`'
-  - '`hw_hunter`'
-  - '`hw_sun_kissed`'
-  - '`hw_tango`'
-  - '`hw_orchid_bloom`'
-  - '`hw_lavender_haze`'
   - '`hw_slate`'
-
+  - '`hw_orchid_bloom`'
+  - '`hw_electric_indigo`'
+  - '`hw_sun_kissed`'
+  - '`hw_hunter`'
+  - '`hw_lavender_haze`'
+  - '`hw_tango`'
 
 - title: Washington Post Colors
   contents:
@@ -182,5 +187,12 @@ reference:
   - '`pantone_very_peri`'
   - '`pantone_viva_magenta`'
   - '`pantone_peach_fuzz`'
+
+- title: Sample Data
+  contents:
+  - '`cascade`'
+  - '`hts`'
+  - '`hts_geo`'
+  - '`hfr_mmd`'
 
 
