@@ -3,7 +3,8 @@
 # DEPENDENCIES ------------------------------------------------------------
 
   library(tidyverse)
-  library(glitr)
+  # library(glitr)
+  load_all()
   library(glue)
   library(googledrive)
 
@@ -25,7 +26,7 @@
       str_replace(" T$", " (tint)") %>%
       str_replace("Achv", "Achievement") %>%
       str_replace("(?<!(Pair|Agencie))s$", "s (mono)") %>%
-      str_replace("(Denim|Rose|Blue|Seinna|Scooter|Sand|Genoa)$", "\\1 (cat)") %>%
+      str_replace("(Denim|Rose|Blue|Sienna|Scooter|Sand|Genoa)$", "\\1 (cat)") %>%
       paste("OHA", .) %>%
       str_replace("OHA (OHA|USAID)", "\\1")
 
@@ -90,6 +91,29 @@
   #review
   cat(txt)
 
+
+# PALETTE NAMES -----------------------------------------------------------
+
+  # names(si_palettes[1:50])%>%
+  #   str_replace_all("_", " ") %>%
+  #   str_remove(" colors") %>%
+  #   str_to_title() %>%
+  #   str_replace("Siei", "OHA") %>%
+  #   str_replace("Usaid", "USAID") %>%
+  #   str_replace(" D$", " (cat)") %>%
+  #   str_replace(" C$", " (mono)") %>%
+  #   str_replace(" T$", " (tint)") %>%
+  #   str_replace("Achv", "Achievement") %>%
+  #   str_replace("(?<!(Pair|Agencie))s$", "s (mono)") %>%
+  #   str_replace("(Denim|Rose|Blue|Sienna|Scooter|Sand|Genoa)$", "\\1 (cat)") %>%
+  #   paste("- OHA", .) %>%
+  #   str_replace("OHA (OHA|USAID)", "\\1") %>%
+  #   str_replace("\\(cat\\)", "(cat) [ordered categorical colors]") %>%
+  #   str_replace("\\(mono\\)", "(mono) [monochromatic colors]") %>%
+  #   str_replace("\\(tint\\)", "(tint) [monochromatic colors]") %>%
+  #   str_replace("\\(seq\\)", "(seq) [monochromatic colors/tints]") %>%
+  #   clipr::write_clip()
+
 # README CREATION ---------------------------------------------------------
 
   txt_readme <- glue("
@@ -106,51 +130,51 @@
     #### Included Palettes
     - OHA
     - OHA Pairs
-    - OHA Midnight Blue (cat)
-    - OHA Viking (cat)
-    - OHA Electric Indigo (cat)
-    - OHA Orchid Bloom (cat)
-    - OHA Sun Kissed (cat)
-    - OHA Hunter (cat)
-    - OHA Lavender Haze (cat)
-    - OHA Tango (cat)
-    - OHA Midnight Blue (tint)
-    - OHA Viking (tint)
-    - OHA Slate (tint)
-    - OHA Electric Indigo (tint)
-    - OHA Orchid Bloom (tint)
-    - OHA Sun Kissed (tint)
-    - OHA Hunter (tint)
-    - OHA Lavender Haze (tint)
-    - OHA Tango (tint)
-    - OHA Midnight Blue (mono)
-    - OHA Viking (mono)
-    - OHA Slate (mono)
-    - OHA Electric Indigo (mono)
-    - OHA Orchid Bloom (mono)
-    - OHA Sun Kissed (mono)
-    - OHA Hunter (mono)
-    - OHA Lavender Haze (mono)
-    - OHA Tango (mono)
+    - OHA Midnight Blue (cat) [ordered categorical colors]
+    - OHA Viking (cat) [ordered categorical colors]
+    - OHA Electric Indigo (cat) [ordered categorical colors]
+    - OHA Orchid Bloom (cat) [ordered categorical colors]
+    - OHA Sun Kissed (cat) [ordered categorical colors]
+    - OHA Hunter (cat) [ordered categorical colors]
+    - OHA Lavender Haze (cat) [ordered categorical colors]
+    - OHA Tango (cat) [ordered categorical colors]
+    - OHA Midnight Blue (tint) [monochromatic colors]
+    - OHA Viking (tint) [monochromatic colors]
+    - OHA Slate (tint) [monochromatic colors]
+    - OHA Electric Indigo (tint) [monochromatic colors]
+    - OHA Orchid Bloom (tint) [monochromatic colors]
+    - OHA Sun Kissed (tint) [monochromatic colors]
+    - OHA Hunter (tint) [monochromatic colors]
+    - OHA Lavender Haze (tint) [monochromatic colors]
+    - OHA Tango (tint) [monochromatic colors]
+    - OHA Midnight Blue (mono) [monochromatic colors]
+    - OHA Viking (mono) [monochromatic colors]
+    - OHA Slate (mono) [monochromatic colors]
+    - OHA Electric Indigo (mono) [monochromatic colors]
+    - OHA Orchid Bloom (mono) [monochromatic colors]
+    - OHA Sun Kissed (mono) [monochromatic colors]
+    - OHA Hunter (mono) [monochromatic colors]
+    - OHA Lavender Haze (mono) [monochromatic colors]
+    - OHA Tango (mono) [monochromatic colors]
     - OHA Achievement
     - OHA Agencies
     - OHA Classic
     - OHA Classic Pairs
-    - OHA Denim (cat)
-    - OHA Old Rose (cat)
-    - OHA Moody Blue (cat)
-    - OHA Burnt Sienna
-    - OHA Scooter (cat)
-    - OHA Golden Sand (cat)
-    - OHA Genoa (cat)
-    - OHA Denims (mono)
-    - OHA Old Roses (mono)
-    - OHA Moody Blues (mono)
-    - OHA Burnt Siennas (mono)
-    - OHA Scooters (mono)
-    - OHA Golden Sands (mono)
-    - OHA Genoas (mono)
-    - OHA Trolley Greys (mono)
+    - OHA Denim (cat) [ordered categorical colors]
+    - OHA Old Rose (cat) [ordered categorical colors]
+    - OHA Moody Blue (cat) [ordered categorical colors]
+    - OHA Burnt Sienna (cat) [ordered categorical colors]
+    - OHA Scooter (cat) [ordered categorical colors]
+    - OHA Golden Sand (cat) [ordered categorical colors]
+    - OHA Genoa (cat) [ordered categorical colors]
+    - OHA Denims (mono) [monochromatic colors]
+    - OHA Old Roses (mono) [monochromatic colors]
+    - OHA Moody Blues (mono) [monochromatic colors]
+    - OHA Burnt Siennas (mono) [monochromatic colors]
+    - OHA Scooters (mono) [monochromatic colors]
+    - OHA Golden Sands (mono) [monochromatic colors]
+    - OHA Genoas (mono) [monochromatic colors]
+    - OHA Trolley Greys (mono) [monochromatic colors]
     - OHA Classic Achievement
     - OHA Classic Agencies
     - USAID
