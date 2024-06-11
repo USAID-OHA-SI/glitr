@@ -80,8 +80,14 @@ si_palettes <- list(
     #SIE Achievement
     siei_achv = c("#F8A27E", "#FBDC99", "#5BB5D5", "#697EBC"),
 
+    #SIEI Agency
+    siei_agencies = c("#15478A", "#9DD3E6", "#8DBDA2", "#B7A8DC", "#BABABD"),
+
     # SIEI Classic colors
     siei_classic = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f", "#808080"),
+
+    # SIEI Classic recommended palettes build from base colors
+    siei_classic_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
 
     # SIEI Classic recommended categorical palettes
     denim = c("#2057a7","#1e87a5", "#e07653", "#f2bc40", "#8980cb"),
@@ -92,11 +98,6 @@ si_palettes <- list(
     golden_sand = c("#f2bc40", "#2057a7", "#287c6f", "#e07653", "#8980cb"),
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
 
-    # SIEI Classic Achievement
-    siei_classic_achv = c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
-
-    # SIEI Classic recommended palettes build from base colors
-    siei_classic_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
 
     denims = c("#bfddff", "#a5c5ff", "#8badfe", "#7396ee", "#5b82d8", "#436ec1", "#265bab", "#074895", "#00347d", "#002065", "#000c4f"),
 
@@ -114,17 +115,25 @@ si_palettes <- list(
 
     trolley_greys = c("#E6E7E8", "#D5D7D8", "#C4C6C8", "#B3B5B8", "#A3A4A8", "#939598", "#838484", "#747576", "#646568", "#535356", "#414042"),
 
+    # SIEI Classic Achievement
+    siei_classic_achv = c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
+
+    #SIEI Classic Agency
+    siei_classic_agencies = c("#2057A7", "#83DBFB", "#7ECFC0", "#8980CB", "#808080"),
+
+  #USAID
     usaid_colors = c("#002a6c", "#ba0c2f", "#212721", "#0067b9", "#a7c6ed", "#6c6463", "#8C8985", "#cfcdc9"),
 
+  # Hemsworth (test)
+    hemsworth = c("#15478A", "#5BB5D5", "#8C8C91", "#E14BA1","#3B5BBE", "#F9C555","#419164", "#876EC4", "#F36428"),
+
+  #Other
     contrast = c("#E4F4EA", "#364352", "#768491", "#C5CAD0", "#BE311F"),
     compliment = c("#6F472E", "#6F827C", "#E4F4EA", "#E4F4EA", "#E4F4EA"),
 
     outbreak_or = c("#F4E5D2", "#FED79C", "#FBA529", "#FF6600"),
     seablue = c("#4FAFB6", "#98CBD0", "#D5EAEB", "#086EA1"),
     seablue_text = c("#00949D", "#58B2BA", "#B2D8DD", "#2476A6"),
-
-  # Hemsworth (test)
-    hemsworth = c("#15478A", "#5BB5D5", "#8C8C91", "#E14BA1","#3B5BBE", "#F9C555","#419164", "#876EC4", "#F36428"),
 
   # Vega palettes
     category10 = c(
