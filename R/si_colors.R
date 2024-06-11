@@ -39,6 +39,12 @@ si_palettes <- list(
     siei = c("#15478A", "#5BB5D5", "#8C8C91",
              "#E14BA1","#3B5BBE", "#F9C555","#419164", "#876EC4", "#F36428"),
 
+    # SIEI pairs
+    siei_pairs = c("#15478A", "#7391B9", "#5BB5D5", "#9DD3E6", "#8C8C91",
+                   "#BABABD", "#3B5BBE", "#899DD8", "#E14BA1", "#EB95C4",
+                   "#F9C555", "#FBDC99", "#419164", "#8DBDA2", "#876EC4",
+                   "#B7A8DC", "#F36428", "#F8A27E"),
+
     # SIEI recommended categorical palettes (discrete)
     midnight_blue_d =    c("#15478A", "#5BB5D5", "#8AA3C4", "#9DD3E6", "#8C8C91"),
     viking_d =           c("#5BB5D5", "#15478A", "#9DD3E6", "#8AA3C4", "#8C8C91"),
@@ -71,6 +77,9 @@ si_palettes <- list(
     lavender_haze_c =    c('#4f3e51', '#644b67', '#79597c', '#8d6990', '#9f79a3', '#b18bb4', '#c29ec4', '#d1b3d3', '#dec8df', '#e9dfea'),
     tango_c =            c('#65331e', '#803e22', '#9a4a29', '#b25934', '#c86a42', '#db7c55', '#eb916b', '#f7a786', '#febfa6', '#fdd9cb'),
 
+    #SIE Achievement
+    siei_achv = c("#F8A27E", "#FBDC99", "#5BB5D5", "#697EBC"),
+
     # SIEI Classic colors
     siei_classic = c("#2057a7", "#c43d4d", "#8980cb", "#e07653", "#1e87a5", "#f2bc40", "#287c6f", "#808080"),
 
@@ -82,7 +91,9 @@ si_palettes <- list(
     scooter = c("#1e87a5", "#c43d4d", "#8980cb", "#f2bc40", "#287c6f"),
     golden_sand = c("#f2bc40", "#2057a7", "#287c6f", "#e07653", "#8980cb"),
     genoa = c("#287c6f", "#8980cb", "#f2bc40", "#e07653", "#1e87a5"),
-    siei_achv = c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
+
+    # SIEI Classic Achievement
+    siei_classic_achv = c("#FF939A", "#FFCAA2", "#5BB5D5", "#E6E6E6"),
 
     # SIEI Classic recommended palettes build from base colors
     siei_classic_pairs = c("#2057a7", "#BFDDFF", "#c43d4d", "#FF939A", "#8980cb", "#DFD3FF", "#e07653", "#FFCAA2", "#1e87a5", "#83DBFB", "#f2bc40", "#FFDDA2", "#287c6f", "#7ECFC0", "#808080", "#E6E6E6"),
