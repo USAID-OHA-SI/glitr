@@ -5,7 +5,7 @@
 \title{scale_color_si}
 \usage{
 scale_color_si(
-  palette = "genoas",
+  palette = "hunter_c",
   alpha = 1,
   discrete = FALSE,
   reverse = FALSE,
@@ -37,10 +37,10 @@ library(glitr)
 # Apply palettes to discrete or continuous colors
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = cut)) +
-scale_color_si("genoas", discrete = T)
+scale_color_si("hunter_c", discrete = T)
 
 ggplot(diamonds) +
 geom_point(aes(x = carat, y = price, color = price)) +
-scale_color_si("genoas")}
+scale_color_si("hunter_c")}
 
 }

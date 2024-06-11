@@ -25,8 +25,8 @@ Chooses palette to use with ggplot2
 \examples{
 \dontrun{
 #View different interpolations of palettes
-si_rampr("royals") \%>\%  scales::show_col()
-si_rampr("royals", n = 10) \%>\% scales::show_col()
-si_rampr("royals", n = 100)
+si_rampr("denims") \%>\%  scales::show_col()
+si_rampr("denims", n = 10) \%>\% scales::show_col()
+si_rampr("denims", n = 100)
 }
 }

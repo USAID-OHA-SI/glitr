@@ -5,7 +5,7 @@
 \title{scale_fill_si}
 \usage{
 scale_fill_si(
-  palette = "genoas",
+  palette = "hunter_c",
   alpha = 1,
   discrete = FALSE,
   reverse = FALSE,
@@ -37,13 +37,13 @@ library(systemfonts)
 
 ggplot(diamonds) +
   geom_bar(aes(x = cut, fill = clarity)) +
-  scale_fill_si("genoas", discrete = T)
+  scale_fill_si("hunter_c", discrete = T)
 
 rnaturalearth::ne_countries(continent = "africa", returnclass = "sf") \%>\%
  add_column(runif = runif(nrow(.))) \%>\%
  ggplot() +
  geom_sf(aes(fill = runif), color = "white", size = 0.25) +
- scale_fill_si("old_roses", reverse = T) +
+ scale_fill_si("orchid_bloom_c", reverse = T) +
  si_style_void()
  }
 }
