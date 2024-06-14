@@ -10,7 +10,7 @@ SI graphics package to adorn your ggplots
 
 
 ### OHA SI Graphics
-Inspired by the BBC bbplot, this repo contains proposed functions for the glitr package. Once installed, glitr adorns your plots in a standardized SI style. As this package develops, pre-built plot types will be available to allow you to make beautiful, standardized SI plots for an array of PEPFAR indicators and disaggregates. Detailed examples on how to use functions included in the `glitr` package can be found in the [glitr cookbook](vignettes/adorn-your-plots). For an explanation of how to install the default font, Source Sans Pro, see the [What the f*nt?] vignette(vignettes/what-the-f_nt).
+Inspired by the BBC bbplot, this repo contains proposed functions for the glitr package. Once installed, glitr adorns your plots in a standardized SI style. As this package develops, pre-built plot types will be available to allow you to make beautiful, standardized SI plots for an array of PEPFAR indicators and disaggregates. Detailed examples on how to use functions included in the `glitr` package can be found in the [glitr cookbook](vignettes/adorn-your-plots.Rmd). For an explanation of how to install the default font, Source Sans Pro, see the [What the f*nt?](vignettes/what-the-f_nt.Rmd) vignette.
 
 ### Installing glitr
 `glitr` is not on CRAN, so you will have to install it directly from [rOpenSci](https://usaid-oha-si.r-universe.dev/packages) or [GitHub](https://github.com/USAID-OHA-SI/) using the code found below.
