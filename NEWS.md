@@ -1,4 +1,5 @@
 # glitr 0.2
+* Set the default fill.color with `scale_*_si` to be `slate` [2024-07-16] 
 * Add to the `si_palette`, changing old version to "classic" and adding full range of tints and continuous ramps [2024-06-11]
 * Modify a few colors in the Hemsworth palette based on feedback - `midnight_blue`, `slate`, and `lavender_haze` [2024-06-06]
 * Add `hw_slate` to extend Hemsworth palette & add `hemsworth` as an option under `si_palettes` [2024-02-11]

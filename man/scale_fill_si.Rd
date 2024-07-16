@@ -9,6 +9,7 @@ scale_fill_si(
   alpha = 1,
   discrete = FALSE,
   reverse = FALSE,
+  na.value = slate,
   ...
 )
 }
@@ -20,6 +21,8 @@ scale_fill_si(
 \item{discrete}{whether to use a discrete colour palette}
 
 \item{reverse}{if TRUE, reverses order of palette}
+
+\item{na.value}{color for NA values, default = slate}
 
 \item{...}{additional arguments to pass to scale_color_gradientn}
 }
