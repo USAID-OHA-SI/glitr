@@ -14,7 +14,6 @@ Create ggplot with transparent background
 }
 \examples{
 \dontrun{
-library(extrafont)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_transparent()
