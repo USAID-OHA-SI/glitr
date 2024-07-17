@@ -1,4 +1,5 @@
 # glitr 0.2
+* Add `si_style_transparent` theme for transparent visuals [2020-07-17]
 * Set the default fill.color with `scale_*_si` to be `slate` [2024-07-16] 
 * Add to the `si_palette`, changing old version to "classic" and adding full range of tints and continuous ramps [2024-06-11]
 * Modify a few colors in the Hemsworth palette based on feedback - `midnight_blue`, `slate`, and `lavender_haze` [2024-06-06]

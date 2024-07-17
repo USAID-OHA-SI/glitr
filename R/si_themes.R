@@ -212,6 +212,7 @@
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
 #' \dontrun{
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_transparent()
