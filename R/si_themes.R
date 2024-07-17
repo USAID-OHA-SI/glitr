@@ -201,7 +201,7 @@
         axis.text.x = ggplot2::element_blank(),
         axis.text.y = ggplot2::element_blank(),
         axis.title = ggplot2::element_blank(),
-        legend.position = "none"
+        legend.position = "top"
       )
   }
 
@@ -212,7 +212,6 @@
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
 #' \dontrun{
-#' library(extrafont)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_transparent()
