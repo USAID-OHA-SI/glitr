@@ -44,6 +44,7 @@ reference:
   - '`si_style_xyline`'
   - '`si_style_ygrid`'
   - '`si_style_yline`'
+  - '`si_style_transparent`'
 
 - title: Legends
   contents:
