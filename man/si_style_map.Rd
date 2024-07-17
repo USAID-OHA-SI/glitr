@@ -15,7 +15,7 @@ Create Standard SI Map
 \examples{
 \dontrun{
 
-library(extrafont)
+library(systemfonts)
 library(tidyverse)
 library(glitr)
 library(gisr)

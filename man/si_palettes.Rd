@@ -5,32 +5,38 @@
 \alias{si_palettes}
 \title{List of SI Color Palettes}
 \format{
-An object of class \code{list} of length 41.
+An object of class \code{list} of length 74.
 }
 \usage{
 si_palettes
 }
 \description{
-Sets of color palettes that have been collected by the SI team.
-Includes all colors from the SIEI data visualization guide and a few additional palettes.
-Colors are stored as a named list. Use palette name or position to call in colors.
+Sets of color palettes that have been collected by the SI team. Includes all
+colors from the SIEI data visualization guide and a few additional palettes.
+Colors are stored as a named list. Use palette name or position to call in
+colors.
 
 Color sets are stored as the name of the first color.
-Calling \code{si_palettes$old_rose} will return the five color pairs where old_rose is the base.
-Calling \code{si_palettes$old_roses} will return an interpolated ramp of 11 colors for old_rose.
+Calling \code{si_palettes$viking_d} will return the five color palette where viking is the base.
+Calling \code{si_palettes$viking_c} will return an interpolated ramp of 10 colors for viking
+Calling \code{si_palettes$viking_t} will return viking and four tints at 80\%, 60\%, 40\%, and 20\%.
 See the SIEI data visualization guide for additional details.
 }
 \examples{
 \dontrun{
+library(scales)
+
 # List names of palettes available
 names(si_palettes)
 
-scales::show_col(si_palettes$siei)
-scales::show_col(si_palettes$old_roses)
+show_col(si_palettes$siei)
+show_col(si_palettes$lavender_haze_d)
+show_col(si_palettes$hunter_t)
+show_col(si_palettes$sun_kissed_c)
 
 # Show palettes interpolated
-si_rampr("carto_div_earth", n = 10) \%>\% scales::show_col(labels = T)
-si_rampr("carto_div_earth", n = 100) \%>\% scales::show_col(labels = FALSE)
+si_rampr("carto_div_earth", n = 10) \%>\% show_col(labels = T)
+si_rampr("carto_div_earth", n = 100) \%>\% show_col(labels = FALSE)
 }
 }
 \seealso{

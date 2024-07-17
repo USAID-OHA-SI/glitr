@@ -14,6 +14,7 @@ Helps create and export ggplot2 charts in the style used by the GH OHA SI team. 
 Useful links:
 \itemize{
   \item \url{https://github.com/USAID-OHA-SI/glitr}
+  \item \url{https://usaid-oha-si.github.io/glitr/}
   \item Report bugs at \url{https://github.com/USAID-OHA-SI/glitr/issues}
 }
 

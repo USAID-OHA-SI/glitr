@@ -10,7 +10,7 @@
 library(tidyverse)
 library(scales)
 library(glitr)
-library(extrafont)
+library(systemfonts)
 library(fs)
 
 

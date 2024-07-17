@@ -19,7 +19,7 @@ using the \code{\link[ggplot2:guides]{ggplot2::guides()}} function.
 }
 \examples{
 \dontrun{
-library(extrafont)
+library(systemfonts)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, color = Sepal.Width)) +
 geom_point(size = 4) + si_legend_color() + si_style()

@@ -5,7 +5,7 @@
 #' @export
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_ygrid()
@@ -27,7 +27,7 @@
 #' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
-#' ibrary(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_xgrid()
@@ -49,7 +49,7 @@
 #' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_nolines()
@@ -73,7 +73,7 @@
 #' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_xline()
@@ -95,7 +95,7 @@
 #' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_yline()
@@ -116,7 +116,7 @@
 #' @param ... inherits parameters from [si_style()]
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_xyline()
@@ -140,7 +140,7 @@
 #' @examples
 #' \dontrun{
 #'
-#' library(extrafont)
+#' library(systemfonts)
 #' library(tidyverse)
 #' library(glitr)
 #' library(gisr)
@@ -186,7 +186,7 @@
 #' @importFrom ggplot2 %+replace% aes geom_point theme element_line
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style_void()

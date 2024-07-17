@@ -1,6 +1,6 @@
 Package: glitr
 Title: Adorned SI style plots
-Version: 0.1.1
+Version: 0.2.9
 Authors@R: c(
     person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
     person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
@@ -10,37 +10,36 @@ Description: Helps create and export ggplot2 charts in the style used by
     the GH OHA SI team. Includes multiple styles and themes to tweak plots
     to user needs. Sample testing data also available. 
 License: MIT + file LICENSE
-URL: https://github.com/USAID-OHA-SI/glitr
+URL: https://github.com/USAID-OHA-SI/glitr, https://usaid-oha-si.github.io/glitr/
 BugReports: https://github.com/USAID-OHA-SI/glitr/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.2.1
+RoxygenNote: 7.3.1
 Depends: 
     R (>= 3.5.0)
 Imports: 
+    systemfonts,
     ggplot2 (>= 3.3.0),
-    ggtext,
     magrittr,
     scales,
     usethis,
-    extrafont,
-    lifecycle,
-    sf, 
-    grDevices
+    grDevices,
+    cli
 Suggests: 
-    rmarkdown,
-    markdown,
-    knitr,
-    testthat,
     dplyr, 
     forcats,
-    tidyr,
+    ggtext,
+    knitr,
+    lifecycle,
     patchwork,
-    purrr
+    purrr,
+    rmarkdown,
+    markdown,
+    sf,
+    testthat,
+    tidyr
 Remotes:
     USAID-OHA-SI/gagglr
 BuildVignettes: false
-VignetteBuilder: 
-  knitr,
-  sf
+VignetteBuilder: knitr
 Roxygen: list(markdown = TRUE)

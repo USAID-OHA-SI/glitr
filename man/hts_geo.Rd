@@ -6,7 +6,7 @@
 \title{Spatial data for mapping testing indicators}
 \format{
 A spatial data frame with three variables and geometry: \code{iso_no},
-\code{primepartner}, \code{iso_1}, \code{geometry},
+\code{prime_partner_name}, \code{iso_1}, \code{geometry},
 }
 \usage{
 hts_geo

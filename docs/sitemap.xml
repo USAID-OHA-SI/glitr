@@ -7,7 +7,13 @@
     <loc>https://usaid-oha-si.github.io/glitr/articles/adorn-your-plots.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/articles/available-colors.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/articles/index.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/articles/what-the-f_nt.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/authors.html</loc>
@@ -56,6 +62,12 @@
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/denim_light.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/electric_indigo.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/font_exists.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/genoa.html</loc>
@@ -109,10 +121,49 @@
     <loc>https://usaid-oha-si.github.io/glitr/reference/hts_geo.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hunter.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_electric_indigo.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_hunter.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_lavender_haze.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_midnight_blue.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_orchid_bloom.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_slate.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_sun_kissed.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_tango.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/hw_viking.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/index.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/lavender_haze.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/light_grey.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/matterhorn.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/midnight_blue.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/moody_blue.html</loc>
@@ -128,6 +179,90 @@
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/old_rose_light.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/orchid_bloom.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_aqua_sky.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_blue_iris.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_blue_turquoise.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_cerulean.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_chili_pepper.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_classic_blue.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_emerald.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_fuchsia_rose.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_greenery.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_honeysuckle.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_illuminating.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_living_coral.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_marsala.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_mimosa.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_peach_fuzz.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_radiant_orchid.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_rose_quartz.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_sand_dollar.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_serenity.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_tangerine_tango.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_tigerlily.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_true_red.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_turquoise.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_ultimate_gray.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_ultra_violet.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_very_peri.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/pantone_viva_magenta.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/pipe.html</loc>
@@ -172,6 +307,9 @@
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_blue.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/si_clear_preview.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_colors.html</loc>
   </url>
   <url>
@@ -200,6 +338,9 @@
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_palettes.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/si_preview.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_rampr.html</loc>
@@ -238,7 +379,16 @@
     <loc>https://usaid-oha-si.github.io/glitr/reference/si_style_yline.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/slate.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/sun_kissed.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/suva_grey.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/tango.html</loc>
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/trolley_grey.html</loc>
@@ -271,6 +421,9 @@
     <loc>https://usaid-oha-si.github.io/glitr/reference/usaid_red.html</loc>
   </url>
   <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/viking.html</loc>
+  </url>
+  <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/wapo_dblue.html</loc>
   </url>
   <url>
@@ -299,5 +452,8 @@
   </url>
   <url>
     <loc>https://usaid-oha-si.github.io/glitr/reference/wapo_pushpop.html</loc>
+  </url>
+  <url>
+    <loc>https://usaid-oha-si.github.io/glitr/reference/whisper.html</loc>
   </url>
 </urlset>

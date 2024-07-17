@@ -14,7 +14,7 @@ Incorporates the default si_style graph and strips all gridlines. Useful for whe
 }
 \examples{
 \dontrun{
-library(extrafont)
+library(systemfonts)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style_nolines()

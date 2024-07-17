@@ -40,7 +40,7 @@ Wrapper around ggplot2::ggsave with SI standards
 }
 \examples{
 \dontrun{
-library(extrafont)
+library(systemfonts)
 library(ggplot2)
 ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
   geom_point() + si_style()
@@ -51,3 +51,9 @@ si_save("out/sepal")
 #change the width
 si_save("out/sepal.jpeg", width = 5)  }
 }
+\seealso{
+Other saving: 
+\code{\link{si_clear_preview}()},
+\code{\link{si_preview}()}
+}
+\concept{saving}

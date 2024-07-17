@@ -16,7 +16,7 @@
 #'
 #' @examples
 #' \dontrun{
-#' library(extrafont)
+#' library(systemfonts)
 #' library(ggplot2)
 #' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
 #'   geom_point() + si_style()
@@ -32,17 +32,25 @@ si_style <- function(font_title,
                      FO = FALSE,
                      ...) {
 
-  if(!isNamespaceLoaded("extrafont"))
-    usethis::ui_warn("The extrafont package is not loaded. Add the following to your code: {usethis::ui_code('library(extrafont)')}")
+  if(!isNamespaceLoaded("systemfonts"))
+    cli::cli_alert_warning("The {.pkg systemfonts} package is not loaded. Run {.code library(systemfonts)}")
+
+  if(isNamespaceLoaded("extrafont"))
+    cli::cli_alert_warning("The {.pkg extrafont} package is loaded. Remove this library and restart your session as it conflicts with {.pkg systemfonts}")
+
+  if(is.null(getOption('glitr_font')))
+    choose_font()
+
+  glitr_font_default <- getOption('glitr_font')
 
   if(missing(font_title))
-    font_title <- "glitr_font_default"
+    font_title <- glitr_font_default
   if(missing(font_subtitle))
-    font_subtitle <- "glitr_font_default"
+    font_subtitle <- glitr_font_default
   if(missing(font_plot))
-    font_plot <- "glitr_font_default"
+    font_plot <- glitr_font_default
   if(missing(font_caption))
-    font_caption <- "glitr_font_default"
+    font_caption <- glitr_font_default
 
   half_line <- 5.5
 
@@ -111,13 +119,13 @@ si_style <- function(font_title,
 
         #Grid lines
         panel.grid.minor = ggplot2::element_blank(),
-        panel.grid.major.y = ggplot2::element_line(colour = color_gridline, size = 0.25),
-        panel.grid.major.x = ggplot2::element_line(colour = color_gridline, size = 0.25),
+        panel.grid.major.y = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
+        panel.grid.major.x = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
 
         #Blank background
         panel.background = ggplot2::element_blank(),
         panel.border = ggplot2::element_blank(),
-        panel.spacing = unit(facet_space, "lines"),
+        panel.spacing = ggplot2::unit(facet_space, "lines"),
 
         # Plot fill and margins
         plot.background = ggplot2::element_rect(fill = "white", color = NA),
@@ -195,13 +203,13 @@ si_style <- function(font_title,
 
       #Grid lines
       panel.grid.minor = ggplot2::element_blank(),
-      panel.grid.major.y = ggplot2::element_line(colour = color_gridline, size = 0.25),
-      panel.grid.major.x = ggplot2::element_line(colour = color_gridline, size = 0.25),
+      panel.grid.major.y = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
+      panel.grid.major.x = ggplot2::element_line(colour = color_gridline, linewidth = 0.25),
 
       #Blank background
       panel.background = ggplot2::element_blank(),
       panel.border = ggplot2::element_blank(),
-      panel.spacing = unit(facet_space, "lines"),
+      panel.spacing = ggplot2::unit(facet_space, "lines"),
 
       # Plot fill and margins
       plot.background = ggplot2::element_rect(fill = "white", color = NA),

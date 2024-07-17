@@ -5,10 +5,11 @@
 \title{scale_fill_si}
 \usage{
 scale_fill_si(
-  palette = "genoas",
+  palette = "hunter_c",
   alpha = 1,
   discrete = FALSE,
   reverse = FALSE,
+  na.value = slate,
   ...
 )
 }
@@ -21,7 +22,9 @@ scale_fill_si(
 
 \item{reverse}{if TRUE, reverses order of palette}
 
-\item{...}{additional arguments to pass to scale_fill_gradientn}
+\item{na.value}{color for NA values, default = slate}
+
+\item{...}{additional arguments to pass to scale_color_gradientn}
 }
 \description{
 SIEI colors available through scale_fill_si
@@ -33,16 +36,17 @@ library(tibble)
 library(sf)
 library(rnaturalearth)
 library(glitr)
+library(systemfonts)
 
 ggplot(diamonds) +
   geom_bar(aes(x = cut, fill = clarity)) +
-  scale_fill_si("genoas", discrete = T)
+  scale_fill_si("hunter_c", discrete = T)
 
 rnaturalearth::ne_countries(continent = "africa", returnclass = "sf") \%>\%
  add_column(runif = runif(nrow(.))) \%>\%
  ggplot() +
  geom_sf(aes(fill = runif), color = "white", size = 0.25) +
- scale_fill_si("old_roses", reverse = T) +
+ scale_fill_si("orchid_bloom_c", reverse = T) +
  si_style_void()
  }
 }
