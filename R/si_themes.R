@@ -167,13 +167,14 @@
 #'}
 #'
   si_style_map <- function(...) {
-    ggplot2::theme_void() %+replace%
-      si_style(...) %+replace%
-      theme(
+    si_style_void(...) %+replace%
+      ggplot2::theme(
         line = ggplot2::element_blank(),
         rect = ggplot2::element_blank(),
         axis.text.x = ggplot2::element_blank(),
         axis.text.y = ggplot2::element_blank(),
+        axis.title.x = ggplot2::element_blank(),
+        axis.title.y = ggplot2::element_blank()
       )
   }
 
@@ -200,7 +201,31 @@
         axis.text.x = ggplot2::element_blank(),
         axis.text.y = ggplot2::element_blank(),
         axis.title = ggplot2::element_blank(),
-        legend.position = "none"
+        legend.position = "top"
       )
   }
 
+#' @title Create ggplot with transparent background
+#'
+#' @param ... inherits parameters from [si_style()]
+#' @export
+#' @importFrom ggplot2 %+replace% aes geom_point theme element_line
+#' @examples
+#' \dontrun{
+#' library(systemfonts)
+#' library(ggplot2)
+#' ggplot(iris, aes(Sepal.Length, y = Sepal.Width, colour = Species)) +
+#'   geom_point() + si_style_transparent()
+#'}
+#'
+  si_style_transparent <- function(...) {
+    si_style(...) %+replace%
+    theme(
+      plot.background = ggplot2::element_rect(fill = "transparent", color = NA),
+      panel.background = ggplot2::element_rect(fill = "transparent", color = NA),
+      panel.grid.major = ggplot2::element_blank(),
+      panel.grid.minor = ggplot2::element_blank(),
+      legend.background = ggplot2::element_rect(fill='transparent', color = NA),
+      legend.box.background = ggplot2::element_rect(fill='transparent', color = NA)
+    )
+  }

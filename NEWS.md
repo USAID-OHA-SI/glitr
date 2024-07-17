@@ -1,5 +1,5 @@
 # glitr 0.2
-* Update vignette with new set of available OHA colors for site [2024-07-16]
+* Update [vignette](https://usaid-oha-si.github.io/glitr/articles/available-colors.html) with new set of available OHA colors for site [2024-07-16]
 * Set the default fill.color with `scale_*_si` to be `slate` [2024-07-16] 
 * Add to the `si_palette`, changing old version to "classic" and adding full range of tints and continuous ramps [2024-06-11]
 * Modify a few colors in the Hemsworth palette based on feedback - `midnight_blue`, `slate`, and `lavender_haze` [2024-06-06]
@@ -43,7 +43,7 @@
   
 
 # glitr 0.0.0.9000
-* Add white background to plots rather than having them be tranparent
+* Add white background to plots rather than having them be tranaparent
 * Migrate to website
 * Fix scale_fill_si and scale_color_si defaults
 * Renamed some color stubs (old si_ colors) to siei_
