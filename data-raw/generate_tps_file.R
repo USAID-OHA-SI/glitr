@@ -73,7 +73,7 @@
 
   #pull it all together for the file
   txt <-
-    paste("<?xml version = '1.0'>",
+    paste("<?xml version = '1.0'?>",
           "<workbook>",
           "   <preferences>",
           siei,
