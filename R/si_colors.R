@@ -178,7 +178,7 @@ si_palettes <- list(
     carto_div_earth = c("#A16928", "#bd925a", "#d6bd8d", "#edeac2", "#b5c8b8", "#79a7ac", "#2887a1"),
 
   #Pantone Colors of the Year (descending)
-    pantone = c("#FEBE98", "#BE3455", "#6768AB", "#F5DF4D", "#939597", "#0F4C81",
+    pantone = c("#A47764", "#FEBE98", "#BE3455", "#6768AB", "#F5DF4D", "#939597", "#0F4C81",
                 "#FF6F61", "#5F4B8B", "#88B04B", "#F7CACA", "#93A9D1", "#964F4C",
                 "#AD5E99", "#009473", "#DD4124", "#45B5AA", "#D94F70", "#F0C05A",
                 "#5A5B9F", "#9B1B30", "#DECDBE", "#53B0AE", "#E2583E", "#7BC4C4",
@@ -790,3 +790,9 @@ pantone_viva_magenta = "#BE3455"
 #' @export
 #' @family pantone
 pantone_peach_fuzz = "#FEBE98"
+
+#' mocha_mousse
+#' Pantone Color of the Year 2025
+#' @export
+#' @family pantone
+pantone_mocha_mousse = "#A47764"
