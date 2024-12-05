@@ -628,6 +628,410 @@ hw_lavender_haze = "#876EC4"
 #' @family SIEI classic colors
 hw_slate= "#8C8C91"
 
+#' @title midnight_blue @ 100% tint
+#' @description
+#' One of the five shades of midnight_blue. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+midnight_blue_100 = "#15478A"
+
+#' @title midnight_blue @ 80% tint
+#' @description
+#' One of the five shades of midnight_blue. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+midnight_blue_80 = "#446CA1"
+
+#' @title midnight_blue @ 60% tint
+#' @description
+#' One of the five shades of midnight_blue. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+midnight_blue_60 = "#7391B9"
+
+#' @title midnight_blue @ 40% tint
+#' @description
+#' One of the five shades of midnight_blue. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+midnight_blue_40 = "#8AA3C5"
+
+#' @title midnight_blue @ 20% tint
+#' @description
+#' One of the five shades of midnight_blue. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+midnight_blue_20 = "#D0DAE8"
+
+#' @title viking @ 100% tint
+#' @description
+#' One of the five shades of viking. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+viking_100 = "#5BB5D5"
+
+#' @title viking @ 80% tint
+#' @description
+#' One of the five shades of viking. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+viking_80 = "#7CC4DD"
+
+#' @title viking @ 60% tint
+#' @description
+#' One of the five shades of viking. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+viking_60 = "#9DD3E6"
+
+#' @title viking @ 40% tint
+#' @description
+#' One of the five shades of viking. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+viking_40 = "#BDE1EE"
+
+#' @title viking @ 20% tint
+#' @description
+#' One of the five shades of viking. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+viking_20 = "#DEF0F7"
+
+#' @title slate @ 100% tint
+#' @description
+#' One of the five shades of slate. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+slate_100 = "#8C8C91"
+
+#' @title slate @ 80% tint
+#' @description
+#' One of the five shades of slate. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+slate_80 = "#A3A3A7"
+
+#' @title slate @ 60% tint
+#' @description
+#' One of the five shades of slate. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+slate_60 = "#BABABD"
+
+#' @title slate @ 40% tint
+#' @description
+#' One of the five shades of slate. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+slate_40 = "#D1D1D3"
+
+#' @title slate @ 20% tint
+#' @description
+#' One of the five shades of slate. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+slate_20 = "#E8E8E9"
+
+#' @title electric_indigo @ 100% tint
+#' @description
+#' One of the five shades of electric_indigo. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+electric_indigo_100 = "#3B5BBE"
+
+#' @title electric_indigo @ 80% tint
+#' @description
+#' One of the five shades of electric_indigo. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+electric_indigo_80 = "#627CCB"
+
+#' @title electric_indigo @ 60% tint
+#' @description
+#' One of the five shades of electric_indigo. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+electric_indigo_60 = "#899DD8"
+
+#' @title electric_indigo @ 40% tint
+#' @description
+#' One of the five shades of electric_indigo. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+electric_indigo_40 = "#B1BDE5"
+
+#' @title electric_indigo @ 20% tint
+#' @description
+#' One of the five shades of electric_indigo. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+electric_indigo_20 = "#D8DEF2"
+
+#' @title orchid_bloom @ 100% tint
+#' @description
+#' One of the five shades of orchid_bloom. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+orchid_bloom_100 = "#E14BA1"
+
+#' @title orchid_bloom @ 80% tint
+#' @description
+#' One of the five shades of orchid_bloom. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+orchid_bloom_80 = "#E571B0"
+
+#' @title orchid_bloom @ 60% tint
+#' @description
+#' One of the five shades of orchid_bloom. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+orchid_bloom_60 = "#EB95C4"
+
+#' @title orchid_bloom @ 40% tint
+#' @description
+#' One of the five shades of orchid_bloom. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+orchid_bloom_40 = "#F2B8D7"
+
+#' @title orchid_bloom @ 20% tint
+#' @description
+#' One of the five shades of orchid_bloom. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+orchid_bloom_20 = "#F8DCEB"
+
+#' @title sun_kissed @ 100% tint
+#' @description
+#' One of the five shades of sun_kissed. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+sun_kissed_100 = "#F9C555"
+
+#' @title sun_kissed @ 80% tint
+#' @description
+#' One of the five shades of sun_kissed. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+sun_kissed_80 = "#FAD177"
+
+#' @title sun_kissed @ 60% tint
+#' @description
+#' One of the five shades of sun_kissed. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+sun_kissed_60 = "#FBDC99"
+
+#' @title sun_kissed @ 40% tint
+#' @description
+#' One of the five shades of sun_kissed. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+sun_kissed_40 = "#FDE8BB"
+
+#' @title sun_kissed @ 20% tint
+#' @description
+#' One of the five shades of sun_kissed. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+sun_kissed_20 = "#FEF3DD"
+
+#' @title hunter @ 100% tint
+#' @description
+#' One of the five shades of hunter. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+hunter_100 = "#419164"
+
+#' @title hunter @ 80% tint
+#' @description
+#' One of the five shades of hunter. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+hunter_80 = "#67A784"
+
+#' @title hunter @ 60% tint
+#' @description
+#' One of the five shades of hunter. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+hunter_60 = "#8DBDA2"
+
+#' @title hunter @ 40% tint
+#' @description
+#' One of the five shades of hunter. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+hunter_40 = "#B3D3C1"
+
+#' @title hunter @ 20% tint
+#' @description
+#' One of the five shades of hunter. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+hunter_20 = "#D9E9E0"
+
+#' @title lavender_haze @ 100% tint
+#' @description
+#' One of the five shades of lavender_haze. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+lavender_haze_100 = "#876EC4"
+
+#' @title lavender_haze @ 80% tint
+#' @description
+#' One of the five shades of lavender_haze. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+lavender_haze_80 = "#9F8BD0"
+
+#' @title lavender_haze @ 60% tint
+#' @description
+#' One of the five shades of lavender_haze. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+lavender_haze_60 = "#B7A8DC"
+
+#' @title lavender_haze @ 40% tint
+#' @description
+#' One of the five shades of lavender_haze. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+lavender_haze_40 = "#CFC5E7"
+
+#' @title lavender_haze @ 20% tint
+#' @description
+#' One of the five shades of lavender_haze. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+lavender_haze_20 = "#E7E2F3"
+
+#' @title tango @ 100% tint
+#' @description
+#' One of the five shades of tango. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+tango_100 = "#F36428"
+
+#' @title tango @ 80% tint
+#' @description
+#' One of the five shades of tango. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+tango_80 = "#F58353"
+
+#' @title tango @ 60% tint
+#' @description
+#' One of the five shades of tango. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+tango_60 = "#F8A27E"
+
+#' @title tango @ 40% tint
+#' @description
+#' One of the five shades of tango. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+tango_40 = "#FAC1A9"
+
+#' @title tango @ 20% tint
+#' @description
+#' One of the five shades of tango. The number is a percent of the
+#' original color, ranging from 100 (100%) down to 20 (20%) at 20% intervals.
+#' The lower the number, the lighter the tint of the original color.
+#' @export
+#' @family SIEI tints
+tango_20 = "#FDE0D4"
 
 #' cerulean
 #' Pantone Color of the Year 2000
