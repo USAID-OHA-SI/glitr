@@ -1,6 +1,6 @@
 Package: glitr
 Title: Adorned SI style plots
-Version: 0.2.10
+Version: 0.3.0
 Authors@R: c(
     person("Tim", "Essam", ,"tessam@usaid.gov", c("aut", "cre")),
     person("Aaron", "Chafetz", ,"achafetz@usaid.gov", c("aut")),
