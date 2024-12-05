@@ -1,4 +1,5 @@
 # glitr 0.2
+* Add new Patone 2025 color of the year [2024-12-05]
 * Add `si_style_transparent` theme for transparent visuals [2020-07-17]
 * Update [vignette](https://usaid-oha-si.github.io/glitr/articles/available-colors.html) with new set of available OHA colors for site [2024-07-17]
 * Set the default fill.color with `scale_*_si` to be `slate` [2024-07-16] 
