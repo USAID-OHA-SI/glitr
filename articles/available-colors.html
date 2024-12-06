@@ -14,8 +14,8 @@
 <link rel="apple-touch-icon" type="image/png" sizes="60x60" href="../apple-touch-icon-60x60.png">
 <script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="../deps/bootstrap-5.3.1/bootstrap.min.css" rel="stylesheet">
-<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.4.2/css/all.min.css" rel="stylesheet">
-<link href="../deps/font-awesome-6.4.2/css/v4-shims.min.css" rel="stylesheet">
+<script src="../deps/bootstrap-5.3.1/bootstrap.bundle.min.js"></script><link href="../deps/font-awesome-6.5.2/css/all.min.css" rel="stylesheet">
+<link href="../deps/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet">
 <script src="../deps/headroom-0.11.0/headroom.min.js"></script><script src="../deps/headroom-0.11.0/jQuery.headroom.min.js"></script><script src="../deps/bootstrap-toc-1.0.1/bootstrap-toc.min.js"></script><script src="../deps/clipboard.js-2.0.11/clipboard.min.js"></script><script src="../deps/search-1.0.0/autocomplete.jquery.min.js"></script><script src="../deps/search-1.0.0/fuse.min.js"></script><script src="../deps/search-1.0.0/mark.min.js"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Available Colors">
 </head>
 <body>
@@ -26,7 +26,7 @@
 
     <a class="navbar-brand me-2" href="../index.html">glitr</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.2.9</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.3.0</small>
 
 
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -69,34 +69,56 @@
 
     
     
-<div class="section level3">
-<h3 id="background-from-oha-style-guide">Background (from OHA Style Guide)<a class="anchor" aria-label="anchor" href="#background-from-oha-style-guide"></a>
-</h3>
+<div class="section level2">
+<h2 id="background-from-the-color-section-of-the-2024-oha-data-viz-guide">Background (from the Color section of the 2024 OHA Data Viz
+Guide)<a class="anchor" aria-label="anchor" href="#background-from-the-color-section-of-the-2024-oha-data-viz-guide"></a>
+</h2>
 <p>The <a href="https://www.usaid.gov/branding/gsm" class="external-link">USAID Graphics
 Standard Manual</a> lays out the two colors found in the agency’s logo
-as the primary color palette, USAID Blue and USAID Red. These colors are
-used to “reinforce that the aid is From the American people” but provide
-a limited range of colors to work with for data visualization.</p>
+as the primary branding color palette, <strong><span style="background-color:#002a6c">USAID Blue</span></strong> and
+<strong><span style="background-color:#ba0c2f">USAID
+Red</span></strong>. These colors are used to “reinforce that the aid is
+From the American people” but provide a limited range of colors to work
+with for data visualization.</p>
 <p>OHA has developed an offshoot of these colors for visualization,
 expanding the number of categorical colors to choose from and creating a
-color-blind friendly palette (508 compliant).</p>
+color-blind friendly palette (508 compliant). We started with primary
+USAID Blue and used a combination of platforms (<a href="https://color.adobe.com/" class="external-link">Adobe Color</a>, <a href="https://projects.susielu.com/viz-palette" class="external-link">Viz Palette</a>, <a href="https://coolors.co/" class="external-link">Coolors</a>, <a href="https://behance.net/" class="external-link">Behance</a>, <a href="https://gka.github.io/palettes/" class="external-link">chroma.js</a>, and Adobe
+Illustrator), to identify and then modifying an offshoot categorical
+palette. The <strong><span style="background-color:#ba0c2f">USAID
+Red</span></strong> was dropped due to high saturation and often
+negative connotations associated with its use in Western culture to mean
+threat or danger. From there, we expanded the identified colors into a
+full palette of categorical and continuous/sequential colors using
+tints. We finally revisiting the <strong><span style="background-color:#002a6c">USAID Blue</span></strong>, dropping
+the saturation roughly 20 percent to reduce the stark contrast when used
+to other graphic elements in the visualization.</p>
+<p>In addition to the color encoding for the visuals, we have also
+identified an assortment of grays to be used for the chart elements. The
+application of these specific colors for the chart elements further
+enhances the visual’s look and feel as an OHA product.</p>
 <p>Strategic use of the OHA palette allows for consistent branding and
 reduces the time needed to think through color choices in every
 visualization. That said, colors should be used meaningfully and thought
 should be given to how these standard colors accentuate the
-visual/message.</p>
-<p>Use USAID colors and text for all banners, text and text boxes. The
-USAID colors are available for use in graphs and charts, however the OHA
-palette is specifically for use in data visualization products (charts,
-graphs, visuals etc.). If in doubt of what color to use, try creating a
-visualization in black and white first. Then, add colors one at a time
-until data are sufficiently encoded to reinforce the message.</p>
+visual/message. If in doubt of what colors to use, try creating a
+visualization in black and white first. Then, add color to specific
+elements one at a time until data are sufficiently encoded to reinforce
+the message.</p>
+<p>Outside of the visualization, default to using the USAID branding
+color palette and prescribed typeface for all banners, text, and text
+boxes. The USAID colors are available for use in graphs and charts,
+however the OHA palette is specifically for use in data visualization
+products (charts, graphs, visuals etc.).</p>
 </div>
 <div class="section level2">
-<h2 id="standalone-colors">Standalone Colors<a class="anchor" aria-label="anchor" href="#standalone-colors"></a>
+<h2 id="data-viz-guide-standalone-colors">Data Viz Guide Standalone Colors<a class="anchor" aria-label="anchor" href="#data-viz-guide-standalone-colors"></a>
 </h2>
+<p>The colors in this section are found in the OHA Data Viz Guide and
+are stored in <code>glitr</code> as objects that can be directly
+called/used.</p>
 <div class="section level3">
-<h3 id="oha-palette-from-oha-style-guide-2024">OHA Palette from OHA Style Guide (2024)<a class="anchor" aria-label="anchor" href="#oha-palette-from-oha-style-guide-2024"></a>
+<h3 id="oha-primary-palette">OHA Primary Palette<a class="anchor" aria-label="anchor" href="#oha-primary-palette"></a>
 </h3>
 <ul>
 <li>midnight_blue <span style="background-color:#15478A">#15478A</span>
@@ -105,6 +127,12 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 <li>slate <span style="background-color:#8C8C91">#8C8C91</span>
 </li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="oha-secondary-palette">OHA Secondary Palette<a class="anchor" aria-label="anchor" href="#oha-secondary-palette"></a>
+</h3>
+<ul>
 <li>orchid_bloom <span style="background-color:#E14BA1">#E14BA1</span>
 </li>
 <li>electric_indigo <span style="background-color:#3B5BBE">#3B5BBE</span>
@@ -118,9 +146,150 @@ until data are sufficiently encoded to reinforce the message.</p>
 <li>tango <span style="background-color:#F36428">#F36428</span>
 </li>
 </ul>
-<div class="section level4">
-<h4 id="oha-classic-colors-2022">OHA Classic Colors (2022)<a class="anchor" aria-label="anchor" href="#oha-classic-colors-2022"></a>
-</h4>
+</div>
+<div class="section level3">
+<h3 id="oha-grays-chart-elements-palette">OHA Grays [Chart Elements] Palette<a class="anchor" aria-label="anchor" href="#oha-grays-chart-elements-palette"></a>
+</h3>
+<ul>
+<li>nero [title]: <span style="background-color:#202020">#202020</span>
+</li>
+<li>matterhorn [Subtitle/Body, Reference Line]: <span style="background-color:#505050">#505050</span>
+</li>
+<li>suva_grey [Source/Note]: <span style="background-color:#909090">#909090</span>
+</li>
+<li>whisper [Shaded Area]: <span style="background-color:#ebebeb">#ebebeb</span>
+</li>
+<li>light_grey [Grid Line]: <span style="background-color:#d3d3d3">#d3d3d3</span>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="usaid-primary-palette">USAID Primary Palette<a class="anchor" aria-label="anchor" href="#usaid-primary-palette"></a>
+</h3>
+<ul>
+<li>usaid_blue: <span style="background-color:#002a6c">#002a6c</span>
+</li>
+<li>usaid_red: <span style="background-color:#ba0c2f">#ba0c2f</span>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="usaid-secondary-palette">USAID Secondary Palette<a class="anchor" aria-label="anchor" href="#usaid-secondary-palette"></a>
+</h3>
+<ul>
+<li>usaid_black: <span style="background-color:#212721">#212721</span>
+</li>
+<li>usaid_medblue: <span style="background-color:#0067b9">#0067b9</span>
+</li>
+<li>usaid_lightblue: <span style="background-color:#a7c6ed">#a7c6ed</span>
+</li>
+<li>usaid_darkgrey: <span style="background-color:#6c6463">#6c6463</span>
+</li>
+<li>usaid_medgrey: <span style="background-color:#8C8985">#8C8985</span>
+</li>
+<li>usaid_lightgrey: <span style="background-color:#cfcdc9">#cfcdc9</span>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="oha-tints-colors">OHA Tints Colors<a class="anchor" aria-label="anchor" href="#oha-tints-colors"></a>
+</h3>
+<ul>
+<li>midnight_blue_100 <span style="background-color:#15478A">#15478A</span>
+</li>
+<li>midnight_blue_80 <span style="background-color:#446CA1">#446CA1</span>
+</li>
+<li>midnight_blue_60 <span style="background-color:#7391B9">#7391B9</span>
+</li>
+<li>midnight_blue_40 <span style="background-color:#8AA3C5">#8AA3C5</span>
+</li>
+<li>midnight_blue_20 <span style="background-color:#D0DAE8">#D0DAE8</span>
+</li>
+<li>viking_100 <span style="background-color:#5BB5D5">#5BB5D5</span>
+</li>
+<li>viking_80 <span style="background-color:#7CC4DD">#7CC4DD</span>
+</li>
+<li>viking_60 <span style="background-color:#9DD3E6">#9DD3E6</span>
+</li>
+<li>viking_40 <span style="background-color:#BDE1EE">#BDE1EE</span>
+</li>
+<li>viking_20 <span style="background-color:#DEF0F7">#DEF0F7</span>
+</li>
+<li>slate_100 <span style="background-color:#8C8C91">#8C8C91</span>
+</li>
+<li>slate_80 <span style="background-color:#A3A3A7">#A3A3A7</span>
+</li>
+<li>slate_60 <span style="background-color:#BABABD">#BABABD</span>
+</li>
+<li>slate_40 <span style="background-color:#D1D1D3">#D1D1D3</span>
+</li>
+<li>slate_20 <span style="background-color:#E8E8E9">#E8E8E9</span>
+</li>
+<li>electric_indigo_100 <span style="background-color:#3B5BBE">#3B5BBE</span>
+</li>
+<li>electric_indigo_80 <span style="background-color:#627CCB">#627CCB</span>
+</li>
+<li>electric_indigo_60 <span style="background-color:#899DD8">#899DD8</span>
+</li>
+<li>electric_indigo_40 <span style="background-color:#B1BDE5">#B1BDE5</span>
+</li>
+<li>electric_indigo_20 <span style="background-color:#D8DEF2">#D8DEF2</span>
+</li>
+<li>orchid_bloom_100 <span style="background-color:#E14BA1">#E14BA1</span>
+</li>
+<li>orchid_bloom_80 <span style="background-color:#E571B0">#E571B0</span>
+</li>
+<li>orchid_bloom_60 <span style="background-color:#EB95C4">#EB95C4</span>
+</li>
+<li>orchid_bloom_40 <span style="background-color:#F2B8D7">#F2B8D7</span>
+</li>
+<li>orchid_bloom_20 <span style="background-color:#F8DCEB">#F8DCEB</span>
+</li>
+<li>sun_kissed_100 <span style="background-color:#F9C555">#F9C555</span>
+</li>
+<li>sun_kissed_80 <span style="background-color:#FAD177">#FAD177</span>
+</li>
+<li>sun_kissed_60 <span style="background-color:#FBDC99">#FBDC99</span>
+</li>
+<li>sun_kissed_40 <span style="background-color:#FDE8BB">#FDE8BB</span>
+</li>
+<li>sun_kissed_20 <span style="background-color:#FEF3DD">#FEF3DD</span>
+</li>
+<li>hunter_100 <span style="background-color:#419164">#419164</span>
+</li>
+<li>hunter_80 <span style="background-color:#67A784">#67A784</span>
+</li>
+<li>hunter_60 <span style="background-color:#8DBDA2">#8DBDA2</span>
+</li>
+<li>hunter_40 <span style="background-color:#B3D3C1">#B3D3C1</span>
+</li>
+<li>hunter_20 <span style="background-color:#D9E9E0">#D9E9E0</span>
+</li>
+<li>lavender_haze_100 <span style="background-color:#876EC4">#876EC4</span>
+</li>
+<li>lavender_haze_80 <span style="background-color:#9F8BD0">#9F8BD0</span>
+</li>
+<li>lavender_haze_60 <span style="background-color:#B7A8DC">#B7A8DC</span>
+</li>
+<li>lavender_haze_40 <span style="background-color:#CFC5E7">#CFC5E7</span>
+</li>
+<li>lavender_haze_20 <span style="background-color:#E7E2F3">#E7E2F3</span>
+</li>
+<li>tango_100 <span style="background-color:#F36428">#F36428</span>
+</li>
+<li>tango_80 <span style="background-color:#F58353">#F58353</span>
+</li>
+<li>tango_60 <span style="background-color:#F8A27E">#F8A27E</span>
+</li>
+<li>tango_40 <span style="background-color:#FAC1A9">#FAC1A9</span>
+</li>
+<li>tango_20 <span style="background-color:#FDE0D4">#FDE0D4</span>
+</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="oha-classic-colors-2022">OHA Classic Colors (2022)<a class="anchor" aria-label="anchor" href="#oha-classic-colors-2022"></a>
+</h3>
 <ul>
 <li>denim: <span style="background-color:#2057a7">#2057a7</span>
 </li>
@@ -140,9 +309,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-classic-light-colors">OHA Classic Light Colors<a class="anchor" aria-label="anchor" href="#oha-classic-light-colors"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-classic-light-colors">OHA Classic Light Colors<a class="anchor" aria-label="anchor" href="#oha-classic-light-colors"></a>
+</h3>
 <ul>
 <li>denim_light: <span style="background-color:#bfddff">#bfddff</span>
 </li>
@@ -164,48 +333,17 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-grays-from-oha-style-guide">OHA Grays from OHA Style Guide<a class="anchor" aria-label="anchor" href="#oha-grays-from-oha-style-guide"></a>
-</h4>
-<ul>
-<li>nero: <span style="background-color:#202020">#202020</span>
-</li>
-<li>matterhorn: <span style="background-color:#505050">#505050</span>
-</li>
-<li>suva_grey: <span style="background-color:#909090">#909090</span>
-</li>
-<li>whisper: <span style="background-color:#ebebeb">#ebebeb</span>
-</li>
-<li>light_grey: <span style="background-color:#d3d3d3">#d3d3d3</span>
-</li>
-</ul>
 </div>
-<div class="section level4">
-<h4 id="standard-usaid-colors-from-usaid-style-guide">Standard USAID colors from USAID Style Guide<a class="anchor" aria-label="anchor" href="#standard-usaid-colors-from-usaid-style-guide"></a>
-</h4>
-<ul>
-<li>usaid_blue: <span style="background-color:#002a6c">#002a6c</span>
-</li>
-<li>usaid_red: <span style="background-color:#ba0c2f">#ba0c2f</span>
-</li>
-<li>usaid_black: <span style="background-color:#212721">#212721</span>
-</li>
-<li>usaid_medblue: <span style="background-color:#0067b9">#0067b9</span>
-</li>
-<li>usaid_lightblue: <span style="background-color:#a7c6ed">#a7c6ed</span>
-</li>
-<li>usaid_darkgrey: <span style="background-color:#6c6463">#6c6463</span>
-</li>
-<li>usaid_medgrey: <span style="background-color:#8C8985">#8C8985</span>
-</li>
-<li>usaid_lightgrey: <span style="background-color:#cfcdc9">#cfcdc9</span>
-</li>
-</ul>
-</div>
-<div class="section level4">
-<h4 id="gray-palette-from-laura-d--hughes-who-was-inspired-by-adobe-grays">Gray Palette from Laura D. Hughes who was inspired by Adobe
+<div class="section level2">
+<h2 id="additional-standalone-colors">Additional Standalone Colors<a class="anchor" aria-label="anchor" href="#additional-standalone-colors"></a>
+</h2>
+<p>The colors in this section are supplemental colors that can be used
+or referenced and are also in <code>glitr</code> as objects that can be
+directly called/used.</p>
+<div class="section level3">
+<h3 id="gray-palette-from-laura-d--hughes-who-was-inspired-by-adobe-grays">Gray Palette from Laura D. Hughes who was inspired by Adobe
 #grays<a class="anchor" aria-label="anchor" href="#gray-palette-from-laura-d--hughes-who-was-inspired-by-adobe-grays"></a>
-</h4>
+</h3>
 <ul>
 <li>grey10k: <span style="background-color:#E6E7E8">#E6E7E8</span>
 </li>
@@ -227,9 +365,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="pantone-color-of-the-year-2000-2024">Pantone Color of the Year (2000-2024)<a class="anchor" aria-label="anchor" href="#pantone-color-of-the-year-2000-2024"></a>
-</h4>
+<div class="section level3">
+<h3 id="pantone-color-of-the-year-2000-2025">Pantone Color of the Year (2000-2025)<a class="anchor" aria-label="anchor" href="#pantone-color-of-the-year-2000-2025"></a>
+</h3>
 <ul>
 <li>pantone_cerulean: <span style="background-color:#9BB7D4">#9BB7D4</span>
 </li>
@@ -285,11 +423,13 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 <li>pantone_peach_fuzz: <span style="background-color:#FEBE98">#FEBE98</span>
 </li>
+<li>pantone_mocha_mousse: <span style="background-color:#A47764">#A47764</span>
+</li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="washington-post-inspired-colors">Washington Post Inspired colors<a class="anchor" aria-label="anchor" href="#washington-post-inspired-colors"></a>
-</h4>
+<div class="section level3">
+<h3 id="washington-post-inspired-colors">Washington Post Inspired colors<a class="anchor" aria-label="anchor" href="#washington-post-inspired-colors"></a>
+</h3>
 <ul>
 <li>wapo_lpurple: <span style="background-color:#C7ABC7">#C7ABC7</span>
 </li>
@@ -314,13 +454,19 @@ until data are sufficiently encoded to reinforce the message.</p>
 </ul>
 </div>
 </div>
-</div>
 <div class="section level2">
 <h2 id="palettes">Palettes<a class="anchor" aria-label="anchor" href="#palettes"></a>
 </h2>
-<div class="section level4">
-<h4 id="oha">OHA<a class="anchor" aria-label="anchor" href="#oha"></a>
-</h4>
+<p>These sets of palettes are stored as nested lists in the object
+<code>si_palettes</code>. To see the full set in R, you can simply run
+<code>si_palettes</code> in the command line. To access specific
+palettes, you will need to call that list,
+e.g. <code>si_palettes$hunter_t</code>, which will return the full set
+of colors stored in that palette. You can also call a specific color in
+that palette, e.g. <code>si_palettes$hunter_t[3]</code></p>
+<div class="section level3">
+<h3 id="oha">OHA<a class="anchor" aria-label="anchor" href="#oha"></a>
+</h3>
 <ul>
 <li>siei: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #8C8C91">#8C8C91</span> <span style="background-color: #E14BA1">#E14BA1</span> <span style="background-color: #3B5BBE">#3B5BBE</span> <span style="background-color: #F9C555">#F9C555</span> <span style="background-color: #419164">#419164</span> <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #F36428">#F36428</span>
 </li>
@@ -334,9 +480,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-tints-ordered">OHA Tints (Ordered)<a class="anchor" aria-label="anchor" href="#oha-tints-ordered"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-tints-ordered">OHA Tints (Ordered)<a class="anchor" aria-label="anchor" href="#oha-tints-ordered"></a>
+</h3>
 <ul>
 <li>midnight_blue_t: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #446CA1">#446CA1</span> <span style="background-color: #7391B9">#7391B9</span> <span style="background-color: #8AA3C5">#8AA3C5</span> <span style="background-color: #D0DAE8">#D0DAE8</span>
 </li>
@@ -363,9 +509,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-discrete-categoricalordered">OHA Discrete (Categorical/Ordered)<a class="anchor" aria-label="anchor" href="#oha-discrete-categoricalordered"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-discrete-categoricalordered">OHA Discrete (Categorical/Ordered)<a class="anchor" aria-label="anchor" href="#oha-discrete-categoricalordered"></a>
+</h3>
 <ul>
 <li>midnight_blue_d: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #8AA3C4">#8AA3C4</span> <span style="background-color: #9DD3E6">#9DD3E6</span> <span style="background-color: #8C8C91">#8C8C91</span>
 </li>
@@ -389,9 +535,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-continuous-categoricalordered">OHA Continuous (Categorical/Ordered)<a class="anchor" aria-label="anchor" href="#oha-continuous-categoricalordered"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-continuous-categoricalordered">OHA Continuous (Categorical/Ordered)<a class="anchor" aria-label="anchor" href="#oha-continuous-categoricalordered"></a>
+</h3>
 <ul>
 <li>midnight_blue_c: <span style="background-color: #1d263e">#1d263e</span> <span style="background-color: #26365b">#26365b</span> <span style="background-color: #354772">#354772</span> <span style="background-color: #485886">#485886</span> <span style="background-color: #5c6b98">#5c6b98</span> <span style="background-color: #717ea8">#717ea8</span> <span style="background-color: #8791b7">#8791b7</span> <span style="background-color: #9ea5c5">#9ea5c5</span> <span style="background-color: #b5bad2">#b5bad2</span> <span style="background-color: #cccfdf">#cccfdf</span>
 </li>
@@ -418,9 +564,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-classic">OHA Classic<a class="anchor" aria-label="anchor" href="#oha-classic"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-classic">OHA Classic<a class="anchor" aria-label="anchor" href="#oha-classic"></a>
+</h3>
 <ul>
 <li>siei_classic: <span style="background-color: #2057a7">#2057a7</span>
 <span style="background-color: #c43d4d">#c43d4d</span> <span style="background-color: #8980cb">#8980cb</span> <span style="background-color: #e07653">#e07653</span> <span style="background-color: #1e87a5">#1e87a5</span> <span style="background-color: #f2bc40">#f2bc40</span> <span style="background-color: #287c6f">#287c6f</span> <span style="background-color: #808080">#808080</span>
@@ -433,9 +579,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-classic-discrete-ordered">OHA Classic Discrete (Ordered)<a class="anchor" aria-label="anchor" href="#oha-classic-discrete-ordered"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-classic-discrete-ordered">OHA Classic Discrete (Ordered)<a class="anchor" aria-label="anchor" href="#oha-classic-discrete-ordered"></a>
+</h3>
 <ul>
 <li>denim: <span style="background-color:#2057a7">#2057a7</span> <span style="background-color:#1e87a5">#1e87a5</span> <span style="background-color:#e07653">#e07653</span> <span style="background-color:#f2bc40">#f2bc40</span> <span style="background-color:#8980cb">#8980cb</span>
 </li>
@@ -457,9 +603,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="oha-continuous">OHA Continuous<a class="anchor" aria-label="anchor" href="#oha-continuous"></a>
-</h4>
+<div class="section level3">
+<h3 id="oha-continuous">OHA Continuous<a class="anchor" aria-label="anchor" href="#oha-continuous"></a>
+</h3>
 <ul>
 <li>denims: <span style="background-color:#bfddff">#bfddff</span> <span style="background-color:#a5c5ff">#a5c5ff</span> <span style="background-color:#8badfe">#8badfe</span> <span style="background-color:#7396ee">#7396ee</span> <span style="background-color:#5b82d8">#5b82d8</span> <span style="background-color:#436ec1">#436ec1</span> <span style="background-color:#265bab">#265bab</span> <span style="background-color:#074895">#074895</span> <span style="background-color:#00347d">#00347d</span> <span style="background-color:#002065">#002065</span> <span style="background-color:#000c4f">#000c4f</span>
 </li>
@@ -485,18 +631,18 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="usaid">USAID<a class="anchor" aria-label="anchor" href="#usaid"></a>
-</h4>
+<div class="section level3">
+<h3 id="usaid">USAID<a class="anchor" aria-label="anchor" href="#usaid"></a>
+</h3>
 <ul>
 <li>usaid_colors: <span style="background-color:#002a6c">#002a6c</span>
 <span style="background-color:#ba0c2f">#ba0c2f</span> <span style="background-color:#212721">#212721</span> <span style="background-color:#0067b9">#0067b9</span> <span style="background-color:#a7c6ed">#a7c6ed</span> <span style="background-color:#6c6463">#6c6463</span> <span style="background-color:#8C8985">#8C8985</span> <span style="background-color:#cfcdc9">#cfcdc9</span>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="cartodb-colors">Cartodb Colors<a class="anchor" aria-label="anchor" href="#cartodb-colors"></a>
-</h4>
+<div class="section level3">
+<h3 id="cartodb-colors">Cartodb Colors<a class="anchor" aria-label="anchor" href="#cartodb-colors"></a>
+</h3>
 <ul>
 <li>carto_burgyl: <span style="background-color:#fbe6c5">#fbe6c5</span>
 <span style="background-color:#f5ba98">#f5ba98</span> <span style="background-color:#ee8a82">#ee8a82</span> <span style="background-color:#dc7176">#dc7176</span> <span style="background-color:#c8586c">#c8586c</span> <span style="background-color:#9c3f5d">#9c3f5d</span> <span style="background-color:#70284a">#70284a</span>
@@ -518,9 +664,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="carto-diverging">Carto Diverging<a class="anchor" aria-label="anchor" href="#carto-diverging"></a>
-</h4>
+<div class="section level3">
+<h3 id="carto-diverging">Carto Diverging<a class="anchor" aria-label="anchor" href="#carto-diverging"></a>
+</h3>
 <ul>
 <li>carto_div_armyrose: <span style="background-color:#798234">#798234</span> <span style="background-color:#a3ad62">#a3ad62</span> <span style="background-color:#d0d3a2">#d0d3a2</span> <span style="background-color:#fdfbe4">#fdfbe4</span> <span style="background-color:#f0c6c3">#f0c6c3</span> <span style="background-color:#df91a3">#df91a3</span> <span style="background-color:#d46780">#d46780</span>
 </li>
@@ -538,9 +684,9 @@ until data are sufficiently encoded to reinforce the message.</p>
 </li>
 </ul>
 </div>
-<div class="section level4">
-<h4 id="other">Other<a class="anchor" aria-label="anchor" href="#other"></a>
-</h4>
+<div class="section level3">
+<h3 id="other">Other<a class="anchor" aria-label="anchor" href="#other"></a>
+</h3>
 <ul>
 <li>pantone: <span style="background-color: #9BB7D4">#9BB7D4</span>
 <span style="background-color: #C74375">#C74375</span> <span style="background-color: #BF1932">#BF1932</span> <span style="background-color: #7BC4C4">#7BC4C4</span> <span style="background-color: #E2583E">#E2583E</span> <span style="background-color: #53B0AE">#53B0AE</span> <span style="background-color: #DECDBE">#DECDBE</span> <span style="background-color: #9B1B30">#9B1B30</span> <span style="background-color: #5A5B9F">#5A5B9F</span> <span style="background-color: #F0C05A">#F0C05A</span> <span style="background-color: #D94F70">#D94F70</span> <span style="background-color: #45B5AA">#45B5AA</span> <span style="background-color: #DD4124">#DD4124</span> <span style="background-color: #009473">#009473</span> <span style="background-color: #AD5E99">#AD5E99</span> <span style="background-color: #964F4C">#964F4C</span> <span style="background-color: #93A9D1">#93A9D1</span> <span style="background-color: #F7CACA">#F7CACA</span> <span style="background-color: #88B04B">#88B04B</span> <span style="background-color: #5F4B8B">#5F4B8B</span> <span style="background-color: #FF6F61">#FF6F61</span> <span style="background-color: #0F4C81">#0F4C81</span> <span style="background-color: #939597">#939597</span> <span style="background-color: #F5DF4D">#F5DF4D</span> <span style="background-color: #6768AB">#6768AB</span> <span style="background-color: #BE3455">#BE3455</span> <span style="background-color: #FEBE98">#FEBE98</span>
@@ -585,7 +731,7 @@ until data are sufficiently encoded to reinforce the message.</p>
 </div>
 
 <div class="pkgdown-footer-right">
-  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.0.</p>
+  <p>Site built with <a href="https://pkgdown.r-lib.org/" class="external-link">pkgdown</a> 2.1.1.</p>
 </div>
 
     </footer>
