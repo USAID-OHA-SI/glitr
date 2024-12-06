@@ -90,6 +90,54 @@ reference:
   - '`whisper`'
   - '`light_grey`'
 
+- title: OHA Tints
+  contents:
+  - midnight_blue_100
+  - midnight_blue_80
+  - midnight_blue_60
+  - midnight_blue_40
+  - midnight_blue_20
+  - viking_100
+  - viking_80
+  - viking_60
+  - viking_40
+  - viking_20
+  - slate_100
+  - slate_80
+  - slate_60
+  - slate_40
+  - slate_20
+  - electric_indigo_100
+  - electric_indigo_80
+  - electric_indigo_60
+  - electric_indigo_40
+  - electric_indigo_20
+  - orchid_bloom_100
+  - orchid_bloom_80
+  - orchid_bloom_60
+  - orchid_bloom_40
+  - orchid_bloom_20
+  - sun_kissed_100
+  - sun_kissed_80
+  - sun_kissed_60
+  - sun_kissed_40
+  - sun_kissed_20
+  - hunter_100
+  - hunter_80
+  - hunter_60
+  - hunter_40
+  - hunter_20
+  - lavender_haze_100
+  - lavender_haze_80
+  - lavender_haze_60
+  - lavender_haze_40
+  - lavender_haze_20
+  - tango_100
+  - tango_80
+  - tango_60
+  - tango_40
+  - tango_20
+
 - title: Classic OHA Colors
   contents:
   - '`burnt_sienna`'
@@ -188,6 +236,7 @@ reference:
   - '`pantone_very_peri`'
   - '`pantone_viva_magenta`'
   - '`pantone_peach_fuzz`'
+  - '`pantone_mocha_mousse`'
 
 - title: Sample Data
   contents:

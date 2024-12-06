@@ -31,6 +31,7 @@ Other pantone:
 \code{\link{pantone_living_coral}},
 \code{\link{pantone_marsala}},
 \code{\link{pantone_mimosa}},
+\code{\link{pantone_mocha_mousse}},
 \code{\link{pantone_peach_fuzz}},
 \code{\link{pantone_radiant_orchid}},
 \code{\link{pantone_sand_dollar}},
