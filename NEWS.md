@@ -1,6 +1,7 @@
 # glitr 0.3
+* Updated vignettes to use the 2024 OHA Style colors [2024-12-06]
 * Include all tints of OHA colors as their own objects to make them easier to access [2024-12-05] 
-* Add new Patone 2025 color of the year [2024-12-05]
+* Add new Pantone 2025 color of the year [2024-12-05]
 
 # glitr 0.2
 * Add `si_style_transparent` theme for transparent visuals [2020-07-17]
