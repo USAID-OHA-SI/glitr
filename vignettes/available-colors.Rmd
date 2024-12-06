@@ -14,21 +14,27 @@ knitr::opts_chunk$set(
 )
 ```
 
-### Background (from OHA Style Guide)
-The [USAID Graphics Standard Manual](https://www.usaid.gov/branding/gsm) lays out the two colors found in the agency’s logo as the primary color palette, USAID Blue and USAID Red. These colors are used to “reinforce that the aid is From the American people” but provide a limited range of colors to work with for data visualization.
+## Background (from the Color section of the 2024 OHA Data Viz Guide)
+The [USAID Graphics Standard Manual](https://www.usaid.gov/branding/gsm) lays out the two colors found in the agency’s logo as the primary branding color palette, **<span style="background-color:#002a6c">USAID Blue</span>** and **<span style="background-color:#ba0c2f">USAID Red</span>**. These colors are used to “reinforce that the aid is From the American people” but provide a limited range of colors to work with for data visualization. 
 
-OHA has developed an offshoot of these colors for visualization, expanding the number of categorical colors to choose from and creating a color-blind friendly palette (508 compliant). 
+OHA has developed an offshoot of these colors for visualization, expanding the number of categorical colors to choose from and creating a color-blind friendly palette (508 compliant). We started with primary USAID Blue and used a combination of platforms ([Adobe Color](https://color.adobe.com/), [Viz Palette](https://projects.susielu.com/viz-palette), [Coolors](https://coolors.co/), [Behance](https://behance.net/), [chroma.js](https://gka.github.io/palettes/), and Adobe Illustrator), to identify and then modifying an offshoot categorical palette. The **<span style="background-color:#ba0c2f">USAID Red</span>** was dropped due to high saturation and often negative connotations associated with its use in Western culture to mean threat or danger. From there, we expanded the identified colors into a full palette of categorical and continuous/sequential colors using tints. We finally revisiting the **<span style="background-color:#002a6c">USAID Blue</span>**, dropping the saturation roughly 20 percent to reduce the stark contrast when used to other graphic elements in the visualization. 
 
-Strategic use of the OHA palette allows for consistent branding and reduces the time needed to think through color choices in every visualization. That said, colors should be used meaningfully and thought should be given to how these standard colors accentuate the visual/message.
+In addition to the color encoding for the visuals, we have also identified an assortment of grays to be used for the chart elements. The application of these specific colors for the chart elements further enhances the visual’s look and feel as an OHA product.
 
-Use USAID colors and text for all banners, text and text boxes. The USAID colors are available for use in graphs and charts, however the OHA palette is specifically for use in data visualization products (charts, graphs, visuals etc.). If in doubt of what color to use, try creating a visualization in black and white first. Then, add colors one at a time until data are sufficiently encoded to reinforce the message.
+Strategic use of the OHA palette allows for consistent branding and reduces the time needed to think through color choices in every visualization. That said, colors should be used meaningfully and thought should be given to how these standard colors accentuate the visual/message. If in doubt of what colors to use, try creating a visualization in black and white first. Then, add color to specific elements one at a time until data are sufficiently encoded to reinforce the message.
 
-## Standalone Colors
+Outside of the visualization, default to using the USAID branding color palette and prescribed typeface for all banners, text, and text boxes. The USAID colors are available for use in graphs and charts, however the OHA palette is specifically for use in data visualization products (charts, graphs, visuals etc.). 
 
-### OHA Palette from OHA Style Guide (2024)
+## Data Viz Guide Standalone Colors
+
+The colors in this section are found in the OHA Data Viz Guide and are stored in `glitr` as objects that can be directly called/used.
+
+### OHA Primary Palette
 - midnight_blue <span style="background-color:#15478A">#15478A</span>
 - viking <span style="background-color:#5BB5D5">#5BB5D5</span>
 - slate <span style="background-color:#8C8C91">#8C8C91</span>
+
+### OHA Secondary Palette
 - orchid_bloom <span style="background-color:#E14BA1">#E14BA1</span>
 - electric_indigo <span style="background-color:#3B5BBE">#3B5BBE</span>
 - sun_kissed <span style="background-color:#F9C555">#F9C555</span>
@@ -36,7 +42,73 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - lavender_haze <span style="background-color:#876EC4">#876EC4</span>
 - tango <span style="background-color:#F36428">#F36428</span>
 
-#### OHA Classic Colors (2022)
+### OHA Grays [Chart Elements] Palette
+- nero [title]: <span style="background-color:#202020">#202020</span>
+- matterhorn [Subtitle/Body, Reference Line]: <span style="background-color:#505050">#505050</span>
+- suva_grey [Source/Note]: <span style="background-color:#909090">#909090</span>
+- whisper [Shaded Area]: <span style="background-color:#ebebeb">#ebebeb</span>
+- light_grey [Grid Line]: <span style="background-color:#d3d3d3">#d3d3d3</span>
+
+### USAID Primary Palette
+- usaid_blue: <span style="background-color:#002a6c">#002a6c</span>
+- usaid_red: <span style="background-color:#ba0c2f">#ba0c2f</span>
+
+### USAID Secondary Palette
+- usaid_black: <span style="background-color:#212721">#212721</span>
+- usaid_medblue: <span style="background-color:#0067b9">#0067b9</span>
+- usaid_lightblue: <span style="background-color:#a7c6ed">#a7c6ed</span>
+- usaid_darkgrey: <span style="background-color:#6c6463">#6c6463</span>
+- usaid_medgrey: <span style="background-color:#8C8985">#8C8985</span>
+- usaid_lightgrey: <span style="background-color:#cfcdc9">#cfcdc9</span>
+
+### OHA Tints Colors
+- midnight_blue_100 <span style="background-color:#15478A">#15478A</span>
+- midnight_blue_80 <span style="background-color:#446CA1">#446CA1</span>
+- midnight_blue_60 <span style="background-color:#7391B9">#7391B9</span>
+- midnight_blue_40 <span style="background-color:#8AA3C5">#8AA3C5</span>
+- midnight_blue_20 <span style="background-color:#D0DAE8">#D0DAE8</span>
+- viking_100 <span style="background-color:#5BB5D5">#5BB5D5</span>
+- viking_80 <span style="background-color:#7CC4DD">#7CC4DD</span>
+- viking_60 <span style="background-color:#9DD3E6">#9DD3E6</span>
+- viking_40 <span style="background-color:#BDE1EE">#BDE1EE</span>
+- viking_20 <span style="background-color:#DEF0F7">#DEF0F7</span>
+- slate_100 <span style="background-color:#8C8C91">#8C8C91</span>
+- slate_80 <span style="background-color:#A3A3A7">#A3A3A7</span>
+- slate_60 <span style="background-color:#BABABD">#BABABD</span>
+- slate_40 <span style="background-color:#D1D1D3">#D1D1D3</span>
+- slate_20 <span style="background-color:#E8E8E9">#E8E8E9</span>
+- electric_indigo_100 <span style="background-color:#3B5BBE">#3B5BBE</span>
+- electric_indigo_80 <span style="background-color:#627CCB">#627CCB</span>
+- electric_indigo_60 <span style="background-color:#899DD8">#899DD8</span>
+- electric_indigo_40 <span style="background-color:#B1BDE5">#B1BDE5</span>
+- electric_indigo_20 <span style="background-color:#D8DEF2">#D8DEF2</span>
+- orchid_bloom_100 <span style="background-color:#E14BA1">#E14BA1</span>
+- orchid_bloom_80 <span style="background-color:#E571B0">#E571B0</span>
+- orchid_bloom_60 <span style="background-color:#EB95C4">#EB95C4</span>
+- orchid_bloom_40 <span style="background-color:#F2B8D7">#F2B8D7</span>
+- orchid_bloom_20 <span style="background-color:#F8DCEB">#F8DCEB</span>
+- sun_kissed_100 <span style="background-color:#F9C555">#F9C555</span>
+- sun_kissed_80 <span style="background-color:#FAD177">#FAD177</span>
+- sun_kissed_60 <span style="background-color:#FBDC99">#FBDC99</span>
+- sun_kissed_40 <span style="background-color:#FDE8BB">#FDE8BB</span>
+- sun_kissed_20 <span style="background-color:#FEF3DD">#FEF3DD</span>
+- hunter_100 <span style="background-color:#419164">#419164</span>
+- hunter_80 <span style="background-color:#67A784">#67A784</span>
+- hunter_60 <span style="background-color:#8DBDA2">#8DBDA2</span>
+- hunter_40 <span style="background-color:#B3D3C1">#B3D3C1</span>
+- hunter_20 <span style="background-color:#D9E9E0">#D9E9E0</span>
+- lavender_haze_100 <span style="background-color:#876EC4">#876EC4</span>
+- lavender_haze_80 <span style="background-color:#9F8BD0">#9F8BD0</span>
+- lavender_haze_60 <span style="background-color:#B7A8DC">#B7A8DC</span>
+- lavender_haze_40 <span style="background-color:#CFC5E7">#CFC5E7</span>
+- lavender_haze_20 <span style="background-color:#E7E2F3">#E7E2F3</span>
+- tango_100 <span style="background-color:#F36428">#F36428</span>
+- tango_80 <span style="background-color:#F58353">#F58353</span>
+- tango_60 <span style="background-color:#F8A27E">#F8A27E</span>
+- tango_40 <span style="background-color:#FAC1A9">#FAC1A9</span>
+- tango_20 <span style="background-color:#FDE0D4">#FDE0D4</span>
+
+### OHA Classic Colors (2022)
 - denim: <span style="background-color:#2057a7">#2057a7</span>
 - old_rose: <span style="background-color:#c43d4d">#c43d4d</span>
 - moody_blue: <span style="background-color:#8980cb">#8980cb</span>
@@ -46,7 +118,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - genoa: <span style="background-color:#287c6f">#287c6f</span>
 - trolley_grey: <span style="background-color:#808080">#808080</span>
 
-#### OHA Classic Light Colors
+### OHA Classic Light Colors
 - denim_light: <span style="background-color:#bfddff">#bfddff</span>
 - old_rose_light: <span style="background-color:#ff939a">#ff939a</span>
 - moody_blue_light: <span style="background-color:#dfd3ff">#dfd3ff</span>
@@ -57,24 +129,11 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - genoa_light: <span style="background-color:#7ecfc0">#7ecfc0</span>
 - trolley_grey_light: <span style="background-color:#e6e6e6">#e6e6e6</span>
 
-#### OHA Grays from OHA Style Guide
-- nero: <span style="background-color:#202020">#202020</span>
-- matterhorn: <span style="background-color:#505050">#505050</span>
-- suva_grey: <span style="background-color:#909090">#909090</span>
-- whisper: <span style="background-color:#ebebeb">#ebebeb</span>
-- light_grey: <span style="background-color:#d3d3d3">#d3d3d3</span>
+## Additional Standalone Colors
 
-#### Standard USAID colors from USAID Style Guide
-- usaid_blue: <span style="background-color:#002a6c">#002a6c</span>
-- usaid_red: <span style="background-color:#ba0c2f">#ba0c2f</span>
-- usaid_black: <span style="background-color:#212721">#212721</span>
-- usaid_medblue: <span style="background-color:#0067b9">#0067b9</span>
-- usaid_lightblue: <span style="background-color:#a7c6ed">#a7c6ed</span>
-- usaid_darkgrey: <span style="background-color:#6c6463">#6c6463</span>
-- usaid_medgrey: <span style="background-color:#8C8985">#8C8985</span>
-- usaid_lightgrey: <span style="background-color:#cfcdc9">#cfcdc9</span>
+The colors in this section are supplemental colors that can be used or referenced and are also in `glitr` as objects that can be directly called/used.
 
-#### Gray Palette from Laura D. Hughes who was inspired by Adobe #grays
+### Gray Palette from Laura D. Hughes who was inspired by Adobe #grays
 - grey10k: <span style="background-color:#E6E7E8">#E6E7E8</span>
 - grey20k: <span style="background-color:#d1d3d4">#d1d3d4</span>
 - grey30k: <span style="background-color:#BCBEC0">#BCBEC0</span>
@@ -85,7 +144,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - grey80k: <span style="background-color:#58595b">#58595b</span>
 - grey90k: <span style="background-color:#414042">#414042</span>
 
-#### Pantone Color of the Year (2000-2024)
+### Pantone Color of the Year (2000-2025)
 - pantone_cerulean: <span style="background-color:#9BB7D4">#9BB7D4</span>
 - pantone_fuchsia_rose: <span style="background-color:#C74375">#C74375</span>
 - pantone_true_red: <span style="background-color:#BF1932">#BF1932</span>
@@ -113,8 +172,9 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - pantone_very_peri: <span style="background-color:#6768AB">#6768AB</span>
 - pantone_viva_magenta: <span style="background-color:#BE3455">#BE3455</span>
 - pantone_peach_fuzz: <span style="background-color:#FEBE98">#FEBE98</span>
+- pantone_mocha_mousse: <span style="background-color:#A47764">#A47764</span>
 
-#### Washington Post Inspired colors
+### Washington Post Inspired colors
 - wapo_lpurple: <span style="background-color:#C7ABC7">#C7ABC7</span>
 - wapo_lorange: <span style="background-color:#F4AB67">#F4AB67</span>
 - wapo_pushpop: <span style="background-color:#FEC693">#FEC693</span>
@@ -128,13 +188,15 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 
 ## Palettes 
 
-#### OHA
+These sets of palettes are stored as nested lists in the object `si_palettes`. To see the full set in R, you can simply run `si_palettes` in the command line. To access specific palettes, you will need to call that list, e.g. `si_palettes$hunter_t`, which will return the full set of colors stored in that palette. You can also call a specific color in that palette, e.g. `si_palettes$hunter_t[3]`
+
+### OHA
 - siei: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #8C8C91">#8C8C91</span> <span style="background-color: #E14BA1">#E14BA1</span> <span style="background-color: #3B5BBE">#3B5BBE</span> <span style="background-color: #F9C555">#F9C555</span> <span style="background-color: #419164">#419164</span> <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #F36428">#F36428</span>
 - siei_pairs: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #7391B9">#7391B9</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #9DD3E6">#9DD3E6</span> <span style="background-color: #8C8C91">#8C8C91</span> <span style="background-color: #BABABD">#BABABD</span> <span style="background-color: #3B5BBE">#3B5BBE</span> <span style="background-color: #899DD8">#899DD8</span> <span style="background-color: #E14BA1">#E14BA1</span> <span style="background-color: #EB95C4">#EB95C4</span> <span style="background-color: #F9C555">#F9C555</span> <span style="background-color: #FBDC99">#FBDC99</span> <span style="background-color: #419164">#419164</span> <span style="background-color: #8DBDA2">#8DBDA2</span> <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #B7A8DC">#B7A8DC</span> <span style="background-color: #F36428">#F36428</span> <span style="background-color: #F8A27E">#F8A27E</span>
 - siei_achv: <span style="background-color: #F8A27E">#F8A27E</span> <span style="background-color: #FBDC99">#FBDC99</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #697EBC">#697EBC</span>
 - siei_agencies: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #9DD3E6">#9DD3E6</span> <span style="background-color: #8DBDA2">#8DBDA2</span> <span style="background-color: #B7A8DC">#B7A8DC</span> <span style="background-color: #BABABD">#BABABD</span>
 
-#### OHA Tints (Ordered)
+### OHA Tints (Ordered)
 - midnight_blue_t: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #446CA1">#446CA1</span> <span style="background-color: #7391B9">#7391B9</span> <span style="background-color: #8AA3C5">#8AA3C5</span> <span style="background-color: #D0DAE8">#D0DAE8</span>
 - viking_t: <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #7CC4DD">#7CC4DD</span> <span style="background-color: #9DD3E6">#9DD3E6</span> <span style="background-color: #BDE1EE">#BDE1EE</span> <span style="background-color: #DEF0F7">#DEF0F7</span>
 - slate_t: <span style="background-color: #8C8C91">#8C8C91</span> <span style="background-color: #A3A3A7">#A3A3A7</span> <span style="background-color: #BABABD">#BABABD</span> <span style="background-color: #D1D1D3">#D1D1D3</span> <span style="background-color: #E8E8E9">#E8E8E9</span>
@@ -145,7 +207,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - lavender_haze_t: <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #9F8BD0">#9F8BD0</span> <span style="background-color: #B7A8DC">#B7A8DC</span> <span style="background-color: #CFC5E7">#CFC5E7</span> <span style="background-color: #E7E2F3">#E7E2F3</span>
 - tango_t: <span style="background-color: #F36428">#F36428</span> <span style="background-color: #F58353">#F58353</span> <span style="background-color: #F8A27E">#F8A27E</span> <span style="background-color: #FAC1A9">#FAC1A9</span> <span style="background-color: #FDE0D4">#FDE0D4</span>
 
-#### OHA Discrete (Categorical/Ordered)
+### OHA Discrete (Categorical/Ordered)
 - midnight_blue_d: <span style="background-color: #15478A">#15478A</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #8AA3C4">#8AA3C4</span> <span style="background-color: #9DD3E6">#9DD3E6</span> <span style="background-color: #8C8C91">#8C8C91</span>
 - viking_d: <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #15478A">#15478A</span> <span style="background-color: #9DD3E6">#9DD3E6</span> <span style="background-color: #8AA3C4">#8AA3C4</span> <span style="background-color: #8C8C91">#8C8C91</span>
 - electric_indigo_d: <span style="background-color: #3B5BBE">#3B5BBE</span> <span style="background-color: #E14BA1">#E14BA1</span> <span style="background-color: #F9C555">#F9C555</span> <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #419164">#419164</span>
@@ -155,7 +217,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - lavender_haze_d: <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #F9C555">#F9C555</span> <span style="background-color: #3B5BBE">#3B5BBE</span> <span style="background-color: #E14BA1">#E14BA1</span> <span style="background-color: #5BB5D5">#5BB5D5</span>
 - tango_d: <span style="background-color: #F36428">#F36428</span> <span style="background-color: #876EC4">#876EC4</span> <span style="background-color: #3B5BBE">#3B5BBE</span> <span style="background-color: #419164">#419164</span> <span style="background-color: #F9C555">#F9C555</span>
 
-#### OHA Continuous (Categorical/Ordered)
+### OHA Continuous (Categorical/Ordered)
 - midnight_blue_c: <span style="background-color: #1d263e">#1d263e</span> <span style="background-color: #26365b">#26365b</span> <span style="background-color: #354772">#354772</span> <span style="background-color: #485886">#485886</span> <span style="background-color: #5c6b98">#5c6b98</span> <span style="background-color: #717ea8">#717ea8</span> <span style="background-color: #8791b7">#8791b7</span> <span style="background-color: #9ea5c5">#9ea5c5</span> <span style="background-color: #b5bad2">#b5bad2</span> <span style="background-color: #cccfdf">#cccfdf</span>
 - viking_c: <span style="background-color: #324d58">#324d58</span> <span style="background-color: #3a5e6c">#3a5e6c</span> <span style="background-color: #446f80">#446f80</span> <span style="background-color: #508093">#508093</span> <span style="background-color: #5f92a6">#5f92a6</span> <span style="background-color: #71a4b8">#71a4b8</span> <span style="background-color: #86b5c9">#86b5c9</span> <span style="background-color: #9ec7d8">#9ec7d8</span> <span style="background-color: #bad8e5">#bad8e5</span> <span style="background-color: #dae8ef">#dae8ef</span>
 - slate_c: <span style="background-color: #3f3f41">#3f3f41</span> <span style="background-color: #4f4f51">#4f4f51</span> <span style="background-color: #5f5f63">#5f5f63</span> <span style="background-color: #707074">#707074</span> <span style="background-color: #828286">#828286</span> <span style="background-color: #939398">#939398</span> <span style="background-color: #a6a6aa">#a6a6aa</span> <span style="background-color: #b9b9bb">#b9b9bb</span> <span style="background-color: #ccccce">#ccccce</span> <span style="background-color: #dfdfe0">#dfdfe0</span>
@@ -166,13 +228,13 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - lavender_haze_c: <span style="background-color: #4f3e51">#4f3e51</span> <span style="background-color: #644b67">#644b67</span> <span style="background-color: #79597c">#79597c</span> <span style="background-color: #8d6990">#8d6990</span> <span style="background-color: #9f79a3">#9f79a3</span> <span style="background-color: #b18bb4">#b18bb4</span> <span style="background-color: #c29ec4">#c29ec4</span> <span style="background-color: #d1b3d3">#d1b3d3</span> <span style="background-color: #dec8df">#dec8df</span> <span style="background-color: #e9dfea">#e9dfea</span>
 - tango_c: <span style="background-color: #65331e">#65331e</span> <span style="background-color: #803e22">#803e22</span> <span style="background-color: #9a4a29">#9a4a29</span> <span style="background-color: #b25934">#b25934</span> <span style="background-color: #c86a42">#c86a42</span> <span style="background-color: #db7c55">#db7c55</span> <span style="background-color: #eb916b">#eb916b</span> <span style="background-color: #f7a786">#f7a786</span> <span style="background-color: #febfa6">#febfa6</span> <span style="background-color: #fdd9cb">#fdd9cb</span>
 
-#### OHA Classic
+### OHA Classic
 - siei_classic: <span style="background-color: #2057a7">#2057a7</span> <span style="background-color: #c43d4d">#c43d4d</span> <span style="background-color: #8980cb">#8980cb</span> <span style="background-color: #e07653">#e07653</span> <span style="background-color: #1e87a5">#1e87a5</span> <span style="background-color: #f2bc40">#f2bc40</span> <span style="background-color: #287c6f">#287c6f</span> <span style="background-color: #808080">#808080</span>
 - siei_classic_pairs: <span style="background-color: #2057a7">#2057a7</span> <span style="background-color: #BFDDFF">#BFDDFF</span> <span style="background-color: #c43d4d">#c43d4d</span> <span style="background-color: #FF939A">#FF939A</span> <span style="background-color: #8980cb">#8980cb</span> <span style="background-color: #DFD3FF">#DFD3FF</span> <span style="background-color: #e07653">#e07653</span> <span style="background-color: #FFCAA2">#FFCAA2</span> <span style="background-color: #1e87a5">#1e87a5</span> <span style="background-color: #83DBFB">#83DBFB</span> <span style="background-color: #f2bc40">#f2bc40</span> <span style="background-color: #FFDDA2">#FFDDA2</span> <span style="background-color: #287c6f">#287c6f</span> <span style="background-color: #7ECFC0">#7ECFC0</span> <span style="background-color: #808080">#808080</span> <span style="background-color: #E6E6E6">#E6E6E6</span>
 - siei_classic_achv: <span style="background-color: #FF939A">#FF939A</span> <span style="background-color: #FFCAA2">#FFCAA2</span> <span style="background-color: #5BB5D5">#5BB5D5</span> <span style="background-color: #E6E6E6">#E6E6E6</span>
 - siei_classic_agencies: <span style="background-color: #2057A7">#2057A7</span> <span style="background-color: #83DBFB">#83DBFB</span> <span style="background-color: #7ECFC0">#7ECFC0</span> <span style="background-color: #8980CB">#8980CB</span> <span style="background-color: #808080">#808080</span>
 
-#### OHA Classic Discrete (Ordered)
+### OHA Classic Discrete (Ordered)
 - denim:  <span style="background-color:#2057a7">#2057a7</span>  <span style="background-color:#1e87a5">#1e87a5</span>  <span style="background-color:#e07653">#e07653</span>  <span style="background-color:#f2bc40">#f2bc40</span>  <span style="background-color:#8980cb">#8980cb</span> 
 - old_rose:  <span style="background-color:#c43d4d">#c43d4d</span>  <span style="background-color:#1e87a5">#1e87a5</span>  <span style="background-color:#8980cb">#8980cb</span>  <span style="background-color:#e07653">#e07653</span>  <span style="background-color:#287c6f">#287c6f</span> 
 - moody_blue:  <span style="background-color:#8980cb">#8980cb</span>  <span style="background-color:#287c6f">#287c6f</span>  <span style="background-color:#2057a7">#2057a7</span>  <span style="background-color:#e07653">#e07653</span>  <span style="background-color:#1e87a5">#1e87a5</span> 
@@ -181,7 +243,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - golden_sand:  <span style="background-color:#f2bc40">#f2bc40</span>  <span style="background-color:#2057a7">#2057a7</span>  <span style="background-color:#287c6f">#287c6f</span>  <span style="background-color:#e07653">#e07653</span>  <span style="background-color:#8980cb">#8980cb</span> 
 - genoa:  <span style="background-color:#287c6f">#287c6f</span>  <span style="background-color:#8980cb">#8980cb</span>  <span style="background-color:#f2bc40">#f2bc40</span>  <span style="background-color:#e07653">#e07653</span>  <span style="background-color:#1e87a5">#1e87a5</span> 
 
-#### OHA Continuous
+### OHA Continuous
 - denims:  <span style="background-color:#bfddff">#bfddff</span>  <span style="background-color:#a5c5ff">#a5c5ff</span>  <span style="background-color:#8badfe">#8badfe</span>  <span style="background-color:#7396ee">#7396ee</span>  <span style="background-color:#5b82d8">#5b82d8</span>  <span style="background-color:#436ec1">#436ec1</span>  <span style="background-color:#265bab">#265bab</span>  <span style="background-color:#074895">#074895</span>  <span style="background-color:#00347d">#00347d</span>  <span style="background-color:#002065">#002065</span>  <span style="background-color:#000c4f">#000c4f</span> 
 - old_roses:  <span style="background-color:#ffb5ba">#ffb5ba</span>  <span style="background-color:#ff989f">#ff989f</span>  <span style="background-color:#fc7a83">#fc7a83</span>  <span style="background-color:#ee636e">#ee636e</span>  <span style="background-color:#d8505d">#d8505d</span>  <span style="background-color:#c33c4c">#c33c4c</span>  <span style="background-color:#af273d">#af273d</span>  <span style="background-color:#990d2e">#990d2e</span>  <span style="background-color:#7f001c">#7f001c</span>  <span style="background-color:#630005">#630005</span>  <span style="background-color:#480000">#480000</span> 
 - moody_blues:  <span style="background-color:#e9ddff">#e9ddff</span>  <span style="background-color:#cfc3ff">#cfc3ff</span>  <span style="background-color:#b5aaf9">#b5aaf9</span>  <span style="background-color:#9e94e0">#9e94e0</span>  <span style="background-color:#877ec9">#877ec9</span>  <span style="background-color:#7069b2">#7069b2</span>  <span style="background-color:#5a559b">#5a559b</span>  <span style="background-color:#454185">#454185</span>  <span style="background-color:#2f2e6f">#2f2e6f</span>  <span style="background-color:#171d5a">#171d5a</span>  <span style="background-color:#000a45">#000a45</span> 
@@ -191,10 +253,10 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - genoas:  <span style="background-color:#a0f2e2">#a0f2e2</span>  <span style="background-color:#89dacb">#89dacb</span>  <span style="background-color:#72c3b4">#72c3b4</span>  <span style="background-color:#5cac9e">#5cac9e</span>  <span style="background-color:#459688">#459688</span>  <span style="background-color:#2d8073">#2d8073</span>  <span style="background-color:#0d6c5f">#0d6c5f</span>  <span style="background-color:#01564b">#01564b</span>  <span style="background-color:#004137">#004137</span>  <span style="background-color:#002e24">#002e24</span>  <span style="background-color:#001b0e">#001b0e</span> 
 - trolley_greys:  <span style="background-color:#E6E7E8">#E6E7E8</span>  <span style="background-color:#D5D7D8">#D5D7D8</span>  <span style="background-color:#C4C6C8">#C4C6C8</span>  <span style="background-color:#B3B5B8">#B3B5B8</span>  <span style="background-color:#A3A4A8">#A3A4A8</span>  <span style="background-color:#939598">#939598</span>  <span style="background-color:#838484">#838484</span>  <span style="background-color:#747576">#747576</span>  <span style="background-color:#646568">#646568</span>  <span style="background-color:#535356">#535356</span>  <span style="background-color:#414042">#414042</span> 
 
-#### USAID
+### USAID
 - usaid_colors:  <span style="background-color:#002a6c">#002a6c</span>  <span style="background-color:#ba0c2f">#ba0c2f</span>  <span style="background-color:#212721">#212721</span>  <span style="background-color:#0067b9">#0067b9</span>  <span style="background-color:#a7c6ed">#a7c6ed</span>  <span style="background-color:#6c6463">#6c6463</span>  <span style="background-color:#8C8985">#8C8985</span>  <span style="background-color:#cfcdc9">#cfcdc9</span> 
 
-#### Cartodb Colors
+### Cartodb Colors
 - carto_burgyl:  <span style="background-color:#fbe6c5">#fbe6c5</span>  <span style="background-color:#f5ba98">#f5ba98</span>  <span style="background-color:#ee8a82">#ee8a82</span>  <span style="background-color:#dc7176">#dc7176</span>  <span style="background-color:#c8586c">#c8586c</span>  <span style="background-color:#9c3f5d">#9c3f5d</span>  <span style="background-color:#70284a">#70284a</span> 
 - carto_sunset:  <span style="background-color:#fcde9c">#fcde9c</span>  <span style="background-color:#faa476">#faa476</span>  <span style="background-color:#f0746e">#f0746e</span>  <span style="background-color:#e34f6f">#e34f6f</span>  <span style="background-color:#dc3977">#dc3977</span>  <span style="background-color:#b9257a">#b9257a</span>  <span style="background-color:#7c1d6f">#7c1d6f</span> 
 - carto_teal:  <span style="background-color:#d1eeea">#d1eeea</span>  <span style="background-color:#a8dbd9">#a8dbd9</span>  <span style="background-color:#85c4c9">#85c4c9</span>  <span style="background-color:#68abb8">#68abb8</span>  <span style="background-color:#4f90a6">#4f90a6</span>  <span style="background-color:#3b738f">#3b738f</span>  <span style="background-color:#2a5674">#2a5674</span> 
@@ -202,7 +264,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - carto_mint:  <span style="background-color:#e4f1e1">#e4f1e1</span>  <span style="background-color:#b4d9cc">#b4d9cc</span>  <span style="background-color:#89c0b6">#89c0b6</span>  <span style="background-color:#63a6a0">#63a6a0</span>  <span style="background-color:#448c8a">#448c8a</span>  <span style="background-color:#287274">#287274</span>  <span style="background-color:#0d585f">#0d585f</span> 
 - carto_brown:  <span style="background-color:#ede5cf">#ede5cf</span>  <span style="background-color:#e0c2a2">#e0c2a2</span>  <span style="background-color:#d39c83">#d39c83</span>  <span style="background-color:#c1766f">#c1766f</span>  <span style="background-color:#a65461">#a65461</span>  <span style="background-color:#813753">#813753</span>  <span style="background-color:#541f3f">#541f3f</span> 
 
-#### Carto Diverging
+### Carto Diverging
 - carto_div_armyrose:  <span style="background-color:#798234">#798234</span>  <span style="background-color:#a3ad62">#a3ad62</span>  <span style="background-color:#d0d3a2">#d0d3a2</span>  <span style="background-color:#fdfbe4">#fdfbe4</span>  <span style="background-color:#f0c6c3">#f0c6c3</span>  <span style="background-color:#df91a3">#df91a3</span>  <span style="background-color:#d46780">#d46780</span> 
 - carto_div_fall:  <span style="background-color:#3d5941">#3d5941</span>  <span style="background-color:#778868">#778868</span>  <span style="background-color:#b5b991">#b5b991</span>  <span style="background-color:#f6edbd">#f6edbd</span>  <span style="background-color:#edbb8a">#edbb8a</span>  <span style="background-color:#de8a5a">#de8a5a</span>  <span style="background-color:#ca562c">#ca562c</span> 
 - carto_div_geyser:  <span style="background-color:#008080">#008080</span>  <span style="background-color:#70a494">#70a494</span>  <span style="background-color:#b4c8a8">#b4c8a8</span>  <span style="background-color:#f6edbd">#f6edbd</span>  <span style="background-color:#edbb8a">#edbb8a</span>  <span style="background-color:#de8a5a">#de8a5a</span>  <span style="background-color:#ca562c">#ca562c</span> 
@@ -211,7 +273,7 @@ Use USAID colors and text for all banners, text and text boxes. The USAID colors
 - carto_div_tropic:  <span style="background-color:#009B9E">#009B9E</span>  <span style="background-color:#42B7B9">#42B7B9</span>  <span style="background-color:#A7D3D4">#A7D3D4</span>  <span style="background-color:#F1F1F1">#F1F1F1</span>  <span style="background-color:#E4C1D9">#E4C1D9</span>  <span style="background-color:#D691C1">#D691C1</span>  <span style="background-color:#C75DAB">#C75DAB</span> 
 - carto_div_earth:  <span style="background-color:#A16928">#A16928</span>  <span style="background-color:#bd925a">#bd925a</span>  <span style="background-color:#d6bd8d">#d6bd8d</span>  <span style="background-color:#edeac2">#edeac2</span>  <span style="background-color:#b5c8b8">#b5c8b8</span>  <span style="background-color:#79a7ac">#79a7ac</span>  <span style="background-color:#2887a1">#2887a1</span> 
   
-#### Other
+### Other
 - pantone: <span style="background-color: #9BB7D4">#9BB7D4</span> <span style="background-color: #C74375">#C74375</span> <span style="background-color: #BF1932">#BF1932</span> <span style="background-color: #7BC4C4">#7BC4C4</span> <span style="background-color: #E2583E">#E2583E</span> <span style="background-color: #53B0AE">#53B0AE</span> <span style="background-color: #DECDBE">#DECDBE</span> <span style="background-color: #9B1B30">#9B1B30</span> <span style="background-color: #5A5B9F">#5A5B9F</span> <span style="background-color: #F0C05A">#F0C05A</span> <span style="background-color: #D94F70">#D94F70</span> <span style="background-color: #45B5AA">#45B5AA</span> <span style="background-color: #DD4124">#DD4124</span> <span style="background-color: #009473">#009473</span> <span style="background-color: #AD5E99">#AD5E99</span> <span style="background-color: #964F4C">#964F4C</span> <span style="background-color: #93A9D1">#93A9D1</span> <span style="background-color: #F7CACA">#F7CACA</span> <span style="background-color: #88B04B">#88B04B</span> <span style="background-color: #5F4B8B">#5F4B8B</span> <span style="background-color: #FF6F61">#FF6F61</span> <span style="background-color: #0F4C81">#0F4C81</span> <span style="background-color: #939597">#939597</span> <span style="background-color: #F5DF4D">#F5DF4D</span> <span style="background-color: #6768AB">#6768AB</span> <span style="background-color: #BE3455">#BE3455</span> <span style="background-color: #FEBE98">#FEBE98</span>
 - contrast:  <span style="background-color:#E4F4EA">#E4F4EA</span>  <span style="background-color:#364352">#364352</span>  <span style="background-color:#768491">#768491</span>  <span style="background-color:#C5CAD0">#C5CAD0</span>  <span style="background-color:#BE311F">#BE311F</span> 
 - compliment:  <span style="background-color:#6F472E">#6F472E</span>  <span style="background-color:#6F827C">#6F827C</span>  <span style="background-color:#E4F4EA">#E4F4EA</span>  <span style="background-color:#E4F4EA">#E4F4EA</span>  <span style="background-color:#E4F4EA">#E4F4EA</span> 
