@@ -66,15 +66,15 @@ grep("(grey|siei_|wapo_|usaid_)", ls('package:glitr'), value = T)
 
 The set of colors that is probably of most interest is the SIEI recommended colors. As you may recall from the [Data Visualization Style Guide](https://usaid-oha-si.github.io/styleguide/), the SI team has created nine core colors:
 
-![#15478A](https://via.placeholder.com/15/15478A/000000?text=+) midnight_blue (#15478A)\
-![#5BB5D5](https://via.placeholder.com/15/5BB5D5/000000?text=+) viking (#5BB5D5)\
-![#8C8C91](https://via.placeholder.com/15/8C8C91/000000?text=+) slate (#8C8C91)\
-![#3B5BBE](https://via.placeholder.com/15/3B5BBE/000000?text=+) electric_indigo (#3B5BBE)\
-![#E14BA1](https://via.placeholder.com/15/E14BA1/000000?text=+) orchid_bloom (#E14BA1)\
-![#F9C555](https://via.placeholder.com/15/F9C555/000000?text=+) sun_kissed (#F9C555)\
-![#419164](https://via.placeholder.com/15/419164/000000?text=+) hunter (#419164)\
-![#876EC4](https://via.placeholder.com/15/876EC4/000000?text=+) lavender_haze (#876EC4)
-![#F36428](https://via.placeholder.com/15/F36428/000000?text=+) tango (F36428)
+-   ![#15478A](https://placehold.co/15x15/15478A/15478A) midnight_blue (#15478A)
+-   ![#5BB5D5](https://placehold.co/15x15/5BB5D5/5BB5D5) viking (#5BB5D5)
+-   ![#8C8C91](https://placehold.co/15x15/8C8C91/8C8C91) slate (#8C8C91)
+-   ![#3B5BBE](https://placehold.co/15x15/3B5BBE/3B5BBE) electric_indigo (#3B5BBE)
+-   ![#E14BA1](https://placehold.co/15x15/E14BA1/E14BA1) orchid_bloom (#E14BA1)
+-   ![#F9C555](https://placehold.co/15x15/F9C555/F9C555) sun_kissed (#F9C555)
+-   ![#419164](https://placehold.co/15x15/419164/419164) hunter (#419164)
+-   ![#876EC4](https://placehold.co/15x15/876EC4/876EC4) lavender_haze (#876EC4)
+-   ![#F36428](https://placehold.co/15x15/F36428/F36428) tango (#F36428)
 
 ```{r show_colors, echo = T, fig.height = 2, fig.width = 4}
 # Any of these colors can be called by typing in the name of the color. 
