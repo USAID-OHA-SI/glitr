@@ -48,7 +48,7 @@ generate_tint_objects <- function(palette_list, output_file) {
 }
 
 # Example Usage
-generate_tint_objects(si_palettes, "../Downloads/tint_objects.R")
+generate_tint_objects(si_palettes, "../../../Downloads/tint_objects.R")
 
 
 generate_tint_objects_and_pkgdown <- function(palette_list, output_file, pkgdown_file) {
@@ -96,6 +96,42 @@ generate_tint_objects_and_pkgdown <- function(palette_list, output_file, pkgdown
 # Example Usage
 generate_tint_objects_and_pkgdown(
   palette_list = si_palettes,
-  output_file = "../Downloads/tint_objects2.R",
-  pkgdown_file = "../Downloads/_pkgdown.yml"
+  output_file = "../../../Downloads/tint_objects2.R",
+  pkgdown_file = "../../../Downloads/_pkgdown.yml"
 )
+
+
+generate_vignette_output <- function(palette_list, vignette_file) {
+  # Open a connection to the vignette file
+  con <- file(vignette_file, open = "wt")
+
+  # Write the header for the vignette section
+  writeLines("### OHA Palette Tints", con)
+
+  # Iterate through each color palette in the list
+  for (color_name in names(palette_list)) {
+    tints <- palette_list[[color_name]]
+    tint_levels <- c(100, 80, 60, 40, 20)  # Tint percentages
+
+    for (i in seq_along(tints)) {
+      # Generate the markdown line for the color object
+      markdown <- sprintf(
+        "- %s_%d <span style=\"background-color:%s\">%s</span>",
+        gsub("_t$", "", color_name),
+        tint_levels[i],
+        tints[i],
+        tints[i]
+      )
+
+      # Write the markdown line to the file
+      writeLines(markdown, con)
+    }
+  }
+
+  # Close the connection
+  close(con)
+}
+
+# Example Usage
+generate_vignette_output(si_palettes, "../../../Downloads/vignette_palette_tints.md")
+
