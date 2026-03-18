@@ -1,3 +1,6 @@
+# glitr 0.4
+* Adjust `si_preview` to allow for launching of preview on all devices, not just PC [2026-03-18]
+
 # glitr 0.3
 * Updated vignettes to use the 2024 OHA Style colors [2024-12-06]
 * Include all tints of OHA colors as their own objects to make them easier to access [2024-12-05] 
