@@ -103,7 +103,7 @@ si_preview <- function(scale = 1,
                   ...)
 
   #launch file
-  shell.exec(tmp_file)
+  utils::browseURL(tmp_file)
 
   #console output for where to file the file(s)
   usethis::ui_info("The plot preview is now open in Photos and can be found in this temporary folder: {usethis::ui_path(tempdir())}")
